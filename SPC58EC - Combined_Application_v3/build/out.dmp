@@ -1,0 +1,1557 @@
+
+build/out.elf:     file format elf32-powerpc
+build/out.elf
+architecture: powerpc:vle, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00fc0030
+
+Program Header:
+    LOAD off    0x00004000 vaddr 0x00fc0000 paddr 0x00fc0000 align 2**14
+         filesz 0x0000d9b4 memsz 0x0000d9b4 flags r-x 10000000
+    LOAD off    0x00014000 vaddr 0x400a8000 paddr 0x00fcd9c0 align 2**14
+         filesz 0x000010ec memsz 0x00001c14 flags rw-
+    LOAD off    0x00018000 vaddr 0x50800000 paddr 0x50800000 align 2**14
+         filesz 0x00000000 memsz 0x00000800 flags rw-
+    LOAD off    0x00018000 vaddr 0x52800000 paddr 0x52800000 align 2**14
+         filesz 0x00000000 memsz 0x00001000 flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .boot0        00000386  00fc0000  00fc0000  00004000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE, VLE
+  1 .boot1        00001c72  00fc0390  00fc0390  00004390  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE, VLE
+  2 .text         0000b426  00fc2010  00fc2010  00006010  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE, VLE
+  3 .rodata       00000574  00fcd440  00fcd440  00011440  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .core0_stacks 00000800  50800000  50800000  00018000  2**4
+                  ALLOC
+  5 .core2_stacks 00001000  52800000  52800000  00018000  2**4
+                  ALLOC
+  6 .data         000010e0  400a8000  00fcd9c0  00014000  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+  7 .sdata        0000000c  400a90e0  00fceaa0  000150e0  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  8 .bss          00000b28  400a90ec  00fceaac  000150ec  2**2
+                  ALLOC
+  9 .PPC.EMB.apuinfo 0000001c  00000000  00000000  000150ec  2**0
+                  CONTENTS, READONLY
+ 10 .comment      0000008e  00000000  00000000  00015108  2**0
+                  CONTENTS, READONLY
+ 11 .gnu.attributes 00000010  00000000  00000000  00015196  2**0
+                  CONTENTS, READONLY
+ 12 .debug_info   0003f862  00000000  00000000  000151a6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_abbrev 000048df  00000000  00000000  00054a08  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_aranges 00000db0  00000000  00000000  000592e7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_ranges 00001450  00000000  00000000  0005a097  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_line   00009a2e  00000000  00000000  0005b4e7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 17 .debug_str    0000aae2  00000000  00000000  00064f15  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 18 .debug_frame  00003b70  00000000  00000000  0006f9f8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 19 .debug_loc    0000e0cd  00000000  00000000  00073568  2**0
+                  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00fc0000 l    d  .boot0	00000000 .boot0
+00fc0390 l    d  .boot1	00000000 .boot1
+00fc2010 l    d  .text	00000000 .text
+00fcd440 l    d  .rodata	00000000 .rodata
+50800000 l    d  .core0_stacks	00000000 .core0_stacks
+52800000 l    d  .core2_stacks	00000000 .core2_stacks
+400a8000 l    d  .data	00000000 .data
+400a90e0 l    d  .sdata	00000000 .sdata
+400a90ec l    d  .bss	00000000 .bss
+00000000 l    d  .PPC.EMB.apuinfo	00000000 .PPC.EMB.apuinfo
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .gnu.attributes	00000000 .gnu.attributes
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    df *ABS*	00000000 build/obj/boot.o
+00fc00cc l       .boot0	00000000 _regclear
+00fc0174 l       .boot0	00000000 _ram0init
+00fc01bc l       .boot0	00000000 _iv0init
+00fc005e l       .boot0	00000000 _disablewatchdog
+00fc0150 l       .boot0	00000000 _sysraminit
+00fc0198 l       .boot0	00000000 _ram2init
+00fc01d8 l       .boot0	00000000 _iv2init
+00fc005c l       .boot0	00000000 .noboot
+00fc0160 l       .boot0	00000000 .sramclrloop
+00fc0170 l       .boot0	00000000 .sramclrend
+00fc0184 l       .boot0	00000000 .dram0clrloop
+00fc0194 l       .boot0	00000000 .dram0clrend
+00fc01a8 l       .boot0	00000000 .dram2clrloop
+00fc01b8 l       .boot0	00000000 .dram2clrend
+00fc0200 l       .boot0	00000000 .unhandled_exception0
+00fc0204 l       .boot0	00000000 .unhandled_exception2
+00000000 l    df *ABS*	00000000 build/obj/crt0.o
+00fc0308 l       .boot0	00000000 .bssloop
+00fc0314 l       .boot0	00000000 .bssend
+00fc032c l       .boot0	00000000 .dataloop
+00fc033c l       .boot0	00000000 .dataend
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00fc20c0 l     F .text	000001a4 _fpadd_parts
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00fc28e0 l     F .text	000002b6 _fpadd_parts
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 spc5_lld.c
+00000000 l    df *ABS*	00000000 spc5_edma.c
+00fcd470 l     O .rodata	00000010 dma1_g0
+00fcd480 l     O .rodata	00000010 dma1_g1
+400a90ec l     O .bss	00000100 channels
+00fcd490 l     O .rodata	00000010 dma1_g2
+00fcd4a0 l     O .rodata	00000010 dma1_g3
+00000000 l    df *ABS*	00000000 can_lld.c
+00000000 l    df *ABS*	00000000 serial_lld.c
+00fc6870 l     F .text	000000be spc5xx_serve_rxi_interrupt
+00fc6930 l     F .text	00000070 spc5xx_serve_txi_interrupt
+00fc69a0 l     F .text	0000000a spc5xx_serve_err_interrupt
+400a8000 l     O .data	00000020 default_config
+00000000 l    df *ABS*	00000000 pit_lld.c
+00000000 l    df *ABS*	00000000 spi_lld.c
+00fc6c50 l     F .text	000000ac spi_dspi_prefill_txfifo_idle
+00fc6d00 l     F .text	0000008c spi_dspi_prefill_txfifo8
+00fc6d90 l     F .text	000000a8 spi_dspi_prefill_txfifo16
+00fc6e40 l     F .text	000000e0 spi_dspi_prefill_txfifo32
+00fc6f20 l     F .text	0000005a spi_start_tx8
+00fc6f80 l     F .text	0000005a spi_start_tx16
+00fc6fe0 l     F .text	0000005a spi_start_tx32
+00000000 l    df *ABS*	00000000 wkpu_lld.c
+00000000 l    df *ABS*	00000000 spc5_linflex.c
+400a9258 l     O .bss	00000001 linflex_initialization
+00000000 l    df *ABS*	00000000 AEK_COM_ISOSPI1_lld.c
+00000000 l    df *ABS*	00000000 AEK_POW_BMS63EN_lld.c
+00fc7bc0 l     F .text	00000140 AEK_POW_BMS63EN_SetUpSPIData
+00fcd4d0 l     O .rodata	00000004 CSWTCH.15
+00000000 l    df *ABS*	00000000 AEK_POW_BMS63EN_id.c
+00000000 l    df *ABS*	00000000 AEK_POW_BMS63EN_diag.c
+00000000 l    df *ABS*	00000000 pal.c
+00000000 l    df *ABS*	00000000 clock.c
+00000000 l    df *ABS*	00000000 irq.c
+00000000 l    df *ABS*	00000000 eirq.c
+00000000 l    df *ABS*	00000000 swirq.c
+00000000 l    df *ABS*	00000000 osal.c
+00fca980 l     F .text	00000018 osalSysTimeDelayTicks
+00fca9a0 l     F .text	0000000a osalSysTimeGetTicks
+00fca9b0 l     F .text	0000002a osalIsrEnable
+00fca9e0 l     F .text	00000032 osalIsrDisable
+400a9384 l     O .bss	00000004 osalIsExtIntEnable
+400a9388 l     O .bss	00000004 osalsystime
+400a938c l     O .bss	00000004 osal_ticks_per_sec
+400a9390 l     O .bss	00000030 osalTimeOps
+400a93c0 l     O .bss	00000004 osalIsrCnt
+00000000 l    df *ABS*	00000000 systimer.c
+00000000 l    df *ABS*	00000000 AEK_COM_ISOSPI1_cfg.c
+400a8238 l     O .data	0000000e isospi_pad_list_dev_0
+00000000 l    df *ABS*	00000000 AEK_POW_BMS63EN_cfg.c
+400a8248 l     O .data	000000a8 AEK_POW_BMS63EN_ParamConf_dev
+400a82f0 l     O .data	00000018 AEK_POW_BMS63EN_dev_status
+400a8318 l     O .data	000000e0 AEK_POW_BMS63EN_cell_stack_state_dev1
+400a83f8 l     O .data	000000e0 AEK_POW_BMS63EN_cell_stack_state_dev2
+400a84e4 l     O .data	00000008 AEK_POW_BMS63EN_status
+00000000 l    df *ABS*	00000000 board.c
+400a84ec l     O .data	000000d8 spc_mscr_io_init
+400a85c4 l     O .data	00000008 pal_default_config
+400a85cc l     O .data	00000020 spc_mscr_mux_init
+00000000 l    df *ABS*	00000000 irq_cfg.c
+00000000 l    df *ABS*	00000000 swirq_cfg.c
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 AEK_POW_BMS63EN_Appl.c
+400a93c8 l     O .bss	000005cc rtDWdev1
+400a9994 l     O .bss	00000008 rtMdev1_
+00000000 l    df *ABS*	00000000 BMS_Controller.c
+00fcb830 l     F .text	00000290 look2_iflf_binlx.constprop.4
+00fcbac0 l     F .text	00000eda BMS_Controller_p
+00000000 l    df *ABS*	00000000 components.c
+00000000 l    df *ABS*	00000000 wf_exp.c
+00000000 l    df *ABS*	00000000 w_log.c
+00000000 l    df *ABS*	00000000 ef_exp.c
+00fcd980 l     O .rodata	00000008 halF
+00fcd990 l     O .rodata	00000008 ln2LO
+00fcd9a0 l     O .rodata	00000008 ln2HI
+00000000 l    df *ABS*	00000000 e_log.c
+00000000 l    df *ABS*	00000000 sf_finite.c
+00000000 l    df *ABS*	00000000 s_fpclassify.c
+00000000 l    df *ABS*	00000000 s_matherr.c
+00000000 l    df *ABS*	00000000 s_nan.c
+00000000 l    df *ABS*	00000000 errno.c
+00000000 l    df *ABS*	00000000 memcpy.c
+00000000 l    df *ABS*	00000000 memset.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 fp-bit.c
+00000000 l    df *ABS*	00000000 BMS_Controller_data.c
+00000000 l    df *ABS*	00000000 impure.c
+400a8cc8 l     O .data	00000418 impure_data
+00000000 l    df *ABS*	00000000 serial_lld_cfg.c
+00000000 l    df *ABS*	00000000 can_lld_cfg.c
+00000000 l    df *ABS*	00000000 pit_lld_cfg.c
+00000000 l    df *ABS*	00000000 spi_lld_cfg.c
+00000000 l    df *ABS*	00000000 wkpu_lld_cfg.c
+00000000 l    df *ABS*	00000000 eirq_cfg.c
+00000000 l    df *ABS*	00000000 Cell_Model_parameter.c
+00000000 l    df *ABS*	00000000 s_lib_ver.c
+00000000 l    df *ABS*	00000000 core0.c
+00000000 l    df *ABS*	00000000 cache.c
+00000000 l    df *ABS*	00000000 libgcc2.c
+00fc6b90 g     F .text	00000004 pit_lld_start
+00fc0400 g       .boot1	00000000 __ivpr0_base__
+00fc2000  w      .boot1	00000000 vector723
+00fc2000  w      .boot1	00000000 vector767
+00fc2000  w      .boot1	00000000 vector612
+00fc2000  w      .boot1	00000000 vector242
+00fc2000  w      .boot1	00000000 vector119
+00fc2000  w      .boot1	00000000 vector829
+00fc4720 g     F .text	00000060 vector87
+00fc46c0 g     F .text	00000060 vector86
+00fc2000  w      .boot1	00000000 vector720
+00fc2000  w      .boot1	00000000 vector626
+00fc2000  w      .boot1	00000000 vector256
+00fc2000  w      .boot1	00000000 vector621
+00fc2000  w      .boot1	00000000 vector251
+00fc2000  w      .boot1	00000000 vector429
+00fc2000  w    F .boot1	00000000 _unhandled_irq
+00fc2000  w      .boot1	00000000 vector584
+00fc2000  w      .boot1	00000000 vector345
+00fc2000  w      .boot1	00000000 vector718
+00fc2000  w      .boot1	00000000 vector762
+00fc2000  w      .boot1	00000000 vector795
+00fc48a0 g     F .text	00000060 vector91
+00fc2000  w      .boot1	00000000 vector33
+00fc2000  w      .boot1	00000000 vector512
+00fc2000  w      .boot1	00000000 vector162
+00fc2000  w      .boot1	00000000 vector419
+00fccb90 g     F .text	00000134 log
+00fc2000  w      .boot1	00000000 vector666
+00fc2000  w      .boot1	00000000 vector296
+00fc2000  w      .boot1	00000000 vector715
+00fc2000  w      .boot1	00000000 vector213
+00fc2000  w      .boot1	00000000 vector985
+00fc4f00 g     F .text	00000060 vector108
+00fc2000  w      .boot1	00000000 vector947
+00fc2000  w      .boot1	00000000 vector493
+00fc2000  w      .boot1	00000000 vector43
+00fc2000  w      .boot1	00000000 vector682
+00fc2000  w      .boot1	00000000 vector451
+00fc2000  w      .boot1	00000000 vector900
+00fc3050 g     F .text	00000064 .hidden __eqdf2
+00fc2000  w      .boot1	00000000 vector750
+00fc2000  w      .boot1	00000000 vector435
+00fc2000  w      .boot1	00000000 vector496
+00fc2000  w      .boot1	00000000 vector515
+00fc2000  w      .boot1	00000000 vector165
+00fc2000  w      .boot1	00000000 vector571
+00fc2000  w      .boot1	00000000 vector535
+00fc2000  w      .boot1	00000000 vector185
+00fc0200  w      .boot0	00000000 _C0_IVOR15
+00fcace0 g     F .text	00000042 getTemperatureStats
+00fc2000  w      .boot1	00000000 vector760
+00fcab80 g     F .text	00000074 osalInit
+00fc2000  w      .boot1	00000000 vector942
+00fc2000  w      .boot1	00000000 vector748
+400a8000 g       .data	00000000 __data_start__
+00fc2000  w      .boot1	00000000 vector580
+00fc3394 g     F .text	0000000e .hidden _restgpr_31_x
+00fc2000  w      .boot1	00000000 vector333
+00fc8560 g     F .text	00000144 AEK_POW_BMS63EN_StartManualConversion
+00fc2000  w      .boot1	00000000 vector817
+400a926c g     O .bss	00000118 AEK_POW_BMS63EN_gpio_state
+00fc51a0 g     F .text	00000060 vector115
+00fc0500 g       .boot1	00000000 __ivpr2_base__
+00fc0204  w    F .boot0	00000000 _unhandled_exception2
+00fc2000  w      .boot1	00000000 vector578
+00fc83e0 g     F .text	0000017e AEK_POW_BMS63EN_StartUpWKUP
+00fc2000  w      .boot1	00000000 vector122
+00fc2000  w      .boot1	00000000 vector376
+400a8618 g     O .data	00000004 SOC_MIN
+00fc2000  w      .boot1	00000000 vector412
+00fc2000  w      .boot1	00000000 vector676
+00fc82d0 g     F .text	00000058 AEK_POW_BMS63EN_SetVTREFAlwaysEnabled
+00fcb390 g     F .text	000000ee AEK_POW_BMS63EN_Balancing
+400a91fc g     O .bss	00000030 SD5
+00fc2000  w      .boot1	00000000 vector709
+00fc2000  w      .boot1	00000000 vector398
+00fc2000  w      .boot1	00000000 vector430
+00fc2000  w      .boot1	00000000 vector506
+00fc2000  w      .boot1	00000000 vector156
+00fc3374 g     F .text	0000002e .hidden _restgpr_23_x
+400a80f8 g     O .data	00000060 pit0_config
+00fc2000  w      .boot1	00000000 vector975
+00fc2000  w      .boot1	00000000 vector615
+00fca710 g     F .text	000000a6 vector245
+00fc2000  w      .boot1	00000000 vector816
+400b10e0 g       .sdata	00000000 __sdata_start__
+00fc2000  w      .boot1	00000000 vector306
+00fc2000  w      .boot1	00000000 vector1014
+00fc2000  w      .boot1	00000000 vector539
+00fc2000  w      .boot1	00000000 vector475
+00fc2000  w      .boot1	00000000 vector189
+00fc2000  w      .boot1	00000000 vector7
+00fc2000  w      .boot1	00000000 vector802
+00fc2000  w      .boot1	00000000 vector431
+400a8b70 g     O .data	00000154 R1_Vector
+00fc2000  w      .boot1	00000000 vector380
+00fc2000  w      .boot1	00000000 vector862
+00fc3d60 g     F .text	0000005c vector61
+00fc2000  w      .boot1	00000000 vector24
+00fc5020 g     F .text	00000060 vector111
+00fc2000  w      .boot1	00000000 vector711
+00fc2000  w      .boot1	00000000 vector930
+00fc2000  w      .boot1	00000000 vector200
+00fc7ef0 g     F .text	00000036 AEK_POW_BMS63EN_SPIWriteRegister
+00fc2000  w      .boot1	00000000 vector655
+00fc2000  w      .boot1	00000000 vector285
+00fc2000  w      .boot1	00000000 vector414
+00fc0200  w      .boot0	00000000 _C0_IVOR0
+00fc2000  w      .boot1	00000000 vector476
+00fc2490 g     F .text	000000fc .hidden __divsf3
+00fc2000  w      .boot1	00000000 vector736
+00fc2000  w      .boot1	00000000 vector928
+00fc3fa0 g     F .text	0000005c vector67
+00fc2000  w      .boot1	00000000 vector974
+00fc2000  w      .boot1	00000000 vector562
+00fc2000  w      .boot1	00000000 vector773
+00fc2000  w      .boot1	00000000 vector138
+00fc2000  w      .boot1	00000000 vector864
+00fc4240 g     F .text	00000060 vector74
+00fc2000  w      .boot1	00000000 vector627
+00fc2000  w      .boot1	00000000 vector257
+00fc3be0 g     F .text	0000005c vector57
+00fc2000  w      .boot1	00000000 vector999
+00fc3354 g     F .text	0000004e .hidden _restgpr_15_x
+00fc0204  w      .boot0	00000000 _IVOR1
+00fc1000 g       .boot1	00000000 _vectors
+00fc2000  w      .boot1	00000000 vector819
+00fc2000  w      .boot1	00000000 vector783
+00fc2780 g     F .text	00000088 .hidden __fixsfsi
+00fc2000  w      .boot1	00000000 vector214
+00fc2000  w      .boot1	00000000 vector870
+00fc4ba0 g     F .text	00000060 vector99
+00fc8390 g     F .text	00000042 AEK_POW_BMS63EN_SetVTREFDisabled
+00fc2000  w      .boot1	00000000 vector770
+00fc2000  w      .boot1	00000000 vector954
+00fc2000  w      .boot1	00000000 vector404
+00fc2000  w      .boot1	00000000 vector348
+00fc2000  w      .boot1	00000000 vector141
+00fc2000  w      .boot1	00000000 vector812
+00fc2000  w      .boot1	00000000 vector859
+00fc2000  w      .boot1	00000000 vector961
+00fc2000  w      .boot1	00000000 vector740
+00fc30c0 g     F .text	00000064 .hidden __gtdf2
+400a93c4 g     O .bss	00000004 AEK_POW_BMS63EN_soc_elab_sts
+00fc2000  w      .boot1	00000000 vector919
+00fc2000  w      .boot1	00000000 vector522
+00fc2000  w      .boot1	00000000 vector172
+00fd59c0 g       .rodata	00000000 __sdata2_start__
+00fcd3f0 g     F .text	0000000a __errno
+00fc2000  w      .boot1	00000000 vector877
+00fc2000  w      .boot1	00000000 vector461
+00fc2000  w      .boot1	00000000 vector611
+00fc2000  w      .boot1	00000000 vector241
+00fca970 g     F .text	00000004 swirqInit
+00fc2000  w      .boot1	00000000 vector876
+00fc2000  w      .boot1	00000000 vector623
+00fc2000  w      .boot1	00000000 vector253
+00fc2000  w      .boot1	00000000 vector3
+00fc2000  w      .boot1	00000000 vector2
+00fc2000  w      .boot1	00000000 vector359
+52800000 g       .boot0	00000000 __dram2_start__
+00fc2000  w      .boot1	00000000 vector833
+00fc2000  w      .boot1	00000000 vector565
+00fc2000  w      .boot1	00000000 vector568
+00fcb480 g     F .text	000000b8 AEK_POW_BMS63EN_init
+00fc0204  w      .boot0	00000000 _IVOR12
+00fc2000  w      .boot1	00000000 vector639
+00fc2000  w      .boot1	00000000 vector269
+00fc2000  w      .boot1	00000000 vector332
+00fc2000  w      .boot1	00000000 vector227
+00fc2000  w      .boot1	00000000 vector834
+400a85fc g     O .data	00000014 Temperature_Vector
+400a9c14 g       .bss	00000000 __heap_base__
+00fc2000  w      .boot1	00000000 vector363
+00fc2000  w      .boot1	00000000 vector983
+00fc2000  w      .boot1	00000000 vector210
+00fc2000  w      .boot1	00000000 vector671
+00fc2000  w      .boot1	00000000 vector316
+00fc2000  w      .boot1	00000000 vector905
+00fc2000  w      .boot1	00000000 vector375
+00fc2000  w      .boot1	00000000 vector1022
+00fc2000  w      .boot1	00000000 vector335
+00fc32d0 g     F .text	00000026 .hidden __make_dp
+00fc0030 g     F .boot0	00000000 _reset_address2
+00fc2000  w      .boot1	00000000 vector307
+00fc2000  w      .boot1	00000000 vector1011
+00fc2000  w      .boot1	00000000 vector224
+00fc2000  w      .boot1	00000000 vector790
+00fc2000  w      .boot1	00000000 vector381
+00fc2000  w      .boot1	00000000 vector346
+00fc2000  w      .boot1	00000000 vector940
+00fc2000  w      .boot1	00000000 vector738
+00fc2000  w      .boot1	00000000 vector378
+00fc2000  w      .boot1	00000000 vector41
+00fc2000  w      .boot1	00000000 vector872
+00fc3600 g     F .text	00000020 .hidden __make_fp
+00fc7d00 g     F .text	00000010 AEK_POW_BMS63EN_ObjectInit
+00fc22b0 g     F .text	00000052 .hidden __subsf3
+00fc2000  w      .boot1	00000000 vector432
+00fc2000  w      .boot1	00000000 vector1018
+00fc2000  w      .boot1	00000000 vector728
+00fc2000  w      .boot1	00000000 vector21
+00fc2000  w      .boot1	00000000 vector803
+00fc2000  w      .boot1	00000000 vector527
+00fc2000  w      .boot1	00000000 vector177
+00fc74c0 g     F .text	000000a4 spi_lld_receive
+00fc2000  w      .boot1	00000000 vector425
+00fc2000  w      .boot1	00000000 vector118
+00fc8790 g     F .text	00000172 AEK_POW_BMS63EN_DisableCellBalancing
+00fc2000  w      .boot1	00000000 vector328
+00fc2000  w      .boot1	00000000 vector918
+00fc40c0 g     F .text	00000060 vector70
+00fc2000  w      .boot1	00000000 vector477
+00fc2000  w      .boot1	00000000 vector579
+00fc0200  w      .boot0	00000000 _C0_IVOR6
+00fcb540 g     F .text	0000000e AEK_POW_BMS63EN_Start_Mgn_exec
+00fc2000  w      .boot1	00000000 vector647
+00fc2000  w      .boot1	00000000 vector277
+00fc4060 g     F .text	00000060 vector69
+00fc2000  w      .boot1	00000000 vector607
+00fc2000  w      .boot1	00000000 vector237
+00fc3e80 g     F .text	0000005c vector64
+00fc2000  w      .boot1	00000000 vector27
+00fc2000  w      .boot1	00000000 vector468
+00010000 g       *ABS*	00000000 __dram2_size__
+00fc3364 g     F .text	0000003e .hidden _restgpr_19_x
+00fc2000  w      .boot1	00000000 vector701
+00fc2000  w      .boot1	00000000 vector312
+00fc2000  w      .boot1	00000000 vector132
+00fc2000  w      .boot1	00000000 vector372
+00fc2000  w      .boot1	00000000 vector583
+00fc2000  w      .boot1	00000000 vector807
+00fc2000  w      .boot1	00000000 vector390
+00fc2000  w      .boot1	00000000 vector536
+00fc2000  w      .boot1	00000000 vector186
+00fc2000  w      .boot1	00000000 vector1013
+00fc77b0 g     F .text	000001cc wkpu_lld_start
+00fc2000  w      .boot1	00000000 vector217
+00fc2000  w      .boot1	00000000 vector355
+400a8174 g     O .data	0000000c wkpu_config_wkpu_cfg_wk_INT28
+00fcd9c0 g       .rodata	00000000 __romdata_start__
+00fc2000  w      .boot1	00000000 vector661
+00fc2000  w      .boot1	00000000 vector291
+00fc2000  w      .boot1	00000000 vector970
+00fc2000  w      .boot1	00000000 vector998
+00fc2000  w      .boot1	00000000 vector436
+00fcd400 g     F .text	0000001a memcpy
+00fc2000  w      .boot1	00000000 vector650
+00fc2000  w      .boot1	00000000 vector280
+00fc2000  w      .boot1	00000000 vector980
+00fc2000  w      .boot1	00000000 vector1
+00fc2000  w      .boot1	00000000 vector528
+00fc2000  w      .boot1	00000000 vector178
+00fc2000  w      .boot1	00000000 vector38
+00fc5b00 g     F .text	000004a4 vector695
+00fc2000  w      .boot1	00000000 vector953
+00fc2000  w      .boot1	00000000 vector652
+00fc2000  w      .boot1	00000000 vector282
+00fc31a0 g     F .text	00000080 .hidden __floatsidf
+00fc5380 g     F .text	0000012a can_lld_readBuffer
+00fc2000  w      .boot1	00000000 vector608
+00fc2000  w      .boot1	00000000 vector238
+00fc2000  w      .boot1	00000000 vector557
+00fc8b50 g     F .text	00000038 AEK_POW_BMS63EN_GetBalancingStatus
+400a8614 g     O .data	00000004 Cap_Nom
+00fc2000  w      .boot1	00000000 vector697
+00fc2000  w      .boot1	00000000 vector311
+00fc2000  w      .boot1	00000000 vector133
+00fc41e0 g     F .text	00000060 vector73
+00fc2000  w      .boot1	00000000 vector144
+00fc2000  w      .boot1	00000000 vector644
+00fc2000  w      .boot1	00000000 vector274
+00fc3390 g     F .text	00000012 .hidden _restgpr_30_x
+00fc2000  w      .boot1	00000000 vector737
+00fc335c g     F .text	00000046 .hidden _restgpr_17_x
+00fc2000  w      .boot1	00000000 vector967
+00fc2000  w      .boot1	00000000 vector687
+00fc2000  w      .boot1	00000000 vector929
+00fc2000  w      .boot1	00000000 vector349
+00fc2000  w      .boot1	00000000 vector354
+00fc99f0 g     F .text	000001de AEK_POW_BMS63EN_SetGPIOUVThreshold
+00fc2000  w      .boot1	00000000 vector624
+00fc2000  w      .boot1	00000000 vector254
+52801000 g       .core2_stacks	00000000 __main_thread_stack_end__
+00fc2000  w      .boot1	00000000 vector763
+00fc2000  w      .boot1	00000000 vector1001
+00fcd380 g     F .text	00000050 __fpclassifyd
+00fc2000  w      .boot1	00000000 vector300
+00fc2000  w      .boot1	00000000 vector798
+00fc2000  w      .boot1	00000000 vector362
+00fc4c60 g     F .text	00000060 vector101
+00fc6750 g     F .text	00000120 can_lld_transmit
+00fc2000  w      .boot1	00000000 vector211
+00fc2000  w      .boot1	00000000 vector418
+00fc2000  w      .boot1	00000000 vector889
+00fc2000  w      .boot1	00000000 vector450
+00fc2000  w      .boot1	00000000 vector524
+00fc2000  w      .boot1	00000000 vector174
+00fc2000  w      .boot1	00000000 vector924
+00fc7a50 g     F .text	0000003c AEK_COM_ISOSPI_EnableTransceiverComm
+00fc2000  w      .boot1	00000000 vector993
+00fc2000  w      .boot1	00000000 vector613
+00fca5b0 g     F .text	000000a6 vector243
+00fc9bd0 g     F .text	000002d4 AEK_POW_BMS63EN_ParameterConfiguration
+00fc338c g     F .text	00000016 .hidden _restgpr_29_x
+00fc0204  w      .boot0	00000000 _IVOR8
+00fc2000  w      .boot1	00000000 vector492
+00fc2000  w      .boot1	00000000 vector495
+00fc2000  w      .boot1	00000000 vector128
+00fc2000  w      .boot1	00000000 vector753
+00fc2000  w      .boot1	00000000 vector844
+00fc44e0 g     F .text	00000060 vector81
+00fc2000  w      .boot1	00000000 vector552
+00fc2000  w      .boot1	00000000 vector765
+00fc2000  w      .boot1	00000000 vector1008
+00fc2000  w      .boot1	00000000 vector677
+00fc2000  w      .boot1	00000000 vector13
+00fc2000  w      .boot1	00000000 vector460
+00fc2000  w      .boot1	00000000 vector51
+00fc2000  w      .boot1	00000000 vector16
+00fc26b0 g     F .text	0000005a .hidden __lesf2
+00fc0200  w    F .boot0	00000000 _unhandled_exception0
+00fc2000  w      .boot1	00000000 vector960
+00fc2000  w      .boot1	00000000 vector714
+00fc2060 g     F .text	00000056 .hidden __fixunsdfsi
+00fc2000  w      .boot1	00000000 vector595
+00fc2000  w      .boot1	00000000 vector946
+00fc2000  w      .boot1	00000000 vector839
+00fca870 g     F .text	000000f4 eirqInit
+00fc2000  w      .boot1	00000000 vector989
+00fc2000  w      .boot1	00000000 vector610
+00fc2000  w      .boot1	00000000 vector240
+00fc9320 g     F .text	00000264 AEK_POW_BMS63EN_SetGPIOModeAbsolute
+00fc2000  w      .boot1	00000000 vector791
+00fc3ac0 g     F .text	0000005c vector54
+00fc2000  w      .boot1	00000000 vector19
+40108000 g       *ABS*	00000000 __heap_end__
+400a90ec g       .sdata	00000000 __bss_start__
+00fc0204  w      .boot0	00000000 _IVOR3
+00fc2000  w      .boot1	00000000 vector453
+00fc2000  w      .boot1	00000000 vector846
+00fc2000  w      .boot1	00000000 vector305
+00fc4900 g     F .text	00000060 vector92
+00fc0200  w      .boot0	00000000 _C0_IVOR3
+00fc2000  w      .boot1	00000000 vector733
+00fc2000  w      .boot1	00000000 vector778
+00fc2000  w      .boot1	00000000 vector614
+00fca660 g     F .text	000000a6 vector244
+00fc2000  w      .boot1	00000000 vector1006
+00fc2000  w      .boot1	00000000 vector140
+00fc2000  w      .boot1	00000000 vector498
+00fcd360 g     F .text	00000014 finitef
+00fc2000  w      .boot1	00000000 vector806
+00fc2000  w      .boot1	00000000 vector797
+00fca190 g     F .text	00000032 clockInit
+00fc8b90 g     F .text	000000c8 AEK_POW_BMS63EN_GetInstCurrentMeasurement
+00fc2000  w      .boot1	00000000 vector45
+00fc4420 g     F .text	00000060 vector79
+00fcc9a0 g     F .text	00000032 BMS_Controller_step
+00fc7760 g     F .text	0000004a wkpu_lld_init
+00fc6aa0 g     F .text	00000032 vector229
+00fc2000  w      .boot1	00000000 vector508
+00fc2000  w      .boot1	00000000 vector158
+00fc2000  w      .boot1	00000000 vector752
+00fc7ff0 g     F .text	00000042 AEK_POW_BMS63EN_EnableCoulombCounting
+00fc2000  w      .boot1	00000000 vector673
+00fc8280 g     F .text	00000050 AEK_POW_BMS63EN_GetVTREFVoltMeasurement
+00fc2000  w      .boot1	00000000 vector428
+00fc2000  w      .boot1	00000000 vector39
+00fc2000  w      .boot1	00000000 vector518
+00fc2000  w      .boot1	00000000 vector168
+00fc79e0 g     F .text	00000028 linflex_lld_init
+00fc0200  w      .boot0	00000000 _C0_IVOR9
+00fc2000  w      .boot1	00000000 vector592
+00fc2000  w      .boot1	00000000 vector871
+00fc2000  w      .boot1	00000000 vector35
+00fc50e0 g     F .text	00000060 vector113
+00fc2000  w      .boot1	00000000 vector885
+00fc3820 g     F .text	000000b0 .hidden __unpack_d
+00fc9f80 g     F .text	00000034 AEK_POW_BMS63EN_GetFaults2
+00fc7ad0 g     F .text	0000003c AEK_COM_ISOSPI_ISOTX_Attenuate
+00fc2000  w      .boot1	00000000 vector125
+00fc2000  w      .boot1	00000000 vector1016
+00fc2000  w      .boot1	00000000 vector645
+00fc2000  w      .boot1	00000000 vector275
+00fc2000  w      .boot1	00000000 vector793
+00fc0204  w      .boot0	00000000 _IVOR6
+00fc2000  w      .boot1	00000000 vector440
+00fc2000  w      .boot1	00000000 vector840
+00fc2000  w      .boot1	00000000 vector409
+00fc2810 g     F .text	00000038 .hidden __extendsfdf2
+00fc2000  w      .boot1	00000000 vector688
+00fc2000  w      .boot1	00000000 vector313
+00fc2b98 g     F .text	0000005a .hidden __adddf3
+00fc2000  w      .boot1	00000000 vector895
+00fc2000  w      .boot1	00000000 vector483
+00fc2000  w      .boot1	00000000 vector813
+00fc2000  w      .boot1	00000000 vector702
+00fcab40 g     F .text	0000003a osalExitCritical
+00fc7340 g     F .text	00000032 spi_lld_init
+00fc2000  w      .boot1	00000000 vector391
+00fc2000  w      .boot1	00000000 vector324
+00fc2000  w      .boot1	00000000 vector981
+400a8800 g     O .data	00000084 NTC_Vector
+00fc2000  w      .boot1	00000000 vector356
+00fc2000  w      .boot1	00000000 vector216
+00fc3e20 g     F .text	0000005c vector63
+00fc2000  w      .boot1	00000000 vector26
+00fc2000  w      .boot1	00000000 vector875
+52810000 g       .boot0	00000000 __dram2_end__
+00fc2000  w      .boot1	00000000 vector543
+00fc2000  w      .boot1	00000000 vector193
+400a90e8 g     O .sdata	00000004 __fdlib_version
+00fc2000  w      .boot1	00000000 vector546
+00fc2000  w      .boot1	00000000 vector196
+50810000 g       .boot0	00000000 __dram0_end__
+00fc2000  w      .boot1	00000000 vector588
+00fc2000  w      .boot1	00000000 vector660
+00fc2000  w      .boot1	00000000 vector290
+00fc2000  w      .boot1	00000000 vector629
+00fc2000  w      .boot1	00000000 vector259
+00fc2000  w      .boot1	00000000 vector209
+00fc2000  w      .boot1	00000000 vector369
+400a90e0 g     O .sdata	00000004 _global_impure_ptr
+00fc2000  w      .boot1	00000000 vector433
+00fc2000  w      .boot1	00000000 vector917
+00fc2000  w      .boot1	00000000 vector852
+00fc2000  w      .boot1	00000000 vector478
+00fc2000  w      .boot1	00000000 vector965
+00fc2000  w      .boot1	00000000 vector691
+00fc2000  w      .boot1	00000000 vector4
+00fc2000  w      .boot1	00000000 vector706
+00fc2000  w      .boot1	00000000 vector399
+00fc2000  w      .boot1	00000000 vector1004
+00fc2000  w      .boot1	00000000 vector832
+00fc2000  w      .boot1	00000000 vector395
+00fc2000  w      .boot1	00000000 vector520
+00fc2000  w      .boot1	00000000 vector170
+00fc2000  w      .boot1	00000000 vector136
+00fc2000  w      .boot1	00000000 vector10
+00fc5610 g     F .text	000004e6 vector694
+00fc2000  w      .boot1	00000000 vector808
+00fc2000  w      .boot1	00000000 vector206
+00fc2000  w      .boot1	00000000 vector560
+00fc2000  w      .boot1	00000000 vector922
+00fc2000  w      .boot1	00000000 vector625
+00fc2000  w      .boot1	00000000 vector255
+00fca560 g     F .text	00000040 irqInit
+00fc2000  w      .boot1	00000000 vector400
+00fc2000  w      .boot1	00000000 vector317
+00fc2000  w      .boot1	00000000 vector371
+00fc2000  w      .boot1	00000000 vector531
+00fc2000  w      .boot1	00000000 vector181
+00fc2000  w      .boot1	00000000 vector890
+00fc2000  w      .boot1	00000000 vector801
+00fc3ca0 g     F .text	0000005c vector59
+00fc4660 g     F .text	00000060 vector85
+00fc4600 g     F .text	00000060 vector84
+00fc2000  w      .boot1	00000000 vector558
+00fc2000  w      .boot1	00000000 vector574
+00fc2000  w      .boot1	00000000 vector825
+00fc2000  w      .boot1	00000000 vector533
+00fc2000  w      .boot1	00000000 vector183
+00fc2000  w      .boot1	00000000 vector509
+00fc2000  w      .boot1	00000000 vector159
+00fc2000  w      .boot1	00000000 vector212
+00fc2000  w      .boot1	00000000 vector856
+00000000 g       *ABS*	00000000 __core0_irq_stack_size__
+00fcccd0 g     F .text	00000246 __ieee754_expf
+00fc2000  w      .boot1	00000000 vector672
+00fc2000  w      .boot1	00000000 vector576
+00fc2000  w      .boot1	00000000 vector899
+00fc2000  w      .boot1	00000000 vector47
+00fc2000  w      .boot1	00000000 vector948
+00fc2000  w      .boot1	00000000 vector228
+00fc2000  w      .boot1	00000000 vector42
+00fc8e20 g     F .text	00000044 AEK_POW_BMS63EN_StopCellBalancing
+00fc2000  w      .boot1	00000000 vector334
+00fc5140 g     F .text	00000060 vector114
+00fc2000  w      .boot1	00000000 vector901
+400a999c g     O .bss	00000278 AEK_POW_BMS63EN_BatteryModules
+00fcb750 g     F .text	00000064 AEK_POW_BMS63EN_Model_exec
+00fc0200  w      .boot0	00000000 _C0_IVOR11
+00fc2000  w      .boot1	00000000 vector674
+00fc2000  w      .boot1	00000000 vector525
+00fc2000  w      .boot1	00000000 vector175
+00fc2000  w      .boot1	00000000 vector143
+00fc0204  w      .boot0	00000000 _IVOR5
+00fc2000  w      .boot1	00000000 vector913
+00fc2000  w      .boot1	00000000 vector958
+00fc2000  w      .boot1	00000000 vector377
+00fc2000  w      .boot1	00000000 vector130
+00fc2000  w      .boot1	00000000 vector788
+00fc2000  w      .boot1	00000000 vector616
+00fca7c0 g     F .text	000000a6 vector246
+00fc2000  w      .boot1	00000000 vector858
+00fc2000  w      .boot1	00000000 vector705
+00fc2000  w      .boot1	00000000 vector331
+00fc2000  w      .boot1	00000000 vector9
+00fc2000  w      .boot1	00000000 vector860
+00fc2000  w      .boot1	00000000 vector142
+00fc2000  w      .boot1	00000000 vector458
+00fc79c0 g     F .text	00000012 vector394
+00fc4c00 g     F .text	00000060 vector100
+00fc2000  w      .boot1	00000000 vector811
+00fc34d0 g     F .text	00000080 .hidden __unpack_f
+00fc2000  w      .boot1	00000000 vector962
+00fc2000  w      .boot1	00000000 vector903
+00fc2000  w      .boot1	00000000 vector554
+00fc2000  w      .boot1	00000000 vector327
+00fc2000  w      .boot1	00000000 vector374
+00fc2000  w      .boot1	00000000 vector201
+00fc000c g     F .boot0	00000000 _reset_address0
+00fc2000  w      .boot1	00000000 vector745
+00fc2000  w      .boot1	00000000 vector935
+00fc2000  w      .boot1	00000000 vector792
+00fc2000  w      .boot1	00000000 vector597
+00fc2000  w      .boot1	00000000 vector361
+00fcd600 g     O .rodata	00000340 rtConstP
+00fc3220 g     F .text	000000a4 .hidden __fixdfsi
+00fc2000  w      .boot1	00000000 vector845
+00fc69b0 g     F .text	0000004e sd_lld_init
+00fc2000  w      .boot1	00000000 vector631
+00fc7290 g     F .text	000000a8 vector261
+00fc2000  w      .boot1	00000000 vector445
+00fc2000  w      .boot1	00000000 vector678
+00fc9f10 g     F .text	00000022 AEK_POW_BMS63EN_isEnabled
+00fc9800 g     F .text	000001e2 AEK_POW_BMS63EN_SetGPIOOVThreshold
+00fc2000  w      .boot1	00000000 vector470
+00fc2000  w      .boot1	00000000 vector758
+00fc2000  w      .boot1	00000000 vector977
+00fc2000  w      .boot1	00000000 vector473
+00fc7f30 g     F .text	0000002e AEK_POW_BMS63EN_SPIBroadcastAccess
+00fc8d30 g     F .text	0000009e AEK_POW_BMS63EN_SetBalancingMode
+00fc3d00 g     F .text	0000005c vector60
+00fc2000  w      .boot1	00000000 vector23
+00fcaca0 g     F .text	0000000c AEK_POW_BMS63EN_cfg_objects_init
+00fc2000  w      .boot1	00000000 vector779
+00fc2000  w      .boot1	00000000 vector488
+00fc2000  w      .boot1	00000000 vector932
+00fc2000  w      .boot1	00000000 vector329
+00fc2000  w      .boot1	00000000 vector747
+00fc2000  w      .boot1	00000000 vector606
+00fc2000  w      .boot1	00000000 vector236
+00fc2000  w      .boot1	00000000 vector1020
+00fc2000  w      .boot1	00000000 vector648
+00fc2000  w      .boot1	00000000 vector278
+00fc2000  w      .boot1	00000000 vector384
+00fc2000  w      .boot1	00000000 vector734
+00fc2000  w      .boot1	00000000 vector601
+00fc6b20 g     F .text	00000034 vector231
+00fc2000  w      .boot1	00000000 vector968
+00fcac00 g     F .text	00000058 sysTimeSetup
+00fc3f40 g     F .text	0000005c vector66
+00fc2000  w      .boot1	00000000 vector29
+00fc2590 g     F .text	0000005a .hidden __gtsf2
+400a88c8 g     O .data	00000154 R0_Vector
+00fc2000  w      .boot1	00000000 vector135
+00400000 g       *ABS*	00000000 __flash_size__
+00fc2000  w      .boot1	00000000 vector796
+00fcb5f0 g     F .text	000000ce AEK_POW_BMS63EN_TEMP_Measurement
+00fc2000  w      .boot1	00000000 vector420
+00fc2000  w      .boot1	00000000 vector314
+00fc2000  w      .boot1	00000000 vector771
+00fc7380 g     F .text	000000ae spi_lld_start
+00fc2000  w      .boot1	00000000 vector357
+00fc2000  w      .boot1	00000000 vector925
+00fc4360 g     F .text	00000060 vector77
+00fc2000  w      .boot1	00000000 vector408
+00fc2000  w      .boot1	00000000 vector530
+00fc2000  w      .boot1	00000000 vector463
+00fc2000  w      .boot1	00000000 vector180
+00fc2000  w      .boot1	00000000 vector632
+00fc2000  w      .boot1	00000000 vector262
+00fc5260 g     F .text	000000d2 edmaInit
+00fc2000  w      .boot1	00000000 vector996
+00fc2000  w      .boot1	00000000 vector751
+00fc2000  w      .boot1	00000000 vector208
+00fc2000  w      .boot1	00000000 vector482
+00fc2000  w      .boot1	00000000 vector438
+00fc3990 g     F .text	00000026 spc5LLDInit
+00fc2000  w      .boot1	00000000 vector573
+00fc2000  w      .boot1	00000000 vector707
+00fcb360 g     F .text	00000028 AEK_POW_BMS63EN_GetModule
+00fcb6c0 g     F .text	0000008c AEK_POW_BMS63EN_DIAG_Measurement
+00fc2000  w      .boot1	00000000 vector784
+00fc2000  w      .boot1	00000000 vector402
+00fc4b40 g     F .text	00000060 vector98
+00fc4ae0 g     F .text	00000060 vector97
+00fc2000  w      .boot1	00000000 vector396
+00fc2000  w      .boot1	00000000 vector526
+00fc2000  w      .boot1	00000000 vector176
+00fc2000  w      .boot1	00000000 vector857
+00fc2000  w      .boot1	00000000 vector544
+00fc2000  w      .boot1	00000000 vector194
+00fc2000  w      .boot1	00000000 vector32
+00fc2000  w      .boot1	00000000 vector693
+00fc2000  w      .boot1	00000000 vector951
+00fc2000  w      .boot1	00000000 vector810
+00fc8330 g     F .text	00000056 AEK_POW_BMS63EN_SetVTREFEnabled
+00fc2000  w      .boot1	00000000 vector549
+00fc2000  w      .boot1	00000000 vector199
+00fc2000  w      .boot1	00000000 vector741
+00fc33b0 g     F .text	00000118 .hidden __pack_f
+00fc2000  w      .boot1	00000000 vector448
+00fca510 g     F .text	00000040 SPCSetPeripheralClockMode
+00fc2000  w      .boot1	00000000 vector589
+00fc3370 g     F .text	00000032 .hidden _restgpr_22_x
+00fc54b0 g     F .text	00000048 can_lld_getDLC
+00fc2000  w      .boot1	00000000 vector131
+400a8020 g     O .data	00000020 serial_config_BMS_serial
+00fc2000  w      .boot1	00000000 vector775
+00fc2000  w      .boot1	00000000 vector622
+00fc2000  w      .boot1	00000000 vector252
+400a90ec g       .sdata	00000000 __data_end__
+00fc2000  w      .boot1	00000000 vector0
+00fc2000  w      .boot1	00000000 vector828
+00fc2000  w      .boot1	00000000 vector667
+00fc2000  w      .boot1	00000000 vector297
+00fc2000  w      .boot1	00000000 vector730
+00fc7f60 g     F .text	0000004a AEK_POW_BMS63EN_SPIReadRegister
+00fcc9e0 g     F .text	00000058 BMS_Controller_initialize
+00fc2000  w      .boot1	00000000 vector896
+00fc0204  w      .boot0	00000000 _IVOR13
+00fc3380 g     F .text	00000022 .hidden _restgpr_26_x
+50800000 g       .core0_stacks	00000000 __core0_main_thread_stack_base__
+00fc2000  w      .boot1	00000000 vector651
+00fc2000  w      .boot1	00000000 vector281
+400a9234 g     O .bss	0000001c SPID1
+00fc2000  w      .boot1	00000000 vector805
+00fc6ba0 g     F .text	000000a6 pit_lld_channel_start
+00fca5a0  w    F .text	00000008 irqSysHalt
+00fc2000  w      .boot1	00000000 vector1021
+00fc2000  w      .boot1	00000000 vector570
+00fc2000  w      .boot1	00000000 vector422
+00fc3388 g     F .text	0000001a .hidden _restgpr_28_x
+00fc2000  w      .boot1	00000000 vector853
+00fc2000  w      .boot1	00000000 vector696
+00fc2000  w      .boot1	00000000 vector443
+00fc2000  w      .boot1	00000000 vector145
+00fc2000  w      .boot1	00000000 vector777
+00fc2000  w      .boot1	00000000 vector964
+400a9c14 g       .bss	00000000 __bss_end__
+400a85ec g     O .data	00000010 eirqconf
+00fc337c g     F .text	00000026 .hidden _restgpr_25_x
+00fc4ea0 g     F .text	00000060 vector107
+00fc2000  w      .boot1	00000000 vector40
+00fc2000  w      .boot1	00000000 vector732
+00fc2000  w      .boot1	00000000 vector486
+00fc2000  w      .boot1	00000000 vector465
+00fc2000  w      .boot1	00000000 vector898
+00fc2000  w      .boot1	00000000 vector789
+00fc2000  w      .boot1	00000000 vector301
+00fc4cc0 g     F .text	00000060 vector102
+00fc3378 g     F .text	0000002a .hidden _restgpr_24_x
+00fc6b60 g     F .text	0000002e pit_lld_init
+00fc2000  w      .boot1	00000000 vector700
+00fc2000  w      .boot1	00000000 vector921
+00fc2000  w      .boot1	00000000 vector1010
+400a877c g     O .data	00000084 NTC_Temp_Vector
+00fc2000  w      .boot1	00000000 vector724
+00fc2000  w      .boot1	00000000 vector746
+00fc2000  w      .boot1	00000000 vector855
+00fc3b80 g     F .text	0000005c vector56
+00fc0200  w      .boot0	00000000 _C0_IVOR1
+00fc2000  w      .boot1	00000000 vector963
+00fc2000  w      .boot1	00000000 vector649
+00fc2000  w      .boot1	00000000 vector279
+00fc4000 g     F .text	0000005c vector68
+00fc2000  w      .boot1	00000000 vector6
+00fc2000  w      .boot1	00000000 vector893
+00fc2000  w      .boot1	00000000 vector553
+00fc2000  w      .boot1	00000000 vector129
+00000000 g       *ABS*	00000000 __irq_stack_size__
+00fc2000  w      .boot1	00000000 vector455
+00fc5340 g     F .text	0000003e can_lld_getframesize
+013c0000 g       .boot0	00000000 __flash_end__
+00fc2000  w      .boot1	00000000 vector920
+00fc2000  w      .boot1	00000000 vector547
+00fc2000  w      .boot1	00000000 vector197
+00fc2000  w      .boot1	00000000 vector596
+00fcb550 g     F .text	0000009c AEK_POW_BMS63EN_VA_Measurement
+00fc2000  w      .boot1	00000000 vector555
+00fc2000  w      .boot1	00000000 vector681
+00fc2710 g     F .text	0000006a .hidden __floatsisf
+00fc2000  w      .boot1	00000000 vector904
+00fc2000  w      .boot1	00000000 vector850
+00fc2000  w      .boot1	00000000 vector502
+00fc2000  w      .boot1	00000000 vector152
+00fca040 g     F .text	00000034 AEK_POW_BMS63EN_GetGPIOOTUTFaults
+00fc2000  w      .boot1	00000000 vector838
+00fc2000  w      .boot1	00000000 vector972
+00fc2000  w      .boot1	00000000 vector598
+00fc2000  w      .boot1	00000000 vector600
+00fc6ae0 g     F .text	00000032 vector230
+00fc2000  w      .boot1	00000000 vector761
+00fc2000  w      .boot1	00000000 vector415
+00fc2000  w      .boot1	00000000 vector339
+00fc2000  w      .boot1	00000000 vector459
+400a8774 g     O .data	00000004 KELVIN_CON
+00fc2000  w      .boot1	00000000 vector823
+00fc2000  w      .boot1	00000000 vector868
+00fc2000  w      .boot1	00000000 vector37
+00fc2000  w      .boot1	00000000 vector690
+00fc2000  w      .boot1	00000000 vector364
+00fc2000  w      .boot1	00000000 vector205
+00fc2000  w      .boot1	00000000 vector908
+00fc2000  w      .boot1	00000000 vector511
+00fc2000  w      .boot1	00000000 vector161
+00fc2000  w      .boot1	00000000 vector472
+00fc2000  w      .boot1	00000000 vector628
+00fc2000  w      .boot1	00000000 vector258
+00060000 g       *ABS*	00000000 __ram_size__
+00fc2000  w      .boot1	00000000 vector927
+00fc2000  w      .boot1	00000000 vector887
+400a8610 g     O .data	00000004 SOH_MAX
+400a8778 g     O .data	00000004 SOH_MIN
+00fc2000  w      .boot1	00000000 vector634
+00fc2000  w      .boot1	00000000 vector264
+00fc2000  w      .boot1	00000000 vector916
+00fc4120 g     F .text	00000060 vector71
+00fc2000  w      .boot1	00000000 vector842
+00fc2000  w      .boot1	00000000 vector510
+00fc2000  w      .boot1	00000000 vector160
+00fc034e  w    F .boot0	00000000 __late_init
+00fc2000  w      .boot1	00000000 vector344
+00fc2000  w      .boot1	00000000 vector559
+400a922c g     O .bss	00000008 PITD1
+00fc2000  w      .boot1	00000000 vector215
+00fc2000  w      .boot1	00000000 vector352
+00fc2000  w      .boot1	00000000 vector347
+00fc2000  w      .boot1	00000000 vector389
+00fc2000  w      .boot1	00000000 vector507
+00fc2000  w      .boot1	00000000 vector157
+00fc2000  w      .boot1	00000000 vector416
+00fcd400  w    F .text	0000001a largememcpy
+00fc2000  w      .boot1	00000000 vector490
+400a84d8 g     O .data	0000000c AEK_POW_BMS63EN_Drv
+00fc5080 g     F .text	00000060 vector112
+00fc38d0 g     F .text	000000ba .hidden __fpcmp_parts_d
+00fc2000  w      .boot1	00000000 vector727
+00fc2000  w      .boot1	00000000 vector423
+00010000 g       *ABS*	00000000 __dram0_size__
+00fc3360 g     F .text	00000042 .hidden _restgpr_18_x
+400a8308 g     O .data	00000010 AEK_POW_BMS63EN_config
+00fc2000  w      .boot1	00000000 vector995
+400a8040 g     O .data	000000b8 can_config_mcanconf
+00fc2000  w      .boot1	00000000 vector826
+00fc2000  w      .boot1	00000000 vector532
+00fc2000  w      .boot1	00000000 vector182
+00fcac80 g     F .text	0000001c AEK_COM_ISOSPI1Board0_CN2_FAULT_callback
+00fc6010 g     F .text	00000734 can_lld_start
+00fc2000  w      .boot1	00000000 vector466
+00fc2000  w      .boot1	00000000 vector950
+00fc2000  w      .boot1	00000000 vector1000
+00fc2000  w      .boot1	00000000 vector12
+00fc2000  w      .boot1	00000000 vector1007
+00fc2000  w      .boot1	00000000 vector719
+00fc2000  w      .boot1	00000000 vector309
+00fc2000  w      .boot1	00000000 vector712
+00fc2000  w      .boot1	00000000 vector321
+00fc2000  w      .boot1	00000000 vector575
+00fc2000  w      .boot1	00000000 vector1002
+00fc4f60 g     F .text	00000060 vector109
+00fc2000  w      .boot1	00000000 vector383
+00fc2000  w      .boot1	00000000 vector20
+00fc2000  w      .boot1	00000000 vector986
+00fc2000  w      .boot1	00000000 vector863
+00fc2000  w      .boot1	00000000 vector319
+00fc2000  w      .boot1	00000000 vector907
+00fc2000  w      .boot1	00000000 vector873
+00fc2000  w      .boot1	00000000 vector656
+00fc2000  w      .boot1	00000000 vector303
+00fc2000  w      .boot1	00000000 vector286
+00fc2000  w      .boot1	00000000 vector417
+00fc3a60 g     F .text	0000005c vector53
+00fc2000  w      .boot1	00000000 vector18
+00fc2000  w      .boot1	00000000 vector366
+00fc2000  w      .boot1	00000000 vector776
+00fc2ed0 g     F .text	0000017e .hidden __divdf3
+00fc2000  w      .boot1	00000000 vector491
+00fc2000  w      .boot1	00000000 vector456
+00fc2000  w      .boot1	00000000 vector572
+00fc2000  w      .boot1	00000000 vector818
+00fc2000  w      .boot1	00000000 vector943
+00fc4a20 g     F .text	00000060 vector95
+00fcaaa0 g     F .text	00000060 osalThreadDelayMilliseconds
+00fc2000  w      .boot1	00000000 vector731
+00fc2000  w      .boot1	00000000 vector830
+00fc2000  w      .boot1	00000000 vector991
+00fcaa20 g     F .text	00000076 vector226
+00fc7e10 g     F .text	000000d2 AEK_POW_BMS63EN_SPIBurstAccess
+00fc2c60 g     F .text	00000264 .hidden __muldf3
+00fc8040 g     F .text	00000042 AEK_POW_BMS63EN_GPIO7_OT_UT_Mask
+00fc7430 g     F .text	0000008c spi_lld_exchange
+00fc2000  w      .boot1	00000000 vector670
+00fcd440 g     O .rodata	00000010 .hidden __thenan_sf
+00fc2000  w      .boot1	00000000 vector49
+00fc2000  w      .boot1	00000000 vector44
+00fc43c0 g     F .text	00000060 vector78
+00fc2000  w      .boot1	00000000 vector643
+00fc2000  w      .boot1	00000000 vector469
+00fc2000  w      .boot1	00000000 vector273
+00fc2000  w      .boot1	00000000 vector523
+00fc2000  w      .boot1	00000000 vector173
+00fc2000  w      .boot1	00000000 vector637
+00fc2000  w      .boot1	00000000 vector267
+00fc2000  w      .boot1	00000000 vector117
+00fc2000  w      .boot1	00000000 vector566
+00fc2000  w      .boot1	00000000 vector956
+00fc2000  w      .boot1	00000000 vector442
+00fc2000  w      .boot1	00000000 vector911
+00fc2000  w      .boot1	00000000 vector336
+00fc2000  w      .boot1	00000000 vector686
+00fc4540 g     F .text	00000060 vector82
+00fc2000  w      .boot1	00000000 vector379
+00fc2000  w      .boot1	00000000 vector426
+00fc2000  w      .boot1	00000000 vector485
+00fc2000  w      .boot1	00000000 vector675
+00fc2000  w      .boot1	00000000 vector704
+00fc2000  w      .boot1	00000000 vector222
+00fc2000  w      .boot1	00000000 vector978
+00fc2000  w      .boot1	00000000 vector582
+00fc2000  w      .boot1	00000000 vector8
+00fc79a0 g     F .text	00000012 vector393
+00fc2000  w      .boot1	00000000 vector757
+00fc2000  w      .boot1	00000000 vector772
+00fc2000  w      .boot1	00000000 vector729
+00fc2000  w      .boot1	00000000 vector342
+00fc2000  w      .boot1	00000000 vector149
+00fca080 g     F .text	00000104 pal_init
+00fc2000  w      .boot1	00000000 vector407
+00fc2000  w      .boot1	00000000 vector878
+00fcd420 g     F .text	00000016 memset
+00fc2000  w      .boot1	00000000 vector387
+00fc0204  w      .boot0	00000000 _IVOR7
+00fc2000  w      .boot1	00000000 vector933
+00fc0204  w      .boot0	00000000 _IVOR2
+00fc2000  w      .boot1	00000000 vector602
+00fc2000  w      .boot1	00000000 vector232
+00fcb2e0 g     F .text	00000076 main
+00fc2000  w      .boot1	00000000 vector635
+00fc2000  w      .boot1	00000000 vector265
+00fc2000  w      .boot1	00000000 vector880
+00fc0200  w      .boot0	00000000 _C0_IVOR14
+00fc81a0 g     F .text	00000068 AEK_POW_BMS63EN_SetVCellOVThreshold
+00fc4e40 g     F .text	00000060 vector106
+00fc2000  w      .boot1	00000000 vector401
+00fc2000  w      .boot1	00000000 vector351
+00fc86b0 g     F .text	000000d6 AEK_POW_BMS63EN_DisableCell
+00fc2000  w      .boot1	00000000 vector481
+00fc2000  w      .boot1	00000000 vector220
+00fc2000  w      .boot1	00000000 vector835
+00fc2000  w      .boot1	00000000 vector421
+00fc4840 g     F .text	00000060 vector90
+00fc2000  w      .boot1	00000000 vector513
+00fc2000  w      .boot1	00000000 vector163
+00fc2000  w      .boot1	00000000 vector1003
+00fc2000  w      .boot1	00000000 vector759
+00fc2000  w      .boot1	00000000 vector982
+00fc2000  w      .boot1	00000000 vector774
+00fc2000  w      .boot1	00000000 vector604
+00fc2000  w      .boot1	00000000 vector234
+00fc2000  w      .boot1	00000000 vector689
+00fc2650 g     F .text	0000005a .hidden __ltsf2
+00fc3dc0 g     F .text	0000005c vector62
+00fc2000  w      .boot1	00000000 vector25
+00fc2000  w      .boot1	00000000 vector710
+00fc2000  w      .boot1	00000000 vector548
+00fc2000  w      .boot1	00000000 vector464
+00fc2000  w      .boot1	00000000 vector198
+00fc2000  w      .boot1	00000000 vector971
+00fc7b70 g     F .text	00000048 AEK_COM_ISOSPI_ConfigISOFreq
+00fc2000  w      .boot1	00000000 vector120
+00fcd3d0 g     F .text	00000004 matherr
+00fcab00 g     F .text	0000003a osalEnterCritical
+00fc02d0 g     F .boot0	00000000 _boot_address
+00fc2000  w      .boot1	00000000 vector646
+00fc2000  w      .boot1	00000000 vector276
+00fc2000  w      .boot1	00000000 vector827
+00fc3300 g     F .text	00000046 .hidden __truncdfsf2
+00fc2000  w      .boot1	00000000 vector403
+00fc8cc0 g     F .text	0000006a AEK_POW_BMS63EN_GetBatteryPackVoltMeasurement
+00fc2000  w      .boot1	00000000 vector444
+00fc2000  w      .boot1	00000000 vector837
+00fc2000  w      .boot1	00000000 vector937
+00fc2000  w      .boot1	00000000 vector50
+00fc2000  w      .boot1	00000000 vector15
+00fc8210 g     F .text	00000066 AEK_POW_BMS63EN_SetVCellUVThreshold
+00fc2000  w      .boot1	00000000 vector848
+00fc2000  w      .boot1	00000000 vector1017
+00fc9590 g     F .text	00000264 AEK_POW_BMS63EN_SetGPIOModeRatiometric
+00fc2000  w      .boot1	00000000 vector501
+00fc2000  w      .boot1	00000000 vector151
+00fc2000  w      .boot1	00000000 vector487
+00fc2000  w      .boot1	00000000 vector725
+00fc7d70 g     F .text	00000098 AEK_POW_BMS63EN_SPIQueuedAccess
+00fc45a0 g     F .text	00000060 vector83
+00fc47e0 g     F .text	00000060 vector89
+00fc4780 g     F .text	00000060 vector88
+00fc2000  w      .boot1	00000000 vector722
+00fc2000  w      .boot1	00000000 vector769
+00fcacc0 g     F .text	00000002 irq_cfg_init
+00fc2000  w      .boot1	00000000 vector569
+00fc2000  w      .boot1	00000000 vector664
+00fc2000  w      .boot1	00000000 vector294
+00fcd450 g     O .rodata	00000018 .hidden __thenan_df
+00fc2000  w      .boot1	00000000 vector529
+00fc2000  w      .boot1	00000000 vector179
+00fc2000  w      .boot1	00000000 vector764
+00fc2000  w      .boot1	00000000 vector990
+00fc2310 g     F .text	0000017e .hidden __mulsf3
+00fc2000  w      .boot1	00000000 vector786
+00fc2000  w      .boot1	00000000 vector794
+00fc2000  w      .boot1	00000000 vector638
+00fc2000  w      .boot1	00000000 vector268
+00fc2000  w      .boot1	00000000 vector34
+00fcb7c0 g     F .text	00000064 AEK_POW_BMS63EN_Mgn_exec
+00fc2000  w      .boot1	00000000 vector46
+00fc2000  w      .boot1	00000000 vector988
+00fc2000  w      .boot1	00000000 vector743
+00fc2000  w      .boot1	00000000 vector437
+00fc2000  w      .boot1	00000000 vector1023
+00fc2000  w      .boot1	00000000 vector134
+400a8000 g       .boot0	00000000 __ram_start__
+00fc2000  w      .boot1	00000000 vector223
+00fc2000  w      .boot1	00000000 vector881
+00fc7d10 g     F .text	00000054 AEK_POW_BMS63EN_Start
+00fc8fb0 g     F .text	00000368 AEK_POW_BMS63EN_ConfigGPIO
+00fc2000  w      .boot1	00000000 vector945
+00fc2000  w      .boot1	00000000 vector892
+00fc0204  w      .boot0	00000000 _IVOR11
+00fc8140 g     F .text	0000005c AEK_POW_BMS63EN_SetVBattUVThreshold
+00fc2000  w      .boot1	00000000 vector410
+00fc2000  w      .boot1	00000000 vector322
+00fc2000  w      .boot1	00000000 vector888
+50800000 g       .core0_stacks	00000000 __core0_process_stack_base__
+00fc9eb0 g     F .text	0000005e AEK_POW_BMS63EN_Init
+00fc2000  w      .boot1	00000000 vector713
+00fc2000  w      .boot1	00000000 vector341
+00fc2000  w      .boot1	00000000 vector218
+00fc2000  w      .boot1	00000000 vector994
+00fc2000  w      .boot1	00000000 vector662
+00fc2000  w      .boot1	00000000 vector292
+00fc2000  w      .boot1	00000000 vector325
+00fc2000  w      .boot1	00000000 vector367
+00fc2000  w      .boot1	00000000 vector386
+00fc2000  w      .boot1	00000000 vector556
+00fc2000  w      .boot1	00000000 vector494
+00fc2000  w      .boot1	00000000 vector599
+00fc2000  w      .boot1	00000000 vector424
+52800000 g       .core2_stacks	00000000 __process_stack_base__
+00fc2000  w      .boot1	00000000 vector843
+00fc2000  w      .boot1	00000000 vector467
+00fc2000  w      .boot1	00000000 vector680
+00fc0204  w      .boot0	00000000 _IVOR15
+50800000 g       .core0_stacks	00000000 __core0_irq_stack_end__
+00fc25f0 g     F .text	0000005a .hidden __gesf2
+00fc0400 g       .boot1	00000000 C0_IVORS
+00fc2000  w      .boot1	00000000 vector225
+00fc2000  w      .boot1	00000000 vector886
+00fcacd0 g     F .text	00000002 swirq_init_prio
+00fc2000  w      .boot1	00000000 vector909
+00fc2000  w      .boot1	00000000 vector308
+00fc2000  w      .boot1	00000000 vector537
+00fc2000  w      .boot1	00000000 vector187
+00fca550 g     F .text	00000010 SPCGetPeripheralClock
+00fc2000  w      .boot1	00000000 vector1015
+00fc5fb0 g     F .text	0000005e can_lld_init
+00fc2000  w      .boot1	00000000 vector804
+00fc2000  w      .boot1	00000000 vector370
+00fc2000  w      .boot1	00000000 vector337
+00fc2000  w      .boot1	00000000 vector739
+00fc2000  w      .boot1	00000000 vector302
+00fc0200  w      .boot0	00000000 _C0_IVOR12
+00fc2000  w      .boot1	00000000 vector30
+00fc2000  w      .boot1	00000000 vector841
+00fc2000  w      .boot1	00000000 vector382
+00fc2000  w      .boot1	00000000 vector883
+00fc0210 g     F .boot0	00000000 _IVOR4
+400a90e4 g     O .sdata	00000004 _impure_ptr
+00fc2000  w      .boot1	00000000 vector127
+00fc2000  w      .boot1	00000000 vector551
+00fc2000  w      .boot1	00000000 vector1009
+00fc2000  w      .boot1	00000000 vector814
+00fc2000  w      .boot1	00000000 vector542
+00fc2000  w      .boot1	00000000 vector192
+00fccf20 g     F .text	0000043e __ieee754_log
+00fc8dd0 g     F .text	00000044 AEK_POW_BMS63EN_StartCellBalancing
+00fc2000  w      .boot1	00000000 vector516
+00fc2000  w      .boot1	00000000 vector166
+00fc2000  w      .boot1	00000000 vector434
+00fc2000  w      .boot1	00000000 vector594
+00fc2000  w      .boot1	00000000 vector590
+00fc4300 g     F .text	00000060 vector76
+00fc42a0 g     F .text	00000060 vector75
+00fc2000  w      .boot1	00000000 vector545
+00fc2000  w      .boot1	00000000 vector195
+00fc2000  w      .boot1	00000000 vector587
+00fc2000  w      .boot1	00000000 vector500
+00fc2000  w      .boot1	00000000 vector150
+00fc2000  w      .boot1	00000000 vector304
+00fc3c40 g     F .text	0000005c vector58
+00fc2000  w      .boot1	00000000 vector618
+00fc75e0 g     F .text	00000076 vector248
+400a91ec g     O .bss	00000010 CAND7
+00fc7a10 g     F .text	0000003c AEK_COM_ISOSPI_SetAsSlave
+00fc2000  w      .boot1	00000000 vector479
+00fc2000  w      .boot1	00000000 vector343
+00fc0204  w      .boot0	00000000 _IVOR0
+00fc2000  w      .boot1	00000000 vector123
+00fc2000  w      .boot1	00000000 vector865
+00fc4a80 g     F .text	00000060 vector96
+00fcb1a0 g     F .text	000000ba AEK_POW_BMS63EN_CAN_Voltage_Transmission
+00fc2000  w      .boot1	00000000 vector665
+00fc2000  w      .boot1	00000000 vector295
+00fc2000  w      .boot1	00000000 vector427
+00fc2000  w      .boot1	00000000 vector891
+00fc2000  w      .boot1	00000000 vector641
+00fc2000  w      .boot1	00000000 vector271
+00fc2000  w      .boot1	00000000 vector820
+00fc2000  w      .boot1	00000000 vector939
+00fc2000  w      .boot1	00000000 vector31
+00fc2000  w      .boot1	00000000 vector388
+00fc2000  w      .boot1	00000000 vector799
+00fc2000  w      .boot1	00000000 vector203
+00fc2000  w      .boot1	00000000 vector959
+00fc2000  w      .boot1	00000000 vector684
+00fc2000  w      .boot1	00000000 vector987
+00fc2000  w      .boot1	00000000 vector139
+00fca1d0 g     F .text	00000328 spc_clock_init
+00fc2000  w      .boot1	00000000 vector503
+00fc2000  w      .boot1	00000000 vector153
+00fc2000  w      .boot1	00000000 vector514
+00fc2000  w      .boot1	00000000 vector164
+00fcafe0 g     F .text	000001c0 send_cell_voltages_CAN
+00fc2000  w      .boot1	00000000 vector973
+00fc5500 g     F .text	00000108 can_lld_writeTxBuffer
+00fc2000  w      .boot1	00000000 vector1012
+00fc2000  w      .boot1	00000000 vector879
+00fc2000  w      .boot1	00000000 vector914
+00fc2000  w      .boot1	00000000 vector563
+00fc2000  w      .boot1	00000000 vector902
+00fc2000  w      .boot1	00000000 vector949
+00fc2000  w      .boot1	00000000 vector121
+00fc2000  w      .boot1	00000000 vector867
+00fc0360 g     F .boot0	00000000 _boot_address0
+00fc2000  w      .boot1	00000000 vector754
+00fc2000  w      .boot1	00000000 vector5
+00fc2000  w      .boot1	00000000 vector320
+00fc2000  w      .boot1	00000000 vector517
+00fc2000  w      .boot1	00000000 vector167
+00fc2000  w      .boot1	00000000 vector944
+00fc2000  w      .boot1	00000000 vector505
+00fc2000  w      .boot1	00000000 vector155
+00fcd3e0 g     F .text	00000008 nan
+00fc2000  w      .boot1	00000000 vector822
+00fc2000  w      .boot1	00000000 vector619
+00fc7660 g     F .text	00000076 vector249
+00fc2000  w      .boot1	00000000 vector938
+00fc2000  w      .boot1	00000000 vector836
+00fc2000  w      .boot1	00000000 vector318
+00fc2000  w      .boot1	00000000 vector365
+00fc2000  w      .boot1	00000000 vector620
+00fc76e0 g     F .text	00000074 vector250
+00fc2000  w      .boot1	00000000 vector591
+00fc2000  w      .boot1	00000000 vector124
+00fc4fc0 g     F .text	00000060 vector110
+00fc2000  w      .boot1	00000000 vector653
+00fc2000  w      .boot1	00000000 vector283
+00fc2000  w      .boot1	00000000 vector726
+00fc2000  w      .boot1	00000000 vector204
+00fc2000  w      .boot1	00000000 vector698
+00fc2000  w      .boot1	00000000 vector441
+00fc0200  w      .boot0	00000000 _C0_IVOR7
+52800000 g       .core2_stacks	00000000 __irq_stack_end__
+00fc0200  w      .boot0	00000000 _C0_IVOR2
+50800800 g       .core0_stacks	00000000 __core0_main_thread_stack_end__
+400a925c g     O .bss	00000010 LinflexD5
+00fc2000  w      .boot1	00000000 vector756
+00fc2000  w      .boot1	00000000 vector787
+00fc2000  w      .boot1	00000000 vector749
+00fc2000  w      .boot1	00000000 vector966
+00fc2000  w      .boot1	00000000 vector484
+00fc2000  w      .boot1	00000000 vector630
+00fc7180 g     F .text	00000106 vector260
+00fc2000  w      .boot1	00000000 vector137
+00fc0204  w      .boot0	00000000 _IVOR14
+00fc2000  w      .boot1	00000000 vector979
+00fc2000  w      .boot1	00000000 vector330
+40108000 g       .boot0	00000000 __ram_end__
+00fc2000  w      .boot1	00000000 vector561
+00fc2000  w      .boot1	00000000 vector923
+00fc2000  w      .boot1	00000000 vector617
+00fc7570 g     F .text	00000070 vector247
+00fc2000  w      .boot1	00000000 vector668
+00fc2000  w      .boot1	00000000 vector298
+00fcb260 g     F .text	00000068 AEK_POW_BMS63EN_CAN_Temp_Transmission
+00fc2000  w      .boot1	00000000 vector657
+00fc2000  w      .boot1	00000000 vector287
+00fc2000  w      .boot1	00000000 vector22
+00fc2000  w      .boot1	00000000 vector1019
+00fc0350  w    F .boot0	00000000 __eabi
+00fc2000  w      .boot1	00000000 vector373
+00fc2000  w      .boot1	00000000 vector202
+00fc2000  w      .boot1	00000000 vector323
+00fc2000  w      .boot1	00000000 vector744
+00fc2000  w      .boot1	00000000 vector955
+00fc2000  w      .boot1	00000000 vector368
+00fc4180 g     F .text	00000060 vector72
+00fc3b20 g     F .text	0000005c vector55
+00fc2000  w      .boot1	00000000 vector934
+00fc2000  w      .boot1	00000000 vector126
+00fc2000  w      .boot1	00000000 vector910
+00fc2000  w      .boot1	00000000 vector785
+00fc2000  w      .boot1	00000000 vector471
+00fc3ee0 g     F .text	0000005c vector65
+00fc2000  w      .boot1	00000000 vector28
+400a8884 g     O .data	00000044 SOC_Vector
+00fc0200  w      .boot0	00000000 _C0_IVOR8
+00fc2000  w      .boot1	00000000 vector703
+00fc2000  w      .boot1	00000000 vector550
+00fc9f40 g     F .text	00000034 AEK_POW_BMS63EN_GetFaults1
+00fc2000  w      .boot1	00000000 vector519
+00fc2000  w      .boot1	00000000 vector169
+00fc2000  w      .boot1	00000000 vector809
+00fc7980 g     F .text	00000012 vector392
+00fc2000  w      .boot1	00000000 vector474
+00fc2000  w      .boot1	00000000 vector603
+00fc2000  w      .boot1	00000000 vector233
+00fc2000  w      .boot1	00000000 vector593
+00fc2000  w      .boot1	00000000 vector742
+00fc2000  w      .boot1	00000000 vector780
+00fc7a90 g     F .text	0000003c AEK_COM_ISOSPI_EnableTransceiver
+00fcac60 g     F .text	00000018 sysTimeReset
+00fc2000  w      .boot1	00000000 vector413
+400a8180 g     O .data	00000090 wkpu_config_wkpu_cfg
+00fc0204  w      .boot0	00000000 _IVOR9
+00fc8910 g     F .text	00000172 AEK_POW_BMS63EN_EnableCellBalancing
+00fc2000  w      .boot1	00000000 vector866
+52800000 g       .core2_stacks	00000000 __irq_stack_base__
+52800000 g       .core2_stacks	00000000 __main_thread_stack_base__
+00fc2000  w      .boot1	00000000 vector821
+00fc2850 g     F .text	00000084 .hidden __floatunsisf
+00fc2000  w      .boot1	00000000 vector457
+00fc3350 g     F .text	00000052 .hidden _restgpr_14_x
+00fc0000 g       .boot0	00000000 __flash_start__
+00fc2000  w      .boot1	00000000 vector147
+00fc2000  w      .boot1	00000000 vector642
+00fc2000  w      .boot1	00000000 vector272
+00fc2000  w      .boot1	00000000 vector874
+00fc2000  w      .boot1	00000000 vector766
+00fc2000  w      .boot1	00000000 vector633
+00fc7040 g     F .text	0000013c vector263
+00fc2000  w      .boot1	00000000 vector581
+00fc2000  w      .boot1	00000000 vector882
+00fc2000  w      .boot1	00000000 vector685
+00fc4d80 g     F .text	00000060 vector104
+00fc2000  w      .boot1	00000000 vector831
+00fc2000  w      .boot1	00000000 vector1005
+00fc5200 g     F .text	00000060 vector116
+00fc2000  w      .boot1	00000000 vector654
+00fc2000  w      .boot1	00000000 vector284
+00fc8c60 g     F .text	00000054 AEK_POW_BMS63EN_GetCellVoltMeasurement
+00fc2000  w      .boot1	00000000 vector452
+00fc2000  w      .boot1	00000000 vector782
+00fc2000  w      .boot1	00000000 vector768
+00fc2000  w      .boot1	00000000 vector869
+00fc2010 g     F .text	00000044 .hidden __fixunssfsi
+00fc2000  w      .boot1	00000000 vector992
+00fc2000  w      .boot1	00000000 vector699
+00fc2000  w      .boot1	00000000 vector439
+400a8158 g     O .data	0000001c spi_config_spi_config_AEK_COM_ISOSPI1_dev0
+400a861c g     O .data	00000004 SOC_MAX
+00fc3550 g     F .text	000000a2 .hidden __fpcmp_parts_f
+00fc2000  w      .boot1	00000000 vector721
+00fc2000  w      .boot1	00000000 vector497
+00fc2000  w      .boot1	00000000 vector824
+00fc2000  w      .boot1	00000000 vector735
+00fc2000  w      .boot1	00000000 vector755
+00fcca70 g     F .text	00000112 expf
+00fc2000  w      .boot1	00000000 vector315
+00fc2000  w      .boot1	00000000 vector976
+00fc2000  w      .boot1	00000000 vector640
+00fc2000  w      .boot1	00000000 vector270
+400a9250 g     O .bss	00000008 WKPUD1
+00fc2000  w      .boot1	00000000 vector717
+00fc39c0 g     F .text	0000009a vector52
+00fc2000  w      .boot1	00000000 vector17
+00fc2000  w      .boot1	00000000 vector360
+00fc2000  w      .boot1	00000000 vector534
+00fc2000  w      .boot1	00000000 vector184
+00fc2000  w      .boot1	00000000 vector577
+00fc336c g     F .text	00000036 .hidden _restgpr_21_x
+00fc2000  w      .boot1	00000000 vector683
+00fc2000  w      .boot1	00000000 vector358
+00fc2000  w      .boot1	00000000 vector446
+00fc2000  w      .boot1	00000000 vector906
+00fc2000  w      .boot1	00000000 vector861
+00fc8e70 g     F .text	000000e0 AEK_POW_BMS63EN_GetNTCMeasurement
+00fc2000  w      .boot1	00000000 vector489
+00fc2000  w      .boot1	00000000 vector931
+00fc2000  w      .boot1	00000000 vector658
+00fc2000  w      .boot1	00000000 vector288
+00fc3130 g     F .text	00000064 .hidden __gedf2
+00fc2000  w      .boot1	00000000 vector564
+00fc2000  w      .boot1	00000000 vector326
+00fc2000  w      .boot1	00000000 vector207
+00fc2000  w      .boot1	00000000 vector915
+00fc0200  w      .boot0	00000000 _C0_IVOR5
+00fc2000  w      .boot1	00000000 vector540
+00fc2000  w      .boot1	00000000 vector190
+00fc3358 g     F .text	0000004a .hidden _restgpr_16_x
+00fc2000  w      .boot1	00000000 vector609
+00fc2000  w      .boot1	00000000 vector239
+00fc49c0 g     F .text	00000060 vector94
+00fc4960 g     F .text	00000060 vector93
+00fc2000  w      .boot1	00000000 vector567
+00fc2000  w      .boot1	00000000 vector538
+00fc2000  w      .boot1	00000000 vector188
+00fc2000  w      .boot1	00000000 vector585
+00fc2000  w      .boot1	00000000 vector636
+00fc2000  w      .boot1	00000000 vector266
+00fc2000  w      .boot1	00000000 vector411
+00fc2000  w      .boot1	00000000 vector692
+00fc2000  w      .boot1	00000000 vector847
+00000800 g       *ABS*	00000000 __core0_process_stack_size__
+00fcca40 g     F .text	0000002a componentsInit
+00fc2000  w      .boot1	00000000 vector48
+00fcacb0 g     F .text	0000000c boardInit
+00fc3384 g     F .text	0000001e .hidden _restgpr_27_x
+00fc6a00 g     F .text	0000009c sd_lld_start
+00fc2000  w      .boot1	00000000 vector659
+00fc2000  w      .boot1	00000000 vector289
+00fc80e0 g     F .text	0000005e AEK_POW_BMS63EN_SetVBattOVThreshold
+400a8cc4 g     O .data	00000001 TH_Bal
+00fc2000  w      .boot1	00000000 vector663
+00fc2000  w      .boot1	00000000 vector293
+00fc2000  w      .boot1	00000000 vector957
+50800800 g       .core0_stacks	00000000 __core0_process_stack_end__
+00fc2000  w      .boot1	00000000 vector310
+00fc2000  w      .boot1	00000000 vector219
+00fc2000  w      .boot1	00000000 vector936
+00fc2000  w      .boot1	00000000 vector148
+00fc2000  w      .boot1	00000000 vector221
+00fc2000  w      .boot1	00000000 vector912
+00fc0348  w    F .boot0	00000000 _main_exit_handler
+00fc4480 g     F .text	00000060 vector80
+00fc2000  w      .boot1	00000000 vector353
+00fc2000  w      .boot1	00000000 vector521
+00fc2000  w      .boot1	00000000 vector171
+00fc2000  w      .boot1	00000000 vector504
+00fc2000  w      .boot1	00000000 vector154
+00fc2000  w      .boot1	00000000 vector36
+00fc2bf4 g     F .text	00000062 .hidden __subdf3
+00fc2000  w      .boot1	00000000 vector894
+400a8210 g     O .data	00000028 AEK_ISOSPI_ARRAY_DRIVER
+00fc2000  w      .boot1	00000000 vector605
+00fc2000  w      .boot1	00000000 vector235
+00fc4de0 g     F .text	00000060 vector105
+00fc2000  w      .boot1	00000000 vector849
+52801000 g       .core2_stacks	00000000 __process_stack_end__
+00fc2000  w      .boot1	00000000 vector716
+00fc2000  w      .boot1	00000000 vector340
+00fc2000  w      .boot1	00000000 vector851
+00fc2000  w      .boot1	00000000 vector449
+00fc2000  w      .boot1	00000000 vector405
+00fc2000  w      .boot1	00000000 vector800
+50800000 g       .boot0	00000000 __dram0_start__
+400a8a1c g     O .data	00000154 OCV_Vector
+00fcb2d0 g     F .text	00000004 main_core0
+00fc2000  w      .boot1	00000000 vector385
+00fca500 g     F .text	00000004 __early_init
+00fc0200  w      .boot0	00000000 _C0_IVOR13
+00fc9fc0 g     F .text	00000034 AEK_POW_BMS63EN_GetVCELLUVFaults
+00fc8a90 g     F .text	000000be AEK_POW_BMS63EN_EnableCell
+00fc2000  w      .boot1	00000000 vector338
+00fc2000  w      .boot1	00000000 vector969
+00fc2000  w      .boot1	00000000 vector146
+00fcad30 g     F .text	000002ae send_temp_data
+00fca000 g     F .text	00000034 AEK_POW_BMS63EN_GetVCELLOVFaults
+00fc2000  w      .boot1	00000000 vector897
+00fc2000  w      .boot1	00000000 vector815
+00fc2000  w      .boot1	00000000 vector541
+00fc2000  w      .boot1	00000000 vector191
+00fc8f50 g     F .text	00000054 AEK_POW_BMS63EN_SetOvercurrentThreshold
+00fc2264 g     F .text	0000004a .hidden __addsf3
+50800000 g       .core0_stacks	00000000 __core0_irq_stack_base__
+00fc4d20 g     F .text	00000060 vector103
+00fc7fb0 g     F .text	0000003a AEK_POW_BMS63EN_Get_Conf_OVL
+00fc0500 g       .boot1	00000000 IVORS
+00fc8090 g     F .text	00000048 AEK_POW_BMS63EN_SetADCFilterSOC
+00fc2000  w      .boot1	00000000 vector669
+00fc2000  w      .boot1	00000000 vector299
+00001000 g       *ABS*	00000000 __process_stack_size__
+00fc2000  w      .boot1	00000000 vector926
+00fc2000  w      .boot1	00000000 vector781
+00fc3368 g     F .text	0000003a .hidden _restgpr_20_x
+00fc2000  w      .boot1	00000000 vector984
+00fc2000  w      .boot1	00000000 vector462
+00fc2000  w      .boot1	00000000 vector586
+00fc3620 g     F .text	000001fc .hidden __pack_d
+00fc2000  w      .boot1	00000000 vector350
+00fc2000  w      .boot1	00000000 vector997
+00fc2000  w      .boot1	00000000 vector854
+00fc0270 g     F .boot0	00000000 _C0_IVOR4
+400a8620 g     O .data	00000154 R0_EOL_Vector
+00fc2000  w      .boot1	00000000 vector941
+00fc7b10 g     F .text	00000060 AEK_COM_ISOSPI_GetFault
+00fc2000  w      .boot1	00000000 vector454
+00fc2000  w      .boot1	00000000 vector708
+00fc2000  w      .boot1	00000000 vector679
+00fc2000  w      .boot1	00000000 vector406
+00fc2000  w      .boot1	00000000 vector397
+00fc2000  w      .boot1	00000000 vector480
+00fc2000  w      .boot1	00000000 vector447
+00fc2000  w      .boot1	00000000 vector11
+00fc2000  w      .boot1	00000000 vector14
+00fc2000  w      .boot1	00000000 vector952
+00fc2000  w      .boot1	00000000 vector499
+00fc2000  w      .boot1	00000000 vector884
+
+
