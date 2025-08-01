@@ -1,0 +1,5955 @@
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 1
+
+
+   1              		.file	"AEK_POW_BMS63EN_cfg.c"
+   2              		.section	".text","axv"
+   3              	.Ltext0:
+   4              		.cfi_sections	.debug_frame
+   5              		.section	.text.AEK_POW_BMS63EN_cfg_objects_init,"axv",@progbits
+   6              		.align 1
+   7              		.p2align 4,,15
+   8              		.globl AEK_POW_BMS63EN_cfg_objects_init
+   9              		.type	AEK_POW_BMS63EN_cfg_objects_init, @function
+  10              	AEK_POW_BMS63EN_cfg_objects_init:
+  11              	.LFB3:
+  12              		.file 1 "./components/aek_pow_bms63en_component_rla/cfg/AEK_POW_BMS63EN_cfg.c"
+  13              		.loc 1 188 0
+  14              		.cfi_startproc
+  15              		.loc 1 189 0
+  16 0000 7060E000 		e_lis %r3,.LANCHOR0@ha
+  17              		.loc 1 190 0
+  18              		.loc 1 189 0
+  19 0004 1C630000 		e_la %r3,.LANCHOR0@l(%r3)
+  20 0008 78000000 		e_b AEK_POW_BMS63EN_ObjectInit
+  21              	.LVL0:
+  22              		.cfi_endproc
+  23              	.LFE3:
+  24              		.size	AEK_POW_BMS63EN_cfg_objects_init, .-AEK_POW_BMS63EN_cfg_objects_init
+  25              		.globl AEK_POW_BMS63EN_config
+  26              		.globl AEK_POW_BMS63EN_Drv
+  27              		.section	.data.AEK_POW_BMS63EN_ParamConf_dev,"aw",@progbits
+  28              		.align 2
+  29              		.type	AEK_POW_BMS63EN_ParamConf_dev, @object
+  30              		.size	AEK_POW_BMS63EN_ParamConf_dev, 168
+  31              	AEK_POW_BMS63EN_ParamConf_dev:
+  32 0000 EA60     		.short	-5536
+  33 0002 2AF8     		.short	11000
+  34 0004 13EC     		.short	5100
+  35 0006 01F4     		.short	500
+  36 0008 04B0     		.short	1200
+  37 000a 1388     		.short	5000
+  38 000c 04B0     		.short	1200
+  39 000e 1388     		.short	5000
+  40 0010 04B0     		.short	1200
+  41 0012 1388     		.short	5000
+  42 0014 04B0     		.short	1200
+  43 0016 1388     		.short	5000
+  44 0018 04B0     		.short	1200
+  45 001a 1388     		.short	5000
+  46 001c 04B0     		.short	1200
+  47 001e 1388     		.short	5000
+  48 0020 00000000 		.long	0
+  49 0024 00000000 		.long	0
+  50 0028 00000000 		.long	0
+  51 002c 00000000 		.long	0
+  52 0030 00000000 		.long	0
+  53 0034 00000000 		.long	0
+  54 0038 00000000 		.long	0
+  55 003c 00000002 		.long	2
+  56 0040 00000000 		.long	0
+  57 0044 00000001 		.long	1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 2
+
+
+  58 0048 00000001 		.long	1
+  59 004c 00000002 		.long	2
+  60 0050 00000002 		.long	2
+  61 0054 EA60     		.short	-5536
+  62 0056 2AF8     		.short	11000
+  63 0058 13EC     		.short	5100
+  64 005a 01F4     		.short	500
+  65 005c 04B0     		.short	1200
+  66 005e 1388     		.short	5000
+  67 0060 04B0     		.short	1200
+  68 0062 1388     		.short	5000
+  69 0064 04B0     		.short	1200
+  70 0066 1388     		.short	5000
+  71 0068 04B0     		.short	1200
+  72 006a 1388     		.short	5000
+  73 006c 04B0     		.short	1200
+  74 006e 1388     		.short	5000
+  75 0070 04B0     		.short	1200
+  76 0072 1388     		.short	5000
+  77 0074 00000000 		.long	0
+  78 0078 00000000 		.long	0
+  79 007c 00000000 		.long	0
+  80 0080 00000000 		.long	0
+  81 0084 00000000 		.long	0
+  82 0088 00000000 		.long	0
+  83 008c 00000000 		.long	0
+  84 0090 00000001 		.long	1
+  85 0094 00000000 		.long	0
+  86 0098 00000001 		.long	1
+  87 009c 00000001 		.long	1
+  88 00a0 00000002 		.long	2
+  89 00a4 00000002 		.long	2
+  90              		.section	.data.AEK_POW_BMS63EN_dev_status,"aw",@progbits
+  91              		.align 2
+  92              		.type	AEK_POW_BMS63EN_dev_status, @object
+  93              		.size	AEK_POW_BMS63EN_dev_status, 24
+  94              	AEK_POW_BMS63EN_dev_status:
+  95 0000 00000001 		.long	1
+  96 0004 00000001 		.long	1
+  97 0008 00000000 		.long	AEK_POW_BMS63EN_cell_stack_state_dev1
+  98 000c 00000002 		.long	2
+  99 0010 00000001 		.long	1
+ 100 0014 00000000 		.long	AEK_POW_BMS63EN_cell_stack_state_dev2
+ 101              		.section	.data.AEK_POW_BMS63EN_config,"aw",@progbits
+ 102              		.align 2
+ 103              		.type	AEK_POW_BMS63EN_config, @object
+ 104              		.size	AEK_POW_BMS63EN_config, 16
+ 105              	AEK_POW_BMS63EN_config:
+ 106 0000 00000000 		.long	SPID1
+ 107 0004 00000000 		.long	spi_config_spi_config_AEK_COM_ISOSPI1_dev0
+ 108 0008 00000000 		.long	0
+ 109 000c 00000000 		.long	0
+ 110              		.section	.data.AEK_POW_BMS63EN_cell_stack_state_dev1,"aw",@progbits
+ 111              		.align 2
+ 112              		.type	AEK_POW_BMS63EN_cell_stack_state_dev1, @object
+ 113              		.size	AEK_POW_BMS63EN_cell_stack_state_dev1, 224
+ 114              	AEK_POW_BMS63EN_cell_stack_state_dev1:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 3
+
+
+ 115 0000 00000000 		.long	0
+ 116 0004 00000001 		.long	1
+ 117 0008 00000001 		.long	1
+ 118 000c 00000000 		.long	0
+ 119 0010 00000001 		.long	1
+ 120 0014 00000001 		.long	1
+ 121 0018 00000001 		.long	1
+ 122 001c 00000000 		.long	0
+ 123 0020 00000002 		.long	2
+ 124 0024 00000001 		.long	1
+ 125 0028 00000001 		.long	1
+ 126 002c 00000000 		.long	0
+ 127 0030 00000003 		.long	3
+ 128 0034 00000001 		.long	1
+ 129 0038 00000001 		.long	1
+ 130 003c 00000000 		.long	0
+ 131 0040 00000004 		.long	4
+ 132 0044 00000001 		.long	1
+ 133 0048 00000001 		.long	1
+ 134 004c 00000000 		.long	0
+ 135 0050 00000005 		.long	5
+ 136 0054 00000001 		.long	1
+ 137 0058 00000001 		.long	1
+ 138 005c 00000000 		.long	0
+ 139 0060 00000006 		.long	6
+ 140 0064 00000001 		.long	1
+ 141 0068 00000001 		.long	1
+ 142 006c 00000000 		.long	0
+ 143 0070 00000007 		.long	7
+ 144 0074 00000001 		.long	1
+ 145 0078 00000001 		.long	1
+ 146 007c 00000000 		.long	0
+ 147 0080 00000008 		.long	8
+ 148 0084 00000001 		.long	1
+ 149 0088 00000001 		.long	1
+ 150 008c 00000000 		.long	0
+ 151 0090 00000009 		.long	9
+ 152 0094 00000001 		.long	1
+ 153 0098 00000001 		.long	1
+ 154 009c 00000000 		.long	0
+ 155 00a0 0000000A 		.long	10
+ 156 00a4 00000001 		.long	1
+ 157 00a8 00000001 		.long	1
+ 158 00ac 00000000 		.long	0
+ 159 00b0 0000000B 		.long	11
+ 160 00b4 00000001 		.long	1
+ 161 00b8 00000001 		.long	1
+ 162 00bc 00000000 		.long	0
+ 163 00c0 0000000C 		.long	12
+ 164 00c4 00000001 		.long	1
+ 165 00c8 00000001 		.long	1
+ 166 00cc 00000000 		.long	0
+ 167 00d0 0000000D 		.long	13
+ 168 00d4 00000001 		.long	1
+ 169 00d8 00000001 		.long	1
+ 170 00dc 00000000 		.long	0
+ 171              		.section	.data.AEK_POW_BMS63EN_cell_stack_state_dev2,"aw",@progbits
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 4
+
+
+ 172              		.align 2
+ 173              		.type	AEK_POW_BMS63EN_cell_stack_state_dev2, @object
+ 174              		.size	AEK_POW_BMS63EN_cell_stack_state_dev2, 224
+ 175              	AEK_POW_BMS63EN_cell_stack_state_dev2:
+ 176 0000 00000000 		.long	0
+ 177 0004 00000001 		.long	1
+ 178 0008 00000001 		.long	1
+ 179 000c 00000000 		.long	0
+ 180 0010 00000001 		.long	1
+ 181 0014 00000001 		.long	1
+ 182 0018 00000001 		.long	1
+ 183 001c 00000000 		.long	0
+ 184 0020 00000002 		.long	2
+ 185 0024 00000001 		.long	1
+ 186 0028 00000001 		.long	1
+ 187 002c 00000000 		.long	0
+ 188 0030 00000003 		.long	3
+ 189 0034 00000001 		.long	1
+ 190 0038 00000001 		.long	1
+ 191 003c 00000000 		.long	0
+ 192 0040 00000004 		.long	4
+ 193 0044 00000001 		.long	1
+ 194 0048 00000001 		.long	1
+ 195 004c 00000000 		.long	0
+ 196 0050 00000005 		.long	5
+ 197 0054 00000001 		.long	1
+ 198 0058 00000001 		.long	1
+ 199 005c 00000000 		.long	0
+ 200 0060 00000006 		.long	6
+ 201 0064 00000001 		.long	1
+ 202 0068 00000001 		.long	1
+ 203 006c 00000000 		.long	0
+ 204 0070 00000007 		.long	7
+ 205 0074 00000001 		.long	1
+ 206 0078 00000001 		.long	1
+ 207 007c 00000000 		.long	0
+ 208 0080 00000008 		.long	8
+ 209 0084 00000001 		.long	1
+ 210 0088 00000001 		.long	1
+ 211 008c 00000000 		.long	0
+ 212 0090 00000009 		.long	9
+ 213 0094 00000001 		.long	1
+ 214 0098 00000001 		.long	1
+ 215 009c 00000000 		.long	0
+ 216 00a0 0000000A 		.long	10
+ 217 00a4 00000001 		.long	1
+ 218 00a8 00000001 		.long	1
+ 219 00ac 00000000 		.long	0
+ 220 00b0 0000000B 		.long	11
+ 221 00b4 00000001 		.long	1
+ 222 00b8 00000001 		.long	1
+ 223 00bc 00000000 		.long	0
+ 224 00c0 0000000C 		.long	12
+ 225 00c4 00000001 		.long	1
+ 226 00c8 00000001 		.long	1
+ 227 00cc 00000000 		.long	0
+ 228 00d0 0000000D 		.long	13
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 5
+
+
+ 229 00d4 00000001 		.long	1
+ 230 00d8 00000001 		.long	1
+ 231 00dc 00000000 		.long	0
+ 232              		.section	.data.AEK_POW_BMS63EN_Drv,"aw",@progbits
+ 233              		.align 2
+ 234              		.set	.LANCHOR0,. + 0
+ 235              		.type	AEK_POW_BMS63EN_Drv, @object
+ 236              		.size	AEK_POW_BMS63EN_Drv, 12
+ 237              	AEK_POW_BMS63EN_Drv:
+ 238 0000 00000000 		.long	AEK_POW_BMS63EN_status
+ 239 0004 00000000 		.long	0
+ 240 0008 00000000 		.long	AEK_POW_BMS63EN_ParamConf_dev
+ 241              		.section	.data.AEK_POW_BMS63EN_status,"aw",@progbits
+ 242              		.align 2
+ 243              		.type	AEK_POW_BMS63EN_status, @object
+ 244              		.size	AEK_POW_BMS63EN_status, 8
+ 245              	AEK_POW_BMS63EN_status:
+ 246 0000 00000000 		.long	0
+ 247 0004 00000000 		.long	AEK_POW_BMS63EN_dev_status
+ 248              		.section	".text","axv"
+ 249              	.Letext0:
+ 250              		.file 2 "c:\\autodevkitstudio-2.4.0\\eclipse\\plugins\\com.st.tools.spc5.tools.gnu.gcc.ppcvle.win3
+ 251              		.file 3 "c:\\autodevkitstudio-2.4.0\\eclipse\\plugins\\com.st.tools.spc5.tools.gnu.gcc.ppcvle.win3
+ 252              		.file 4 "c:\\autodevkitstudio-2.4.0\\eclipse\\plugins\\com.st.tools.spc5.tools.gnu.gcc.ppcvle.win3
+ 253              		.file 5 "./components/spc58ecxx_platform_component_rla/lib/include/typedefs.h"
+ 254              		.file 6 "./components/spc58ecxx_board_initialization_component_rla/lib/include/pal.h"
+ 255              		.file 7 "./components/spc58ecxx_low_level_drivers_component_rla/lib/include/spc5_dspi.h"
+ 256              		.file 8 "./components/spc58ecxx_low_level_drivers_component_rla/lib/include/spi_lld.h"
+ 257              		.file 9 "./components/aek_pow_bms63en_component_rla/lib/include/AEK_POW_BMS63EN_lld.h"
+ 258              		.file 10 "./components/spc58ecxx_low_level_drivers_component_rla/cfg/spi_lld_cfg.h"
+ 259              		.section	.debug_info,"",@progbits
+ 260              	.Ldebug_info0:
+ 261 0000 000016C8 		.4byte	0x16c8
+ 262 0004 0002     		.2byte	0x2
+ 263 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 264 000a 04       		.byte	0x4
+ 265 000b 01       		.uleb128 0x1
+ 266 000c 00000000 		.4byte	.LASF336
+ 267 0010 01       		.byte	0x1
+ 268 0011 00000000 		.4byte	.LASF337
+ 269 0015 00000000 		.4byte	.LASF338
+ 270 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 271 001d 00000000 		.4byte	0
+ 272 0021 00000000 		.4byte	0
+ 273 0025 00000000 		.4byte	.Ldebug_line0
+ 274 0029 02       		.uleb128 0x2
+ 275 002a 01       		.byte	0x1
+ 276 002b 06       		.byte	0x6
+ 277 002c 00000000 		.4byte	.LASF0
+ 278 0030 03       		.uleb128 0x3
+ 279 0031 00000000 		.4byte	.LASF3
+ 280 0035 02       		.byte	0x2
+ 281 0036 1D       		.byte	0x1d
+ 282 0037 0000003B 		.4byte	0x3b
+ 283 003b 02       		.uleb128 0x2
+ 284 003c 01       		.byte	0x1
+ 285 003d 08       		.byte	0x8
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 6
+
+
+ 286 003e 00000000 		.4byte	.LASF1
+ 287 0042 02       		.uleb128 0x2
+ 288 0043 02       		.byte	0x2
+ 289 0044 05       		.byte	0x5
+ 290 0045 00000000 		.4byte	.LASF2
+ 291 0049 03       		.uleb128 0x3
+ 292 004a 00000000 		.4byte	.LASF4
+ 293 004e 02       		.byte	0x2
+ 294 004f 2B       		.byte	0x2b
+ 295 0050 00000054 		.4byte	0x54
+ 296 0054 02       		.uleb128 0x2
+ 297 0055 02       		.byte	0x2
+ 298 0056 07       		.byte	0x7
+ 299 0057 00000000 		.4byte	.LASF5
+ 300 005b 02       		.uleb128 0x2
+ 301 005c 04       		.byte	0x4
+ 302 005d 05       		.byte	0x5
+ 303 005e 00000000 		.4byte	.LASF6
+ 304 0062 03       		.uleb128 0x3
+ 305 0063 00000000 		.4byte	.LASF7
+ 306 0067 02       		.byte	0x2
+ 307 0068 41       		.byte	0x41
+ 308 0069 0000006D 		.4byte	0x6d
+ 309 006d 02       		.uleb128 0x2
+ 310 006e 04       		.byte	0x4
+ 311 006f 07       		.byte	0x7
+ 312 0070 00000000 		.4byte	.LASF8
+ 313 0074 02       		.uleb128 0x2
+ 314 0075 08       		.byte	0x8
+ 315 0076 05       		.byte	0x5
+ 316 0077 00000000 		.4byte	.LASF9
+ 317 007b 02       		.uleb128 0x2
+ 318 007c 08       		.byte	0x8
+ 319 007d 07       		.byte	0x7
+ 320 007e 00000000 		.4byte	.LASF10
+ 321 0082 04       		.uleb128 0x4
+ 322 0083 04       		.byte	0x4
+ 323 0084 05       		.byte	0x5
+ 324 0085 696E7400 		.string	"int"
+ 325 0089 02       		.uleb128 0x2
+ 326 008a 04       		.byte	0x4
+ 327 008b 07       		.byte	0x7
+ 328 008c 00000000 		.4byte	.LASF11
+ 329 0090 03       		.uleb128 0x3
+ 330 0091 00000000 		.4byte	.LASF12
+ 331 0095 03       		.byte	0x3
+ 332 0096 15       		.byte	0x15
+ 333 0097 00000030 		.4byte	0x30
+ 334 009b 03       		.uleb128 0x3
+ 335 009c 00000000 		.4byte	.LASF13
+ 336 00a0 03       		.byte	0x3
+ 337 00a1 21       		.byte	0x21
+ 338 00a2 00000049 		.4byte	0x49
+ 339 00a6 03       		.uleb128 0x3
+ 340 00a7 00000000 		.4byte	.LASF14
+ 341 00ab 03       		.byte	0x3
+ 342 00ac 2D       		.byte	0x2d
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 7
+
+
+ 343 00ad 00000062 		.4byte	0x62
+ 344 00b1 03       		.uleb128 0x3
+ 345 00b2 00000000 		.4byte	.LASF15
+ 346 00b6 04       		.byte	0x4
+ 347 00b7 D4       		.byte	0xd4
+ 348 00b8 00000089 		.4byte	0x89
+ 349 00bc 05       		.uleb128 0x5
+ 350 00bd 00000090 		.4byte	0x90
+ 351 00c1 03       		.uleb128 0x3
+ 352 00c2 00000000 		.4byte	.LASF16
+ 353 00c6 05       		.byte	0x5
+ 354 00c7 1E       		.byte	0x1e
+ 355 00c8 000000CC 		.4byte	0xcc
+ 356 00cc 05       		.uleb128 0x5
+ 357 00cd 0000009B 		.4byte	0x9b
+ 358 00d1 03       		.uleb128 0x3
+ 359 00d2 00000000 		.4byte	.LASF17
+ 360 00d6 05       		.byte	0x5
+ 361 00d7 20       		.byte	0x20
+ 362 00d8 000000DC 		.4byte	0xdc
+ 363 00dc 05       		.uleb128 0x5
+ 364 00dd 000000A6 		.4byte	0xa6
+ 365 00e1 02       		.uleb128 0x2
+ 366 00e2 04       		.byte	0x4
+ 367 00e3 07       		.byte	0x7
+ 368 00e4 00000000 		.4byte	.LASF18
+ 369 00e8 03       		.uleb128 0x3
+ 370 00e9 00000000 		.4byte	.LASF19
+ 371 00ed 06       		.byte	0x6
+ 372 00ee 90       		.byte	0x90
+ 373 00ef 000000A6 		.4byte	0xa6
+ 374 00f3 06       		.uleb128 0x6
+ 375 00f4 04       		.byte	0x4
+ 376 00f5 07       		.uleb128 0x7
+ 377 00f6 04       		.byte	0x4
+ 378 00f7 00000090 		.4byte	0x90
+ 379 00fb 08       		.uleb128 0x8
+ 380 00fc 04       		.byte	0x4
+ 381 00fd 07       		.byte	0x7
+ 382 00fe D4       		.byte	0xd4
+ 383 00ff 000002BE 		.4byte	0x2be
+ 384 0103 09       		.uleb128 0x9
+ 385 0104 00000000 		.4byte	.LASF20
+ 386 0108 07       		.byte	0x7
+ 387 0109 D5       		.byte	0xd5
+ 388 010a 000000D1 		.4byte	0xd1
+ 389 010e 04       		.byte	0x4
+ 390 010f 01       		.byte	0x1
+ 391 0110 00       		.byte	0
+ 392 0111 02       		.byte	0x2
+ 393 0112 23       		.byte	0x23
+ 394 0113 00       		.uleb128 0
+ 395 0114 09       		.uleb128 0x9
+ 396 0115 00000000 		.4byte	.LASF21
+ 397 0119 07       		.byte	0x7
+ 398 011a D6       		.byte	0xd6
+ 399 011b 000000D1 		.4byte	0xd1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 8
+
+
+ 400 011f 04       		.byte	0x4
+ 401 0120 01       		.byte	0x1
+ 402 0121 01       		.byte	0x1
+ 403 0122 02       		.byte	0x2
+ 404 0123 23       		.byte	0x23
+ 405 0124 00       		.uleb128 0
+ 406 0125 09       		.uleb128 0x9
+ 407 0126 00000000 		.4byte	.LASF22
+ 408 012a 07       		.byte	0x7
+ 409 012b D7       		.byte	0xd7
+ 410 012c 000000D1 		.4byte	0xd1
+ 411 0130 04       		.byte	0x4
+ 412 0131 02       		.byte	0x2
+ 413 0132 02       		.byte	0x2
+ 414 0133 02       		.byte	0x2
+ 415 0134 23       		.byte	0x23
+ 416 0135 00       		.uleb128 0
+ 417 0136 0A       		.uleb128 0xa
+ 418 0137 46525A00 		.string	"FRZ"
+ 419 013b 07       		.byte	0x7
+ 420 013c D8       		.byte	0xd8
+ 421 013d 000000D1 		.4byte	0xd1
+ 422 0141 04       		.byte	0x4
+ 423 0142 01       		.byte	0x1
+ 424 0143 04       		.byte	0x4
+ 425 0144 02       		.byte	0x2
+ 426 0145 23       		.byte	0x23
+ 427 0146 00       		.uleb128 0
+ 428 0147 09       		.uleb128 0x9
+ 429 0148 00000000 		.4byte	.LASF23
+ 430 014c 07       		.byte	0x7
+ 431 014d D9       		.byte	0xd9
+ 432 014e 000000D1 		.4byte	0xd1
+ 433 0152 04       		.byte	0x4
+ 434 0153 01       		.byte	0x1
+ 435 0154 05       		.byte	0x5
+ 436 0155 02       		.byte	0x2
+ 437 0156 23       		.byte	0x23
+ 438 0157 00       		.uleb128 0
+ 439 0158 09       		.uleb128 0x9
+ 440 0159 00000000 		.4byte	.LASF24
+ 441 015d 07       		.byte	0x7
+ 442 015e DA       		.byte	0xda
+ 443 015f 000000D1 		.4byte	0xd1
+ 444 0163 04       		.byte	0x4
+ 445 0164 01       		.byte	0x1
+ 446 0165 06       		.byte	0x6
+ 447 0166 02       		.byte	0x2
+ 448 0167 23       		.byte	0x23
+ 449 0168 00       		.uleb128 0
+ 450 0169 09       		.uleb128 0x9
+ 451 016a 00000000 		.4byte	.LASF25
+ 452 016e 07       		.byte	0x7
+ 453 016f DB       		.byte	0xdb
+ 454 0170 000000D1 		.4byte	0xd1
+ 455 0174 04       		.byte	0x4
+ 456 0175 01       		.byte	0x1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 9
+
+
+ 457 0176 07       		.byte	0x7
+ 458 0177 02       		.byte	0x2
+ 459 0178 23       		.byte	0x23
+ 460 0179 00       		.uleb128 0
+ 461 017a 09       		.uleb128 0x9
+ 462 017b 00000000 		.4byte	.LASF26
+ 463 017f 07       		.byte	0x7
+ 464 0180 DC       		.byte	0xdc
+ 465 0181 000000D1 		.4byte	0xd1
+ 466 0185 04       		.byte	0x4
+ 467 0186 01       		.byte	0x1
+ 468 0187 08       		.byte	0x8
+ 469 0188 02       		.byte	0x2
+ 470 0189 23       		.byte	0x23
+ 471 018a 00       		.uleb128 0
+ 472 018b 09       		.uleb128 0x9
+ 473 018c 00000000 		.4byte	.LASF27
+ 474 0190 07       		.byte	0x7
+ 475 0191 DD       		.byte	0xdd
+ 476 0192 000000D1 		.4byte	0xd1
+ 477 0196 04       		.byte	0x4
+ 478 0197 01       		.byte	0x1
+ 479 0198 09       		.byte	0x9
+ 480 0199 02       		.byte	0x2
+ 481 019a 23       		.byte	0x23
+ 482 019b 00       		.uleb128 0
+ 483 019c 09       		.uleb128 0x9
+ 484 019d 00000000 		.4byte	.LASF28
+ 485 01a1 07       		.byte	0x7
+ 486 01a2 DE       		.byte	0xde
+ 487 01a3 000000D1 		.4byte	0xd1
+ 488 01a7 04       		.byte	0x4
+ 489 01a8 01       		.byte	0x1
+ 490 01a9 0A       		.byte	0xa
+ 491 01aa 02       		.byte	0x2
+ 492 01ab 23       		.byte	0x23
+ 493 01ac 00       		.uleb128 0
+ 494 01ad 09       		.uleb128 0x9
+ 495 01ae 00000000 		.4byte	.LASF29
+ 496 01b2 07       		.byte	0x7
+ 497 01b3 DF       		.byte	0xdf
+ 498 01b4 000000D1 		.4byte	0xd1
+ 499 01b8 04       		.byte	0x4
+ 500 01b9 01       		.byte	0x1
+ 501 01ba 0B       		.byte	0xb
+ 502 01bb 02       		.byte	0x2
+ 503 01bc 23       		.byte	0x23
+ 504 01bd 00       		.uleb128 0
+ 505 01be 09       		.uleb128 0x9
+ 506 01bf 00000000 		.4byte	.LASF30
+ 507 01c3 07       		.byte	0x7
+ 508 01c4 E0       		.byte	0xe0
+ 509 01c5 000000D1 		.4byte	0xd1
+ 510 01c9 04       		.byte	0x4
+ 511 01ca 01       		.byte	0x1
+ 512 01cb 0C       		.byte	0xc
+ 513 01cc 02       		.byte	0x2
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 10
+
+
+ 514 01cd 23       		.byte	0x23
+ 515 01ce 00       		.uleb128 0
+ 516 01cf 09       		.uleb128 0x9
+ 517 01d0 00000000 		.4byte	.LASF31
+ 518 01d4 07       		.byte	0x7
+ 519 01d5 E1       		.byte	0xe1
+ 520 01d6 000000D1 		.4byte	0xd1
+ 521 01da 04       		.byte	0x4
+ 522 01db 01       		.byte	0x1
+ 523 01dc 0D       		.byte	0xd
+ 524 01dd 02       		.byte	0x2
+ 525 01de 23       		.byte	0x23
+ 526 01df 00       		.uleb128 0
+ 527 01e0 09       		.uleb128 0x9
+ 528 01e1 00000000 		.4byte	.LASF32
+ 529 01e5 07       		.byte	0x7
+ 530 01e6 E2       		.byte	0xe2
+ 531 01e7 000000D1 		.4byte	0xd1
+ 532 01eb 04       		.byte	0x4
+ 533 01ec 01       		.byte	0x1
+ 534 01ed 0E       		.byte	0xe
+ 535 01ee 02       		.byte	0x2
+ 536 01ef 23       		.byte	0x23
+ 537 01f0 00       		.uleb128 0
+ 538 01f1 09       		.uleb128 0x9
+ 539 01f2 00000000 		.4byte	.LASF33
+ 540 01f6 07       		.byte	0x7
+ 541 01f7 E3       		.byte	0xe3
+ 542 01f8 000000D1 		.4byte	0xd1
+ 543 01fc 04       		.byte	0x4
+ 544 01fd 01       		.byte	0x1
+ 545 01fe 0F       		.byte	0xf
+ 546 01ff 02       		.byte	0x2
+ 547 0200 23       		.byte	0x23
+ 548 0201 00       		.uleb128 0
+ 549 0202 09       		.uleb128 0x9
+ 550 0203 00000000 		.4byte	.LASF34
+ 551 0207 07       		.byte	0x7
+ 552 0208 E5       		.byte	0xe5
+ 553 0209 000000D1 		.4byte	0xd1
+ 554 020d 04       		.byte	0x4
+ 555 020e 01       		.byte	0x1
+ 556 020f 11       		.byte	0x11
+ 557 0210 02       		.byte	0x2
+ 558 0211 23       		.byte	0x23
+ 559 0212 00       		.uleb128 0
+ 560 0213 09       		.uleb128 0x9
+ 561 0214 00000000 		.4byte	.LASF35
+ 562 0218 07       		.byte	0x7
+ 563 0219 E6       		.byte	0xe6
+ 564 021a 000000D1 		.4byte	0xd1
+ 565 021e 04       		.byte	0x4
+ 566 021f 01       		.byte	0x1
+ 567 0220 12       		.byte	0x12
+ 568 0221 02       		.byte	0x2
+ 569 0222 23       		.byte	0x23
+ 570 0223 00       		.uleb128 0
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 11
+
+
+ 571 0224 09       		.uleb128 0x9
+ 572 0225 00000000 		.4byte	.LASF36
+ 573 0229 07       		.byte	0x7
+ 574 022a E7       		.byte	0xe7
+ 575 022b 000000D1 		.4byte	0xd1
+ 576 022f 04       		.byte	0x4
+ 577 0230 01       		.byte	0x1
+ 578 0231 13       		.byte	0x13
+ 579 0232 02       		.byte	0x2
+ 580 0233 23       		.byte	0x23
+ 581 0234 00       		.uleb128 0
+ 582 0235 09       		.uleb128 0x9
+ 583 0236 00000000 		.4byte	.LASF37
+ 584 023a 07       		.byte	0x7
+ 585 023b E8       		.byte	0xe8
+ 586 023c 000000D1 		.4byte	0xd1
+ 587 0240 04       		.byte	0x4
+ 588 0241 01       		.byte	0x1
+ 589 0242 14       		.byte	0x14
+ 590 0243 02       		.byte	0x2
+ 591 0244 23       		.byte	0x23
+ 592 0245 00       		.uleb128 0
+ 593 0246 09       		.uleb128 0x9
+ 594 0247 00000000 		.4byte	.LASF38
+ 595 024b 07       		.byte	0x7
+ 596 024c E9       		.byte	0xe9
+ 597 024d 000000D1 		.4byte	0xd1
+ 598 0251 04       		.byte	0x4
+ 599 0252 01       		.byte	0x1
+ 600 0253 15       		.byte	0x15
+ 601 0254 02       		.byte	0x2
+ 602 0255 23       		.byte	0x23
+ 603 0256 00       		.uleb128 0
+ 604 0257 09       		.uleb128 0x9
+ 605 0258 00000000 		.4byte	.LASF39
+ 606 025c 07       		.byte	0x7
+ 607 025d EA       		.byte	0xea
+ 608 025e 000000D1 		.4byte	0xd1
+ 609 0262 04       		.byte	0x4
+ 610 0263 02       		.byte	0x2
+ 611 0264 16       		.byte	0x16
+ 612 0265 02       		.byte	0x2
+ 613 0266 23       		.byte	0x23
+ 614 0267 00       		.uleb128 0
+ 615 0268 09       		.uleb128 0x9
+ 616 0269 00000000 		.4byte	.LASF40
+ 617 026d 07       		.byte	0x7
+ 618 026e EB       		.byte	0xeb
+ 619 026f 000000D1 		.4byte	0xd1
+ 620 0273 04       		.byte	0x4
+ 621 0274 01       		.byte	0x1
+ 622 0275 18       		.byte	0x18
+ 623 0276 02       		.byte	0x2
+ 624 0277 23       		.byte	0x23
+ 625 0278 00       		.uleb128 0
+ 626 0279 09       		.uleb128 0x9
+ 627 027a 00000000 		.4byte	.LASF41
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 12
+
+
+ 628 027e 07       		.byte	0x7
+ 629 027f ED       		.byte	0xed
+ 630 0280 000000D1 		.4byte	0xd1
+ 631 0284 04       		.byte	0x4
+ 632 0285 01       		.byte	0x1
+ 633 0286 1C       		.byte	0x1c
+ 634 0287 02       		.byte	0x2
+ 635 0288 23       		.byte	0x23
+ 636 0289 00       		.uleb128 0
+ 637 028a 09       		.uleb128 0x9
+ 638 028b 00000000 		.4byte	.LASF42
+ 639 028f 07       		.byte	0x7
+ 640 0290 EE       		.byte	0xee
+ 641 0291 000000D1 		.4byte	0xd1
+ 642 0295 04       		.byte	0x4
+ 643 0296 01       		.byte	0x1
+ 644 0297 1D       		.byte	0x1d
+ 645 0298 02       		.byte	0x2
+ 646 0299 23       		.byte	0x23
+ 647 029a 00       		.uleb128 0
+ 648 029b 0A       		.uleb128 0xa
+ 649 029c 50455300 		.string	"PES"
+ 650 02a0 07       		.byte	0x7
+ 651 02a1 EF       		.byte	0xef
+ 652 02a2 000000D1 		.4byte	0xd1
+ 653 02a6 04       		.byte	0x4
+ 654 02a7 01       		.byte	0x1
+ 655 02a8 1E       		.byte	0x1e
+ 656 02a9 02       		.byte	0x2
+ 657 02aa 23       		.byte	0x23
+ 658 02ab 00       		.uleb128 0
+ 659 02ac 09       		.uleb128 0x9
+ 660 02ad 00000000 		.4byte	.LASF43
+ 661 02b1 07       		.byte	0x7
+ 662 02b2 F0       		.byte	0xf0
+ 663 02b3 000000D1 		.4byte	0xd1
+ 664 02b7 04       		.byte	0x4
+ 665 02b8 01       		.byte	0x1
+ 666 02b9 1F       		.byte	0x1f
+ 667 02ba 02       		.byte	0x2
+ 668 02bb 23       		.byte	0x23
+ 669 02bc 00       		.uleb128 0
+ 670 02bd 00       		.byte	0
+ 671 02be 0B       		.uleb128 0xb
+ 672 02bf 04       		.byte	0x4
+ 673 02c0 07       		.byte	0x7
+ 674 02c1 D2       		.byte	0xd2
+ 675 02c2 000002D9 		.4byte	0x2d9
+ 676 02c6 0C       		.uleb128 0xc
+ 677 02c7 5200     		.string	"R"
+ 678 02c9 07       		.byte	0x7
+ 679 02ca D3       		.byte	0xd3
+ 680 02cb 000000D1 		.4byte	0xd1
+ 681 02cf 0C       		.uleb128 0xc
+ 682 02d0 4200     		.string	"B"
+ 683 02d2 07       		.byte	0x7
+ 684 02d3 F1       		.byte	0xf1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 13
+
+
+ 685 02d4 000000FB 		.4byte	0xfb
+ 686 02d8 00       		.byte	0
+ 687 02d9 08       		.uleb128 0x8
+ 688 02da 04       		.byte	0x4
+ 689 02db 07       		.byte	0x7
+ 690 02dc F8       		.byte	0xf8
+ 691 02dd 000002F3 		.4byte	0x2f3
+ 692 02e1 09       		.uleb128 0x9
+ 693 02e2 00000000 		.4byte	.LASF44
+ 694 02e6 07       		.byte	0x7
+ 695 02e7 F9       		.byte	0xf9
+ 696 02e8 000000D1 		.4byte	0xd1
+ 697 02ec 04       		.byte	0x4
+ 698 02ed 10       		.byte	0x10
+ 699 02ee 00       		.byte	0
+ 700 02ef 02       		.byte	0x2
+ 701 02f0 23       		.byte	0x23
+ 702 02f1 00       		.uleb128 0
+ 703 02f2 00       		.byte	0
+ 704 02f3 0B       		.uleb128 0xb
+ 705 02f4 04       		.byte	0x4
+ 706 02f5 07       		.byte	0x7
+ 707 02f6 F6       		.byte	0xf6
+ 708 02f7 0000030E 		.4byte	0x30e
+ 709 02fb 0C       		.uleb128 0xc
+ 710 02fc 5200     		.string	"R"
+ 711 02fe 07       		.byte	0x7
+ 712 02ff F7       		.byte	0xf7
+ 713 0300 000000D1 		.4byte	0xd1
+ 714 0304 0C       		.uleb128 0xc
+ 715 0305 4200     		.string	"B"
+ 716 0307 07       		.byte	0x7
+ 717 0308 FB       		.byte	0xfb
+ 718 0309 000002D9 		.4byte	0x2d9
+ 719 030d 00       		.byte	0
+ 720 030e 0D       		.uleb128 0xd
+ 721 030f 04       		.byte	0x4
+ 722 0310 07       		.byte	0x7
+ 723 0311 0100     		.2byte	0x100
+ 724 0313 00000400 		.4byte	0x400
+ 725 0317 0E       		.uleb128 0xe
+ 726 0318 44425200 		.string	"DBR"
+ 727 031c 07       		.byte	0x7
+ 728 031d 0101     		.2byte	0x101
+ 729 031f 000000D1 		.4byte	0xd1
+ 730 0323 04       		.byte	0x4
+ 731 0324 01       		.byte	0x1
+ 732 0325 00       		.byte	0
+ 733 0326 02       		.byte	0x2
+ 734 0327 23       		.byte	0x23
+ 735 0328 00       		.uleb128 0
+ 736 0329 0F       		.uleb128 0xf
+ 737 032a 00000000 		.4byte	.LASF45
+ 738 032e 07       		.byte	0x7
+ 739 032f 0102     		.2byte	0x102
+ 740 0331 000000D1 		.4byte	0xd1
+ 741 0335 04       		.byte	0x4
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 14
+
+
+ 742 0336 04       		.byte	0x4
+ 743 0337 01       		.byte	0x1
+ 744 0338 02       		.byte	0x2
+ 745 0339 23       		.byte	0x23
+ 746 033a 00       		.uleb128 0
+ 747 033b 0F       		.uleb128 0xf
+ 748 033c 00000000 		.4byte	.LASF46
+ 749 0340 07       		.byte	0x7
+ 750 0341 0103     		.2byte	0x103
+ 751 0343 000000D1 		.4byte	0xd1
+ 752 0347 04       		.byte	0x4
+ 753 0348 01       		.byte	0x1
+ 754 0349 05       		.byte	0x5
+ 755 034a 02       		.byte	0x2
+ 756 034b 23       		.byte	0x23
+ 757 034c 00       		.uleb128 0
+ 758 034d 0F       		.uleb128 0xf
+ 759 034e 00000000 		.4byte	.LASF47
+ 760 0352 07       		.byte	0x7
+ 761 0353 0104     		.2byte	0x104
+ 762 0355 000000D1 		.4byte	0xd1
+ 763 0359 04       		.byte	0x4
+ 764 035a 01       		.byte	0x1
+ 765 035b 06       		.byte	0x6
+ 766 035c 02       		.byte	0x2
+ 767 035d 23       		.byte	0x23
+ 768 035e 00       		.uleb128 0
+ 769 035f 0F       		.uleb128 0xf
+ 770 0360 00000000 		.4byte	.LASF48
+ 771 0364 07       		.byte	0x7
+ 772 0365 0105     		.2byte	0x105
+ 773 0367 000000D1 		.4byte	0xd1
+ 774 036b 04       		.byte	0x4
+ 775 036c 01       		.byte	0x1
+ 776 036d 07       		.byte	0x7
+ 777 036e 02       		.byte	0x2
+ 778 036f 23       		.byte	0x23
+ 779 0370 00       		.uleb128 0
+ 780 0371 0F       		.uleb128 0xf
+ 781 0372 00000000 		.4byte	.LASF49
+ 782 0376 07       		.byte	0x7
+ 783 0377 0106     		.2byte	0x106
+ 784 0379 000000D1 		.4byte	0xd1
+ 785 037d 04       		.byte	0x4
+ 786 037e 02       		.byte	0x2
+ 787 037f 08       		.byte	0x8
+ 788 0380 02       		.byte	0x2
+ 789 0381 23       		.byte	0x23
+ 790 0382 00       		.uleb128 0
+ 791 0383 0F       		.uleb128 0xf
+ 792 0384 00000000 		.4byte	.LASF50
+ 793 0388 07       		.byte	0x7
+ 794 0389 0107     		.2byte	0x107
+ 795 038b 000000D1 		.4byte	0xd1
+ 796 038f 04       		.byte	0x4
+ 797 0390 02       		.byte	0x2
+ 798 0391 0A       		.byte	0xa
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 15
+
+
+ 799 0392 02       		.byte	0x2
+ 800 0393 23       		.byte	0x23
+ 801 0394 00       		.uleb128 0
+ 802 0395 0E       		.uleb128 0xe
+ 803 0396 50445400 		.string	"PDT"
+ 804 039a 07       		.byte	0x7
+ 805 039b 0108     		.2byte	0x108
+ 806 039d 000000D1 		.4byte	0xd1
+ 807 03a1 04       		.byte	0x4
+ 808 03a2 02       		.byte	0x2
+ 809 03a3 0C       		.byte	0xc
+ 810 03a4 02       		.byte	0x2
+ 811 03a5 23       		.byte	0x23
+ 812 03a6 00       		.uleb128 0
+ 813 03a7 0E       		.uleb128 0xe
+ 814 03a8 50425200 		.string	"PBR"
+ 815 03ac 07       		.byte	0x7
+ 816 03ad 0109     		.2byte	0x109
+ 817 03af 000000D1 		.4byte	0xd1
+ 818 03b3 04       		.byte	0x4
+ 819 03b4 02       		.byte	0x2
+ 820 03b5 0E       		.byte	0xe
+ 821 03b6 02       		.byte	0x2
+ 822 03b7 23       		.byte	0x23
+ 823 03b8 00       		.uleb128 0
+ 824 03b9 0F       		.uleb128 0xf
+ 825 03ba 00000000 		.4byte	.LASF51
+ 826 03be 07       		.byte	0x7
+ 827 03bf 010A     		.2byte	0x10a
+ 828 03c1 000000D1 		.4byte	0xd1
+ 829 03c5 04       		.byte	0x4
+ 830 03c6 04       		.byte	0x4
+ 831 03c7 10       		.byte	0x10
+ 832 03c8 02       		.byte	0x2
+ 833 03c9 23       		.byte	0x23
+ 834 03ca 00       		.uleb128 0
+ 835 03cb 0E       		.uleb128 0xe
+ 836 03cc 41534300 		.string	"ASC"
+ 837 03d0 07       		.byte	0x7
+ 838 03d1 010B     		.2byte	0x10b
+ 839 03d3 000000D1 		.4byte	0xd1
+ 840 03d7 04       		.byte	0x4
+ 841 03d8 04       		.byte	0x4
+ 842 03d9 14       		.byte	0x14
+ 843 03da 02       		.byte	0x2
+ 844 03db 23       		.byte	0x23
+ 845 03dc 00       		.uleb128 0
+ 846 03dd 0E       		.uleb128 0xe
+ 847 03de 445400   		.string	"DT"
+ 848 03e1 07       		.byte	0x7
+ 849 03e2 010C     		.2byte	0x10c
+ 850 03e4 000000D1 		.4byte	0xd1
+ 851 03e8 04       		.byte	0x4
+ 852 03e9 04       		.byte	0x4
+ 853 03ea 18       		.byte	0x18
+ 854 03eb 02       		.byte	0x2
+ 855 03ec 23       		.byte	0x23
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 16
+
+
+ 856 03ed 00       		.uleb128 0
+ 857 03ee 0E       		.uleb128 0xe
+ 858 03ef 425200   		.string	"BR"
+ 859 03f2 07       		.byte	0x7
+ 860 03f3 010D     		.2byte	0x10d
+ 861 03f5 000000D1 		.4byte	0xd1
+ 862 03f9 04       		.byte	0x4
+ 863 03fa 04       		.byte	0x4
+ 864 03fb 1C       		.byte	0x1c
+ 865 03fc 02       		.byte	0x2
+ 866 03fd 23       		.byte	0x23
+ 867 03fe 00       		.uleb128 0
+ 868 03ff 00       		.byte	0
+ 869 0400 0B       		.uleb128 0xb
+ 870 0401 04       		.byte	0x4
+ 871 0402 07       		.byte	0x7
+ 872 0403 FE       		.byte	0xfe
+ 873 0404 0000041C 		.4byte	0x41c
+ 874 0408 0C       		.uleb128 0xc
+ 875 0409 5200     		.string	"R"
+ 876 040b 07       		.byte	0x7
+ 877 040c FF       		.byte	0xff
+ 878 040d 000000D1 		.4byte	0xd1
+ 879 0411 10       		.uleb128 0x10
+ 880 0412 4200     		.string	"B"
+ 881 0414 07       		.byte	0x7
+ 882 0415 010E     		.2byte	0x10e
+ 883 0417 0000030E 		.4byte	0x30e
+ 884 041b 00       		.byte	0
+ 885 041c 0D       		.uleb128 0xd
+ 886 041d 04       		.byte	0x4
+ 887 041e 07       		.byte	0x7
+ 888 041f 0113     		.2byte	0x113
+ 889 0421 00000510 		.4byte	0x510
+ 890 0425 0E       		.uleb128 0xe
+ 891 0426 54434600 		.string	"TCF"
+ 892 042a 07       		.byte	0x7
+ 893 042b 0114     		.2byte	0x114
+ 894 042d 000000D1 		.4byte	0xd1
+ 895 0431 04       		.byte	0x4
+ 896 0432 01       		.byte	0x1
+ 897 0433 00       		.byte	0
+ 898 0434 02       		.byte	0x2
+ 899 0435 23       		.byte	0x23
+ 900 0436 00       		.uleb128 0
+ 901 0437 0F       		.uleb128 0xf
+ 902 0438 00000000 		.4byte	.LASF52
+ 903 043c 07       		.byte	0x7
+ 904 043d 0115     		.2byte	0x115
+ 905 043f 000000D1 		.4byte	0xd1
+ 906 0443 04       		.byte	0x4
+ 907 0444 01       		.byte	0x1
+ 908 0445 01       		.byte	0x1
+ 909 0446 02       		.byte	0x2
+ 910 0447 23       		.byte	0x23
+ 911 0448 00       		.uleb128 0
+ 912 0449 0F       		.uleb128 0xf
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 17
+
+
+ 913 044a 00000000 		.4byte	.LASF53
+ 914 044e 07       		.byte	0x7
+ 915 044f 0117     		.2byte	0x117
+ 916 0451 000000D1 		.4byte	0xd1
+ 917 0455 04       		.byte	0x4
+ 918 0456 01       		.byte	0x1
+ 919 0457 03       		.byte	0x3
+ 920 0458 02       		.byte	0x2
+ 921 0459 23       		.byte	0x23
+ 922 045a 00       		.uleb128 0
+ 923 045b 0F       		.uleb128 0xf
+ 924 045c 00000000 		.4byte	.LASF54
+ 925 0460 07       		.byte	0x7
+ 926 0461 0118     		.2byte	0x118
+ 927 0463 000000D1 		.4byte	0xd1
+ 928 0467 04       		.byte	0x4
+ 929 0468 01       		.byte	0x1
+ 930 0469 04       		.byte	0x4
+ 931 046a 02       		.byte	0x2
+ 932 046b 23       		.byte	0x23
+ 933 046c 00       		.uleb128 0
+ 934 046d 0F       		.uleb128 0xf
+ 935 046e 00000000 		.4byte	.LASF55
+ 936 0472 07       		.byte	0x7
+ 937 0473 011A     		.2byte	0x11a
+ 938 0475 000000D1 		.4byte	0xd1
+ 939 0479 04       		.byte	0x4
+ 940 047a 01       		.byte	0x1
+ 941 047b 06       		.byte	0x6
+ 942 047c 02       		.byte	0x2
+ 943 047d 23       		.byte	0x23
+ 944 047e 00       		.uleb128 0
+ 945 047f 0F       		.uleb128 0xf
+ 946 0480 00000000 		.4byte	.LASF56
+ 947 0484 07       		.byte	0x7
+ 948 0485 011B     		.2byte	0x11b
+ 949 0487 000000D1 		.4byte	0xd1
+ 950 048b 04       		.byte	0x4
+ 951 048c 01       		.byte	0x1
+ 952 048d 07       		.byte	0x7
+ 953 048e 02       		.byte	0x2
+ 954 048f 23       		.byte	0x23
+ 955 0490 00       		.uleb128 0
+ 956 0491 0F       		.uleb128 0xf
+ 957 0492 00000000 		.4byte	.LASF57
+ 958 0496 07       		.byte	0x7
+ 959 0497 011C     		.2byte	0x11c
+ 960 0499 000000D1 		.4byte	0xd1
+ 961 049d 04       		.byte	0x4
+ 962 049e 01       		.byte	0x1
+ 963 049f 08       		.byte	0x8
+ 964 04a0 02       		.byte	0x2
+ 965 04a1 23       		.byte	0x23
+ 966 04a2 00       		.uleb128 0
+ 967 04a3 0F       		.uleb128 0xf
+ 968 04a4 00000000 		.4byte	.LASF58
+ 969 04a8 07       		.byte	0x7
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 18
+
+
+ 970 04a9 011E     		.2byte	0x11e
+ 971 04ab 000000D1 		.4byte	0xd1
+ 972 04af 04       		.byte	0x4
+ 973 04b0 01       		.byte	0x1
+ 974 04b1 0C       		.byte	0xc
+ 975 04b2 02       		.byte	0x2
+ 976 04b3 23       		.byte	0x23
+ 977 04b4 00       		.uleb128 0
+ 978 04b5 0F       		.uleb128 0xf
+ 979 04b6 00000000 		.4byte	.LASF59
+ 980 04ba 07       		.byte	0x7
+ 981 04bb 0120     		.2byte	0x120
+ 982 04bd 000000D1 		.4byte	0xd1
+ 983 04c1 04       		.byte	0x4
+ 984 04c2 01       		.byte	0x1
+ 985 04c3 0E       		.byte	0xe
+ 986 04c4 02       		.byte	0x2
+ 987 04c5 23       		.byte	0x23
+ 988 04c6 00       		.uleb128 0
+ 989 04c7 0F       		.uleb128 0xf
+ 990 04c8 00000000 		.4byte	.LASF60
+ 991 04cc 07       		.byte	0x7
+ 992 04cd 0122     		.2byte	0x122
+ 993 04cf 000000D1 		.4byte	0xd1
+ 994 04d3 04       		.byte	0x4
+ 995 04d4 04       		.byte	0x4
+ 996 04d5 10       		.byte	0x10
+ 997 04d6 02       		.byte	0x2
+ 998 04d7 23       		.byte	0x23
+ 999 04d8 00       		.uleb128 0
+ 1000 04d9 0F       		.uleb128 0xf
+ 1001 04da 00000000 		.4byte	.LASF61
+ 1002 04de 07       		.byte	0x7
+ 1003 04df 0123     		.2byte	0x123
+ 1004 04e1 000000D1 		.4byte	0xd1
+ 1005 04e5 04       		.byte	0x4
+ 1006 04e6 04       		.byte	0x4
+ 1007 04e7 14       		.byte	0x14
+ 1008 04e8 02       		.byte	0x2
+ 1009 04e9 23       		.byte	0x23
+ 1010 04ea 00       		.uleb128 0
+ 1011 04eb 0F       		.uleb128 0xf
+ 1012 04ec 00000000 		.4byte	.LASF62
+ 1013 04f0 07       		.byte	0x7
+ 1014 04f1 0124     		.2byte	0x124
+ 1015 04f3 000000D1 		.4byte	0xd1
+ 1016 04f7 04       		.byte	0x4
+ 1017 04f8 04       		.byte	0x4
+ 1018 04f9 18       		.byte	0x18
+ 1019 04fa 02       		.byte	0x2
+ 1020 04fb 23       		.byte	0x23
+ 1021 04fc 00       		.uleb128 0
+ 1022 04fd 0F       		.uleb128 0xf
+ 1023 04fe 00000000 		.4byte	.LASF63
+ 1024 0502 07       		.byte	0x7
+ 1025 0503 0125     		.2byte	0x125
+ 1026 0505 000000D1 		.4byte	0xd1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 19
+
+
+ 1027 0509 04       		.byte	0x4
+ 1028 050a 04       		.byte	0x4
+ 1029 050b 1C       		.byte	0x1c
+ 1030 050c 02       		.byte	0x2
+ 1031 050d 23       		.byte	0x23
+ 1032 050e 00       		.uleb128 0
+ 1033 050f 00       		.byte	0
+ 1034 0510 11       		.uleb128 0x11
+ 1035 0511 04       		.byte	0x4
+ 1036 0512 07       		.byte	0x7
+ 1037 0513 0111     		.2byte	0x111
+ 1038 0515 0000052E 		.4byte	0x52e
+ 1039 0519 10       		.uleb128 0x10
+ 1040 051a 5200     		.string	"R"
+ 1041 051c 07       		.byte	0x7
+ 1042 051d 0112     		.2byte	0x112
+ 1043 051f 000000D1 		.4byte	0xd1
+ 1044 0523 10       		.uleb128 0x10
+ 1045 0524 4200     		.string	"B"
+ 1046 0526 07       		.byte	0x7
+ 1047 0527 0126     		.2byte	0x126
+ 1048 0529 0000041C 		.4byte	0x41c
+ 1049 052d 00       		.byte	0
+ 1050 052e 0D       		.uleb128 0xd
+ 1051 052f 04       		.byte	0x4
+ 1052 0530 07       		.byte	0x7
+ 1053 0531 012B     		.2byte	0x12b
+ 1054 0533 000005C8 		.4byte	0x5c8
+ 1055 0537 0F       		.uleb128 0xf
+ 1056 0538 00000000 		.4byte	.LASF64
+ 1057 053c 07       		.byte	0x7
+ 1058 053d 012C     		.2byte	0x12c
+ 1059 053f 000000D1 		.4byte	0xd1
+ 1060 0543 04       		.byte	0x4
+ 1061 0544 01       		.byte	0x1
+ 1062 0545 00       		.byte	0
+ 1063 0546 02       		.byte	0x2
+ 1064 0547 23       		.byte	0x23
+ 1065 0548 00       		.uleb128 0
+ 1066 0549 0F       		.uleb128 0xf
+ 1067 054a 00000000 		.4byte	.LASF65
+ 1068 054e 07       		.byte	0x7
+ 1069 054f 012E     		.2byte	0x12e
+ 1070 0551 000000D1 		.4byte	0xd1
+ 1071 0555 04       		.byte	0x4
+ 1072 0556 01       		.byte	0x1
+ 1073 0557 03       		.byte	0x3
+ 1074 0558 02       		.byte	0x2
+ 1075 0559 23       		.byte	0x23
+ 1076 055a 00       		.uleb128 0
+ 1077 055b 0F       		.uleb128 0xf
+ 1078 055c 00000000 		.4byte	.LASF66
+ 1079 0560 07       		.byte	0x7
+ 1080 0561 012F     		.2byte	0x12f
+ 1081 0563 000000D1 		.4byte	0xd1
+ 1082 0567 04       		.byte	0x4
+ 1083 0568 01       		.byte	0x1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 20
+
+
+ 1084 0569 04       		.byte	0x4
+ 1085 056a 02       		.byte	0x2
+ 1086 056b 23       		.byte	0x23
+ 1087 056c 00       		.uleb128 0
+ 1088 056d 0F       		.uleb128 0xf
+ 1089 056e 00000000 		.4byte	.LASF67
+ 1090 0572 07       		.byte	0x7
+ 1091 0573 0131     		.2byte	0x131
+ 1092 0575 000000D1 		.4byte	0xd1
+ 1093 0579 04       		.byte	0x4
+ 1094 057a 01       		.byte	0x1
+ 1095 057b 06       		.byte	0x6
+ 1096 057c 02       		.byte	0x2
+ 1097 057d 23       		.byte	0x23
+ 1098 057e 00       		.uleb128 0
+ 1099 057f 0F       		.uleb128 0xf
+ 1100 0580 00000000 		.4byte	.LASF68
+ 1101 0584 07       		.byte	0x7
+ 1102 0585 0132     		.2byte	0x132
+ 1103 0587 000000D1 		.4byte	0xd1
+ 1104 058b 04       		.byte	0x4
+ 1105 058c 01       		.byte	0x1
+ 1106 058d 07       		.byte	0x7
+ 1107 058e 02       		.byte	0x2
+ 1108 058f 23       		.byte	0x23
+ 1109 0590 00       		.uleb128 0
+ 1110 0591 0F       		.uleb128 0xf
+ 1111 0592 00000000 		.4byte	.LASF69
+ 1112 0596 07       		.byte	0x7
+ 1113 0597 0134     		.2byte	0x134
+ 1114 0599 000000D1 		.4byte	0xd1
+ 1115 059d 04       		.byte	0x4
+ 1116 059e 01       		.byte	0x1
+ 1117 059f 0C       		.byte	0xc
+ 1118 05a0 02       		.byte	0x2
+ 1119 05a1 23       		.byte	0x23
+ 1120 05a2 00       		.uleb128 0
+ 1121 05a3 0F       		.uleb128 0xf
+ 1122 05a4 00000000 		.4byte	.LASF70
+ 1123 05a8 07       		.byte	0x7
+ 1124 05a9 0136     		.2byte	0x136
+ 1125 05ab 000000D1 		.4byte	0xd1
+ 1126 05af 04       		.byte	0x4
+ 1127 05b0 01       		.byte	0x1
+ 1128 05b1 0E       		.byte	0xe
+ 1129 05b2 02       		.byte	0x2
+ 1130 05b3 23       		.byte	0x23
+ 1131 05b4 00       		.uleb128 0
+ 1132 05b5 0F       		.uleb128 0xf
+ 1133 05b6 00000000 		.4byte	.LASF71
+ 1134 05ba 07       		.byte	0x7
+ 1135 05bb 0137     		.2byte	0x137
+ 1136 05bd 000000D1 		.4byte	0xd1
+ 1137 05c1 04       		.byte	0x4
+ 1138 05c2 01       		.byte	0x1
+ 1139 05c3 0F       		.byte	0xf
+ 1140 05c4 02       		.byte	0x2
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 21
+
+
+ 1141 05c5 23       		.byte	0x23
+ 1142 05c6 00       		.uleb128 0
+ 1143 05c7 00       		.byte	0
+ 1144 05c8 11       		.uleb128 0x11
+ 1145 05c9 04       		.byte	0x4
+ 1146 05ca 07       		.byte	0x7
+ 1147 05cb 0129     		.2byte	0x129
+ 1148 05cd 000005E6 		.4byte	0x5e6
+ 1149 05d1 10       		.uleb128 0x10
+ 1150 05d2 5200     		.string	"R"
+ 1151 05d4 07       		.byte	0x7
+ 1152 05d5 012A     		.2byte	0x12a
+ 1153 05d7 000000D1 		.4byte	0xd1
+ 1154 05db 10       		.uleb128 0x10
+ 1155 05dc 4200     		.string	"B"
+ 1156 05de 07       		.byte	0x7
+ 1157 05df 0139     		.2byte	0x139
+ 1158 05e1 0000052E 		.4byte	0x52e
+ 1159 05e5 00       		.byte	0
+ 1160 05e6 0D       		.uleb128 0xd
+ 1161 05e7 04       		.byte	0x4
+ 1162 05e8 07       		.byte	0x7
+ 1163 05e9 013E     		.2byte	0x13e
+ 1164 05eb 000006DA 		.4byte	0x6da
+ 1165 05ef 0F       		.uleb128 0xf
+ 1166 05f0 00000000 		.4byte	.LASF72
+ 1167 05f4 07       		.byte	0x7
+ 1168 05f5 013F     		.2byte	0x13f
+ 1169 05f7 000000D1 		.4byte	0xd1
+ 1170 05fb 04       		.byte	0x4
+ 1171 05fc 01       		.byte	0x1
+ 1172 05fd 00       		.byte	0
+ 1173 05fe 02       		.byte	0x2
+ 1174 05ff 23       		.byte	0x23
+ 1175 0600 00       		.uleb128 0
+ 1176 0601 0F       		.uleb128 0xf
+ 1177 0602 00000000 		.4byte	.LASF73
+ 1178 0606 07       		.byte	0x7
+ 1179 0607 0140     		.2byte	0x140
+ 1180 0609 000000D1 		.4byte	0xd1
+ 1181 060d 04       		.byte	0x4
+ 1182 060e 03       		.byte	0x3
+ 1183 060f 01       		.byte	0x1
+ 1184 0610 02       		.byte	0x2
+ 1185 0611 23       		.byte	0x23
+ 1186 0612 00       		.uleb128 0
+ 1187 0613 0E       		.uleb128 0xe
+ 1188 0614 454F5100 		.string	"EOQ"
+ 1189 0618 07       		.byte	0x7
+ 1190 0619 0141     		.2byte	0x141
+ 1191 061b 000000D1 		.4byte	0xd1
+ 1192 061f 04       		.byte	0x4
+ 1193 0620 01       		.byte	0x1
+ 1194 0621 04       		.byte	0x4
+ 1195 0622 02       		.byte	0x2
+ 1196 0623 23       		.byte	0x23
+ 1197 0624 00       		.uleb128 0
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 22
+
+
+ 1198 0625 0F       		.uleb128 0xf
+ 1199 0626 00000000 		.4byte	.LASF74
+ 1200 062a 07       		.byte	0x7
+ 1201 062b 0142     		.2byte	0x142
+ 1202 062d 000000D1 		.4byte	0xd1
+ 1203 0631 04       		.byte	0x4
+ 1204 0632 01       		.byte	0x1
+ 1205 0633 05       		.byte	0x5
+ 1206 0634 02       		.byte	0x2
+ 1207 0635 23       		.byte	0x23
+ 1208 0636 00       		.uleb128 0
+ 1209 0637 0F       		.uleb128 0xf
+ 1210 0638 00000000 		.4byte	.LASF75
+ 1211 063c 07       		.byte	0x7
+ 1212 063d 0144     		.2byte	0x144
+ 1213 063f 000000D1 		.4byte	0xd1
+ 1214 0643 04       		.byte	0x4
+ 1215 0644 01       		.byte	0x1
+ 1216 0645 08       		.byte	0x8
+ 1217 0646 02       		.byte	0x2
+ 1218 0647 23       		.byte	0x23
+ 1219 0648 00       		.uleb128 0
+ 1220 0649 0F       		.uleb128 0xf
+ 1221 064a 00000000 		.4byte	.LASF76
+ 1222 064e 07       		.byte	0x7
+ 1223 064f 0145     		.2byte	0x145
+ 1224 0651 000000D1 		.4byte	0xd1
+ 1225 0655 04       		.byte	0x4
+ 1226 0656 01       		.byte	0x1
+ 1227 0657 09       		.byte	0x9
+ 1228 0658 02       		.byte	0x2
+ 1229 0659 23       		.byte	0x23
+ 1230 065a 00       		.uleb128 0
+ 1231 065b 0F       		.uleb128 0xf
+ 1232 065c 00000000 		.4byte	.LASF77
+ 1233 0660 07       		.byte	0x7
+ 1234 0661 0146     		.2byte	0x146
+ 1235 0663 000000D1 		.4byte	0xd1
+ 1236 0667 04       		.byte	0x4
+ 1237 0668 01       		.byte	0x1
+ 1238 0669 0A       		.byte	0xa
+ 1239 066a 02       		.byte	0x2
+ 1240 066b 23       		.byte	0x23
+ 1241 066c 00       		.uleb128 0
+ 1242 066d 0F       		.uleb128 0xf
+ 1243 066e 00000000 		.4byte	.LASF78
+ 1244 0672 07       		.byte	0x7
+ 1245 0673 0147     		.2byte	0x147
+ 1246 0675 000000D1 		.4byte	0xd1
+ 1247 0679 04       		.byte	0x4
+ 1248 067a 01       		.byte	0x1
+ 1249 067b 0B       		.byte	0xb
+ 1250 067c 02       		.byte	0x2
+ 1251 067d 23       		.byte	0x23
+ 1252 067e 00       		.uleb128 0
+ 1253 067f 0F       		.uleb128 0xf
+ 1254 0680 00000000 		.4byte	.LASF79
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 23
+
+
+ 1255 0684 07       		.byte	0x7
+ 1256 0685 0148     		.2byte	0x148
+ 1257 0687 000000D1 		.4byte	0xd1
+ 1258 068b 04       		.byte	0x4
+ 1259 068c 01       		.byte	0x1
+ 1260 068d 0C       		.byte	0xc
+ 1261 068e 02       		.byte	0x2
+ 1262 068f 23       		.byte	0x23
+ 1263 0690 00       		.uleb128 0
+ 1264 0691 0F       		.uleb128 0xf
+ 1265 0692 00000000 		.4byte	.LASF80
+ 1266 0696 07       		.byte	0x7
+ 1267 0697 0149     		.2byte	0x149
+ 1268 0699 000000D1 		.4byte	0xd1
+ 1269 069d 04       		.byte	0x4
+ 1270 069e 01       		.byte	0x1
+ 1271 069f 0D       		.byte	0xd
+ 1272 06a0 02       		.byte	0x2
+ 1273 06a1 23       		.byte	0x23
+ 1274 06a2 00       		.uleb128 0
+ 1275 06a3 0F       		.uleb128 0xf
+ 1276 06a4 00000000 		.4byte	.LASF81
+ 1277 06a8 07       		.byte	0x7
+ 1278 06a9 014A     		.2byte	0x14a
+ 1279 06ab 000000D1 		.4byte	0xd1
+ 1280 06af 04       		.byte	0x4
+ 1281 06b0 01       		.byte	0x1
+ 1282 06b1 0E       		.byte	0xe
+ 1283 06b2 02       		.byte	0x2
+ 1284 06b3 23       		.byte	0x23
+ 1285 06b4 00       		.uleb128 0
+ 1286 06b5 0F       		.uleb128 0xf
+ 1287 06b6 00000000 		.4byte	.LASF82
+ 1288 06ba 07       		.byte	0x7
+ 1289 06bb 014B     		.2byte	0x14b
+ 1290 06bd 000000D1 		.4byte	0xd1
+ 1291 06c1 04       		.byte	0x4
+ 1292 06c2 01       		.byte	0x1
+ 1293 06c3 0F       		.byte	0xf
+ 1294 06c4 02       		.byte	0x2
+ 1295 06c5 23       		.byte	0x23
+ 1296 06c6 00       		.uleb128 0
+ 1297 06c7 0F       		.uleb128 0xf
+ 1298 06c8 00000000 		.4byte	.LASF83
+ 1299 06cc 07       		.byte	0x7
+ 1300 06cd 014C     		.2byte	0x14c
+ 1301 06cf 000000D1 		.4byte	0xd1
+ 1302 06d3 04       		.byte	0x4
+ 1303 06d4 10       		.byte	0x10
+ 1304 06d5 10       		.byte	0x10
+ 1305 06d6 02       		.byte	0x2
+ 1306 06d7 23       		.byte	0x23
+ 1307 06d8 00       		.uleb128 0
+ 1308 06d9 00       		.byte	0
+ 1309 06da 0D       		.uleb128 0xd
+ 1310 06db 04       		.byte	0x4
+ 1311 06dc 07       		.byte	0x7
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 24
+
+
+ 1312 06dd 014E     		.2byte	0x14e
+ 1313 06df 00000702 		.4byte	0x702
+ 1314 06e3 12       		.uleb128 0x12
+ 1315 06e4 434D4400 		.string	"CMD"
+ 1316 06e8 07       		.byte	0x7
+ 1317 06e9 014F     		.2byte	0x14f
+ 1318 06eb 000000C1 		.4byte	0xc1
+ 1319 06ef 02       		.byte	0x2
+ 1320 06f0 23       		.byte	0x23
+ 1321 06f1 00       		.uleb128 0
+ 1322 06f2 13       		.uleb128 0x13
+ 1323 06f3 00000000 		.4byte	.LASF83
+ 1324 06f7 07       		.byte	0x7
+ 1325 06f8 0150     		.2byte	0x150
+ 1326 06fa 000000C1 		.4byte	0xc1
+ 1327 06fe 02       		.byte	0x2
+ 1328 06ff 23       		.byte	0x23
+ 1329 0700 02       		.uleb128 0x2
+ 1330 0701 00       		.byte	0
+ 1331 0702 11       		.uleb128 0x11
+ 1332 0703 04       		.byte	0x4
+ 1333 0704 07       		.byte	0x7
+ 1334 0705 013C     		.2byte	0x13c
+ 1335 0707 0000072B 		.4byte	0x72b
+ 1336 070b 10       		.uleb128 0x10
+ 1337 070c 5200     		.string	"R"
+ 1338 070e 07       		.byte	0x7
+ 1339 070f 013D     		.2byte	0x13d
+ 1340 0711 000000D1 		.4byte	0xd1
+ 1341 0715 10       		.uleb128 0x10
+ 1342 0716 4200     		.string	"B"
+ 1343 0718 07       		.byte	0x7
+ 1344 0719 014D     		.2byte	0x14d
+ 1345 071b 000005E6 		.4byte	0x5e6
+ 1346 071f 10       		.uleb128 0x10
+ 1347 0720 455800   		.string	"EX"
+ 1348 0723 07       		.byte	0x7
+ 1349 0724 0151     		.2byte	0x151
+ 1350 0726 000006DA 		.4byte	0x6da
+ 1351 072a 00       		.byte	0
+ 1352 072b 0D       		.uleb128 0xd
+ 1353 072c 04       		.byte	0x4
+ 1354 072d 07       		.byte	0x7
+ 1355 072e 0156     		.2byte	0x156
+ 1356 0730 00000747 		.4byte	0x747
+ 1357 0734 0F       		.uleb128 0xf
+ 1358 0735 00000000 		.4byte	.LASF84
+ 1359 0739 07       		.byte	0x7
+ 1360 073a 0158     		.2byte	0x158
+ 1361 073c 000000D1 		.4byte	0xd1
+ 1362 0740 04       		.byte	0x4
+ 1363 0741 10       		.byte	0x10
+ 1364 0742 10       		.byte	0x10
+ 1365 0743 02       		.byte	0x2
+ 1366 0744 23       		.byte	0x23
+ 1367 0745 00       		.uleb128 0
+ 1368 0746 00       		.byte	0
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 25
+
+
+ 1369 0747 11       		.uleb128 0x11
+ 1370 0748 04       		.byte	0x4
+ 1371 0749 07       		.byte	0x7
+ 1372 074a 0154     		.2byte	0x154
+ 1373 074c 00000765 		.4byte	0x765
+ 1374 0750 10       		.uleb128 0x10
+ 1375 0751 5200     		.string	"R"
+ 1376 0753 07       		.byte	0x7
+ 1377 0754 0155     		.2byte	0x155
+ 1378 0756 000000D1 		.4byte	0xd1
+ 1379 075a 10       		.uleb128 0x10
+ 1380 075b 4200     		.string	"B"
+ 1381 075d 07       		.byte	0x7
+ 1382 075e 0159     		.2byte	0x159
+ 1383 0760 0000072B 		.4byte	0x72b
+ 1384 0764 00       		.byte	0
+ 1385 0765 0D       		.uleb128 0xd
+ 1386 0766 04       		.byte	0x4
+ 1387 0767 07       		.byte	0x7
+ 1388 0768 015E     		.2byte	0x15e
+ 1389 076a 00000793 		.4byte	0x793
+ 1390 076e 0F       		.uleb128 0xf
+ 1391 076f 00000000 		.4byte	.LASF85
+ 1392 0773 07       		.byte	0x7
+ 1393 0774 015F     		.2byte	0x15f
+ 1394 0776 000000D1 		.4byte	0xd1
+ 1395 077a 04       		.byte	0x4
+ 1396 077b 10       		.byte	0x10
+ 1397 077c 00       		.byte	0
+ 1398 077d 02       		.byte	0x2
+ 1399 077e 23       		.byte	0x23
+ 1400 077f 00       		.uleb128 0
+ 1401 0780 0F       		.uleb128 0xf
+ 1402 0781 00000000 		.4byte	.LASF83
+ 1403 0785 07       		.byte	0x7
+ 1404 0786 0160     		.2byte	0x160
+ 1405 0788 000000D1 		.4byte	0xd1
+ 1406 078c 04       		.byte	0x4
+ 1407 078d 10       		.byte	0x10
+ 1408 078e 10       		.byte	0x10
+ 1409 078f 02       		.byte	0x2
+ 1410 0790 23       		.byte	0x23
+ 1411 0791 00       		.uleb128 0
+ 1412 0792 00       		.byte	0
+ 1413 0793 11       		.uleb128 0x11
+ 1414 0794 04       		.byte	0x4
+ 1415 0795 07       		.byte	0x7
+ 1416 0796 015C     		.2byte	0x15c
+ 1417 0798 000007B1 		.4byte	0x7b1
+ 1418 079c 10       		.uleb128 0x10
+ 1419 079d 5200     		.string	"R"
+ 1420 079f 07       		.byte	0x7
+ 1421 07a0 015D     		.2byte	0x15d
+ 1422 07a2 000000D1 		.4byte	0xd1
+ 1423 07a6 10       		.uleb128 0x10
+ 1424 07a7 4200     		.string	"B"
+ 1425 07a9 07       		.byte	0x7
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 26
+
+
+ 1426 07aa 0161     		.2byte	0x161
+ 1427 07ac 00000765 		.4byte	0x765
+ 1428 07b0 00       		.byte	0
+ 1429 07b1 0D       		.uleb128 0xd
+ 1430 07b2 04       		.byte	0x4
+ 1431 07b3 07       		.byte	0x7
+ 1432 07b4 0168     		.2byte	0x168
+ 1433 07b6 000007CD 		.4byte	0x7cd
+ 1434 07ba 0F       		.uleb128 0xf
+ 1435 07bb 00000000 		.4byte	.LASF84
+ 1436 07bf 07       		.byte	0x7
+ 1437 07c0 016A     		.2byte	0x16a
+ 1438 07c2 000000D1 		.4byte	0xd1
+ 1439 07c6 04       		.byte	0x4
+ 1440 07c7 10       		.byte	0x10
+ 1441 07c8 10       		.byte	0x10
+ 1442 07c9 02       		.byte	0x2
+ 1443 07ca 23       		.byte	0x23
+ 1444 07cb 00       		.uleb128 0
+ 1445 07cc 00       		.byte	0
+ 1446 07cd 11       		.uleb128 0x11
+ 1447 07ce 04       		.byte	0x4
+ 1448 07cf 07       		.byte	0x7
+ 1449 07d0 0166     		.2byte	0x166
+ 1450 07d2 000007EB 		.4byte	0x7eb
+ 1451 07d6 10       		.uleb128 0x10
+ 1452 07d7 5200     		.string	"R"
+ 1453 07d9 07       		.byte	0x7
+ 1454 07da 0167     		.2byte	0x167
+ 1455 07dc 000000D1 		.4byte	0xd1
+ 1456 07e0 10       		.uleb128 0x10
+ 1457 07e1 4200     		.string	"B"
+ 1458 07e3 07       		.byte	0x7
+ 1459 07e4 016B     		.2byte	0x16b
+ 1460 07e6 000007B1 		.4byte	0x7b1
+ 1461 07ea 00       		.byte	0
+ 1462 07eb 0D       		.uleb128 0xd
+ 1463 07ec 04       		.byte	0x4
+ 1464 07ed 07       		.byte	0x7
+ 1465 07ee 0172     		.2byte	0x172
+ 1466 07f0 000008F1 		.4byte	0x8f1
+ 1467 07f4 0F       		.uleb128 0xf
+ 1468 07f5 00000000 		.4byte	.LASF86
+ 1469 07f9 07       		.byte	0x7
+ 1470 07fa 0173     		.2byte	0x173
+ 1471 07fc 000000D1 		.4byte	0xd1
+ 1472 0800 04       		.byte	0x4
+ 1473 0801 01       		.byte	0x1
+ 1474 0802 00       		.byte	0
+ 1475 0803 02       		.byte	0x2
+ 1476 0804 23       		.byte	0x23
+ 1477 0805 00       		.uleb128 0
+ 1478 0806 0F       		.uleb128 0xf
+ 1479 0807 00000000 		.4byte	.LASF87
+ 1480 080b 07       		.byte	0x7
+ 1481 080c 0175     		.2byte	0x175
+ 1482 080e 000000D1 		.4byte	0xd1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 27
+
+
+ 1483 0812 04       		.byte	0x4
+ 1484 0813 06       		.byte	0x6
+ 1485 0814 02       		.byte	0x2
+ 1486 0815 02       		.byte	0x2
+ 1487 0816 23       		.byte	0x23
+ 1488 0817 00       		.uleb128 0
+ 1489 0818 0F       		.uleb128 0xf
+ 1490 0819 00000000 		.4byte	.LASF88
+ 1491 081d 07       		.byte	0x7
+ 1492 081e 0177     		.2byte	0x177
+ 1493 0820 000000D1 		.4byte	0xd1
+ 1494 0824 04       		.byte	0x4
+ 1495 0825 01       		.byte	0x1
+ 1496 0826 0C       		.byte	0xc
+ 1497 0827 02       		.byte	0x2
+ 1498 0828 23       		.byte	0x23
+ 1499 0829 00       		.uleb128 0
+ 1500 082a 0F       		.uleb128 0xf
+ 1501 082b 00000000 		.4byte	.LASF89
+ 1502 082f 07       		.byte	0x7
+ 1503 0830 0178     		.2byte	0x178
+ 1504 0832 000000D1 		.4byte	0xd1
+ 1505 0836 04       		.byte	0x4
+ 1506 0837 01       		.byte	0x1
+ 1507 0838 0D       		.byte	0xd
+ 1508 0839 02       		.byte	0x2
+ 1509 083a 23       		.byte	0x23
+ 1510 083b 00       		.uleb128 0
+ 1511 083c 0F       		.uleb128 0xf
+ 1512 083d 00000000 		.4byte	.LASF90
+ 1513 0841 07       		.byte	0x7
+ 1514 0842 0179     		.2byte	0x179
+ 1515 0844 000000D1 		.4byte	0xd1
+ 1516 0848 04       		.byte	0x4
+ 1517 0849 01       		.byte	0x1
+ 1518 084a 0E       		.byte	0xe
+ 1519 084b 02       		.byte	0x2
+ 1520 084c 23       		.byte	0x23
+ 1521 084d 00       		.uleb128 0
+ 1522 084e 0E       		.uleb128 0xe
+ 1523 084f 43494400 		.string	"CID"
+ 1524 0853 07       		.byte	0x7
+ 1525 0854 017A     		.2byte	0x17a
+ 1526 0856 000000D1 		.4byte	0xd1
+ 1527 085a 04       		.byte	0x4
+ 1528 085b 01       		.byte	0x1
+ 1529 085c 0F       		.byte	0xf
+ 1530 085d 02       		.byte	0x2
+ 1531 085e 23       		.byte	0x23
+ 1532 085f 00       		.uleb128 0
+ 1533 0860 0F       		.uleb128 0xf
+ 1534 0861 00000000 		.4byte	.LASF91
+ 1535 0865 07       		.byte	0x7
+ 1536 0866 017B     		.2byte	0x17b
+ 1537 0868 000000D1 		.4byte	0xd1
+ 1538 086c 04       		.byte	0x4
+ 1539 086d 01       		.byte	0x1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 28
+
+
+ 1540 086e 10       		.byte	0x10
+ 1541 086f 02       		.byte	0x2
+ 1542 0870 23       		.byte	0x23
+ 1543 0871 00       		.uleb128 0
+ 1544 0872 0F       		.uleb128 0xf
+ 1545 0873 00000000 		.4byte	.LASF92
+ 1546 0877 07       		.byte	0x7
+ 1547 0878 017C     		.2byte	0x17c
+ 1548 087a 000000D1 		.4byte	0xd1
+ 1549 087e 04       		.byte	0x4
+ 1550 087f 03       		.byte	0x3
+ 1551 0880 11       		.byte	0x11
+ 1552 0881 02       		.byte	0x2
+ 1553 0882 23       		.byte	0x23
+ 1554 0883 00       		.uleb128 0
+ 1555 0884 0F       		.uleb128 0xf
+ 1556 0885 00000000 		.4byte	.LASF93
+ 1557 0889 07       		.byte	0x7
+ 1558 088a 017E     		.2byte	0x17e
+ 1559 088c 000000D1 		.4byte	0xd1
+ 1560 0890 04       		.byte	0x4
+ 1561 0891 01       		.byte	0x1
+ 1562 0892 1A       		.byte	0x1a
+ 1563 0893 02       		.byte	0x2
+ 1564 0894 23       		.byte	0x23
+ 1565 0895 00       		.uleb128 0
+ 1566 0896 0F       		.uleb128 0xf
+ 1567 0897 00000000 		.4byte	.LASF94
+ 1568 089b 07       		.byte	0x7
+ 1569 089c 017F     		.2byte	0x17f
+ 1570 089e 000000D1 		.4byte	0xd1
+ 1571 08a2 04       		.byte	0x4
+ 1572 08a3 01       		.byte	0x1
+ 1573 08a4 1B       		.byte	0x1b
+ 1574 08a5 02       		.byte	0x2
+ 1575 08a6 23       		.byte	0x23
+ 1576 08a7 00       		.uleb128 0
+ 1577 08a8 0F       		.uleb128 0xf
+ 1578 08a9 00000000 		.4byte	.LASF95
+ 1579 08ad 07       		.byte	0x7
+ 1580 08ae 0180     		.2byte	0x180
+ 1581 08b0 000000D1 		.4byte	0xd1
+ 1582 08b4 04       		.byte	0x4
+ 1583 08b5 01       		.byte	0x1
+ 1584 08b6 1C       		.byte	0x1c
+ 1585 08b7 02       		.byte	0x2
+ 1586 08b8 23       		.byte	0x23
+ 1587 08b9 00       		.uleb128 0
+ 1588 08ba 0F       		.uleb128 0xf
+ 1589 08bb 00000000 		.4byte	.LASF96
+ 1590 08bf 07       		.byte	0x7
+ 1591 08c0 0181     		.2byte	0x181
+ 1592 08c2 000000D1 		.4byte	0xd1
+ 1593 08c6 04       		.byte	0x4
+ 1594 08c7 01       		.byte	0x1
+ 1595 08c8 1D       		.byte	0x1d
+ 1596 08c9 02       		.byte	0x2
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 29
+
+
+ 1597 08ca 23       		.byte	0x23
+ 1598 08cb 00       		.uleb128 0
+ 1599 08cc 0F       		.uleb128 0xf
+ 1600 08cd 00000000 		.4byte	.LASF97
+ 1601 08d1 07       		.byte	0x7
+ 1602 08d2 0182     		.2byte	0x182
+ 1603 08d4 000000D1 		.4byte	0xd1
+ 1604 08d8 04       		.byte	0x4
+ 1605 08d9 01       		.byte	0x1
+ 1606 08da 1E       		.byte	0x1e
+ 1607 08db 02       		.byte	0x2
+ 1608 08dc 23       		.byte	0x23
+ 1609 08dd 00       		.uleb128 0
+ 1610 08de 0F       		.uleb128 0xf
+ 1611 08df 00000000 		.4byte	.LASF98
+ 1612 08e3 07       		.byte	0x7
+ 1613 08e4 0183     		.2byte	0x183
+ 1614 08e6 000000D1 		.4byte	0xd1
+ 1615 08ea 04       		.byte	0x4
+ 1616 08eb 01       		.byte	0x1
+ 1617 08ec 1F       		.byte	0x1f
+ 1618 08ed 02       		.byte	0x2
+ 1619 08ee 23       		.byte	0x23
+ 1620 08ef 00       		.uleb128 0
+ 1621 08f0 00       		.byte	0
+ 1622 08f1 11       		.uleb128 0x11
+ 1623 08f2 04       		.byte	0x4
+ 1624 08f3 07       		.byte	0x7
+ 1625 08f4 0170     		.2byte	0x170
+ 1626 08f6 0000090F 		.4byte	0x90f
+ 1627 08fa 10       		.uleb128 0x10
+ 1628 08fb 5200     		.string	"R"
+ 1629 08fd 07       		.byte	0x7
+ 1630 08fe 0171     		.2byte	0x171
+ 1631 0900 000000D1 		.4byte	0xd1
+ 1632 0904 10       		.uleb128 0x10
+ 1633 0905 4200     		.string	"B"
+ 1634 0907 07       		.byte	0x7
+ 1635 0908 0184     		.2byte	0x184
+ 1636 090a 000007EB 		.4byte	0x7eb
+ 1637 090e 00       		.byte	0
+ 1638 090f 0D       		.uleb128 0xd
+ 1639 0910 04       		.byte	0x4
+ 1640 0911 07       		.byte	0x7
+ 1641 0912 0189     		.2byte	0x189
+ 1642 0914 0000092B 		.4byte	0x92b
+ 1643 0918 0F       		.uleb128 0xf
+ 1644 0919 00000000 		.4byte	.LASF99
+ 1645 091d 07       		.byte	0x7
+ 1646 091e 018B     		.2byte	0x18b
+ 1647 0920 000000D1 		.4byte	0xd1
+ 1648 0924 04       		.byte	0x4
+ 1649 0925 10       		.byte	0x10
+ 1650 0926 10       		.byte	0x10
+ 1651 0927 02       		.byte	0x2
+ 1652 0928 23       		.byte	0x23
+ 1653 0929 00       		.uleb128 0
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 30
+
+
+ 1654 092a 00       		.byte	0
+ 1655 092b 11       		.uleb128 0x11
+ 1656 092c 04       		.byte	0x4
+ 1657 092d 07       		.byte	0x7
+ 1658 092e 0187     		.2byte	0x187
+ 1659 0930 00000949 		.4byte	0x949
+ 1660 0934 10       		.uleb128 0x10
+ 1661 0935 5200     		.string	"R"
+ 1662 0937 07       		.byte	0x7
+ 1663 0938 0188     		.2byte	0x188
+ 1664 093a 000000D1 		.4byte	0xd1
+ 1665 093e 10       		.uleb128 0x10
+ 1666 093f 4200     		.string	"B"
+ 1667 0941 07       		.byte	0x7
+ 1668 0942 018C     		.2byte	0x18c
+ 1669 0944 0000090F 		.4byte	0x90f
+ 1670 0948 00       		.byte	0
+ 1671 0949 0D       		.uleb128 0xd
+ 1672 094a 04       		.byte	0x4
+ 1673 094b 07       		.byte	0x7
+ 1674 094c 0191     		.2byte	0x191
+ 1675 094e 00000965 		.4byte	0x965
+ 1676 0952 0F       		.uleb128 0xf
+ 1677 0953 00000000 		.4byte	.LASF100
+ 1678 0957 07       		.byte	0x7
+ 1679 0958 0193     		.2byte	0x193
+ 1680 095a 000000D1 		.4byte	0xd1
+ 1681 095e 04       		.byte	0x4
+ 1682 095f 10       		.byte	0x10
+ 1683 0960 10       		.byte	0x10
+ 1684 0961 02       		.byte	0x2
+ 1685 0962 23       		.byte	0x23
+ 1686 0963 00       		.uleb128 0
+ 1687 0964 00       		.byte	0
+ 1688 0965 11       		.uleb128 0x11
+ 1689 0966 04       		.byte	0x4
+ 1690 0967 07       		.byte	0x7
+ 1691 0968 018F     		.2byte	0x18f
+ 1692 096a 00000983 		.4byte	0x983
+ 1693 096e 10       		.uleb128 0x10
+ 1694 096f 5200     		.string	"R"
+ 1695 0971 07       		.byte	0x7
+ 1696 0972 0190     		.2byte	0x190
+ 1697 0974 000000D1 		.4byte	0xd1
+ 1698 0978 10       		.uleb128 0x10
+ 1699 0979 4200     		.string	"B"
+ 1700 097b 07       		.byte	0x7
+ 1701 097c 0194     		.2byte	0x194
+ 1702 097e 00000949 		.4byte	0x949
+ 1703 0982 00       		.byte	0
+ 1704 0983 0D       		.uleb128 0xd
+ 1705 0984 04       		.byte	0x4
+ 1706 0985 07       		.byte	0x7
+ 1707 0986 0199     		.2byte	0x199
+ 1708 0988 0000099F 		.4byte	0x99f
+ 1709 098c 0F       		.uleb128 0xf
+ 1710 098d 00000000 		.4byte	.LASF101
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 31
+
+
+ 1711 0991 07       		.byte	0x7
+ 1712 0992 019B     		.2byte	0x19b
+ 1713 0994 000000D1 		.4byte	0xd1
+ 1714 0998 04       		.byte	0x4
+ 1715 0999 10       		.byte	0x10
+ 1716 099a 10       		.byte	0x10
+ 1717 099b 02       		.byte	0x2
+ 1718 099c 23       		.byte	0x23
+ 1719 099d 00       		.uleb128 0
+ 1720 099e 00       		.byte	0
+ 1721 099f 11       		.uleb128 0x11
+ 1722 09a0 04       		.byte	0x4
+ 1723 09a1 07       		.byte	0x7
+ 1724 09a2 0197     		.2byte	0x197
+ 1725 09a4 000009BD 		.4byte	0x9bd
+ 1726 09a8 10       		.uleb128 0x10
+ 1727 09a9 5200     		.string	"R"
+ 1728 09ab 07       		.byte	0x7
+ 1729 09ac 0198     		.2byte	0x198
+ 1730 09ae 000000D1 		.4byte	0xd1
+ 1731 09b2 10       		.uleb128 0x10
+ 1732 09b3 4200     		.string	"B"
+ 1733 09b5 07       		.byte	0x7
+ 1734 09b6 019C     		.2byte	0x19c
+ 1735 09b8 00000983 		.4byte	0x983
+ 1736 09bc 00       		.byte	0
+ 1737 09bd 0D       		.uleb128 0xd
+ 1738 09be 04       		.byte	0x4
+ 1739 09bf 07       		.byte	0x7
+ 1740 09c0 01A1     		.2byte	0x1a1
+ 1741 09c2 000009D9 		.4byte	0x9d9
+ 1742 09c6 0F       		.uleb128 0xf
+ 1743 09c7 00000000 		.4byte	.LASF102
+ 1744 09cb 07       		.byte	0x7
+ 1745 09cc 01A3     		.2byte	0x1a3
+ 1746 09ce 000000D1 		.4byte	0xd1
+ 1747 09d2 04       		.byte	0x4
+ 1748 09d3 10       		.byte	0x10
+ 1749 09d4 10       		.byte	0x10
+ 1750 09d5 02       		.byte	0x2
+ 1751 09d6 23       		.byte	0x23
+ 1752 09d7 00       		.uleb128 0
+ 1753 09d8 00       		.byte	0
+ 1754 09d9 11       		.uleb128 0x11
+ 1755 09da 04       		.byte	0x4
+ 1756 09db 07       		.byte	0x7
+ 1757 09dc 019F     		.2byte	0x19f
+ 1758 09de 000009F7 		.4byte	0x9f7
+ 1759 09e2 10       		.uleb128 0x10
+ 1760 09e3 5200     		.string	"R"
+ 1761 09e5 07       		.byte	0x7
+ 1762 09e6 01A0     		.2byte	0x1a0
+ 1763 09e8 000000D1 		.4byte	0xd1
+ 1764 09ec 10       		.uleb128 0x10
+ 1765 09ed 4200     		.string	"B"
+ 1766 09ef 07       		.byte	0x7
+ 1767 09f0 01A4     		.2byte	0x1a4
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 32
+
+
+ 1768 09f2 000009BD 		.4byte	0x9bd
+ 1769 09f6 00       		.byte	0
+ 1770 09f7 0D       		.uleb128 0xd
+ 1771 09f8 04       		.byte	0x4
+ 1772 09f9 07       		.byte	0x7
+ 1773 09fa 01AB     		.2byte	0x1ab
+ 1774 09fc 00000A25 		.4byte	0xa25
+ 1775 0a00 0F       		.uleb128 0xf
+ 1776 0a01 00000000 		.4byte	.LASF103
+ 1777 0a05 07       		.byte	0x7
+ 1778 0a06 01AD     		.2byte	0x1ad
+ 1779 0a08 000000D1 		.4byte	0xd1
+ 1780 0a0c 04       		.byte	0x4
+ 1781 0a0d 01       		.byte	0x1
+ 1782 0a0e 0F       		.byte	0xf
+ 1783 0a0f 02       		.byte	0x2
+ 1784 0a10 23       		.byte	0x23
+ 1785 0a11 00       		.uleb128 0
+ 1786 0a12 0F       		.uleb128 0xf
+ 1787 0a13 00000000 		.4byte	.LASF104
+ 1788 0a17 07       		.byte	0x7
+ 1789 0a18 01AF     		.2byte	0x1af
+ 1790 0a1a 000000D1 		.4byte	0xd1
+ 1791 0a1e 04       		.byte	0x4
+ 1792 0a1f 0B       		.byte	0xb
+ 1793 0a20 15       		.byte	0x15
+ 1794 0a21 02       		.byte	0x2
+ 1795 0a22 23       		.byte	0x23
+ 1796 0a23 00       		.uleb128 0
+ 1797 0a24 00       		.byte	0
+ 1798 0a25 11       		.uleb128 0x11
+ 1799 0a26 04       		.byte	0x4
+ 1800 0a27 07       		.byte	0x7
+ 1801 0a28 01A9     		.2byte	0x1a9
+ 1802 0a2a 00000A43 		.4byte	0xa43
+ 1803 0a2e 10       		.uleb128 0x10
+ 1804 0a2f 5200     		.string	"R"
+ 1805 0a31 07       		.byte	0x7
+ 1806 0a32 01AA     		.2byte	0x1aa
+ 1807 0a34 000000D1 		.4byte	0xd1
+ 1808 0a38 10       		.uleb128 0x10
+ 1809 0a39 4200     		.string	"B"
+ 1810 0a3b 07       		.byte	0x7
+ 1811 0a3c 01B0     		.2byte	0x1b0
+ 1812 0a3e 000009F7 		.4byte	0x9f7
+ 1813 0a42 00       		.byte	0
+ 1814 0a43 0D       		.uleb128 0xd
+ 1815 0a44 04       		.byte	0x4
+ 1816 0a45 07       		.byte	0x7
+ 1817 0a46 01B5     		.2byte	0x1b5
+ 1818 0a48 00000A71 		.4byte	0xa71
+ 1819 0a4c 0F       		.uleb128 0xf
+ 1820 0a4d 00000000 		.4byte	.LASF105
+ 1821 0a51 07       		.byte	0x7
+ 1822 0a52 01B7     		.2byte	0x1b7
+ 1823 0a54 000000D1 		.4byte	0xd1
+ 1824 0a58 04       		.byte	0x4
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 33
+
+
+ 1825 0a59 04       		.byte	0x4
+ 1826 0a5a 18       		.byte	0x18
+ 1827 0a5b 02       		.byte	0x2
+ 1828 0a5c 23       		.byte	0x23
+ 1829 0a5d 00       		.uleb128 0
+ 1830 0a5e 0F       		.uleb128 0xf
+ 1831 0a5f 00000000 		.4byte	.LASF106
+ 1832 0a63 07       		.byte	0x7
+ 1833 0a64 01B8     		.2byte	0x1b8
+ 1834 0a66 000000D1 		.4byte	0xd1
+ 1835 0a6a 04       		.byte	0x4
+ 1836 0a6b 04       		.byte	0x4
+ 1837 0a6c 1C       		.byte	0x1c
+ 1838 0a6d 02       		.byte	0x2
+ 1839 0a6e 23       		.byte	0x23
+ 1840 0a6f 00       		.uleb128 0
+ 1841 0a70 00       		.byte	0
+ 1842 0a71 11       		.uleb128 0x11
+ 1843 0a72 04       		.byte	0x4
+ 1844 0a73 07       		.byte	0x7
+ 1845 0a74 01B3     		.2byte	0x1b3
+ 1846 0a76 00000A8F 		.4byte	0xa8f
+ 1847 0a7a 10       		.uleb128 0x10
+ 1848 0a7b 5200     		.string	"R"
+ 1849 0a7d 07       		.byte	0x7
+ 1850 0a7e 01B4     		.2byte	0x1b4
+ 1851 0a80 000000D1 		.4byte	0xd1
+ 1852 0a84 10       		.uleb128 0x10
+ 1853 0a85 4200     		.string	"B"
+ 1854 0a87 07       		.byte	0x7
+ 1855 0a88 01B9     		.2byte	0x1b9
+ 1856 0a8a 00000A43 		.4byte	0xa43
+ 1857 0a8e 00       		.byte	0
+ 1858 0a8f 14       		.uleb128 0x14
+ 1859 0a90 00000000 		.4byte	.LASF123
+ 1860 0a94 0140     		.2byte	0x140
+ 1861 0a96 07       		.byte	0x7
+ 1862 0a97 D1       		.byte	0xd1
+ 1863 0a98 00000BCE 		.4byte	0xbce
+ 1864 0a9c 15       		.uleb128 0x15
+ 1865 0a9d 4D435200 		.string	"MCR"
+ 1866 0aa1 07       		.byte	0x7
+ 1867 0aa2 F2       		.byte	0xf2
+ 1868 0aa3 000002BE 		.4byte	0x2be
+ 1869 0aa7 02       		.byte	0x2
+ 1870 0aa8 23       		.byte	0x23
+ 1871 0aa9 00       		.uleb128 0
+ 1872 0aaa 16       		.uleb128 0x16
+ 1873 0aab 00000000 		.4byte	.LASF107
+ 1874 0aaf 07       		.byte	0x7
+ 1875 0ab0 F4       		.byte	0xf4
+ 1876 0ab1 000000A6 		.4byte	0xa6
+ 1877 0ab5 02       		.byte	0x2
+ 1878 0ab6 23       		.byte	0x23
+ 1879 0ab7 04       		.uleb128 0x4
+ 1880 0ab8 15       		.uleb128 0x15
+ 1881 0ab9 54435200 		.string	"TCR"
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 34
+
+
+ 1882 0abd 07       		.byte	0x7
+ 1883 0abe FC       		.byte	0xfc
+ 1884 0abf 000002F3 		.4byte	0x2f3
+ 1885 0ac3 02       		.byte	0x2
+ 1886 0ac4 23       		.byte	0x23
+ 1887 0ac5 08       		.uleb128 0x8
+ 1888 0ac6 13       		.uleb128 0x13
+ 1889 0ac7 00000000 		.4byte	.LASF108
+ 1890 0acb 07       		.byte	0x7
+ 1891 0acc 010F     		.2byte	0x10f
+ 1892 0ace 00000BCE 		.4byte	0xbce
+ 1893 0ad2 02       		.byte	0x2
+ 1894 0ad3 23       		.byte	0x23
+ 1895 0ad4 0C       		.uleb128 0xc
+ 1896 0ad5 12       		.uleb128 0x12
+ 1897 0ad6 535200   		.string	"SR"
+ 1898 0ad9 07       		.byte	0x7
+ 1899 0ada 0127     		.2byte	0x127
+ 1900 0adc 00000510 		.4byte	0x510
+ 1901 0ae0 02       		.byte	0x2
+ 1902 0ae1 23       		.byte	0x23
+ 1903 0ae2 2C       		.uleb128 0x2c
+ 1904 0ae3 13       		.uleb128 0x13
+ 1905 0ae4 00000000 		.4byte	.LASF109
+ 1906 0ae8 07       		.byte	0x7
+ 1907 0ae9 013A     		.2byte	0x13a
+ 1908 0aeb 000005C8 		.4byte	0x5c8
+ 1909 0aef 02       		.byte	0x2
+ 1910 0af0 23       		.byte	0x23
+ 1911 0af1 30       		.uleb128 0x30
+ 1912 0af2 13       		.uleb128 0x13
+ 1913 0af3 00000000 		.4byte	.LASF110
+ 1914 0af7 07       		.byte	0x7
+ 1915 0af8 0152     		.2byte	0x152
+ 1916 0afa 00000702 		.4byte	0x702
+ 1917 0afe 02       		.byte	0x2
+ 1918 0aff 23       		.byte	0x23
+ 1919 0b00 34       		.uleb128 0x34
+ 1920 0b01 13       		.uleb128 0x13
+ 1921 0b02 00000000 		.4byte	.LASF111
+ 1922 0b06 07       		.byte	0x7
+ 1923 0b07 015A     		.2byte	0x15a
+ 1924 0b09 00000747 		.4byte	0x747
+ 1925 0b0d 02       		.byte	0x2
+ 1926 0b0e 23       		.byte	0x23
+ 1927 0b0f 38       		.uleb128 0x38
+ 1928 0b10 13       		.uleb128 0x13
+ 1929 0b11 00000000 		.4byte	.LASF112
+ 1930 0b15 07       		.byte	0x7
+ 1931 0b16 0162     		.2byte	0x162
+ 1932 0b18 00000BDE 		.4byte	0xbde
+ 1933 0b1c 02       		.byte	0x2
+ 1934 0b1d 23       		.byte	0x23
+ 1935 0b1e 3C       		.uleb128 0x3c
+ 1936 0b1f 13       		.uleb128 0x13
+ 1937 0b20 00000000 		.4byte	.LASF113
+ 1938 0b24 07       		.byte	0x7
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 35
+
+
+ 1939 0b25 0164     		.2byte	0x164
+ 1940 0b27 00000BFE 		.4byte	0xbfe
+ 1941 0b2b 02       		.byte	0x2
+ 1942 0b2c 23       		.byte	0x23
+ 1943 0b2d 50       		.uleb128 0x50
+ 1944 0b2e 13       		.uleb128 0x13
+ 1945 0b2f 00000000 		.4byte	.LASF114
+ 1946 0b33 07       		.byte	0x7
+ 1947 0b34 016C     		.2byte	0x16c
+ 1948 0b36 00000C03 		.4byte	0xc03
+ 1949 0b3a 02       		.byte	0x2
+ 1950 0b3b 23       		.byte	0x23
+ 1951 0b3c 7C       		.uleb128 0x7c
+ 1952 0b3d 13       		.uleb128 0x13
+ 1953 0b3e 00000000 		.4byte	.LASF115
+ 1954 0b42 07       		.byte	0x7
+ 1955 0b43 016E     		.2byte	0x16e
+ 1956 0b45 00000C23 		.4byte	0xc23
+ 1957 0b49 03       		.byte	0x3
+ 1958 0b4a 23       		.byte	0x23
+ 1959 0b4b 9001     		.uleb128 0x90
+ 1960 0b4d 13       		.uleb128 0x13
+ 1961 0b4e 00000000 		.4byte	.LASF116
+ 1962 0b52 07       		.byte	0x7
+ 1963 0b53 0185     		.2byte	0x185
+ 1964 0b55 000008F1 		.4byte	0x8f1
+ 1965 0b59 03       		.byte	0x3
+ 1966 0b5a 23       		.byte	0x23
+ 1967 0b5b C001     		.uleb128 0xc0
+ 1968 0b5d 12       		.uleb128 0x12
+ 1969 0b5e 53445200 		.string	"SDR"
+ 1970 0b62 07       		.byte	0x7
+ 1971 0b63 018D     		.2byte	0x18d
+ 1972 0b65 0000092B 		.4byte	0x92b
+ 1973 0b69 03       		.byte	0x3
+ 1974 0b6a 23       		.byte	0x23
+ 1975 0b6b C401     		.uleb128 0xc4
+ 1976 0b6d 13       		.uleb128 0x13
+ 1977 0b6e 00000000 		.4byte	.LASF117
+ 1978 0b72 07       		.byte	0x7
+ 1979 0b73 0195     		.2byte	0x195
+ 1980 0b75 00000965 		.4byte	0x965
+ 1981 0b79 03       		.byte	0x3
+ 1982 0b7a 23       		.byte	0x23
+ 1983 0b7b C801     		.uleb128 0xc8
+ 1984 0b7d 13       		.uleb128 0x13
+ 1985 0b7e 00000000 		.4byte	.LASF118
+ 1986 0b82 07       		.byte	0x7
+ 1987 0b83 019D     		.2byte	0x19d
+ 1988 0b85 0000099F 		.4byte	0x99f
+ 1989 0b89 03       		.byte	0x3
+ 1990 0b8a 23       		.byte	0x23
+ 1991 0b8b CC01     		.uleb128 0xcc
+ 1992 0b8d 12       		.uleb128 0x12
+ 1993 0b8e 44445200 		.string	"DDR"
+ 1994 0b92 07       		.byte	0x7
+ 1995 0b93 01A5     		.2byte	0x1a5
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 36
+
+
+ 1996 0b95 000009D9 		.4byte	0x9d9
+ 1997 0b99 03       		.byte	0x3
+ 1998 0b9a 23       		.byte	0x23
+ 1999 0b9b D001     		.uleb128 0xd0
+ 2000 0b9d 13       		.uleb128 0x13
+ 2001 0b9e 00000000 		.4byte	.LASF119
+ 2002 0ba2 07       		.byte	0x7
+ 2003 0ba3 01A7     		.2byte	0x1a7
+ 2004 0ba5 00000C38 		.4byte	0xc38
+ 2005 0ba9 03       		.byte	0x3
+ 2006 0baa 23       		.byte	0x23
+ 2007 0bab D401     		.uleb128 0xd4
+ 2008 0bad 13       		.uleb128 0x13
+ 2009 0bae 00000000 		.4byte	.LASF120
+ 2010 0bb2 07       		.byte	0x7
+ 2011 0bb3 01B1     		.2byte	0x1b1
+ 2012 0bb5 00000C3D 		.4byte	0xc3d
+ 2013 0bb9 03       		.byte	0x3
+ 2014 0bba 23       		.byte	0x23
+ 2015 0bbb 9C02     		.uleb128 0x11c
+ 2016 0bbd 13       		.uleb128 0x13
+ 2017 0bbe 00000000 		.4byte	.LASF121
+ 2018 0bc2 07       		.byte	0x7
+ 2019 0bc3 01BA     		.2byte	0x1ba
+ 2020 0bc5 00000A71 		.4byte	0xa71
+ 2021 0bc9 03       		.byte	0x3
+ 2022 0bca 23       		.byte	0x23
+ 2023 0bcb BC02     		.uleb128 0x13c
+ 2024 0bcd 00       		.byte	0
+ 2025 0bce 17       		.uleb128 0x17
+ 2026 0bcf 00000400 		.4byte	0x400
+ 2027 0bd3 00000BDE 		.4byte	0xbde
+ 2028 0bd7 18       		.uleb128 0x18
+ 2029 0bd8 000000E1 		.4byte	0xe1
+ 2030 0bdc 07       		.byte	0x7
+ 2031 0bdd 00       		.byte	0
+ 2032 0bde 17       		.uleb128 0x17
+ 2033 0bdf 00000793 		.4byte	0x793
+ 2034 0be3 00000BEE 		.4byte	0xbee
+ 2035 0be7 18       		.uleb128 0x18
+ 2036 0be8 000000E1 		.4byte	0xe1
+ 2037 0bec 04       		.byte	0x4
+ 2038 0bed 00       		.byte	0
+ 2039 0bee 17       		.uleb128 0x17
+ 2040 0bef 000000D1 		.4byte	0xd1
+ 2041 0bf3 00000BFE 		.4byte	0xbfe
+ 2042 0bf7 18       		.uleb128 0x18
+ 2043 0bf8 000000E1 		.4byte	0xe1
+ 2044 0bfc 0A       		.byte	0xa
+ 2045 0bfd 00       		.byte	0
+ 2046 0bfe 05       		.uleb128 0x5
+ 2047 0bff 00000BEE 		.4byte	0xbee
+ 2048 0c03 17       		.uleb128 0x17
+ 2049 0c04 000007CD 		.4byte	0x7cd
+ 2050 0c08 00000C13 		.4byte	0xc13
+ 2051 0c0c 18       		.uleb128 0x18
+ 2052 0c0d 000000E1 		.4byte	0xe1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 37
+
+
+ 2053 0c11 04       		.byte	0x4
+ 2054 0c12 00       		.byte	0
+ 2055 0c13 17       		.uleb128 0x17
+ 2056 0c14 000000D1 		.4byte	0xd1
+ 2057 0c18 00000C23 		.4byte	0xc23
+ 2058 0c1c 18       		.uleb128 0x18
+ 2059 0c1d 000000E1 		.4byte	0xe1
+ 2060 0c21 0B       		.byte	0xb
+ 2061 0c22 00       		.byte	0
+ 2062 0c23 05       		.uleb128 0x5
+ 2063 0c24 00000C13 		.4byte	0xc13
+ 2064 0c28 17       		.uleb128 0x17
+ 2065 0c29 000000D1 		.4byte	0xd1
+ 2066 0c2d 00000C38 		.4byte	0xc38
+ 2067 0c31 18       		.uleb128 0x18
+ 2068 0c32 000000E1 		.4byte	0xe1
+ 2069 0c36 11       		.byte	0x11
+ 2070 0c37 00       		.byte	0
+ 2071 0c38 05       		.uleb128 0x5
+ 2072 0c39 00000C28 		.4byte	0xc28
+ 2073 0c3d 17       		.uleb128 0x17
+ 2074 0c3e 00000A25 		.4byte	0xa25
+ 2075 0c42 00000C4D 		.4byte	0xc4d
+ 2076 0c46 18       		.uleb128 0x18
+ 2077 0c47 000000E1 		.4byte	0xe1
+ 2078 0c4b 07       		.byte	0x7
+ 2079 0c4c 00       		.byte	0
+ 2080 0c4d 19       		.uleb128 0x19
+ 2081 0c4e 00000000 		.4byte	.LASF122
+ 2082 0c52 08       		.byte	0x8
+ 2083 0c53 032A     		.2byte	0x32a
+ 2084 0c55 00000C59 		.4byte	0xc59
+ 2085 0c59 1A       		.uleb128 0x1a
+ 2086 0c5a 00000000 		.4byte	.LASF122
+ 2087 0c5e 1C       		.byte	0x1c
+ 2088 0c5f 08       		.byte	0x8
+ 2089 0c60 0372     		.2byte	0x372
+ 2090 0c62 00000CC2 		.4byte	0xcc2
+ 2091 0c66 13       		.uleb128 0x13
+ 2092 0c67 00000000 		.4byte	.LASF124
+ 2093 0c6b 08       		.byte	0x8
+ 2094 0c6c 0376     		.2byte	0x376
+ 2095 0c6e 00000E2F 		.4byte	0xe2f
+ 2096 0c72 02       		.byte	0x2
+ 2097 0c73 23       		.byte	0x23
+ 2098 0c74 00       		.uleb128 0
+ 2099 0c75 13       		.uleb128 0x13
+ 2100 0c76 00000000 		.4byte	.LASF125
+ 2101 0c7a 08       		.byte	0x8
+ 2102 0c7b 037A     		.2byte	0x37a
+ 2103 0c7d 000000BC 		.4byte	0xbc
+ 2104 0c81 02       		.byte	0x2
+ 2105 0c82 23       		.byte	0x23
+ 2106 0c83 04       		.uleb128 0x4
+ 2107 0c84 13       		.uleb128 0x13
+ 2108 0c85 00000000 		.4byte	.LASF126
+ 2109 0c89 08       		.byte	0x8
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 38
+
+
+ 2110 0c8a 037E     		.2byte	0x37e
+ 2111 0c8c 00000E35 		.4byte	0xe35
+ 2112 0c90 02       		.byte	0x2
+ 2113 0c91 23       		.byte	0x23
+ 2114 0c92 08       		.uleb128 0x8
+ 2115 0c93 1B       		.uleb128 0x1b
+ 2116 0c94 00000DAF 		.4byte	0xdaf
+ 2117 0c98 02       		.byte	0x2
+ 2118 0c99 23       		.byte	0x23
+ 2119 0c9a 0C       		.uleb128 0xc
+ 2120 0c9b 13       		.uleb128 0x13
+ 2121 0c9c 00000000 		.4byte	.LASF127
+ 2122 0ca0 08       		.byte	0x8
+ 2123 0ca1 0391     		.2byte	0x391
+ 2124 0ca3 000000B1 		.4byte	0xb1
+ 2125 0ca7 02       		.byte	0x2
+ 2126 0ca8 23       		.byte	0x23
+ 2127 0ca9 10       		.uleb128 0x10
+ 2128 0caa 1B       		.uleb128 0x1b
+ 2129 0cab 00000DF5 		.4byte	0xdf5
+ 2130 0caf 02       		.byte	0x2
+ 2131 0cb0 23       		.byte	0x23
+ 2132 0cb1 14       		.uleb128 0x14
+ 2133 0cb2 13       		.uleb128 0x13
+ 2134 0cb3 00000000 		.4byte	.LASF128
+ 2135 0cb7 08       		.byte	0x8
+ 2136 0cb8 03B1     		.2byte	0x3b1
+ 2137 0cba 000000B1 		.4byte	0xb1
+ 2138 0cbe 02       		.byte	0x2
+ 2139 0cbf 23       		.byte	0x23
+ 2140 0cc0 18       		.uleb128 0x18
+ 2141 0cc1 00       		.byte	0
+ 2142 0cc2 1C       		.uleb128 0x1c
+ 2143 0cc3 04       		.byte	0x4
+ 2144 0cc4 08       		.byte	0x8
+ 2145 0cc5 032F     		.2byte	0x32f
+ 2146 0cc7 00000CD8 		.4byte	0xcd8
+ 2147 0ccb 1D       		.uleb128 0x1d
+ 2148 0ccc 00000000 		.4byte	.LASF129
+ 2149 0cd0 00       		.sleb128 0
+ 2150 0cd1 1D       		.uleb128 0x1d
+ 2151 0cd2 00000000 		.4byte	.LASF130
+ 2152 0cd6 01       		.sleb128 1
+ 2153 0cd7 00       		.byte	0
+ 2154 0cd8 19       		.uleb128 0x19
+ 2155 0cd9 00000000 		.4byte	.LASF131
+ 2156 0cdd 08       		.byte	0x8
+ 2157 0cde 0332     		.2byte	0x332
+ 2158 0ce0 00000CC2 		.4byte	0xcc2
+ 2159 0ce4 1C       		.uleb128 0x1c
+ 2160 0ce5 04       		.byte	0x4
+ 2161 0ce6 08       		.byte	0x8
+ 2162 0ce7 0337     		.2byte	0x337
+ 2163 0ce9 00000D00 		.4byte	0xd00
+ 2164 0ced 1D       		.uleb128 0x1d
+ 2165 0cee 00000000 		.4byte	.LASF132
+ 2166 0cf2 00       		.sleb128 0
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 39
+
+
+ 2167 0cf3 1D       		.uleb128 0x1d
+ 2168 0cf4 00000000 		.4byte	.LASF133
+ 2169 0cf8 01       		.sleb128 1
+ 2170 0cf9 1D       		.uleb128 0x1d
+ 2171 0cfa 00000000 		.4byte	.LASF134
+ 2172 0cfe 02       		.sleb128 2
+ 2173 0cff 00       		.byte	0
+ 2174 0d00 19       		.uleb128 0x19
+ 2175 0d01 00000000 		.4byte	.LASF135
+ 2176 0d05 08       		.byte	0x8
+ 2177 0d06 033B     		.2byte	0x33b
+ 2178 0d08 00000CE4 		.4byte	0xce4
+ 2179 0d0c 19       		.uleb128 0x19
+ 2180 0d0d 00000000 		.4byte	.LASF136
+ 2181 0d11 08       		.byte	0x8
+ 2182 0d12 0343     		.2byte	0x343
+ 2183 0d14 00000D18 		.4byte	0xd18
+ 2184 0d18 07       		.uleb128 0x7
+ 2185 0d19 04       		.byte	0x4
+ 2186 0d1a 00000D1E 		.4byte	0xd1e
+ 2187 0d1e 1E       		.uleb128 0x1e
+ 2188 0d1f 01       		.byte	0x1
+ 2189 0d20 00000D2A 		.4byte	0xd2a
+ 2190 0d24 1F       		.uleb128 0x1f
+ 2191 0d25 00000D2A 		.4byte	0xd2a
+ 2192 0d29 00       		.byte	0
+ 2193 0d2a 07       		.uleb128 0x7
+ 2194 0d2b 04       		.byte	0x4
+ 2195 0d2c 00000C4D 		.4byte	0xc4d
+ 2196 0d30 0D       		.uleb128 0xd
+ 2197 0d31 1C       		.byte	0x1c
+ 2198 0d32 08       		.byte	0x8
+ 2199 0d33 034A     		.2byte	0x34a
+ 2200 0d35 00000DA3 		.4byte	0xda3
+ 2201 0d39 13       		.uleb128 0x13
+ 2202 0d3a 00000000 		.4byte	.LASF137
+ 2203 0d3e 08       		.byte	0x8
+ 2204 0d3f 034E     		.2byte	0x34e
+ 2205 0d41 00000CD8 		.4byte	0xcd8
+ 2206 0d45 02       		.byte	0x2
+ 2207 0d46 23       		.byte	0x23
+ 2208 0d47 00       		.uleb128 0
+ 2209 0d48 13       		.uleb128 0x13
+ 2210 0d49 00000000 		.4byte	.LASF138
+ 2211 0d4d 08       		.byte	0x8
+ 2212 0d4e 0352     		.2byte	0x352
+ 2213 0d50 00000D0C 		.4byte	0xd0c
+ 2214 0d54 02       		.byte	0x2
+ 2215 0d55 23       		.byte	0x23
+ 2216 0d56 04       		.uleb128 0x4
+ 2217 0d57 13       		.uleb128 0x13
+ 2218 0d58 00000000 		.4byte	.LASF139
+ 2219 0d5c 08       		.byte	0x8
+ 2220 0d5d 0357     		.2byte	0x357
+ 2221 0d5f 000000E8 		.4byte	0xe8
+ 2222 0d63 02       		.byte	0x2
+ 2223 0d64 23       		.byte	0x23
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 40
+
+
+ 2224 0d65 08       		.uleb128 0x8
+ 2225 0d66 13       		.uleb128 0x13
+ 2226 0d67 00000000 		.4byte	.LASF140
+ 2227 0d6b 08       		.byte	0x8
+ 2228 0d6c 035B     		.2byte	0x35b
+ 2229 0d6e 0000009B 		.4byte	0x9b
+ 2230 0d72 02       		.byte	0x2
+ 2231 0d73 23       		.byte	0x23
+ 2232 0d74 0C       		.uleb128 0xc
+ 2233 0d75 13       		.uleb128 0x13
+ 2234 0d76 00000000 		.4byte	.LASF141
+ 2235 0d7a 08       		.byte	0x8
+ 2236 0d7b 035F     		.2byte	0x35f
+ 2237 0d7d 000000A6 		.4byte	0xa6
+ 2238 0d81 02       		.byte	0x2
+ 2239 0d82 23       		.byte	0x23
+ 2240 0d83 10       		.uleb128 0x10
+ 2241 0d84 13       		.uleb128 0x13
+ 2242 0d85 00000000 		.4byte	.LASF142
+ 2243 0d89 08       		.byte	0x8
+ 2244 0d8a 0365     		.2byte	0x365
+ 2245 0d8c 000000A6 		.4byte	0xa6
+ 2246 0d90 02       		.byte	0x2
+ 2247 0d91 23       		.byte	0x23
+ 2248 0d92 14       		.uleb128 0x14
+ 2249 0d93 13       		.uleb128 0x13
+ 2250 0d94 00000000 		.4byte	.LASF143
+ 2251 0d98 08       		.byte	0x8
+ 2252 0d99 036A     		.2byte	0x36a
+ 2253 0d9b 00000D00 		.4byte	0xd00
+ 2254 0d9f 02       		.byte	0x2
+ 2255 0da0 23       		.byte	0x23
+ 2256 0da1 18       		.uleb128 0x18
+ 2257 0da2 00       		.byte	0
+ 2258 0da3 19       		.uleb128 0x19
+ 2259 0da4 00000000 		.4byte	.LASF144
+ 2260 0da8 08       		.byte	0x8
+ 2261 0da9 036B     		.2byte	0x36b
+ 2262 0dab 00000D30 		.4byte	0xd30
+ 2263 0daf 11       		.uleb128 0x11
+ 2264 0db0 04       		.byte	0x4
+ 2265 0db1 08       		.byte	0x8
+ 2266 0db2 0388     		.2byte	0x388
+ 2267 0db4 00000DE9 		.4byte	0xde9
+ 2268 0db8 20       		.uleb128 0x20
+ 2269 0db9 00000000 		.4byte	.LASF145
+ 2270 0dbd 08       		.byte	0x8
+ 2271 0dbe 0389     		.2byte	0x389
+ 2272 0dc0 000000F3 		.4byte	0xf3
+ 2273 0dc4 20       		.uleb128 0x20
+ 2274 0dc5 00000000 		.4byte	.LASF146
+ 2275 0dc9 08       		.byte	0x8
+ 2276 0dca 038A     		.2byte	0x38a
+ 2277 0dcc 000000F5 		.4byte	0xf5
+ 2278 0dd0 20       		.uleb128 0x20
+ 2279 0dd1 00000000 		.4byte	.LASF147
+ 2280 0dd5 08       		.byte	0x8
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 41
+
+
+ 2281 0dd6 038B     		.2byte	0x38b
+ 2282 0dd8 00000DE9 		.4byte	0xde9
+ 2283 0ddc 20       		.uleb128 0x20
+ 2284 0ddd 00000000 		.4byte	.LASF148
+ 2285 0de1 08       		.byte	0x8
+ 2286 0de2 038C     		.2byte	0x38c
+ 2287 0de4 00000DEF 		.4byte	0xdef
+ 2288 0de8 00       		.byte	0
+ 2289 0de9 07       		.uleb128 0x7
+ 2290 0dea 04       		.byte	0x4
+ 2291 0deb 0000009B 		.4byte	0x9b
+ 2292 0def 07       		.uleb128 0x7
+ 2293 0df0 04       		.byte	0x4
+ 2294 0df1 000000A6 		.4byte	0xa6
+ 2295 0df5 11       		.uleb128 0x11
+ 2296 0df6 04       		.byte	0x4
+ 2297 0df7 08       		.byte	0x8
+ 2298 0df8 03A8     		.2byte	0x3a8
+ 2299 0dfa 00000E2F 		.4byte	0xe2f
+ 2300 0dfe 20       		.uleb128 0x20
+ 2301 0dff 00000000 		.4byte	.LASF149
+ 2302 0e03 08       		.byte	0x8
+ 2303 0e04 03A9     		.2byte	0x3a9
+ 2304 0e06 000000F3 		.4byte	0xf3
+ 2305 0e0a 20       		.uleb128 0x20
+ 2306 0e0b 00000000 		.4byte	.LASF150
+ 2307 0e0f 08       		.byte	0x8
+ 2308 0e10 03AA     		.2byte	0x3aa
+ 2309 0e12 000000F5 		.4byte	0xf5
+ 2310 0e16 20       		.uleb128 0x20
+ 2311 0e17 00000000 		.4byte	.LASF151
+ 2312 0e1b 08       		.byte	0x8
+ 2313 0e1c 03AB     		.2byte	0x3ab
+ 2314 0e1e 00000DE9 		.4byte	0xde9
+ 2315 0e22 20       		.uleb128 0x20
+ 2316 0e23 00000000 		.4byte	.LASF152
+ 2317 0e27 08       		.byte	0x8
+ 2318 0e28 03AC     		.2byte	0x3ac
+ 2319 0e2a 00000DEF 		.4byte	0xdef
+ 2320 0e2e 00       		.byte	0
+ 2321 0e2f 07       		.uleb128 0x7
+ 2322 0e30 04       		.byte	0x4
+ 2323 0e31 00000DA3 		.4byte	0xda3
+ 2324 0e35 07       		.uleb128 0x7
+ 2325 0e36 04       		.byte	0x4
+ 2326 0e37 00000A8F 		.4byte	0xa8f
+ 2327 0e3b 02       		.uleb128 0x2
+ 2328 0e3c 04       		.byte	0x4
+ 2329 0e3d 04       		.byte	0x4
+ 2330 0e3e 00000000 		.4byte	.LASF153
+ 2331 0e42 21       		.uleb128 0x21
+ 2332 0e43 04       		.byte	0x4
+ 2333 0e44 09       		.byte	0x9
+ 2334 0e45 43       		.byte	0x43
+ 2335 0e46 00000EA5 		.4byte	0xea5
+ 2336 0e4a 1D       		.uleb128 0x1d
+ 2337 0e4b 00000000 		.4byte	.LASF154
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 42
+
+
+ 2338 0e4f 00       		.sleb128 0
+ 2339 0e50 1D       		.uleb128 0x1d
+ 2340 0e51 00000000 		.4byte	.LASF155
+ 2341 0e55 01       		.sleb128 1
+ 2342 0e56 1D       		.uleb128 0x1d
+ 2343 0e57 00000000 		.4byte	.LASF156
+ 2344 0e5b 02       		.sleb128 2
+ 2345 0e5c 1D       		.uleb128 0x1d
+ 2346 0e5d 00000000 		.4byte	.LASF157
+ 2347 0e61 03       		.sleb128 3
+ 2348 0e62 1D       		.uleb128 0x1d
+ 2349 0e63 00000000 		.4byte	.LASF158
+ 2350 0e67 04       		.sleb128 4
+ 2351 0e68 1D       		.uleb128 0x1d
+ 2352 0e69 00000000 		.4byte	.LASF159
+ 2353 0e6d 05       		.sleb128 5
+ 2354 0e6e 1D       		.uleb128 0x1d
+ 2355 0e6f 00000000 		.4byte	.LASF160
+ 2356 0e73 06       		.sleb128 6
+ 2357 0e74 1D       		.uleb128 0x1d
+ 2358 0e75 00000000 		.4byte	.LASF161
+ 2359 0e79 07       		.sleb128 7
+ 2360 0e7a 1D       		.uleb128 0x1d
+ 2361 0e7b 00000000 		.4byte	.LASF162
+ 2362 0e7f 08       		.sleb128 8
+ 2363 0e80 1D       		.uleb128 0x1d
+ 2364 0e81 00000000 		.4byte	.LASF163
+ 2365 0e85 09       		.sleb128 9
+ 2366 0e86 1D       		.uleb128 0x1d
+ 2367 0e87 00000000 		.4byte	.LASF164
+ 2368 0e8b 0A       		.sleb128 10
+ 2369 0e8c 1D       		.uleb128 0x1d
+ 2370 0e8d 00000000 		.4byte	.LASF165
+ 2371 0e91 0B       		.sleb128 11
+ 2372 0e92 1D       		.uleb128 0x1d
+ 2373 0e93 00000000 		.4byte	.LASF166
+ 2374 0e97 0C       		.sleb128 12
+ 2375 0e98 1D       		.uleb128 0x1d
+ 2376 0e99 00000000 		.4byte	.LASF167
+ 2377 0e9d 0D       		.sleb128 13
+ 2378 0e9e 1D       		.uleb128 0x1d
+ 2379 0e9f 00000000 		.4byte	.LASF168
+ 2380 0ea3 0E       		.sleb128 14
+ 2381 0ea4 00       		.byte	0
+ 2382 0ea5 03       		.uleb128 0x3
+ 2383 0ea6 00000000 		.4byte	.LASF169
+ 2384 0eaa 09       		.byte	0x9
+ 2385 0eab 53       		.byte	0x53
+ 2386 0eac 00000E42 		.4byte	0xe42
+ 2387 0eb0 21       		.uleb128 0x21
+ 2388 0eb1 04       		.byte	0x4
+ 2389 0eb2 09       		.byte	0x9
+ 2390 0eb3 59       		.byte	0x59
+ 2391 0eb4 00000EC5 		.4byte	0xec5
+ 2392 0eb8 1D       		.uleb128 0x1d
+ 2393 0eb9 00000000 		.4byte	.LASF170
+ 2394 0ebd 00       		.sleb128 0
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 43
+
+
+ 2395 0ebe 1D       		.uleb128 0x1d
+ 2396 0ebf 00000000 		.4byte	.LASF171
+ 2397 0ec3 01       		.sleb128 1
+ 2398 0ec4 00       		.byte	0
+ 2399 0ec5 03       		.uleb128 0x3
+ 2400 0ec6 00000000 		.4byte	.LASF172
+ 2401 0eca 09       		.byte	0x9
+ 2402 0ecb 5C       		.byte	0x5c
+ 2403 0ecc 00000EB0 		.4byte	0xeb0
+ 2404 0ed0 21       		.uleb128 0x21
+ 2405 0ed1 04       		.byte	0x4
+ 2406 0ed2 09       		.byte	0x9
+ 2407 0ed3 63       		.byte	0x63
+ 2408 0ed4 00000EE5 		.4byte	0xee5
+ 2409 0ed8 1D       		.uleb128 0x1d
+ 2410 0ed9 00000000 		.4byte	.LASF173
+ 2411 0edd 00       		.sleb128 0
+ 2412 0ede 1D       		.uleb128 0x1d
+ 2413 0edf 00000000 		.4byte	.LASF174
+ 2414 0ee3 01       		.sleb128 1
+ 2415 0ee4 00       		.byte	0
+ 2416 0ee5 03       		.uleb128 0x3
+ 2417 0ee6 00000000 		.4byte	.LASF175
+ 2418 0eea 09       		.byte	0x9
+ 2419 0eeb 66       		.byte	0x66
+ 2420 0eec 00000ED0 		.4byte	0xed0
+ 2421 0ef0 21       		.uleb128 0x21
+ 2422 0ef1 04       		.byte	0x4
+ 2423 0ef2 09       		.byte	0x9
+ 2424 0ef3 6C       		.byte	0x6c
+ 2425 0ef4 00000F05 		.4byte	0xf05
+ 2426 0ef8 1D       		.uleb128 0x1d
+ 2427 0ef9 00000000 		.4byte	.LASF176
+ 2428 0efd 00       		.sleb128 0
+ 2429 0efe 1D       		.uleb128 0x1d
+ 2430 0eff 00000000 		.4byte	.LASF177
+ 2431 0f03 01       		.sleb128 1
+ 2432 0f04 00       		.byte	0
+ 2433 0f05 03       		.uleb128 0x3
+ 2434 0f06 00000000 		.4byte	.LASF178
+ 2435 0f0a 09       		.byte	0x9
+ 2436 0f0b 6F       		.byte	0x6f
+ 2437 0f0c 00000EF0 		.4byte	0xef0
+ 2438 0f10 21       		.uleb128 0x21
+ 2439 0f11 04       		.byte	0x4
+ 2440 0f12 09       		.byte	0x9
+ 2441 0f13 74       		.byte	0x74
+ 2442 0f14 00000F2B 		.4byte	0xf2b
+ 2443 0f18 1D       		.uleb128 0x1d
+ 2444 0f19 00000000 		.4byte	.LASF179
+ 2445 0f1d 00       		.sleb128 0
+ 2446 0f1e 1D       		.uleb128 0x1d
+ 2447 0f1f 00000000 		.4byte	.LASF180
+ 2448 0f23 01       		.sleb128 1
+ 2449 0f24 1D       		.uleb128 0x1d
+ 2450 0f25 00000000 		.4byte	.LASF181
+ 2451 0f29 02       		.sleb128 2
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 44
+
+
+ 2452 0f2a 00       		.byte	0
+ 2453 0f2b 03       		.uleb128 0x3
+ 2454 0f2c 00000000 		.4byte	.LASF182
+ 2455 0f30 09       		.byte	0x9
+ 2456 0f31 78       		.byte	0x78
+ 2457 0f32 00000F10 		.4byte	0xf10
+ 2458 0f36 21       		.uleb128 0x21
+ 2459 0f37 04       		.byte	0x4
+ 2460 0f38 09       		.byte	0x9
+ 2461 0f39 7F       		.byte	0x7f
+ 2462 0f3a 00000F51 		.4byte	0xf51
+ 2463 0f3e 1D       		.uleb128 0x1d
+ 2464 0f3f 00000000 		.4byte	.LASF183
+ 2465 0f43 00       		.sleb128 0
+ 2466 0f44 1D       		.uleb128 0x1d
+ 2467 0f45 00000000 		.4byte	.LASF184
+ 2468 0f49 01       		.sleb128 1
+ 2469 0f4a 1D       		.uleb128 0x1d
+ 2470 0f4b 00000000 		.4byte	.LASF185
+ 2471 0f4f 02       		.sleb128 2
+ 2472 0f50 00       		.byte	0
+ 2473 0f51 03       		.uleb128 0x3
+ 2474 0f52 00000000 		.4byte	.LASF186
+ 2475 0f56 09       		.byte	0x9
+ 2476 0f57 83       		.byte	0x83
+ 2477 0f58 00000F36 		.4byte	0xf36
+ 2478 0f5c 08       		.uleb128 0x8
+ 2479 0f5d 10       		.byte	0x10
+ 2480 0f5e 09       		.byte	0x9
+ 2481 0f5f 89       		.byte	0x89
+ 2482 0f60 00000F9D 		.4byte	0xf9d
+ 2483 0f64 16       		.uleb128 0x16
+ 2484 0f65 00000000 		.4byte	.LASF187
+ 2485 0f69 09       		.byte	0x9
+ 2486 0f6a 8A       		.byte	0x8a
+ 2487 0f6b 00000F9D 		.4byte	0xf9d
+ 2488 0f6f 02       		.byte	0x2
+ 2489 0f70 23       		.byte	0x23
+ 2490 0f71 00       		.uleb128 0
+ 2491 0f72 16       		.uleb128 0x16
+ 2492 0f73 00000000 		.4byte	.LASF188
+ 2493 0f77 09       		.byte	0x9
+ 2494 0f78 8B       		.byte	0x8b
+ 2495 0f79 00000FA2 		.4byte	0xfa2
+ 2496 0f7d 02       		.byte	0x2
+ 2497 0f7e 23       		.byte	0x23
+ 2498 0f7f 04       		.uleb128 0x4
+ 2499 0f80 16       		.uleb128 0x16
+ 2500 0f81 00000000 		.4byte	.LASF189
+ 2501 0f85 09       		.byte	0x9
+ 2502 0f86 8C       		.byte	0x8c
+ 2503 0f87 00000F05 		.4byte	0xf05
+ 2504 0f8b 02       		.byte	0x2
+ 2505 0f8c 23       		.byte	0x23
+ 2506 0f8d 08       		.uleb128 0x8
+ 2507 0f8e 16       		.uleb128 0x16
+ 2508 0f8f 00000000 		.4byte	.LASF190
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 45
+
+
+ 2509 0f93 09       		.byte	0x9
+ 2510 0f94 8D       		.byte	0x8d
+ 2511 0f95 00000F51 		.4byte	0xf51
+ 2512 0f99 02       		.byte	0x2
+ 2513 0f9a 23       		.byte	0x23
+ 2514 0f9b 0C       		.uleb128 0xc
+ 2515 0f9c 00       		.byte	0
+ 2516 0f9d 22       		.uleb128 0x22
+ 2517 0f9e 00000EA5 		.4byte	0xea5
+ 2518 0fa2 22       		.uleb128 0x22
+ 2519 0fa3 00000EE5 		.4byte	0xee5
+ 2520 0fa7 03       		.uleb128 0x3
+ 2521 0fa8 00000000 		.4byte	.LASF191
+ 2522 0fac 09       		.byte	0x9
+ 2523 0fad 8E       		.byte	0x8e
+ 2524 0fae 00000F5C 		.4byte	0xf5c
+ 2525 0fb2 08       		.uleb128 0x8
+ 2526 0fb3 E0       		.byte	0xe0
+ 2527 0fb4 09       		.byte	0x9
+ 2528 0fb5 94       		.byte	0x94
+ 2529 0fb6 00001085 		.4byte	0x1085
+ 2530 0fba 16       		.uleb128 0x16
+ 2531 0fbb 00000000 		.4byte	.LASF192
+ 2532 0fbf 09       		.byte	0x9
+ 2533 0fc0 95       		.byte	0x95
+ 2534 0fc1 00000FA7 		.4byte	0xfa7
+ 2535 0fc5 02       		.byte	0x2
+ 2536 0fc6 23       		.byte	0x23
+ 2537 0fc7 00       		.uleb128 0
+ 2538 0fc8 16       		.uleb128 0x16
+ 2539 0fc9 00000000 		.4byte	.LASF193
+ 2540 0fcd 09       		.byte	0x9
+ 2541 0fce 96       		.byte	0x96
+ 2542 0fcf 00000FA7 		.4byte	0xfa7
+ 2543 0fd3 02       		.byte	0x2
+ 2544 0fd4 23       		.byte	0x23
+ 2545 0fd5 10       		.uleb128 0x10
+ 2546 0fd6 16       		.uleb128 0x16
+ 2547 0fd7 00000000 		.4byte	.LASF194
+ 2548 0fdb 09       		.byte	0x9
+ 2549 0fdc 97       		.byte	0x97
+ 2550 0fdd 00000FA7 		.4byte	0xfa7
+ 2551 0fe1 02       		.byte	0x2
+ 2552 0fe2 23       		.byte	0x23
+ 2553 0fe3 20       		.uleb128 0x20
+ 2554 0fe4 16       		.uleb128 0x16
+ 2555 0fe5 00000000 		.4byte	.LASF195
+ 2556 0fe9 09       		.byte	0x9
+ 2557 0fea 98       		.byte	0x98
+ 2558 0feb 00000FA7 		.4byte	0xfa7
+ 2559 0fef 02       		.byte	0x2
+ 2560 0ff0 23       		.byte	0x23
+ 2561 0ff1 30       		.uleb128 0x30
+ 2562 0ff2 16       		.uleb128 0x16
+ 2563 0ff3 00000000 		.4byte	.LASF196
+ 2564 0ff7 09       		.byte	0x9
+ 2565 0ff8 99       		.byte	0x99
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 46
+
+
+ 2566 0ff9 00000FA7 		.4byte	0xfa7
+ 2567 0ffd 02       		.byte	0x2
+ 2568 0ffe 23       		.byte	0x23
+ 2569 0fff 40       		.uleb128 0x40
+ 2570 1000 16       		.uleb128 0x16
+ 2571 1001 00000000 		.4byte	.LASF197
+ 2572 1005 09       		.byte	0x9
+ 2573 1006 9A       		.byte	0x9a
+ 2574 1007 00000FA7 		.4byte	0xfa7
+ 2575 100b 02       		.byte	0x2
+ 2576 100c 23       		.byte	0x23
+ 2577 100d 50       		.uleb128 0x50
+ 2578 100e 16       		.uleb128 0x16
+ 2579 100f 00000000 		.4byte	.LASF198
+ 2580 1013 09       		.byte	0x9
+ 2581 1014 9B       		.byte	0x9b
+ 2582 1015 00000FA7 		.4byte	0xfa7
+ 2583 1019 02       		.byte	0x2
+ 2584 101a 23       		.byte	0x23
+ 2585 101b 60       		.uleb128 0x60
+ 2586 101c 16       		.uleb128 0x16
+ 2587 101d 00000000 		.4byte	.LASF199
+ 2588 1021 09       		.byte	0x9
+ 2589 1022 9C       		.byte	0x9c
+ 2590 1023 00000FA7 		.4byte	0xfa7
+ 2591 1027 02       		.byte	0x2
+ 2592 1028 23       		.byte	0x23
+ 2593 1029 70       		.uleb128 0x70
+ 2594 102a 16       		.uleb128 0x16
+ 2595 102b 00000000 		.4byte	.LASF200
+ 2596 102f 09       		.byte	0x9
+ 2597 1030 9D       		.byte	0x9d
+ 2598 1031 00000FA7 		.4byte	0xfa7
+ 2599 1035 03       		.byte	0x3
+ 2600 1036 23       		.byte	0x23
+ 2601 1037 8001     		.uleb128 0x80
+ 2602 1039 16       		.uleb128 0x16
+ 2603 103a 00000000 		.4byte	.LASF201
+ 2604 103e 09       		.byte	0x9
+ 2605 103f 9E       		.byte	0x9e
+ 2606 1040 00000FA7 		.4byte	0xfa7
+ 2607 1044 03       		.byte	0x3
+ 2608 1045 23       		.byte	0x23
+ 2609 1046 9001     		.uleb128 0x90
+ 2610 1048 16       		.uleb128 0x16
+ 2611 1049 00000000 		.4byte	.LASF202
+ 2612 104d 09       		.byte	0x9
+ 2613 104e 9F       		.byte	0x9f
+ 2614 104f 00000FA7 		.4byte	0xfa7
+ 2615 1053 03       		.byte	0x3
+ 2616 1054 23       		.byte	0x23
+ 2617 1055 A001     		.uleb128 0xa0
+ 2618 1057 16       		.uleb128 0x16
+ 2619 1058 00000000 		.4byte	.LASF203
+ 2620 105c 09       		.byte	0x9
+ 2621 105d A0       		.byte	0xa0
+ 2622 105e 00000FA7 		.4byte	0xfa7
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 47
+
+
+ 2623 1062 03       		.byte	0x3
+ 2624 1063 23       		.byte	0x23
+ 2625 1064 B001     		.uleb128 0xb0
+ 2626 1066 16       		.uleb128 0x16
+ 2627 1067 00000000 		.4byte	.LASF204
+ 2628 106b 09       		.byte	0x9
+ 2629 106c A1       		.byte	0xa1
+ 2630 106d 00000FA7 		.4byte	0xfa7
+ 2631 1071 03       		.byte	0x3
+ 2632 1072 23       		.byte	0x23
+ 2633 1073 C001     		.uleb128 0xc0
+ 2634 1075 16       		.uleb128 0x16
+ 2635 1076 00000000 		.4byte	.LASF205
+ 2636 107a 09       		.byte	0x9
+ 2637 107b A2       		.byte	0xa2
+ 2638 107c 00000FA7 		.4byte	0xfa7
+ 2639 1080 03       		.byte	0x3
+ 2640 1081 23       		.byte	0x23
+ 2641 1082 D001     		.uleb128 0xd0
+ 2642 1084 00       		.byte	0
+ 2643 1085 03       		.uleb128 0x3
+ 2644 1086 00000000 		.4byte	.LASF206
+ 2645 108a 09       		.byte	0x9
+ 2646 108b A3       		.byte	0xa3
+ 2647 108c 00000FB2 		.4byte	0xfb2
+ 2648 1090 21       		.uleb128 0x21
+ 2649 1091 04       		.byte	0x4
+ 2650 1092 09       		.byte	0x9
+ 2651 1093 A9       		.byte	0xa9
+ 2652 1094 00001159 		.4byte	0x1159
+ 2653 1098 1D       		.uleb128 0x1d
+ 2654 1099 00000000 		.4byte	.LASF207
+ 2655 109d 00       		.sleb128 0
+ 2656 109e 1D       		.uleb128 0x1d
+ 2657 109f 00000000 		.4byte	.LASF208
+ 2658 10a3 01       		.sleb128 1
+ 2659 10a4 1D       		.uleb128 0x1d
+ 2660 10a5 00000000 		.4byte	.LASF209
+ 2661 10a9 02       		.sleb128 2
+ 2662 10aa 1D       		.uleb128 0x1d
+ 2663 10ab 00000000 		.4byte	.LASF210
+ 2664 10af 03       		.sleb128 3
+ 2665 10b0 1D       		.uleb128 0x1d
+ 2666 10b1 00000000 		.4byte	.LASF211
+ 2667 10b5 04       		.sleb128 4
+ 2668 10b6 1D       		.uleb128 0x1d
+ 2669 10b7 00000000 		.4byte	.LASF212
+ 2670 10bb 05       		.sleb128 5
+ 2671 10bc 1D       		.uleb128 0x1d
+ 2672 10bd 00000000 		.4byte	.LASF213
+ 2673 10c1 06       		.sleb128 6
+ 2674 10c2 1D       		.uleb128 0x1d
+ 2675 10c3 00000000 		.4byte	.LASF214
+ 2676 10c7 07       		.sleb128 7
+ 2677 10c8 1D       		.uleb128 0x1d
+ 2678 10c9 00000000 		.4byte	.LASF215
+ 2679 10cd 08       		.sleb128 8
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 48
+
+
+ 2680 10ce 1D       		.uleb128 0x1d
+ 2681 10cf 00000000 		.4byte	.LASF216
+ 2682 10d3 09       		.sleb128 9
+ 2683 10d4 1D       		.uleb128 0x1d
+ 2684 10d5 00000000 		.4byte	.LASF217
+ 2685 10d9 0A       		.sleb128 10
+ 2686 10da 1D       		.uleb128 0x1d
+ 2687 10db 00000000 		.4byte	.LASF218
+ 2688 10df 0B       		.sleb128 11
+ 2689 10e0 1D       		.uleb128 0x1d
+ 2690 10e1 00000000 		.4byte	.LASF219
+ 2691 10e5 0C       		.sleb128 12
+ 2692 10e6 1D       		.uleb128 0x1d
+ 2693 10e7 00000000 		.4byte	.LASF220
+ 2694 10eb 0D       		.sleb128 13
+ 2695 10ec 1D       		.uleb128 0x1d
+ 2696 10ed 00000000 		.4byte	.LASF221
+ 2697 10f1 0E       		.sleb128 14
+ 2698 10f2 1D       		.uleb128 0x1d
+ 2699 10f3 00000000 		.4byte	.LASF222
+ 2700 10f7 0F       		.sleb128 15
+ 2701 10f8 1D       		.uleb128 0x1d
+ 2702 10f9 00000000 		.4byte	.LASF223
+ 2703 10fd 10       		.sleb128 16
+ 2704 10fe 1D       		.uleb128 0x1d
+ 2705 10ff 00000000 		.4byte	.LASF224
+ 2706 1103 11       		.sleb128 17
+ 2707 1104 1D       		.uleb128 0x1d
+ 2708 1105 00000000 		.4byte	.LASF225
+ 2709 1109 12       		.sleb128 18
+ 2710 110a 1D       		.uleb128 0x1d
+ 2711 110b 00000000 		.4byte	.LASF226
+ 2712 110f 13       		.sleb128 19
+ 2713 1110 1D       		.uleb128 0x1d
+ 2714 1111 00000000 		.4byte	.LASF227
+ 2715 1115 14       		.sleb128 20
+ 2716 1116 1D       		.uleb128 0x1d
+ 2717 1117 00000000 		.4byte	.LASF228
+ 2718 111b 15       		.sleb128 21
+ 2719 111c 1D       		.uleb128 0x1d
+ 2720 111d 00000000 		.4byte	.LASF229
+ 2721 1121 16       		.sleb128 22
+ 2722 1122 1D       		.uleb128 0x1d
+ 2723 1123 00000000 		.4byte	.LASF230
+ 2724 1127 17       		.sleb128 23
+ 2725 1128 1D       		.uleb128 0x1d
+ 2726 1129 00000000 		.4byte	.LASF231
+ 2727 112d 18       		.sleb128 24
+ 2728 112e 1D       		.uleb128 0x1d
+ 2729 112f 00000000 		.4byte	.LASF232
+ 2730 1133 19       		.sleb128 25
+ 2731 1134 1D       		.uleb128 0x1d
+ 2732 1135 00000000 		.4byte	.LASF233
+ 2733 1139 1A       		.sleb128 26
+ 2734 113a 1D       		.uleb128 0x1d
+ 2735 113b 00000000 		.4byte	.LASF234
+ 2736 113f 1B       		.sleb128 27
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 49
+
+
+ 2737 1140 1D       		.uleb128 0x1d
+ 2738 1141 00000000 		.4byte	.LASF235
+ 2739 1145 1C       		.sleb128 28
+ 2740 1146 1D       		.uleb128 0x1d
+ 2741 1147 00000000 		.4byte	.LASF236
+ 2742 114b 1D       		.sleb128 29
+ 2743 114c 1D       		.uleb128 0x1d
+ 2744 114d 00000000 		.4byte	.LASF237
+ 2745 1151 1E       		.sleb128 30
+ 2746 1152 1D       		.uleb128 0x1d
+ 2747 1153 00000000 		.4byte	.LASF238
+ 2748 1157 1F       		.sleb128 31
+ 2749 1158 00       		.byte	0
+ 2750 1159 03       		.uleb128 0x3
+ 2751 115a 00000000 		.4byte	.LASF239
+ 2752 115e 09       		.byte	0x9
+ 2753 115f CA       		.byte	0xca
+ 2754 1160 00001090 		.4byte	0x1090
+ 2755 1164 21       		.uleb128 0x21
+ 2756 1165 04       		.byte	0x4
+ 2757 1166 09       		.byte	0x9
+ 2758 1167 D0       		.byte	0xd0
+ 2759 1168 0000118B 		.4byte	0x118b
+ 2760 116c 1D       		.uleb128 0x1d
+ 2761 116d 00000000 		.4byte	.LASF240
+ 2762 1171 00       		.sleb128 0
+ 2763 1172 1D       		.uleb128 0x1d
+ 2764 1173 00000000 		.4byte	.LASF241
+ 2765 1177 01       		.sleb128 1
+ 2766 1178 1D       		.uleb128 0x1d
+ 2767 1179 00000000 		.4byte	.LASF242
+ 2768 117d 02       		.sleb128 2
+ 2769 117e 1D       		.uleb128 0x1d
+ 2770 117f 00000000 		.4byte	.LASF243
+ 2771 1183 03       		.sleb128 3
+ 2772 1184 1D       		.uleb128 0x1d
+ 2773 1185 00000000 		.4byte	.LASF244
+ 2774 1189 04       		.sleb128 4
+ 2775 118a 00       		.byte	0
+ 2776 118b 03       		.uleb128 0x3
+ 2777 118c 00000000 		.4byte	.LASF245
+ 2778 1190 09       		.byte	0x9
+ 2779 1191 D6       		.byte	0xd6
+ 2780 1192 00001164 		.4byte	0x1164
+ 2781 1196 21       		.uleb128 0x21
+ 2782 1197 04       		.byte	0x4
+ 2783 1198 09       		.byte	0x9
+ 2784 1199 DB       		.byte	0xdb
+ 2785 119a 000011D5 		.4byte	0x11d5
+ 2786 119e 1D       		.uleb128 0x1d
+ 2787 119f 00000000 		.4byte	.LASF246
+ 2788 11a3 00       		.sleb128 0
+ 2789 11a4 1D       		.uleb128 0x1d
+ 2790 11a5 00000000 		.4byte	.LASF247
+ 2791 11a9 01       		.sleb128 1
+ 2792 11aa 1D       		.uleb128 0x1d
+ 2793 11ab 00000000 		.4byte	.LASF248
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 50
+
+
+ 2794 11af 02       		.sleb128 2
+ 2795 11b0 1D       		.uleb128 0x1d
+ 2796 11b1 00000000 		.4byte	.LASF249
+ 2797 11b5 03       		.sleb128 3
+ 2798 11b6 1D       		.uleb128 0x1d
+ 2799 11b7 00000000 		.4byte	.LASF250
+ 2800 11bb 04       		.sleb128 4
+ 2801 11bc 1D       		.uleb128 0x1d
+ 2802 11bd 00000000 		.4byte	.LASF251
+ 2803 11c1 05       		.sleb128 5
+ 2804 11c2 1D       		.uleb128 0x1d
+ 2805 11c3 00000000 		.4byte	.LASF252
+ 2806 11c7 06       		.sleb128 6
+ 2807 11c8 1D       		.uleb128 0x1d
+ 2808 11c9 00000000 		.4byte	.LASF253
+ 2809 11cd 07       		.sleb128 7
+ 2810 11ce 1D       		.uleb128 0x1d
+ 2811 11cf 00000000 		.4byte	.LASF254
+ 2812 11d3 08       		.sleb128 8
+ 2813 11d4 00       		.byte	0
+ 2814 11d5 03       		.uleb128 0x3
+ 2815 11d6 00000000 		.4byte	.LASF255
+ 2816 11da 09       		.byte	0x9
+ 2817 11db E5       		.byte	0xe5
+ 2818 11dc 00001196 		.4byte	0x1196
+ 2819 11e0 03       		.uleb128 0x3
+ 2820 11e1 00000000 		.4byte	.LASF256
+ 2821 11e5 09       		.byte	0x9
+ 2822 11e6 EB       		.byte	0xeb
+ 2823 11e7 000011EB 		.4byte	0x11eb
+ 2824 11eb 1A       		.uleb128 0x1a
+ 2825 11ec 00000000 		.4byte	.LASF256
+ 2826 11f0 0C       		.byte	0xc
+ 2827 11f1 09       		.byte	0x9
+ 2828 11f2 0172     		.2byte	0x172
+ 2829 11f4 00001226 		.4byte	0x1226
+ 2830 11f8 13       		.uleb128 0x13
+ 2831 11f9 00000000 		.4byte	.LASF257
+ 2832 11fd 09       		.byte	0x9
+ 2833 11fe 0176     		.2byte	0x176
+ 2834 1200 000015BC 		.4byte	0x15bc
+ 2835 1204 02       		.byte	0x2
+ 2836 1205 23       		.byte	0x23
+ 2837 1206 00       		.uleb128 0
+ 2838 1207 13       		.uleb128 0x13
+ 2839 1208 00000000 		.4byte	.LASF124
+ 2840 120c 09       		.byte	0x9
+ 2841 120d 017B     		.2byte	0x17b
+ 2842 120f 000015C2 		.4byte	0x15c2
+ 2843 1213 02       		.byte	0x2
+ 2844 1214 23       		.byte	0x23
+ 2845 1215 04       		.uleb128 0x4
+ 2846 1216 13       		.uleb128 0x13
+ 2847 1217 00000000 		.4byte	.LASF258
+ 2848 121b 09       		.byte	0x9
+ 2849 121c 0180     		.2byte	0x180
+ 2850 121e 000015C8 		.4byte	0x15c8
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 51
+
+
+ 2851 1222 02       		.byte	0x2
+ 2852 1223 23       		.byte	0x23
+ 2853 1224 08       		.uleb128 0x8
+ 2854 1225 00       		.byte	0
+ 2855 1226 08       		.uleb128 0x8
+ 2856 1227 0C       		.byte	0xc
+ 2857 1228 09       		.byte	0x9
+ 2858 1229 F1       		.byte	0xf1
+ 2859 122a 00001259 		.4byte	0x1259
+ 2860 122e 16       		.uleb128 0x16
+ 2861 122f 00000000 		.4byte	.LASF259
+ 2862 1233 09       		.byte	0x9
+ 2863 1234 F2       		.byte	0xf2
+ 2864 1235 00001259 		.4byte	0x1259
+ 2865 1239 02       		.byte	0x2
+ 2866 123a 23       		.byte	0x23
+ 2867 123b 00       		.uleb128 0
+ 2868 123c 16       		.uleb128 0x16
+ 2869 123d 00000000 		.4byte	.LASF260
+ 2870 1241 09       		.byte	0x9
+ 2871 1242 F3       		.byte	0xf3
+ 2872 1243 000011D5 		.4byte	0x11d5
+ 2873 1247 02       		.byte	0x2
+ 2874 1248 23       		.byte	0x23
+ 2875 1249 04       		.uleb128 0x4
+ 2876 124a 16       		.uleb128 0x16
+ 2877 124b 00000000 		.4byte	.LASF261
+ 2878 124f 09       		.byte	0x9
+ 2879 1250 F4       		.byte	0xf4
+ 2880 1251 0000125E 		.4byte	0x125e
+ 2881 1255 02       		.byte	0x2
+ 2882 1256 23       		.byte	0x23
+ 2883 1257 08       		.uleb128 0x8
+ 2884 1258 00       		.byte	0
+ 2885 1259 22       		.uleb128 0x22
+ 2886 125a 00001159 		.4byte	0x1159
+ 2887 125e 07       		.uleb128 0x7
+ 2888 125f 04       		.byte	0x4
+ 2889 1260 00001085 		.4byte	0x1085
+ 2890 1264 03       		.uleb128 0x3
+ 2891 1265 00000000 		.4byte	.LASF262
+ 2892 1269 09       		.byte	0x9
+ 2893 126a F5       		.byte	0xf5
+ 2894 126b 00001226 		.4byte	0x1226
+ 2895 126f 08       		.uleb128 0x8
+ 2896 1270 08       		.byte	0x8
+ 2897 1271 09       		.byte	0x9
+ 2898 1272 FB       		.byte	0xfb
+ 2899 1273 00001294 		.4byte	0x1294
+ 2900 1277 16       		.uleb128 0x16
+ 2901 1278 00000000 		.4byte	.LASF263
+ 2902 127c 09       		.byte	0x9
+ 2903 127d FC       		.byte	0xfc
+ 2904 127e 0000118B 		.4byte	0x118b
+ 2905 1282 02       		.byte	0x2
+ 2906 1283 23       		.byte	0x23
+ 2907 1284 00       		.uleb128 0
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 52
+
+
+ 2908 1285 16       		.uleb128 0x16
+ 2909 1286 00000000 		.4byte	.LASF264
+ 2910 128a 09       		.byte	0x9
+ 2911 128b FD       		.byte	0xfd
+ 2912 128c 00001294 		.4byte	0x1294
+ 2913 1290 02       		.byte	0x2
+ 2914 1291 23       		.byte	0x23
+ 2915 1292 04       		.uleb128 0x4
+ 2916 1293 00       		.byte	0
+ 2917 1294 07       		.uleb128 0x7
+ 2918 1295 04       		.byte	0x4
+ 2919 1296 00001264 		.4byte	0x1264
+ 2920 129a 03       		.uleb128 0x3
+ 2921 129b 00000000 		.4byte	.LASF265
+ 2922 129f 09       		.byte	0x9
+ 2923 12a0 FE       		.byte	0xfe
+ 2924 12a1 0000126F 		.4byte	0x126f
+ 2925 12a5 0D       		.uleb128 0xd
+ 2926 12a6 10       		.byte	0x10
+ 2927 12a7 09       		.byte	0x9
+ 2928 12a8 0105     		.2byte	0x105
+ 2929 12aa 000012EB 		.4byte	0x12eb
+ 2930 12ae 13       		.uleb128 0x13
+ 2931 12af 00000000 		.4byte	.LASF266
+ 2932 12b3 09       		.byte	0x9
+ 2933 12b4 0106     		.2byte	0x106
+ 2934 12b6 00000D2A 		.4byte	0xd2a
+ 2935 12ba 02       		.byte	0x2
+ 2936 12bb 23       		.byte	0x23
+ 2937 12bc 00       		.uleb128 0
+ 2938 12bd 13       		.uleb128 0x13
+ 2939 12be 00000000 		.4byte	.LASF267
+ 2940 12c2 09       		.byte	0x9
+ 2941 12c3 0107     		.2byte	0x107
+ 2942 12c5 00000E2F 		.4byte	0xe2f
+ 2943 12c9 02       		.byte	0x2
+ 2944 12ca 23       		.byte	0x23
+ 2945 12cb 04       		.uleb128 0x4
+ 2946 12cc 13       		.uleb128 0x13
+ 2947 12cd 00000000 		.4byte	.LASF268
+ 2948 12d1 09       		.byte	0x9
+ 2949 12d2 0108     		.2byte	0x108
+ 2950 12d4 00000D2A 		.4byte	0xd2a
+ 2951 12d8 02       		.byte	0x2
+ 2952 12d9 23       		.byte	0x23
+ 2953 12da 08       		.uleb128 0x8
+ 2954 12db 13       		.uleb128 0x13
+ 2955 12dc 00000000 		.4byte	.LASF269
+ 2956 12e0 09       		.byte	0x9
+ 2957 12e1 0109     		.2byte	0x109
+ 2958 12e3 00000E2F 		.4byte	0xe2f
+ 2959 12e7 02       		.byte	0x2
+ 2960 12e8 23       		.byte	0x23
+ 2961 12e9 0C       		.uleb128 0xc
+ 2962 12ea 00       		.byte	0
+ 2963 12eb 19       		.uleb128 0x19
+ 2964 12ec 00000000 		.4byte	.LASF270
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 53
+
+
+ 2965 12f0 09       		.byte	0x9
+ 2966 12f1 010A     		.2byte	0x10a
+ 2967 12f3 000012A5 		.4byte	0x12a5
+ 2968 12f7 1C       		.uleb128 0x1c
+ 2969 12f8 04       		.byte	0x4
+ 2970 12f9 09       		.byte	0x9
+ 2971 12fa 0110     		.2byte	0x110
+ 2972 12fc 0000130D 		.4byte	0x130d
+ 2973 1300 1D       		.uleb128 0x1d
+ 2974 1301 00000000 		.4byte	.LASF271
+ 2975 1305 01       		.sleb128 1
+ 2976 1306 1D       		.uleb128 0x1d
+ 2977 1307 00000000 		.4byte	.LASF272
+ 2978 130b 02       		.sleb128 2
+ 2979 130c 00       		.byte	0
+ 2980 130d 19       		.uleb128 0x19
+ 2981 130e 00000000 		.4byte	.LASF273
+ 2982 1312 09       		.byte	0x9
+ 2983 1313 0114     		.2byte	0x114
+ 2984 1315 000012F7 		.4byte	0x12f7
+ 2985 1319 1C       		.uleb128 0x1c
+ 2986 131a 04       		.byte	0x4
+ 2987 131b 09       		.byte	0x9
+ 2988 131c 011A     		.2byte	0x11a
+ 2989 131e 0000132F 		.4byte	0x132f
+ 2990 1322 1D       		.uleb128 0x1d
+ 2991 1323 00000000 		.4byte	.LASF274
+ 2992 1327 01       		.sleb128 1
+ 2993 1328 1D       		.uleb128 0x1d
+ 2994 1329 00000000 		.4byte	.LASF275
+ 2995 132d 02       		.sleb128 2
+ 2996 132e 00       		.byte	0
+ 2997 132f 19       		.uleb128 0x19
+ 2998 1330 00000000 		.4byte	.LASF276
+ 2999 1334 09       		.byte	0x9
+ 3000 1335 011E     		.2byte	0x11e
+ 3001 1337 00001319 		.4byte	0x1319
+ 3002 133b 1C       		.uleb128 0x1c
+ 3003 133c 04       		.byte	0x4
+ 3004 133d 09       		.byte	0x9
+ 3005 133e 0124     		.2byte	0x124
+ 3006 1340 00001375 		.4byte	0x1375
+ 3007 1344 1D       		.uleb128 0x1d
+ 3008 1345 00000000 		.4byte	.LASF277
+ 3009 1349 00       		.sleb128 0
+ 3010 134a 1D       		.uleb128 0x1d
+ 3011 134b 00000000 		.4byte	.LASF278
+ 3012 134f 01       		.sleb128 1
+ 3013 1350 1D       		.uleb128 0x1d
+ 3014 1351 00000000 		.4byte	.LASF279
+ 3015 1355 02       		.sleb128 2
+ 3016 1356 1D       		.uleb128 0x1d
+ 3017 1357 00000000 		.4byte	.LASF280
+ 3018 135b 03       		.sleb128 3
+ 3019 135c 1D       		.uleb128 0x1d
+ 3020 135d 00000000 		.4byte	.LASF281
+ 3021 1361 04       		.sleb128 4
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 54
+
+
+ 3022 1362 1D       		.uleb128 0x1d
+ 3023 1363 00000000 		.4byte	.LASF282
+ 3024 1367 05       		.sleb128 5
+ 3025 1368 1D       		.uleb128 0x1d
+ 3026 1369 00000000 		.4byte	.LASF283
+ 3027 136d 06       		.sleb128 6
+ 3028 136e 1D       		.uleb128 0x1d
+ 3029 136f 00000000 		.4byte	.LASF284
+ 3030 1373 07       		.sleb128 7
+ 3031 1374 00       		.byte	0
+ 3032 1375 19       		.uleb128 0x19
+ 3033 1376 00000000 		.4byte	.LASF285
+ 3034 137a 09       		.byte	0x9
+ 3035 137b 012D     		.2byte	0x12d
+ 3036 137d 0000133B 		.4byte	0x133b
+ 3037 1381 1C       		.uleb128 0x1c
+ 3038 1382 04       		.byte	0x4
+ 3039 1383 09       		.byte	0x9
+ 3040 1384 0134     		.2byte	0x134
+ 3041 1386 0000139D 		.4byte	0x139d
+ 3042 138a 1D       		.uleb128 0x1d
+ 3043 138b 00000000 		.4byte	.LASF286
+ 3044 138f 00       		.sleb128 0
+ 3045 1390 1D       		.uleb128 0x1d
+ 3046 1391 00000000 		.4byte	.LASF287
+ 3047 1395 01       		.sleb128 1
+ 3048 1396 1D       		.uleb128 0x1d
+ 3049 1397 00000000 		.4byte	.LASF288
+ 3050 139b 02       		.sleb128 2
+ 3051 139c 00       		.byte	0
+ 3052 139d 19       		.uleb128 0x19
+ 3053 139e 00000000 		.4byte	.LASF289
+ 3054 13a2 09       		.byte	0x9
+ 3055 13a3 0138     		.2byte	0x138
+ 3056 13a5 00001381 		.4byte	0x1381
+ 3057 13a9 1C       		.uleb128 0x1c
+ 3058 13aa 04       		.byte	0x4
+ 3059 13ab 09       		.byte	0x9
+ 3060 13ac 013E     		.2byte	0x13e
+ 3061 13ae 000013BF 		.4byte	0x13bf
+ 3062 13b2 1D       		.uleb128 0x1d
+ 3063 13b3 00000000 		.4byte	.LASF290
+ 3064 13b7 00       		.sleb128 0
+ 3065 13b8 1D       		.uleb128 0x1d
+ 3066 13b9 00000000 		.4byte	.LASF291
+ 3067 13bd 01       		.sleb128 1
+ 3068 13be 00       		.byte	0
+ 3069 13bf 19       		.uleb128 0x19
+ 3070 13c0 00000000 		.4byte	.LASF292
+ 3071 13c4 09       		.byte	0x9
+ 3072 13c5 0141     		.2byte	0x141
+ 3073 13c7 000013A9 		.4byte	0x13a9
+ 3074 13cb 1C       		.uleb128 0x1c
+ 3075 13cc 04       		.byte	0x4
+ 3076 13cd 09       		.byte	0x9
+ 3077 13ce 0145     		.2byte	0x145
+ 3078 13d0 000013E7 		.4byte	0x13e7
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 55
+
+
+ 3079 13d4 1D       		.uleb128 0x1d
+ 3080 13d5 00000000 		.4byte	.LASF293
+ 3081 13d9 00       		.sleb128 0
+ 3082 13da 1D       		.uleb128 0x1d
+ 3083 13db 00000000 		.4byte	.LASF294
+ 3084 13df 01       		.sleb128 1
+ 3085 13e0 1D       		.uleb128 0x1d
+ 3086 13e1 00000000 		.4byte	.LASF295
+ 3087 13e5 02       		.sleb128 2
+ 3088 13e6 00       		.byte	0
+ 3089 13e7 19       		.uleb128 0x19
+ 3090 13e8 00000000 		.4byte	.LASF296
+ 3091 13ec 09       		.byte	0x9
+ 3092 13ed 0149     		.2byte	0x149
+ 3093 13ef 000013CB 		.4byte	0x13cb
+ 3094 13f3 0D       		.uleb128 0xd
+ 3095 13f4 54       		.byte	0x54
+ 3096 13f5 09       		.byte	0x9
+ 3097 13f6 014E     		.2byte	0x14e
+ 3098 13f8 000015B0 		.4byte	0x15b0
+ 3099 13fc 13       		.uleb128 0x13
+ 3100 13fd 00000000 		.4byte	.LASF297
+ 3101 1401 09       		.byte	0x9
+ 3102 1402 014F     		.2byte	0x14f
+ 3103 1404 0000009B 		.4byte	0x9b
+ 3104 1408 02       		.byte	0x2
+ 3105 1409 23       		.byte	0x23
+ 3106 140a 00       		.uleb128 0
+ 3107 140b 13       		.uleb128 0x13
+ 3108 140c 00000000 		.4byte	.LASF298
+ 3109 1410 09       		.byte	0x9
+ 3110 1411 0150     		.2byte	0x150
+ 3111 1413 0000009B 		.4byte	0x9b
+ 3112 1417 02       		.byte	0x2
+ 3113 1418 23       		.byte	0x23
+ 3114 1419 02       		.uleb128 0x2
+ 3115 141a 13       		.uleb128 0x13
+ 3116 141b 00000000 		.4byte	.LASF299
+ 3117 141f 09       		.byte	0x9
+ 3118 1420 0151     		.2byte	0x151
+ 3119 1422 0000009B 		.4byte	0x9b
+ 3120 1426 02       		.byte	0x2
+ 3121 1427 23       		.byte	0x23
+ 3122 1428 04       		.uleb128 0x4
+ 3123 1429 13       		.uleb128 0x13
+ 3124 142a 00000000 		.4byte	.LASF300
+ 3125 142e 09       		.byte	0x9
+ 3126 142f 0152     		.2byte	0x152
+ 3127 1431 0000009B 		.4byte	0x9b
+ 3128 1435 02       		.byte	0x2
+ 3129 1436 23       		.byte	0x23
+ 3130 1437 06       		.uleb128 0x6
+ 3131 1438 13       		.uleb128 0x13
+ 3132 1439 00000000 		.4byte	.LASF301
+ 3133 143d 09       		.byte	0x9
+ 3134 143e 0153     		.2byte	0x153
+ 3135 1440 0000009B 		.4byte	0x9b
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 56
+
+
+ 3136 1444 02       		.byte	0x2
+ 3137 1445 23       		.byte	0x23
+ 3138 1446 08       		.uleb128 0x8
+ 3139 1447 13       		.uleb128 0x13
+ 3140 1448 00000000 		.4byte	.LASF302
+ 3141 144c 09       		.byte	0x9
+ 3142 144d 0154     		.2byte	0x154
+ 3143 144f 0000009B 		.4byte	0x9b
+ 3144 1453 02       		.byte	0x2
+ 3145 1454 23       		.byte	0x23
+ 3146 1455 0A       		.uleb128 0xa
+ 3147 1456 13       		.uleb128 0x13
+ 3148 1457 00000000 		.4byte	.LASF303
+ 3149 145b 09       		.byte	0x9
+ 3150 145c 0155     		.2byte	0x155
+ 3151 145e 0000009B 		.4byte	0x9b
+ 3152 1462 02       		.byte	0x2
+ 3153 1463 23       		.byte	0x23
+ 3154 1464 0C       		.uleb128 0xc
+ 3155 1465 13       		.uleb128 0x13
+ 3156 1466 00000000 		.4byte	.LASF304
+ 3157 146a 09       		.byte	0x9
+ 3158 146b 0156     		.2byte	0x156
+ 3159 146d 0000009B 		.4byte	0x9b
+ 3160 1471 02       		.byte	0x2
+ 3161 1472 23       		.byte	0x23
+ 3162 1473 0E       		.uleb128 0xe
+ 3163 1474 13       		.uleb128 0x13
+ 3164 1475 00000000 		.4byte	.LASF305
+ 3165 1479 09       		.byte	0x9
+ 3166 147a 0157     		.2byte	0x157
+ 3167 147c 0000009B 		.4byte	0x9b
+ 3168 1480 02       		.byte	0x2
+ 3169 1481 23       		.byte	0x23
+ 3170 1482 10       		.uleb128 0x10
+ 3171 1483 13       		.uleb128 0x13
+ 3172 1484 00000000 		.4byte	.LASF306
+ 3173 1488 09       		.byte	0x9
+ 3174 1489 0158     		.2byte	0x158
+ 3175 148b 0000009B 		.4byte	0x9b
+ 3176 148f 02       		.byte	0x2
+ 3177 1490 23       		.byte	0x23
+ 3178 1491 12       		.uleb128 0x12
+ 3179 1492 13       		.uleb128 0x13
+ 3180 1493 00000000 		.4byte	.LASF307
+ 3181 1497 09       		.byte	0x9
+ 3182 1498 0159     		.2byte	0x159
+ 3183 149a 0000009B 		.4byte	0x9b
+ 3184 149e 02       		.byte	0x2
+ 3185 149f 23       		.byte	0x23
+ 3186 14a0 14       		.uleb128 0x14
+ 3187 14a1 13       		.uleb128 0x13
+ 3188 14a2 00000000 		.4byte	.LASF308
+ 3189 14a6 09       		.byte	0x9
+ 3190 14a7 015A     		.2byte	0x15a
+ 3191 14a9 0000009B 		.4byte	0x9b
+ 3192 14ad 02       		.byte	0x2
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 57
+
+
+ 3193 14ae 23       		.byte	0x23
+ 3194 14af 16       		.uleb128 0x16
+ 3195 14b0 13       		.uleb128 0x13
+ 3196 14b1 00000000 		.4byte	.LASF309
+ 3197 14b5 09       		.byte	0x9
+ 3198 14b6 015B     		.2byte	0x15b
+ 3199 14b8 0000009B 		.4byte	0x9b
+ 3200 14bc 02       		.byte	0x2
+ 3201 14bd 23       		.byte	0x23
+ 3202 14be 18       		.uleb128 0x18
+ 3203 14bf 13       		.uleb128 0x13
+ 3204 14c0 00000000 		.4byte	.LASF310
+ 3205 14c4 09       		.byte	0x9
+ 3206 14c5 015C     		.2byte	0x15c
+ 3207 14c7 0000009B 		.4byte	0x9b
+ 3208 14cb 02       		.byte	0x2
+ 3209 14cc 23       		.byte	0x23
+ 3210 14cd 1A       		.uleb128 0x1a
+ 3211 14ce 13       		.uleb128 0x13
+ 3212 14cf 00000000 		.4byte	.LASF311
+ 3213 14d3 09       		.byte	0x9
+ 3214 14d4 015D     		.2byte	0x15d
+ 3215 14d6 0000009B 		.4byte	0x9b
+ 3216 14da 02       		.byte	0x2
+ 3217 14db 23       		.byte	0x23
+ 3218 14dc 1C       		.uleb128 0x1c
+ 3219 14dd 13       		.uleb128 0x13
+ 3220 14de 00000000 		.4byte	.LASF312
+ 3221 14e2 09       		.byte	0x9
+ 3222 14e3 015E     		.2byte	0x15e
+ 3223 14e5 0000009B 		.4byte	0x9b
+ 3224 14e9 02       		.byte	0x2
+ 3225 14ea 23       		.byte	0x23
+ 3226 14eb 1E       		.uleb128 0x1e
+ 3227 14ec 13       		.uleb128 0x13
+ 3228 14ed 00000000 		.4byte	.LASF313
+ 3229 14f1 09       		.byte	0x9
+ 3230 14f2 015F     		.2byte	0x15f
+ 3231 14f4 00000F2B 		.4byte	0xf2b
+ 3232 14f8 02       		.byte	0x2
+ 3233 14f9 23       		.byte	0x23
+ 3234 14fa 20       		.uleb128 0x20
+ 3235 14fb 13       		.uleb128 0x13
+ 3236 14fc 00000000 		.4byte	.LASF314
+ 3237 1500 09       		.byte	0x9
+ 3238 1501 0160     		.2byte	0x160
+ 3239 1503 00000F2B 		.4byte	0xf2b
+ 3240 1507 02       		.byte	0x2
+ 3241 1508 23       		.byte	0x23
+ 3242 1509 24       		.uleb128 0x24
+ 3243 150a 13       		.uleb128 0x13
+ 3244 150b 00000000 		.4byte	.LASF315
+ 3245 150f 09       		.byte	0x9
+ 3246 1510 0161     		.2byte	0x161
+ 3247 1512 00000F2B 		.4byte	0xf2b
+ 3248 1516 02       		.byte	0x2
+ 3249 1517 23       		.byte	0x23
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 58
+
+
+ 3250 1518 28       		.uleb128 0x28
+ 3251 1519 13       		.uleb128 0x13
+ 3252 151a 00000000 		.4byte	.LASF316
+ 3253 151e 09       		.byte	0x9
+ 3254 151f 0162     		.2byte	0x162
+ 3255 1521 00000F2B 		.4byte	0xf2b
+ 3256 1525 02       		.byte	0x2
+ 3257 1526 23       		.byte	0x23
+ 3258 1527 2C       		.uleb128 0x2c
+ 3259 1528 13       		.uleb128 0x13
+ 3260 1529 00000000 		.4byte	.LASF317
+ 3261 152d 09       		.byte	0x9
+ 3262 152e 0163     		.2byte	0x163
+ 3263 1530 00000F2B 		.4byte	0xf2b
+ 3264 1534 02       		.byte	0x2
+ 3265 1535 23       		.byte	0x23
+ 3266 1536 30       		.uleb128 0x30
+ 3267 1537 13       		.uleb128 0x13
+ 3268 1538 00000000 		.4byte	.LASF318
+ 3269 153c 09       		.byte	0x9
+ 3270 153d 0164     		.2byte	0x164
+ 3271 153f 00000F2B 		.4byte	0xf2b
+ 3272 1543 02       		.byte	0x2
+ 3273 1544 23       		.byte	0x23
+ 3274 1545 34       		.uleb128 0x34
+ 3275 1546 13       		.uleb128 0x13
+ 3276 1547 00000000 		.4byte	.LASF319
+ 3277 154b 09       		.byte	0x9
+ 3278 154c 0165     		.2byte	0x165
+ 3279 154e 00000EC5 		.4byte	0xec5
+ 3280 1552 02       		.byte	0x2
+ 3281 1553 23       		.byte	0x23
+ 3282 1554 38       		.uleb128 0x38
+ 3283 1555 13       		.uleb128 0x13
+ 3284 1556 00000000 		.4byte	.LASF320
+ 3285 155a 09       		.byte	0x9
+ 3286 155b 0166     		.2byte	0x166
+ 3287 155d 0000130D 		.4byte	0x130d
+ 3288 1561 02       		.byte	0x2
+ 3289 1562 23       		.byte	0x23
+ 3290 1563 3C       		.uleb128 0x3c
+ 3291 1564 13       		.uleb128 0x13
+ 3292 1565 00000000 		.4byte	.LASF321
+ 3293 1569 09       		.byte	0x9
+ 3294 156a 0167     		.2byte	0x167
+ 3295 156c 00001375 		.4byte	0x1375
+ 3296 1570 02       		.byte	0x2
+ 3297 1571 23       		.byte	0x23
+ 3298 1572 40       		.uleb128 0x40
+ 3299 1573 13       		.uleb128 0x13
+ 3300 1574 00000000 		.4byte	.LASF322
+ 3301 1578 09       		.byte	0x9
+ 3302 1579 0168     		.2byte	0x168
+ 3303 157b 0000132F 		.4byte	0x132f
+ 3304 157f 02       		.byte	0x2
+ 3305 1580 23       		.byte	0x23
+ 3306 1581 44       		.uleb128 0x44
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 59
+
+
+ 3307 1582 13       		.uleb128 0x13
+ 3308 1583 00000000 		.4byte	.LASF323
+ 3309 1587 09       		.byte	0x9
+ 3310 1588 0169     		.2byte	0x169
+ 3311 158a 000013BF 		.4byte	0x13bf
+ 3312 158e 02       		.byte	0x2
+ 3313 158f 23       		.byte	0x23
+ 3314 1590 48       		.uleb128 0x48
+ 3315 1591 13       		.uleb128 0x13
+ 3316 1592 00000000 		.4byte	.LASF324
+ 3317 1596 09       		.byte	0x9
+ 3318 1597 016A     		.2byte	0x16a
+ 3319 1599 0000139D 		.4byte	0x139d
+ 3320 159d 02       		.byte	0x2
+ 3321 159e 23       		.byte	0x23
+ 3322 159f 4C       		.uleb128 0x4c
+ 3323 15a0 13       		.uleb128 0x13
+ 3324 15a1 00000000 		.4byte	.LASF325
+ 3325 15a5 09       		.byte	0x9
+ 3326 15a6 016B     		.2byte	0x16b
+ 3327 15a8 000013E7 		.4byte	0x13e7
+ 3328 15ac 02       		.byte	0x2
+ 3329 15ad 23       		.byte	0x23
+ 3330 15ae 50       		.uleb128 0x50
+ 3331 15af 00       		.byte	0
+ 3332 15b0 19       		.uleb128 0x19
+ 3333 15b1 00000000 		.4byte	.LASF326
+ 3334 15b5 09       		.byte	0x9
+ 3335 15b6 016C     		.2byte	0x16c
+ 3336 15b8 000013F3 		.4byte	0x13f3
+ 3337 15bc 07       		.uleb128 0x7
+ 3338 15bd 04       		.byte	0x4
+ 3339 15be 0000129A 		.4byte	0x129a
+ 3340 15c2 07       		.uleb128 0x7
+ 3341 15c3 04       		.byte	0x4
+ 3342 15c4 000012EB 		.4byte	0x12eb
+ 3343 15c8 07       		.uleb128 0x7
+ 3344 15c9 04       		.byte	0x4
+ 3345 15ca 000015B0 		.4byte	0x15b0
+ 3346 15ce 23       		.uleb128 0x23
+ 3347 15cf 01       		.byte	0x1
+ 3348 15d0 00000000 		.4byte	.LASF339
+ 3349 15d4 01       		.byte	0x1
+ 3350 15d5 BC       		.byte	0xbc
+ 3351 15d6 01       		.byte	0x1
+ 3352 15d7 00000000 		.4byte	.LFB3
+ 3353 15db 00000000 		.4byte	.LFE3
+ 3354 15df 02       		.byte	0x2
+ 3355 15e0 71       		.byte	0x71
+ 3356 15e1 00       		.sleb128 0
+ 3357 15e2 01       		.byte	0x1
+ 3358 15e3 000015FC 		.4byte	0x15fc
+ 3359 15e7 24       		.uleb128 0x24
+ 3360 15e8 00000000 		.4byte	.LVL0
+ 3361 15ec 01       		.byte	0x1
+ 3362 15ed 000016B0 		.4byte	0x16b0
+ 3363 15f1 25       		.uleb128 0x25
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 60
+
+
+ 3364 15f2 01       		.byte	0x1
+ 3365 15f3 53       		.byte	0x53
+ 3366 15f4 05       		.byte	0x5
+ 3367 15f5 03       		.byte	0x3
+ 3368 15f6 00000000 		.4byte	.LANCHOR0
+ 3369 15fa 00       		.byte	0
+ 3370 15fb 00       		.byte	0
+ 3371 15fc 26       		.uleb128 0x26
+ 3372 15fd 00000000 		.4byte	.LASF327
+ 3373 1601 01       		.byte	0x1
+ 3374 1602 21       		.byte	0x21
+ 3375 1603 00001085 		.4byte	0x1085
+ 3376 1607 05       		.byte	0x5
+ 3377 1608 03       		.byte	0x3
+ 3378 1609 00000000 		.4byte	AEK_POW_BMS63EN_cell_stack_state_dev1
+ 3379 160d 26       		.uleb128 0x26
+ 3380 160e 00000000 		.4byte	.LASF328
+ 3381 1612 01       		.byte	0x1
+ 3382 1613 31       		.byte	0x31
+ 3383 1614 00001085 		.4byte	0x1085
+ 3384 1618 05       		.byte	0x5
+ 3385 1619 03       		.byte	0x3
+ 3386 161a 00000000 		.4byte	AEK_POW_BMS63EN_cell_stack_state_dev2
+ 3387 161e 17       		.uleb128 0x17
+ 3388 161f 00001264 		.4byte	0x1264
+ 3389 1623 0000162E 		.4byte	0x162e
+ 3390 1627 18       		.uleb128 0x18
+ 3391 1628 000000E1 		.4byte	0xe1
+ 3392 162c 01       		.byte	0x1
+ 3393 162d 00       		.byte	0
+ 3394 162e 26       		.uleb128 0x26
+ 3395 162f 00000000 		.4byte	.LASF329
+ 3396 1633 01       		.byte	0x1
+ 3397 1634 43       		.byte	0x43
+ 3398 1635 0000161E 		.4byte	0x161e
+ 3399 1639 05       		.byte	0x5
+ 3400 163a 03       		.byte	0x3
+ 3401 163b 00000000 		.4byte	AEK_POW_BMS63EN_dev_status
+ 3402 163f 26       		.uleb128 0x26
+ 3403 1640 00000000 		.4byte	.LASF330
+ 3404 1644 01       		.byte	0x1
+ 3405 1645 48       		.byte	0x48
+ 3406 1646 0000129A 		.4byte	0x129a
+ 3407 164a 05       		.byte	0x5
+ 3408 164b 03       		.byte	0x3
+ 3409 164c 00000000 		.4byte	AEK_POW_BMS63EN_status
+ 3410 1650 17       		.uleb128 0x17
+ 3411 1651 000015B0 		.4byte	0x15b0
+ 3412 1655 00001660 		.4byte	0x1660
+ 3413 1659 18       		.uleb128 0x18
+ 3414 165a 000000E1 		.4byte	0xe1
+ 3415 165e 01       		.byte	0x1
+ 3416 165f 00       		.byte	0
+ 3417 1660 26       		.uleb128 0x26
+ 3418 1661 00000000 		.4byte	.LASF331
+ 3419 1665 01       		.byte	0x1
+ 3420 1666 4E       		.byte	0x4e
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 61
+
+
+ 3421 1667 00001650 		.4byte	0x1650
+ 3422 166b 05       		.byte	0x5
+ 3423 166c 03       		.byte	0x3
+ 3424 166d 00000000 		.4byte	AEK_POW_BMS63EN_ParamConf_dev
+ 3425 1671 27       		.uleb128 0x27
+ 3426 1672 00000000 		.4byte	.LASF332
+ 3427 1676 08       		.byte	0x8
+ 3428 1677 0414     		.2byte	0x414
+ 3429 1679 00000C4D 		.4byte	0xc4d
+ 3430 167d 01       		.byte	0x1
+ 3431 167e 01       		.byte	0x1
+ 3432 167f 28       		.uleb128 0x28
+ 3433 1680 00000000 		.4byte	.LASF333
+ 3434 1684 01       		.byte	0x1
+ 3435 1685 98       		.byte	0x98
+ 3436 1686 000011E0 		.4byte	0x11e0
+ 3437 168a 01       		.byte	0x1
+ 3438 168b 05       		.byte	0x5
+ 3439 168c 03       		.byte	0x3
+ 3440 168d 00000000 		.4byte	AEK_POW_BMS63EN_Drv
+ 3441 1691 28       		.uleb128 0x28
+ 3442 1692 00000000 		.4byte	.LASF334
+ 3443 1696 01       		.byte	0x1
+ 3444 1697 AA       		.byte	0xaa
+ 3445 1698 000012EB 		.4byte	0x12eb
+ 3446 169c 01       		.byte	0x1
+ 3447 169d 05       		.byte	0x5
+ 3448 169e 03       		.byte	0x3
+ 3449 169f 00000000 		.4byte	AEK_POW_BMS63EN_config
+ 3450 16a3 29       		.uleb128 0x29
+ 3451 16a4 00000000 		.4byte	.LASF335
+ 3452 16a8 0A       		.byte	0xa
+ 3453 16a9 35       		.byte	0x35
+ 3454 16aa 00000DA3 		.4byte	0xda3
+ 3455 16ae 01       		.byte	0x1
+ 3456 16af 01       		.byte	0x1
+ 3457 16b0 2A       		.uleb128 0x2a
+ 3458 16b1 01       		.byte	0x1
+ 3459 16b2 00000000 		.4byte	.LASF340
+ 3460 16b6 09       		.byte	0x9
+ 3461 16b7 0194     		.2byte	0x194
+ 3462 16b9 01       		.byte	0x1
+ 3463 16ba 01       		.byte	0x1
+ 3464 16bb 000016C5 		.4byte	0x16c5
+ 3465 16bf 1F       		.uleb128 0x1f
+ 3466 16c0 000016C5 		.4byte	0x16c5
+ 3467 16c4 00       		.byte	0
+ 3468 16c5 07       		.uleb128 0x7
+ 3469 16c6 04       		.byte	0x4
+ 3470 16c7 000011E0 		.4byte	0x11e0
+ 3471 16cb 00       		.byte	0
+ 3472              		.section	.debug_abbrev,"",@progbits
+ 3473              	.Ldebug_abbrev0:
+ 3474 0000 01       		.uleb128 0x1
+ 3475 0001 11       		.uleb128 0x11
+ 3476 0002 01       		.byte	0x1
+ 3477 0003 25       		.uleb128 0x25
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 62
+
+
+ 3478 0004 0E       		.uleb128 0xe
+ 3479 0005 13       		.uleb128 0x13
+ 3480 0006 0B       		.uleb128 0xb
+ 3481 0007 03       		.uleb128 0x3
+ 3482 0008 0E       		.uleb128 0xe
+ 3483 0009 1B       		.uleb128 0x1b
+ 3484 000a 0E       		.uleb128 0xe
+ 3485 000b 55       		.uleb128 0x55
+ 3486 000c 06       		.uleb128 0x6
+ 3487 000d 11       		.uleb128 0x11
+ 3488 000e 01       		.uleb128 0x1
+ 3489 000f 52       		.uleb128 0x52
+ 3490 0010 01       		.uleb128 0x1
+ 3491 0011 10       		.uleb128 0x10
+ 3492 0012 06       		.uleb128 0x6
+ 3493 0013 00       		.byte	0
+ 3494 0014 00       		.byte	0
+ 3495 0015 02       		.uleb128 0x2
+ 3496 0016 24       		.uleb128 0x24
+ 3497 0017 00       		.byte	0
+ 3498 0018 0B       		.uleb128 0xb
+ 3499 0019 0B       		.uleb128 0xb
+ 3500 001a 3E       		.uleb128 0x3e
+ 3501 001b 0B       		.uleb128 0xb
+ 3502 001c 03       		.uleb128 0x3
+ 3503 001d 0E       		.uleb128 0xe
+ 3504 001e 00       		.byte	0
+ 3505 001f 00       		.byte	0
+ 3506 0020 03       		.uleb128 0x3
+ 3507 0021 16       		.uleb128 0x16
+ 3508 0022 00       		.byte	0
+ 3509 0023 03       		.uleb128 0x3
+ 3510 0024 0E       		.uleb128 0xe
+ 3511 0025 3A       		.uleb128 0x3a
+ 3512 0026 0B       		.uleb128 0xb
+ 3513 0027 3B       		.uleb128 0x3b
+ 3514 0028 0B       		.uleb128 0xb
+ 3515 0029 49       		.uleb128 0x49
+ 3516 002a 13       		.uleb128 0x13
+ 3517 002b 00       		.byte	0
+ 3518 002c 00       		.byte	0
+ 3519 002d 04       		.uleb128 0x4
+ 3520 002e 24       		.uleb128 0x24
+ 3521 002f 00       		.byte	0
+ 3522 0030 0B       		.uleb128 0xb
+ 3523 0031 0B       		.uleb128 0xb
+ 3524 0032 3E       		.uleb128 0x3e
+ 3525 0033 0B       		.uleb128 0xb
+ 3526 0034 03       		.uleb128 0x3
+ 3527 0035 08       		.uleb128 0x8
+ 3528 0036 00       		.byte	0
+ 3529 0037 00       		.byte	0
+ 3530 0038 05       		.uleb128 0x5
+ 3531 0039 35       		.uleb128 0x35
+ 3532 003a 00       		.byte	0
+ 3533 003b 49       		.uleb128 0x49
+ 3534 003c 13       		.uleb128 0x13
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 63
+
+
+ 3535 003d 00       		.byte	0
+ 3536 003e 00       		.byte	0
+ 3537 003f 06       		.uleb128 0x6
+ 3538 0040 0F       		.uleb128 0xf
+ 3539 0041 00       		.byte	0
+ 3540 0042 0B       		.uleb128 0xb
+ 3541 0043 0B       		.uleb128 0xb
+ 3542 0044 00       		.byte	0
+ 3543 0045 00       		.byte	0
+ 3544 0046 07       		.uleb128 0x7
+ 3545 0047 0F       		.uleb128 0xf
+ 3546 0048 00       		.byte	0
+ 3547 0049 0B       		.uleb128 0xb
+ 3548 004a 0B       		.uleb128 0xb
+ 3549 004b 49       		.uleb128 0x49
+ 3550 004c 13       		.uleb128 0x13
+ 3551 004d 00       		.byte	0
+ 3552 004e 00       		.byte	0
+ 3553 004f 08       		.uleb128 0x8
+ 3554 0050 13       		.uleb128 0x13
+ 3555 0051 01       		.byte	0x1
+ 3556 0052 0B       		.uleb128 0xb
+ 3557 0053 0B       		.uleb128 0xb
+ 3558 0054 3A       		.uleb128 0x3a
+ 3559 0055 0B       		.uleb128 0xb
+ 3560 0056 3B       		.uleb128 0x3b
+ 3561 0057 0B       		.uleb128 0xb
+ 3562 0058 01       		.uleb128 0x1
+ 3563 0059 13       		.uleb128 0x13
+ 3564 005a 00       		.byte	0
+ 3565 005b 00       		.byte	0
+ 3566 005c 09       		.uleb128 0x9
+ 3567 005d 0D       		.uleb128 0xd
+ 3568 005e 00       		.byte	0
+ 3569 005f 03       		.uleb128 0x3
+ 3570 0060 0E       		.uleb128 0xe
+ 3571 0061 3A       		.uleb128 0x3a
+ 3572 0062 0B       		.uleb128 0xb
+ 3573 0063 3B       		.uleb128 0x3b
+ 3574 0064 0B       		.uleb128 0xb
+ 3575 0065 49       		.uleb128 0x49
+ 3576 0066 13       		.uleb128 0x13
+ 3577 0067 0B       		.uleb128 0xb
+ 3578 0068 0B       		.uleb128 0xb
+ 3579 0069 0D       		.uleb128 0xd
+ 3580 006a 0B       		.uleb128 0xb
+ 3581 006b 0C       		.uleb128 0xc
+ 3582 006c 0B       		.uleb128 0xb
+ 3583 006d 38       		.uleb128 0x38
+ 3584 006e 0A       		.uleb128 0xa
+ 3585 006f 00       		.byte	0
+ 3586 0070 00       		.byte	0
+ 3587 0071 0A       		.uleb128 0xa
+ 3588 0072 0D       		.uleb128 0xd
+ 3589 0073 00       		.byte	0
+ 3590 0074 03       		.uleb128 0x3
+ 3591 0075 08       		.uleb128 0x8
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 64
+
+
+ 3592 0076 3A       		.uleb128 0x3a
+ 3593 0077 0B       		.uleb128 0xb
+ 3594 0078 3B       		.uleb128 0x3b
+ 3595 0079 0B       		.uleb128 0xb
+ 3596 007a 49       		.uleb128 0x49
+ 3597 007b 13       		.uleb128 0x13
+ 3598 007c 0B       		.uleb128 0xb
+ 3599 007d 0B       		.uleb128 0xb
+ 3600 007e 0D       		.uleb128 0xd
+ 3601 007f 0B       		.uleb128 0xb
+ 3602 0080 0C       		.uleb128 0xc
+ 3603 0081 0B       		.uleb128 0xb
+ 3604 0082 38       		.uleb128 0x38
+ 3605 0083 0A       		.uleb128 0xa
+ 3606 0084 00       		.byte	0
+ 3607 0085 00       		.byte	0
+ 3608 0086 0B       		.uleb128 0xb
+ 3609 0087 17       		.uleb128 0x17
+ 3610 0088 01       		.byte	0x1
+ 3611 0089 0B       		.uleb128 0xb
+ 3612 008a 0B       		.uleb128 0xb
+ 3613 008b 3A       		.uleb128 0x3a
+ 3614 008c 0B       		.uleb128 0xb
+ 3615 008d 3B       		.uleb128 0x3b
+ 3616 008e 0B       		.uleb128 0xb
+ 3617 008f 01       		.uleb128 0x1
+ 3618 0090 13       		.uleb128 0x13
+ 3619 0091 00       		.byte	0
+ 3620 0092 00       		.byte	0
+ 3621 0093 0C       		.uleb128 0xc
+ 3622 0094 0D       		.uleb128 0xd
+ 3623 0095 00       		.byte	0
+ 3624 0096 03       		.uleb128 0x3
+ 3625 0097 08       		.uleb128 0x8
+ 3626 0098 3A       		.uleb128 0x3a
+ 3627 0099 0B       		.uleb128 0xb
+ 3628 009a 3B       		.uleb128 0x3b
+ 3629 009b 0B       		.uleb128 0xb
+ 3630 009c 49       		.uleb128 0x49
+ 3631 009d 13       		.uleb128 0x13
+ 3632 009e 00       		.byte	0
+ 3633 009f 00       		.byte	0
+ 3634 00a0 0D       		.uleb128 0xd
+ 3635 00a1 13       		.uleb128 0x13
+ 3636 00a2 01       		.byte	0x1
+ 3637 00a3 0B       		.uleb128 0xb
+ 3638 00a4 0B       		.uleb128 0xb
+ 3639 00a5 3A       		.uleb128 0x3a
+ 3640 00a6 0B       		.uleb128 0xb
+ 3641 00a7 3B       		.uleb128 0x3b
+ 3642 00a8 05       		.uleb128 0x5
+ 3643 00a9 01       		.uleb128 0x1
+ 3644 00aa 13       		.uleb128 0x13
+ 3645 00ab 00       		.byte	0
+ 3646 00ac 00       		.byte	0
+ 3647 00ad 0E       		.uleb128 0xe
+ 3648 00ae 0D       		.uleb128 0xd
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 65
+
+
+ 3649 00af 00       		.byte	0
+ 3650 00b0 03       		.uleb128 0x3
+ 3651 00b1 08       		.uleb128 0x8
+ 3652 00b2 3A       		.uleb128 0x3a
+ 3653 00b3 0B       		.uleb128 0xb
+ 3654 00b4 3B       		.uleb128 0x3b
+ 3655 00b5 05       		.uleb128 0x5
+ 3656 00b6 49       		.uleb128 0x49
+ 3657 00b7 13       		.uleb128 0x13
+ 3658 00b8 0B       		.uleb128 0xb
+ 3659 00b9 0B       		.uleb128 0xb
+ 3660 00ba 0D       		.uleb128 0xd
+ 3661 00bb 0B       		.uleb128 0xb
+ 3662 00bc 0C       		.uleb128 0xc
+ 3663 00bd 0B       		.uleb128 0xb
+ 3664 00be 38       		.uleb128 0x38
+ 3665 00bf 0A       		.uleb128 0xa
+ 3666 00c0 00       		.byte	0
+ 3667 00c1 00       		.byte	0
+ 3668 00c2 0F       		.uleb128 0xf
+ 3669 00c3 0D       		.uleb128 0xd
+ 3670 00c4 00       		.byte	0
+ 3671 00c5 03       		.uleb128 0x3
+ 3672 00c6 0E       		.uleb128 0xe
+ 3673 00c7 3A       		.uleb128 0x3a
+ 3674 00c8 0B       		.uleb128 0xb
+ 3675 00c9 3B       		.uleb128 0x3b
+ 3676 00ca 05       		.uleb128 0x5
+ 3677 00cb 49       		.uleb128 0x49
+ 3678 00cc 13       		.uleb128 0x13
+ 3679 00cd 0B       		.uleb128 0xb
+ 3680 00ce 0B       		.uleb128 0xb
+ 3681 00cf 0D       		.uleb128 0xd
+ 3682 00d0 0B       		.uleb128 0xb
+ 3683 00d1 0C       		.uleb128 0xc
+ 3684 00d2 0B       		.uleb128 0xb
+ 3685 00d3 38       		.uleb128 0x38
+ 3686 00d4 0A       		.uleb128 0xa
+ 3687 00d5 00       		.byte	0
+ 3688 00d6 00       		.byte	0
+ 3689 00d7 10       		.uleb128 0x10
+ 3690 00d8 0D       		.uleb128 0xd
+ 3691 00d9 00       		.byte	0
+ 3692 00da 03       		.uleb128 0x3
+ 3693 00db 08       		.uleb128 0x8
+ 3694 00dc 3A       		.uleb128 0x3a
+ 3695 00dd 0B       		.uleb128 0xb
+ 3696 00de 3B       		.uleb128 0x3b
+ 3697 00df 05       		.uleb128 0x5
+ 3698 00e0 49       		.uleb128 0x49
+ 3699 00e1 13       		.uleb128 0x13
+ 3700 00e2 00       		.byte	0
+ 3701 00e3 00       		.byte	0
+ 3702 00e4 11       		.uleb128 0x11
+ 3703 00e5 17       		.uleb128 0x17
+ 3704 00e6 01       		.byte	0x1
+ 3705 00e7 0B       		.uleb128 0xb
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 66
+
+
+ 3706 00e8 0B       		.uleb128 0xb
+ 3707 00e9 3A       		.uleb128 0x3a
+ 3708 00ea 0B       		.uleb128 0xb
+ 3709 00eb 3B       		.uleb128 0x3b
+ 3710 00ec 05       		.uleb128 0x5
+ 3711 00ed 01       		.uleb128 0x1
+ 3712 00ee 13       		.uleb128 0x13
+ 3713 00ef 00       		.byte	0
+ 3714 00f0 00       		.byte	0
+ 3715 00f1 12       		.uleb128 0x12
+ 3716 00f2 0D       		.uleb128 0xd
+ 3717 00f3 00       		.byte	0
+ 3718 00f4 03       		.uleb128 0x3
+ 3719 00f5 08       		.uleb128 0x8
+ 3720 00f6 3A       		.uleb128 0x3a
+ 3721 00f7 0B       		.uleb128 0xb
+ 3722 00f8 3B       		.uleb128 0x3b
+ 3723 00f9 05       		.uleb128 0x5
+ 3724 00fa 49       		.uleb128 0x49
+ 3725 00fb 13       		.uleb128 0x13
+ 3726 00fc 38       		.uleb128 0x38
+ 3727 00fd 0A       		.uleb128 0xa
+ 3728 00fe 00       		.byte	0
+ 3729 00ff 00       		.byte	0
+ 3730 0100 13       		.uleb128 0x13
+ 3731 0101 0D       		.uleb128 0xd
+ 3732 0102 00       		.byte	0
+ 3733 0103 03       		.uleb128 0x3
+ 3734 0104 0E       		.uleb128 0xe
+ 3735 0105 3A       		.uleb128 0x3a
+ 3736 0106 0B       		.uleb128 0xb
+ 3737 0107 3B       		.uleb128 0x3b
+ 3738 0108 05       		.uleb128 0x5
+ 3739 0109 49       		.uleb128 0x49
+ 3740 010a 13       		.uleb128 0x13
+ 3741 010b 38       		.uleb128 0x38
+ 3742 010c 0A       		.uleb128 0xa
+ 3743 010d 00       		.byte	0
+ 3744 010e 00       		.byte	0
+ 3745 010f 14       		.uleb128 0x14
+ 3746 0110 13       		.uleb128 0x13
+ 3747 0111 01       		.byte	0x1
+ 3748 0112 03       		.uleb128 0x3
+ 3749 0113 0E       		.uleb128 0xe
+ 3750 0114 0B       		.uleb128 0xb
+ 3751 0115 05       		.uleb128 0x5
+ 3752 0116 3A       		.uleb128 0x3a
+ 3753 0117 0B       		.uleb128 0xb
+ 3754 0118 3B       		.uleb128 0x3b
+ 3755 0119 0B       		.uleb128 0xb
+ 3756 011a 01       		.uleb128 0x1
+ 3757 011b 13       		.uleb128 0x13
+ 3758 011c 00       		.byte	0
+ 3759 011d 00       		.byte	0
+ 3760 011e 15       		.uleb128 0x15
+ 3761 011f 0D       		.uleb128 0xd
+ 3762 0120 00       		.byte	0
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 67
+
+
+ 3763 0121 03       		.uleb128 0x3
+ 3764 0122 08       		.uleb128 0x8
+ 3765 0123 3A       		.uleb128 0x3a
+ 3766 0124 0B       		.uleb128 0xb
+ 3767 0125 3B       		.uleb128 0x3b
+ 3768 0126 0B       		.uleb128 0xb
+ 3769 0127 49       		.uleb128 0x49
+ 3770 0128 13       		.uleb128 0x13
+ 3771 0129 38       		.uleb128 0x38
+ 3772 012a 0A       		.uleb128 0xa
+ 3773 012b 00       		.byte	0
+ 3774 012c 00       		.byte	0
+ 3775 012d 16       		.uleb128 0x16
+ 3776 012e 0D       		.uleb128 0xd
+ 3777 012f 00       		.byte	0
+ 3778 0130 03       		.uleb128 0x3
+ 3779 0131 0E       		.uleb128 0xe
+ 3780 0132 3A       		.uleb128 0x3a
+ 3781 0133 0B       		.uleb128 0xb
+ 3782 0134 3B       		.uleb128 0x3b
+ 3783 0135 0B       		.uleb128 0xb
+ 3784 0136 49       		.uleb128 0x49
+ 3785 0137 13       		.uleb128 0x13
+ 3786 0138 38       		.uleb128 0x38
+ 3787 0139 0A       		.uleb128 0xa
+ 3788 013a 00       		.byte	0
+ 3789 013b 00       		.byte	0
+ 3790 013c 17       		.uleb128 0x17
+ 3791 013d 01       		.uleb128 0x1
+ 3792 013e 01       		.byte	0x1
+ 3793 013f 49       		.uleb128 0x49
+ 3794 0140 13       		.uleb128 0x13
+ 3795 0141 01       		.uleb128 0x1
+ 3796 0142 13       		.uleb128 0x13
+ 3797 0143 00       		.byte	0
+ 3798 0144 00       		.byte	0
+ 3799 0145 18       		.uleb128 0x18
+ 3800 0146 21       		.uleb128 0x21
+ 3801 0147 00       		.byte	0
+ 3802 0148 49       		.uleb128 0x49
+ 3803 0149 13       		.uleb128 0x13
+ 3804 014a 2F       		.uleb128 0x2f
+ 3805 014b 0B       		.uleb128 0xb
+ 3806 014c 00       		.byte	0
+ 3807 014d 00       		.byte	0
+ 3808 014e 19       		.uleb128 0x19
+ 3809 014f 16       		.uleb128 0x16
+ 3810 0150 00       		.byte	0
+ 3811 0151 03       		.uleb128 0x3
+ 3812 0152 0E       		.uleb128 0xe
+ 3813 0153 3A       		.uleb128 0x3a
+ 3814 0154 0B       		.uleb128 0xb
+ 3815 0155 3B       		.uleb128 0x3b
+ 3816 0156 05       		.uleb128 0x5
+ 3817 0157 49       		.uleb128 0x49
+ 3818 0158 13       		.uleb128 0x13
+ 3819 0159 00       		.byte	0
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 68
+
+
+ 3820 015a 00       		.byte	0
+ 3821 015b 1A       		.uleb128 0x1a
+ 3822 015c 13       		.uleb128 0x13
+ 3823 015d 01       		.byte	0x1
+ 3824 015e 03       		.uleb128 0x3
+ 3825 015f 0E       		.uleb128 0xe
+ 3826 0160 0B       		.uleb128 0xb
+ 3827 0161 0B       		.uleb128 0xb
+ 3828 0162 3A       		.uleb128 0x3a
+ 3829 0163 0B       		.uleb128 0xb
+ 3830 0164 3B       		.uleb128 0x3b
+ 3831 0165 05       		.uleb128 0x5
+ 3832 0166 01       		.uleb128 0x1
+ 3833 0167 13       		.uleb128 0x13
+ 3834 0168 00       		.byte	0
+ 3835 0169 00       		.byte	0
+ 3836 016a 1B       		.uleb128 0x1b
+ 3837 016b 0D       		.uleb128 0xd
+ 3838 016c 00       		.byte	0
+ 3839 016d 49       		.uleb128 0x49
+ 3840 016e 13       		.uleb128 0x13
+ 3841 016f 38       		.uleb128 0x38
+ 3842 0170 0A       		.uleb128 0xa
+ 3843 0171 00       		.byte	0
+ 3844 0172 00       		.byte	0
+ 3845 0173 1C       		.uleb128 0x1c
+ 3846 0174 04       		.uleb128 0x4
+ 3847 0175 01       		.byte	0x1
+ 3848 0176 0B       		.uleb128 0xb
+ 3849 0177 0B       		.uleb128 0xb
+ 3850 0178 3A       		.uleb128 0x3a
+ 3851 0179 0B       		.uleb128 0xb
+ 3852 017a 3B       		.uleb128 0x3b
+ 3853 017b 05       		.uleb128 0x5
+ 3854 017c 01       		.uleb128 0x1
+ 3855 017d 13       		.uleb128 0x13
+ 3856 017e 00       		.byte	0
+ 3857 017f 00       		.byte	0
+ 3858 0180 1D       		.uleb128 0x1d
+ 3859 0181 28       		.uleb128 0x28
+ 3860 0182 00       		.byte	0
+ 3861 0183 03       		.uleb128 0x3
+ 3862 0184 0E       		.uleb128 0xe
+ 3863 0185 1C       		.uleb128 0x1c
+ 3864 0186 0D       		.uleb128 0xd
+ 3865 0187 00       		.byte	0
+ 3866 0188 00       		.byte	0
+ 3867 0189 1E       		.uleb128 0x1e
+ 3868 018a 15       		.uleb128 0x15
+ 3869 018b 01       		.byte	0x1
+ 3870 018c 27       		.uleb128 0x27
+ 3871 018d 0C       		.uleb128 0xc
+ 3872 018e 01       		.uleb128 0x1
+ 3873 018f 13       		.uleb128 0x13
+ 3874 0190 00       		.byte	0
+ 3875 0191 00       		.byte	0
+ 3876 0192 1F       		.uleb128 0x1f
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 69
+
+
+ 3877 0193 05       		.uleb128 0x5
+ 3878 0194 00       		.byte	0
+ 3879 0195 49       		.uleb128 0x49
+ 3880 0196 13       		.uleb128 0x13
+ 3881 0197 00       		.byte	0
+ 3882 0198 00       		.byte	0
+ 3883 0199 20       		.uleb128 0x20
+ 3884 019a 0D       		.uleb128 0xd
+ 3885 019b 00       		.byte	0
+ 3886 019c 03       		.uleb128 0x3
+ 3887 019d 0E       		.uleb128 0xe
+ 3888 019e 3A       		.uleb128 0x3a
+ 3889 019f 0B       		.uleb128 0xb
+ 3890 01a0 3B       		.uleb128 0x3b
+ 3891 01a1 05       		.uleb128 0x5
+ 3892 01a2 49       		.uleb128 0x49
+ 3893 01a3 13       		.uleb128 0x13
+ 3894 01a4 00       		.byte	0
+ 3895 01a5 00       		.byte	0
+ 3896 01a6 21       		.uleb128 0x21
+ 3897 01a7 04       		.uleb128 0x4
+ 3898 01a8 01       		.byte	0x1
+ 3899 01a9 0B       		.uleb128 0xb
+ 3900 01aa 0B       		.uleb128 0xb
+ 3901 01ab 3A       		.uleb128 0x3a
+ 3902 01ac 0B       		.uleb128 0xb
+ 3903 01ad 3B       		.uleb128 0x3b
+ 3904 01ae 0B       		.uleb128 0xb
+ 3905 01af 01       		.uleb128 0x1
+ 3906 01b0 13       		.uleb128 0x13
+ 3907 01b1 00       		.byte	0
+ 3908 01b2 00       		.byte	0
+ 3909 01b3 22       		.uleb128 0x22
+ 3910 01b4 26       		.uleb128 0x26
+ 3911 01b5 00       		.byte	0
+ 3912 01b6 49       		.uleb128 0x49
+ 3913 01b7 13       		.uleb128 0x13
+ 3914 01b8 00       		.byte	0
+ 3915 01b9 00       		.byte	0
+ 3916 01ba 23       		.uleb128 0x23
+ 3917 01bb 2E       		.uleb128 0x2e
+ 3918 01bc 01       		.byte	0x1
+ 3919 01bd 3F       		.uleb128 0x3f
+ 3920 01be 0C       		.uleb128 0xc
+ 3921 01bf 03       		.uleb128 0x3
+ 3922 01c0 0E       		.uleb128 0xe
+ 3923 01c1 3A       		.uleb128 0x3a
+ 3924 01c2 0B       		.uleb128 0xb
+ 3925 01c3 3B       		.uleb128 0x3b
+ 3926 01c4 0B       		.uleb128 0xb
+ 3927 01c5 27       		.uleb128 0x27
+ 3928 01c6 0C       		.uleb128 0xc
+ 3929 01c7 11       		.uleb128 0x11
+ 3930 01c8 01       		.uleb128 0x1
+ 3931 01c9 12       		.uleb128 0x12
+ 3932 01ca 01       		.uleb128 0x1
+ 3933 01cb 40       		.uleb128 0x40
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 70
+
+
+ 3934 01cc 0A       		.uleb128 0xa
+ 3935 01cd 9742     		.uleb128 0x2117
+ 3936 01cf 0C       		.uleb128 0xc
+ 3937 01d0 01       		.uleb128 0x1
+ 3938 01d1 13       		.uleb128 0x13
+ 3939 01d2 00       		.byte	0
+ 3940 01d3 00       		.byte	0
+ 3941 01d4 24       		.uleb128 0x24
+ 3942 01d5 898201   		.uleb128 0x4109
+ 3943 01d8 01       		.byte	0x1
+ 3944 01d9 11       		.uleb128 0x11
+ 3945 01da 01       		.uleb128 0x1
+ 3946 01db 9542     		.uleb128 0x2115
+ 3947 01dd 0C       		.uleb128 0xc
+ 3948 01de 31       		.uleb128 0x31
+ 3949 01df 13       		.uleb128 0x13
+ 3950 01e0 00       		.byte	0
+ 3951 01e1 00       		.byte	0
+ 3952 01e2 25       		.uleb128 0x25
+ 3953 01e3 8A8201   		.uleb128 0x410a
+ 3954 01e6 00       		.byte	0
+ 3955 01e7 02       		.uleb128 0x2
+ 3956 01e8 0A       		.uleb128 0xa
+ 3957 01e9 9142     		.uleb128 0x2111
+ 3958 01eb 0A       		.uleb128 0xa
+ 3959 01ec 00       		.byte	0
+ 3960 01ed 00       		.byte	0
+ 3961 01ee 26       		.uleb128 0x26
+ 3962 01ef 34       		.uleb128 0x34
+ 3963 01f0 00       		.byte	0
+ 3964 01f1 03       		.uleb128 0x3
+ 3965 01f2 0E       		.uleb128 0xe
+ 3966 01f3 3A       		.uleb128 0x3a
+ 3967 01f4 0B       		.uleb128 0xb
+ 3968 01f5 3B       		.uleb128 0x3b
+ 3969 01f6 0B       		.uleb128 0xb
+ 3970 01f7 49       		.uleb128 0x49
+ 3971 01f8 13       		.uleb128 0x13
+ 3972 01f9 02       		.uleb128 0x2
+ 3973 01fa 0A       		.uleb128 0xa
+ 3974 01fb 00       		.byte	0
+ 3975 01fc 00       		.byte	0
+ 3976 01fd 27       		.uleb128 0x27
+ 3977 01fe 34       		.uleb128 0x34
+ 3978 01ff 00       		.byte	0
+ 3979 0200 03       		.uleb128 0x3
+ 3980 0201 0E       		.uleb128 0xe
+ 3981 0202 3A       		.uleb128 0x3a
+ 3982 0203 0B       		.uleb128 0xb
+ 3983 0204 3B       		.uleb128 0x3b
+ 3984 0205 05       		.uleb128 0x5
+ 3985 0206 49       		.uleb128 0x49
+ 3986 0207 13       		.uleb128 0x13
+ 3987 0208 3F       		.uleb128 0x3f
+ 3988 0209 0C       		.uleb128 0xc
+ 3989 020a 3C       		.uleb128 0x3c
+ 3990 020b 0C       		.uleb128 0xc
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 71
+
+
+ 3991 020c 00       		.byte	0
+ 3992 020d 00       		.byte	0
+ 3993 020e 28       		.uleb128 0x28
+ 3994 020f 34       		.uleb128 0x34
+ 3995 0210 00       		.byte	0
+ 3996 0211 03       		.uleb128 0x3
+ 3997 0212 0E       		.uleb128 0xe
+ 3998 0213 3A       		.uleb128 0x3a
+ 3999 0214 0B       		.uleb128 0xb
+ 4000 0215 3B       		.uleb128 0x3b
+ 4001 0216 0B       		.uleb128 0xb
+ 4002 0217 49       		.uleb128 0x49
+ 4003 0218 13       		.uleb128 0x13
+ 4004 0219 3F       		.uleb128 0x3f
+ 4005 021a 0C       		.uleb128 0xc
+ 4006 021b 02       		.uleb128 0x2
+ 4007 021c 0A       		.uleb128 0xa
+ 4008 021d 00       		.byte	0
+ 4009 021e 00       		.byte	0
+ 4010 021f 29       		.uleb128 0x29
+ 4011 0220 34       		.uleb128 0x34
+ 4012 0221 00       		.byte	0
+ 4013 0222 03       		.uleb128 0x3
+ 4014 0223 0E       		.uleb128 0xe
+ 4015 0224 3A       		.uleb128 0x3a
+ 4016 0225 0B       		.uleb128 0xb
+ 4017 0226 3B       		.uleb128 0x3b
+ 4018 0227 0B       		.uleb128 0xb
+ 4019 0228 49       		.uleb128 0x49
+ 4020 0229 13       		.uleb128 0x13
+ 4021 022a 3F       		.uleb128 0x3f
+ 4022 022b 0C       		.uleb128 0xc
+ 4023 022c 3C       		.uleb128 0x3c
+ 4024 022d 0C       		.uleb128 0xc
+ 4025 022e 00       		.byte	0
+ 4026 022f 00       		.byte	0
+ 4027 0230 2A       		.uleb128 0x2a
+ 4028 0231 2E       		.uleb128 0x2e
+ 4029 0232 01       		.byte	0x1
+ 4030 0233 3F       		.uleb128 0x3f
+ 4031 0234 0C       		.uleb128 0xc
+ 4032 0235 03       		.uleb128 0x3
+ 4033 0236 0E       		.uleb128 0xe
+ 4034 0237 3A       		.uleb128 0x3a
+ 4035 0238 0B       		.uleb128 0xb
+ 4036 0239 3B       		.uleb128 0x3b
+ 4037 023a 05       		.uleb128 0x5
+ 4038 023b 27       		.uleb128 0x27
+ 4039 023c 0C       		.uleb128 0xc
+ 4040 023d 3C       		.uleb128 0x3c
+ 4041 023e 0C       		.uleb128 0xc
+ 4042 023f 01       		.uleb128 0x1
+ 4043 0240 13       		.uleb128 0x13
+ 4044 0241 00       		.byte	0
+ 4045 0242 00       		.byte	0
+ 4046 0243 00       		.byte	0
+ 4047              		.section	.debug_aranges,"",@progbits
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 72
+
+
+ 4048 0000 0000001C 		.4byte	0x1c
+ 4049 0004 0002     		.2byte	0x2
+ 4050 0006 00000000 		.4byte	.Ldebug_info0
+ 4051 000a 04       		.byte	0x4
+ 4052 000b 00       		.byte	0
+ 4053 000c 0000     		.2byte	0
+ 4054 000e 0000     		.2byte	0
+ 4055 0010 00000000 		.4byte	.LFB3
+ 4056 0014 0000000C 		.4byte	.LFE3-.LFB3
+ 4057 0018 00000000 		.4byte	0
+ 4058 001c 00000000 		.4byte	0
+ 4059              		.section	.debug_ranges,"",@progbits
+ 4060              	.Ldebug_ranges0:
+ 4061 0000 00000000 		.4byte	.LFB3
+ 4062 0004 00000000 		.4byte	.LFE3
+ 4063 0008 00000000 		.4byte	0
+ 4064 000c 00000000 		.4byte	0
+ 4065              		.section	.debug_line,"",@progbits
+ 4066              	.Ldebug_line0:
+ 4067 0000 000003F2 		.section	.debug_str,"MS",@progbits,1
+ 4067      00020000 
+ 4067      03D90201 
+ 4067      FB0E0D00 
+ 4067      01010101 
+ 4068              	.LASF90:
+ 4069 0000 54525245 		.string	"TRRE"
+ 4069      00
+ 4070              	.LASF174:
+ 4071 0005 41454B5F 		.string	"AEK_POW_BMS63EN_CELL_CONNECTED"
+ 4071      504F575F 
+ 4071      424D5336 
+ 4071      33454E5F 
+ 4071      43454C4C 
+ 4072              	.LASF50:
+ 4073 0024 50415343 		.string	"PASC"
+ 4073      00
+ 4074              	.LASF176:
+ 4075 0029 41454B5F 		.string	"AEK_POW_BMS63EN_CELL_DISABLED"
+ 4075      504F575F 
+ 4075      424D5336 
+ 4075      33454E5F 
+ 4075      43454C4C 
+ 4076              	.LASF89:
+ 4077 0047 54504F4C 		.string	"TPOL"
+ 4077      00
+ 4078              	.LASF335:
+ 4079 004c 7370695F 		.string	"spi_config_spi_config_AEK_COM_ISOSPI1_dev0"
+ 4079      636F6E66 
+ 4079      69675F73 
+ 4079      70695F63 
+ 4079      6F6E6669 
+ 4080              	.LASF262:
+ 4081 0077 41454B5F 		.string	"AEK_POW_BMS63EN_dev_status_t"
+ 4081      504F575F 
+ 4081      424D5336 
+ 4081      33454E5F 
+ 4081      6465765F 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 73
+
+
+ 4082              	.LASF45:
+ 4083 0094 464D535A 		.string	"FMSZ"
+ 4083      00
+ 4084              	.LASF242:
+ 4085 0099 41454B5F 		.string	"AEK_POW_BMS63EN_STARTING"
+ 4085      504F575F 
+ 4085      424D5336 
+ 4085      33454E5F 
+ 4085      53544152 
+ 4086              	.LASF39:
+ 4087 00b2 534D504C 		.string	"SMPL_PT"
+ 4087      5F505400 
+ 4088              	.LASF250:
+ 4089 00ba 41454B5F 		.string	"AEK_POW_BMS63EN_CYCLIC_WAKEUP"
+ 4089      504F575F 
+ 4089      424D5336 
+ 4089      33454E5F 
+ 4089      4359434C 
+ 4090              	.LASF118:
+ 4091 00d8 434F4D50 		.string	"COMPR"
+ 4091      5200
+ 4092              	.LASF263:
+ 4093 00de 64726976 		.string	"driver_state"
+ 4093      65725F73 
+ 4093      74617465 
+ 4093      00
+ 4094              	.LASF16:
+ 4095 00eb 7675696E 		.string	"vuint16_t"
+ 4095      7431365F 
+ 4095      7400
+ 4096              	.LASF21:
+ 4097 00f5 434F4E54 		.string	"CONT_SCKE"
+ 4097      5F53434B 
+ 4097      4500
+ 4098              	.LASF127:
+ 4099 00ff 72785F63 		.string	"rx_cnt"
+ 4099      6E7400
+ 4100              	.LASF302:
+ 4101 0106 4750494F 		.string	"GPIO3UVThreshold"
+ 4101      33555654 
+ 4101      68726573 
+ 4101      686F6C64 
+ 4101      00
+ 4102              	.LASF308:
+ 4103 0117 4750494F 		.string	"GPIO6UVThreshold"
+ 4103      36555654 
+ 4103      68726573 
+ 4103      686F6C64 
+ 4103      00
+ 4104              	.LASF282:
+ 4105 0128 41454B5F 		.string	"AEK_POW_BMS63EN_adc_flt_soc_37ms12"
+ 4105      504F575F 
+ 4105      424D5336 
+ 4105      33454E5F 
+ 4105      6164635F 
+ 4106              	.LASF184:
+ 4107 014b 41454B5F 		.string	"AEK_POW_BMS63EN_CELL_PCB_OPEN"
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 74
+
+
+ 4107      504F575F 
+ 4107      424D5336 
+ 4107      33454E5F 
+ 4107      43454C4C 
+ 4108              	.LASF297:
+ 4109 0169 56426174 		.string	"VBattOVThreshold"
+ 4109      744F5654 
+ 4109      68726573 
+ 4109      686F6C64 
+ 4109      00
+ 4110              	.LASF283:
+ 4111 017a 41454B5F 		.string	"AEK_POW_BMS63EN_adc_flt_soc_74ms24"
+ 4111      504F575F 
+ 4111      424D5336 
+ 4111      33454E5F 
+ 4111      6164635F 
+ 4112              	.LASF188:
+ 4113 019d 63656C6C 		.string	"cell_conn"
+ 4113      5F636F6E 
+ 4113      6E00
+ 4114              	.LASF252:
+ 4115 01a7 41454B5F 		.string	"AEK_POW_BMS63EN_INIT"
+ 4115      504F575F 
+ 4115      424D5336 
+ 4115      33454E5F 
+ 4115      494E4954 
+ 4116              	.LASF334:
+ 4117 01bc 41454B5F 		.string	"AEK_POW_BMS63EN_config"
+ 4117      504F575F 
+ 4117      424D5336 
+ 4117      33454E5F 
+ 4117      636F6E66 
+ 4118              	.LASF171:
+ 4119 01d3 41454B5F 		.string	"AEK_POW_BMS63EN_ABSOLUTE"
+ 4119      504F575F 
+ 4119      424D5336 
+ 4119      33454E5F 
+ 4119      4142534F 
+ 4120              	.LASF206:
+ 4121 01ec 41454B5F 		.string	"AEK_POW_BMS63EN_cell_stack_state_t"
+ 4121      504F575F 
+ 4121      424D5336 
+ 4121      33454E5F 
+ 4121      63656C6C 
+ 4122              	.LASF307:
+ 4123 020f 4750494F 		.string	"GPIO6OVThreshold"
+ 4123      364F5654 
+ 4123      68726573 
+ 4123      686F6C64 
+ 4123      00
+ 4124              	.LASF318:
+ 4125 0220 6770696F 		.string	"gpio8_conf"
+ 4125      385F636F 
+ 4125      6E6600
+ 4126              	.LASF301:
+ 4127 022b 4750494F 		.string	"GPIO3OVThreshold"
+ 4127      334F5654 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 75
+
+
+ 4127      68726573 
+ 4127      686F6C64 
+ 4127      00
+ 4128              	.LASF316:
+ 4129 023c 6770696F 		.string	"gpio6_conf"
+ 4129      365F636F 
+ 4129      6E6600
+ 4130              	.LASF324:
+ 4131 0247 636F6D6D 		.string	"commtimeout"
+ 4131      74696D65 
+ 4131      6F757400 
+ 4132              	.LASF298:
+ 4133 0253 56426174 		.string	"VBattUVThreshold"
+ 4133      74555654 
+ 4133      68726573 
+ 4133      686F6C64 
+ 4133      00
+ 4134              	.LASF85:
+ 4135 0264 5458434D 		.string	"TXCMD"
+ 4135      4400
+ 4136              	.LASF271:
+ 4137 026a 41454B5F 		.string	"AEK_POW_BMS63EN_cell_man_bal_mode"
+ 4137      504F575F 
+ 4137      424D5336 
+ 4137      33454E5F 
+ 4137      63656C6C 
+ 4138              	.LASF40:
+ 4139 028c 4249475F 		.string	"BIG_ENDIAN"
+ 4139      454E4449 
+ 4139      414E00
+ 4140              	.LASF114:
+ 4141 0297 52584652 		.string	"RXFR"
+ 4141      00
+ 4142              	.LASF260:
+ 4143 029c 64657669 		.string	"device_state"
+ 4143      63655F73 
+ 4143      74617465 
+ 4143      00
+ 4144              	.LASF187:
+ 4145 02a9 63656C6C 		.string	"cell_id"
+ 4145      5F696400 
+ 4146              	.LASF310:
+ 4147 02b1 4750494F 		.string	"GPIO9UVThreshold"
+ 4147      39555654 
+ 4147      68726573 
+ 4147      686F6C64 
+ 4147      00
+ 4148              	.LASF129:
+ 4149 02c2 5350495F 		.string	"SPI_MASTER"
+ 4149      4D415354 
+ 4149      455200
+ 4150              	.LASF70:
+ 4151 02cd 52464446 		.string	"RFDFRE"
+ 4151      524500
+ 4152              	.LASF122:
+ 4153 02d4 53504944 		.string	"SPIDriver"
+ 4153      72697665 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 76
+
+
+ 4153      7200
+ 4154              	.LASF59:
+ 4155 02de 52464446 		.string	"RFDF"
+ 4155      00
+ 4156              	.LASF88:
+ 4157 02e3 54585353 		.string	"TXSS"
+ 4157      00
+ 4158              	.LASF303:
+ 4159 02e8 4750494F 		.string	"GPIO4OVThreshold"
+ 4159      344F5654 
+ 4159      68726573 
+ 4159      686F6C64 
+ 4159      00
+ 4160              	.LASF269:
+ 4161 02f9 73706963 		.string	"spicfgp_dual"
+ 4161      6667705F 
+ 4161      6475616C 
+ 4161      00
+ 4162              	.LASF259:
+ 4163 0306 64657669 		.string	"device_id"
+ 4163      63655F69 
+ 4163      6400
+ 4164              	.LASF48:
+ 4165 0310 4C534246 		.string	"LSBFE"
+ 4165      4500
+ 4166              	.LASF169:
+ 4167 0316 41454B5F 		.string	"AEK_POW_BMS63EN_cell_id_t"
+ 4167      504F575F 
+ 4167      424D5336 
+ 4167      33454E5F 
+ 4167      63656C6C 
+ 4168              	.LASF329:
+ 4169 0330 41454B5F 		.string	"AEK_POW_BMS63EN_dev_status"
+ 4169      504F575F 
+ 4169      424D5336 
+ 4169      33454E5F 
+ 4169      6465765F 
+ 4170              	.LASF338:
+ 4171 034b 443A5C53 		.string	"D:\\Study\\Y1\\Work\\RCVD\\Autodev\\Slave_L9963E\\SPC58EC - Combined_Application_v4"
+ 4171      74756479 
+ 4171      5C59315C 
+ 4171      576F726B 
+ 4171      5C524356 
+ 4172              	.LASF14:
+ 4173 0398 75696E74 		.string	"uint32_t"
+ 4173      33325F74 
+ 4173      00
+ 4174              	.LASF285:
+ 4175 03a1 41454B5F 		.string	"AEK_POW_BMS63EN_adc_flt_soc_t"
+ 4175      504F575F 
+ 4175      424D5336 
+ 4175      33454E5F 
+ 4175      6164635F 
+ 4176              	.LASF87:
+ 4177 03bf 4D544F43 		.string	"MTOCNT"
+ 4177      4E5400
+ 4178              	.LASF46:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 77
+
+
+ 4179 03c6 43504F4C 		.string	"CPOL"
+ 4179      00
+ 4180              	.LASF300:
+ 4181 03cb 5643656C 		.string	"VCellUVThreshold"
+ 4181      6C555654 
+ 4181      68726573 
+ 4181      686F6C64 
+ 4181      00
+ 4182              	.LASF153:
+ 4183 03dc 666C6F61 		.string	"float"
+ 4183      7400
+ 4184              	.LASF247:
+ 4185 03e2 41454B5F 		.string	"AEK_POW_BMS63EN_RESET"
+ 4185      504F575F 
+ 4185      424D5336 
+ 4185      33454E5F 
+ 4185      52455345 
+ 4186              	.LASF240:
+ 4187 03f8 41454B5F 		.string	"AEK_POW_BMS63EN_UNINIT"
+ 4187      504F575F 
+ 4187      424D5336 
+ 4187      33454E5F 
+ 4187      554E494E 
+ 4188              	.LASF266:
+ 4189 040f 73706970 		.string	"spip"
+ 4189      00
+ 4190              	.LASF139:
+ 4191 0414 7373706F 		.string	"ssport"
+ 4191      727400
+ 4192              	.LASF138:
+ 4193 041b 656E645F 		.string	"end_cb"
+ 4193      636200
+ 4194              	.LASF133:
+ 4195 0422 58535049 		.string	"XSPI_ON_LITTLE_ENDIAN"
+ 4195      5F4F4E5F 
+ 4195      4C495454 
+ 4195      4C455F45 
+ 4195      4E444941 
+ 4196              	.LASF331:
+ 4197 0438 41454B5F 		.string	"AEK_POW_BMS63EN_ParamConf_dev"
+ 4197      504F575F 
+ 4197      424D5336 
+ 4197      33454E5F 
+ 4197      50617261 
+ 4198              	.LASF57:
+ 4199 0456 434D4454 		.string	"CMDTCF"
+ 4199      434600
+ 4200              	.LASF10:
+ 4201 045d 6C6F6E67 		.string	"long long unsigned int"
+ 4201      206C6F6E 
+ 4201      6720756E 
+ 4201      7369676E 
+ 4201      65642069 
+ 4202              	.LASF66:
+ 4203 0474 54465546 		.string	"TFUFRE"
+ 4203      524500
+ 4204              	.LASF37:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 78
+
+
+ 4205 047b 434C525F 		.string	"CLR_TXF"
+ 4205      54584600 
+ 4206              	.LASF99:
+ 4207 0483 5345525F 		.string	"SER_DATA"
+ 4207      44415441 
+ 4207      00
+ 4208              	.LASF4:
+ 4209 048c 5F5F7569 		.string	"__uint16_t"
+ 4209      6E743136 
+ 4209      5F7400
+ 4210              	.LASF177:
+ 4211 0497 41454B5F 		.string	"AEK_POW_BMS63EN_CELL_ENABLED"
+ 4211      504F575F 
+ 4211      424D5336 
+ 4211      33454E5F 
+ 4211      43454C4C 
+ 4212              	.LASF71:
+ 4213 04b4 52464446 		.string	"RFDFDIRS"
+ 4213      44495253 
+ 4213      00
+ 4214              	.LASF299:
+ 4215 04bd 5643656C 		.string	"VCellOVThreshold"
+ 4215      6C4F5654 
+ 4215      68726573 
+ 4215      686F6C64 
+ 4215      00
+ 4216              	.LASF281:
+ 4217 04ce 41454B5F 		.string	"AEK_POW_BMS63EN_adc_flt_soc_18ms56"
+ 4217      504F575F 
+ 4217      424D5336 
+ 4217      33454E5F 
+ 4217      6164635F 
+ 4218              	.LASF62:
+ 4219 04f1 52584354 		.string	"RXCTR"
+ 4219      5200
+ 4220              	.LASF267:
+ 4221 04f7 73706963 		.string	"spicfgp"
+ 4221      66677000 
+ 4222              	.LASF104:
+ 4223 04ff 44544350 		.string	"DTCP"
+ 4223      00
+ 4224              	.LASF120:
+ 4225 0504 43544152 		.string	"CTARE"
+ 4225      4500
+ 4226              	.LASF135:
+ 4227 050a 78737069 		.string	"xspimode_t"
+ 4227      6D6F6465 
+ 4227      5F7400
+ 4228              	.LASF83:
+ 4229 0515 54584441 		.string	"TXDATA"
+ 4229      544100
+ 4230              	.LASF191:
+ 4231 051c 41454B5F 		.string	"AEK_POW_BMS63EN_cell_status_t"
+ 4231      504F575F 
+ 4231      424D5336 
+ 4231      33454E5F 
+ 4231      63656C6C 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 79
+
+
+ 4232              	.LASF315:
+ 4233 053a 6770696F 		.string	"gpio5_conf"
+ 4233      355F636F 
+ 4233      6E6600
+ 4234              	.LASF170:
+ 4235 0545 41454B5F 		.string	"AEK_POW_BMS63EN_RATIOMETRIC"
+ 4235      504F575F 
+ 4235      424D5336 
+ 4235      33454E5F 
+ 4235      52415449 
+ 4236              	.LASF33:
+ 4237 0561 50435349 		.string	"PCSIS0"
+ 4237      533000
+ 4238              	.LASF32:
+ 4239 0568 50435349 		.string	"PCSIS1"
+ 4239      533100
+ 4240              	.LASF31:
+ 4241 056f 50435349 		.string	"PCSIS2"
+ 4241      533200
+ 4242              	.LASF15:
+ 4243 0576 73697A65 		.string	"size_t"
+ 4243      5F7400
+ 4244              	.LASF292:
+ 4245 057d 41454B5F 		.string	"AEK_POW_BMS63EN_iso_freq_t"
+ 4245      504F575F 
+ 4245      424D5336 
+ 4245      33454E5F 
+ 4245      69736F5F 
+ 4246              	.LASF29:
+ 4247 0598 50435349 		.string	"PCSIS4"
+ 4247      533400
+ 4248              	.LASF28:
+ 4249 059f 50435349 		.string	"PCSIS5"
+ 4249      533500
+ 4250              	.LASF126:
+ 4251 05a6 64737069 		.string	"dspi"
+ 4251      00
+ 4252              	.LASF151:
+ 4253 05ab 74785F70 		.string	"tx_ptr16"
+ 4253      74723136 
+ 4253      00
+ 4254              	.LASF26:
+ 4255 05b4 50435349 		.string	"PCSIS7"
+ 4255      533700
+ 4256              	.LASF284:
+ 4257 05bb 41454B5F 		.string	"AEK_POW_BMS63EN_adc_flt_soc_148ms48"
+ 4257      504F575F 
+ 4257      424D5336 
+ 4257      33454E5F 
+ 4257      6164635F 
+ 4258              	.LASF319:
+ 4259 05df 6770696F 		.string	"gpio_meas"
+ 4259      5F6D6561 
+ 4259      7300
+ 4260              	.LASF113:
+ 4261 05e9 44535049 		.string	"DSPI_reserved_txf"
+ 4261      5F726573 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 80
+
+
+ 4261      65727665 
+ 4261      645F7478 
+ 4261      6600
+ 4262              	.LASF128:
+ 4263 05fb 74785F63 		.string	"tx_cnt"
+ 4263      6E7400
+ 4264              	.LASF244:
+ 4265 0602 41454B5F 		.string	"AEK_POW_BMS63EN_READY"
+ 4265      504F575F 
+ 4265      424D5336 
+ 4265      33454E5F 
+ 4265      52454144 
+ 4266              	.LASF144:
+ 4267 0618 53504943 		.string	"SPIConfig"
+ 4267      6F6E6669 
+ 4267      6700
+ 4268              	.LASF278:
+ 4269 0622 41454B5F 		.string	"AEK_POW_BMS63EN_adc_flt_soc_1ms16"
+ 4269      504F575F 
+ 4269      424D5336 
+ 4269      33454E5F 
+ 4269      6164635F 
+ 4270              	.LASF51:
+ 4271 0644 43535343 		.string	"CSSCK"
+ 4271      4B00
+ 4272              	.LASF141:
+ 4273 064a 63746172 		.string	"ctar0"
+ 4273      3000
+ 4274              	.LASF60:
+ 4275 0650 54584354 		.string	"TXCTR"
+ 4275      5200
+ 4276              	.LASF337:
+ 4277 0656 2E2F636F 		.string	"./components/aek_pow_bms63en_component_rla/cfg/AEK_POW_BMS63EN_cfg.c"
+ 4277      6D706F6E 
+ 4277      656E7473 
+ 4277      2F61656B 
+ 4277      5F706F77 
+ 4278              	.LASF111:
+ 4279 069b 504F5052 		.string	"POPR"
+ 4279      00
+ 4280              	.LASF190:
+ 4281 06a0 63656C6C 		.string	"cell_pcb_conn"
+ 4281      5F706362 
+ 4281      5F636F6E 
+ 4281      6E00
+ 4282              	.LASF208:
+ 4283 06ae 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE1"
+ 4283      504F575F 
+ 4283      424D5336 
+ 4283      33454E5F 
+ 4283      44455649 
+ 4284              	.LASF209:
+ 4285 06c6 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE2"
+ 4285      504F575F 
+ 4285      424D5336 
+ 4285      33454E5F 
+ 4285      44455649 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 81
+
+
+ 4286              	.LASF210:
+ 4287 06de 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE3"
+ 4287      504F575F 
+ 4287      424D5336 
+ 4287      33454E5F 
+ 4287      44455649 
+ 4288              	.LASF211:
+ 4289 06f6 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE4"
+ 4289      504F575F 
+ 4289      424D5336 
+ 4289      33454E5F 
+ 4289      44455649 
+ 4290              	.LASF212:
+ 4291 070e 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE5"
+ 4291      504F575F 
+ 4291      424D5336 
+ 4291      33454E5F 
+ 4291      44455649 
+ 4292              	.LASF213:
+ 4293 0726 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE6"
+ 4293      504F575F 
+ 4293      424D5336 
+ 4293      33454E5F 
+ 4293      44455649 
+ 4294              	.LASF214:
+ 4295 073e 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE7"
+ 4295      504F575F 
+ 4295      424D5336 
+ 4295      33454E5F 
+ 4295      44455649 
+ 4296              	.LASF215:
+ 4297 0756 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE8"
+ 4297      504F575F 
+ 4297      424D5336 
+ 4297      33454E5F 
+ 4297      44455649 
+ 4298              	.LASF216:
+ 4299 076e 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE9"
+ 4299      504F575F 
+ 4299      424D5336 
+ 4299      33454E5F 
+ 4299      44455649 
+ 4300              	.LASF304:
+ 4301 0786 4750494F 		.string	"GPIO4UVThreshold"
+ 4301      34555654 
+ 4301      68726573 
+ 4301      686F6C64 
+ 4301      00
+ 4302              	.LASF109:
+ 4303 0797 52534552 		.string	"RSER"
+ 4303      00
+ 4304              	.LASF279:
+ 4305 079c 41454B5F 		.string	"AEK_POW_BMS63EN_adc_flt_soc_2ms32"
+ 4305      504F575F 
+ 4305      424D5336 
+ 4305      33454E5F 
+ 4305      6164635F 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 82
+
+
+ 4306              	.LASF296:
+ 4307 07be 41454B5F 		.string	"AEK_POW_BMS63EN_VTRef_sts_t"
+ 4307      504F575F 
+ 4307      424D5336 
+ 4307      33454E5F 
+ 4307      56545265 
+ 4308              	.LASF239:
+ 4309 07da 41454B5F 		.string	"AEK_POW_BMS63EN_device_id_t"
+ 4309      504F575F 
+ 4309      424D5336 
+ 4309      33454E5F 
+ 4309      64657669 
+ 4310              	.LASF12:
+ 4311 07f6 75696E74 		.string	"uint8_t"
+ 4311      385F7400 
+ 4312              	.LASF168:
+ 4313 07fe 41454B5F 		.string	"AEK_POW_BMS63EN_CELL_ALL"
+ 4313      504F575F 
+ 4313      424D5336 
+ 4313      33454E5F 
+ 4313      43454C4C 
+ 4314              	.LASF42:
+ 4315 0817 46435043 		.string	"FCPCS"
+ 4315      5300
+ 4316              	.LASF154:
+ 4317 081d 41454B5F 		.string	"AEK_POW_BMS63EN_CELL1"
+ 4317      504F575F 
+ 4317      424D5336 
+ 4317      33454E5F 
+ 4317      43454C4C 
+ 4318              	.LASF155:
+ 4319 0833 41454B5F 		.string	"AEK_POW_BMS63EN_CELL2"
+ 4319      504F575F 
+ 4319      424D5336 
+ 4319      33454E5F 
+ 4319      43454C4C 
+ 4320              	.LASF156:
+ 4321 0849 41454B5F 		.string	"AEK_POW_BMS63EN_CELL3"
+ 4321      504F575F 
+ 4321      424D5336 
+ 4321      33454E5F 
+ 4321      43454C4C 
+ 4322              	.LASF157:
+ 4323 085f 41454B5F 		.string	"AEK_POW_BMS63EN_CELL4"
+ 4323      504F575F 
+ 4323      424D5336 
+ 4323      33454E5F 
+ 4323      43454C4C 
+ 4324              	.LASF61:
+ 4325 0875 54584E58 		.string	"TXNXTPTR"
+ 4325      54505452 
+ 4325      00
+ 4326              	.LASF159:
+ 4327 087e 41454B5F 		.string	"AEK_POW_BMS63EN_CELL6"
+ 4327      504F575F 
+ 4327      424D5336 
+ 4327      33454E5F 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 83
+
+
+ 4327      43454C4C 
+ 4328              	.LASF160:
+ 4329 0894 41454B5F 		.string	"AEK_POW_BMS63EN_CELL7"
+ 4329      504F575F 
+ 4329      424D5336 
+ 4329      33454E5F 
+ 4329      43454C4C 
+ 4330              	.LASF161:
+ 4331 08aa 41454B5F 		.string	"AEK_POW_BMS63EN_CELL8"
+ 4331      504F575F 
+ 4331      424D5336 
+ 4331      33454E5F 
+ 4331      43454C4C 
+ 4332              	.LASF162:
+ 4333 08c0 41454B5F 		.string	"AEK_POW_BMS63EN_CELL9"
+ 4333      504F575F 
+ 4333      424D5336 
+ 4333      33454E5F 
+ 4333      43454C4C 
+ 4334              	.LASF22:
+ 4335 08d6 44434F4E 		.string	"DCONF"
+ 4335      4600
+ 4336              	.LASF201:
+ 4337 08dc 63656C6C 		.string	"cell_10"
+ 4337      5F313000 
+ 4338              	.LASF202:
+ 4339 08e4 63656C6C 		.string	"cell_11"
+ 4339      5F313100 
+ 4340              	.LASF203:
+ 4341 08ec 63656C6C 		.string	"cell_12"
+ 4341      5F313200 
+ 4342              	.LASF204:
+ 4343 08f4 63656C6C 		.string	"cell_13"
+ 4343      5F313300 
+ 4344              	.LASF54:
+ 4345 08fc 54465546 		.string	"TFUF"
+ 4345      00
+ 4346              	.LASF205:
+ 4347 0901 63656C6C 		.string	"cell_14"
+ 4347      5F313400 
+ 4348              	.LASF91:
+ 4349 0909 44434F4E 		.string	"DCONT"
+ 4349      5400
+ 4350              	.LASF326:
+ 4351 090f 41454B5F 		.string	"AEK_POW_BMS63EN_ParamConf"
+ 4351      504F575F 
+ 4351      424D5336 
+ 4351      33454E5F 
+ 4351      50617261 
+ 4352              	.LASF38:
+ 4353 0929 434C525F 		.string	"CLR_RXF"
+ 4353      52584600 
+ 4354              	.LASF152:
+ 4355 0931 74785F70 		.string	"tx_ptr32"
+ 4355      74723332 
+ 4355      00
+ 4356              	.LASF55:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 84
+
+
+ 4357 093a 54464646 		.string	"TFFF"
+ 4357      00
+ 4358              	.LASF293:
+ 4359 093f 41454B5F 		.string	"AEK_POW_BMS63EN_VTREF_DISABLED"
+ 4359      504F575F 
+ 4359      424D5336 
+ 4359      33454E5F 
+ 4359      56545245 
+ 4360              	.LASF25:
+ 4361 095e 524F4F45 		.string	"ROOE"
+ 4361      00
+ 4362              	.LASF309:
+ 4363 0963 4750494F 		.string	"GPIO9OVThreshold"
+ 4363      394F5654 
+ 4363      68726573 
+ 4363      686F6C64 
+ 4363      00
+ 4364              	.LASF333:
+ 4365 0974 41454B5F 		.string	"AEK_POW_BMS63EN_Drv"
+ 4365      504F575F 
+ 4365      424D5336 
+ 4365      33454E5F 
+ 4365      44727600 
+ 4366              	.LASF273:
+ 4367 0988 41454B5F 		.string	"AEK_POW_BMS63EN_cell_bal_mode"
+ 4367      504F575F 
+ 4367      424D5336 
+ 4367      33454E5F 
+ 4367      63656C6C 
+ 4368              	.LASF56:
+ 4369 09a6 42535946 		.string	"BSYF"
+ 4369      00
+ 4370              	.LASF100:
+ 4371 09ab 41534552 		.string	"ASER_DATA"
+ 4371      5F444154 
+ 4371      4100
+ 4372              	.LASF325:
+ 4373 09b5 41454B5F 		.string	"AEK_POW_BMS63EN_VTREF_sts"
+ 4373      504F575F 
+ 4373      424D5336 
+ 4373      33454E5F 
+ 4373      56545245 
+ 4374              	.LASF97:
+ 4375 09cf 44504353 		.string	"DPCS1"
+ 4375      3100
+ 4376              	.LASF96:
+ 4377 09d5 44504353 		.string	"DPCS2"
+ 4377      3200
+ 4378              	.LASF95:
+ 4379 09db 44504353 		.string	"DPCS3"
+ 4379      3300
+ 4380              	.LASF94:
+ 4381 09e1 44504353 		.string	"DPCS4"
+ 4381      3400
+ 4382              	.LASF93:
+ 4383 09e7 44504353 		.string	"DPCS5"
+ 4383      3500
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 85
+
+
+ 4384              	.LASF294:
+ 4385 09ed 41454B5F 		.string	"AEK_POW_BMS63EN_VTREF_ON_CONV_ENABLED"
+ 4385      504F575F 
+ 4385      424D5336 
+ 4385      33454E5F 
+ 4385      56545245 
+ 4386              	.LASF258:
+ 4387 0a13 70617261 		.string	"param_conf"
+ 4387      6D5F636F 
+ 4387      6E6600
+ 4388              	.LASF9:
+ 4389 0a1e 6C6F6E67 		.string	"long long int"
+ 4389      206C6F6E 
+ 4389      6720696E 
+ 4389      7400
+ 4390              	.LASF136:
+ 4391 0a2c 73706963 		.string	"spicallback_t"
+ 4391      616C6C62 
+ 4391      61636B5F 
+ 4391      7400
+ 4392              	.LASF75:
+ 4393 0a3a 50435337 		.string	"PCS7"
+ 4393      00
+ 4394              	.LASF339:
+ 4395 0a3f 41454B5F 		.string	"AEK_POW_BMS63EN_cfg_objects_init"
+ 4395      504F575F 
+ 4395      424D5336 
+ 4395      33454E5F 
+ 4395      6366675F 
+ 4396              	.LASF20:
+ 4397 0a60 4D535452 		.string	"MSTR"
+ 4397      00
+ 4398              	.LASF173:
+ 4399 0a65 41454B5F 		.string	"AEK_POW_BMS63EN_CELL_UNCONNECTED"
+ 4399      504F575F 
+ 4399      424D5336 
+ 4399      33454E5F 
+ 4399      43454C4C 
+ 4400              	.LASF185:
+ 4401 0a86 41454B5F 		.string	"AEK_POW_BMS63EN_CELL_PCB_CONNECTED"
+ 4401      504F575F 
+ 4401      424D5336 
+ 4401      33454E5F 
+ 4401      43454C4C 
+ 4402              	.LASF287:
+ 4403 0aa9 41454B5F 		.string	"AEK_POW_BMS63EN_commtimeout_1024ms"
+ 4403      504F575F 
+ 4403      424D5336 
+ 4403      33454E5F 
+ 4403      636F6D6D 
+ 4404              	.LASF172:
+ 4405 0acc 41454B5F 		.string	"AEK_POW_BMS63EN_gpio_measurement_t"
+ 4405      504F575F 
+ 4405      424D5336 
+ 4405      33454E5F 
+ 4405      6770696F 
+ 4406              	.LASF24:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 86
+
+
+ 4407 0aef 50435353 		.string	"PCSSE"
+ 4407      4500
+ 4408              	.LASF320:
+ 4409 0af5 63656C6C 		.string	"cell_bal_mode"
+ 4409      5F62616C 
+ 4409      5F6D6F64 
+ 4409      6500
+ 4410              	.LASF137:
+ 4411 0b03 6D6F6465 		.string	"mode"
+ 4411      00
+ 4412              	.LASF67:
+ 4413 0b08 54464646 		.string	"TFFFRE"
+ 4413      524500
+ 4414              	.LASF106:
+ 4415 0b0f 434D444E 		.string	"CMDNXTPTR"
+ 4415      58545054 
+ 4415      5200
+ 4416              	.LASF117:
+ 4417 0b19 41534452 		.string	"ASDR"
+ 4417      00
+ 4418              	.LASF125:
+ 4419 0b1e 72656164 		.string	"ready"
+ 4419      7900
+ 4420              	.LASF256:
+ 4421 0b24 41454B5F 		.string	"AEK_POW_BMS63EN_Driver"
+ 4421      504F575F 
+ 4421      424D5336 
+ 4421      33454E5F 
+ 4421      44726976 
+ 4422              	.LASF64:
+ 4423 0b3b 54434652 		.string	"TCFRE"
+ 4423      4500
+ 4424              	.LASF276:
+ 4425 0b41 41454B5F 		.string	"AEK_POW_BMS63EN_coulomb_counting_t"
+ 4425      504F575F 
+ 4425      424D5336 
+ 4425      33454E5F 
+ 4425      636F756C 
+ 4426              	.LASF92:
+ 4427 0b64 44534943 		.string	"DSICTAS"
+ 4427      54415300 
+ 4428              	.LASF86:
+ 4429 0b6c 4D544F45 		.string	"MTOE"
+ 4429      00
+ 4430              	.LASF249:
+ 4431 0b71 41454B5F 		.string	"AEK_POW_BMS63EN_SILENT_BALANCING"
+ 4431      504F575F 
+ 4431      424D5336 
+ 4431      33454E5F 
+ 4431      53494C45 
+ 4432              	.LASF274:
+ 4433 0b92 41454B5F 		.string	"AEK_POW_BMS63EN_CoulombCounting_Enabled"
+ 4433      504F575F 
+ 4433      424D5336 
+ 4433      33454E5F 
+ 4433      436F756C 
+ 4434              	.LASF268:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 87
+
+
+ 4435 0bba 73706970 		.string	"spip_dual"
+ 4435      5F647561 
+ 4435      6C00
+ 4436              	.LASF116:
+ 4437 0bc4 44534943 		.string	"DSICR"
+ 4437      5200
+ 4438              	.LASF41:
+ 4439 0bca 58535049 		.string	"XSPI"
+ 4439      00
+ 4440              	.LASF182:
+ 4441 0bcf 41454B5F 		.string	"AEK_POW_BMS63EN_gpio_conf_t"
+ 4441      504F575F 
+ 4441      424D5336 
+ 4441      33454E5F 
+ 4441      6770696F 
+ 4442              	.LASF130:
+ 4443 0beb 5350495F 		.string	"SPI_SLAVE"
+ 4443      534C4156 
+ 4443      4500
+ 4444              	.LASF121:
+ 4445 0bf5 53524558 		.string	"SREX"
+ 4445      00
+ 4446              	.LASF336:
+ 4447 0bfa 474E5520 		.ascii	"GNU C 4.9.4 20160726 (Sat May 27 11:09:55 CDT 2017         b"
+ 4447      4320342E 
+ 4447      392E3420 
+ 4447      32303136 
+ 4447      30373236 
+ 4448 0c36 75696C64 		.ascii	"uild.sh"
+ 4448      2E7368
+ 4449 0c3d 20726576 		.string	" rev=gd8b6c20 s=F494 ELe200 -V release_gd8b6c20_build_Fed_ELe200_ML0) -mcall-sysv -mcpu=e
+ 4449      3D676438 
+ 4449      62366332 
+ 4449      3020733D 
+ 4449      46343934 
+ 4450              	.LASF123:
+ 4451 0d3e 73706335 		.string	"spc5_dspi"
+ 4451      5F647370 
+ 4451      6900
+ 4452              	.LASF180:
+ 4453 0d48 41454B5F 		.string	"AEK_POW_BMS63EN_gpio_digital_input"
+ 4453      504F575F 
+ 4453      424D5336 
+ 4453      33454E5F 
+ 4453      6770696F 
+ 4454              	.LASF131:
+ 4455 0d6b 7370696D 		.string	"spimode_t"
+ 4455      6F64655F 
+ 4455      7400
+ 4456              	.LASF112:
+ 4457 0d75 54584652 		.string	"TXFR"
+ 4457      00
+ 4458              	.LASF145:
+ 4459 0d7a 72785F70 		.string	"rx_ptr"
+ 4459      747200
+ 4460              	.LASF68:
+ 4461 0d81 54464646 		.string	"TFFFDIRS"
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 88
+
+
+ 4461      44495253 
+ 4461      00
+ 4462              	.LASF105:
+ 4463 0d8a 434D4443 		.string	"CMDCTR"
+ 4463      545200
+ 4464              	.LASF183:
+ 4465 0d91 41454B5F 		.string	"AEK_POW_BMS63EN_CELL_PCB_UNKNOWN"
+ 4465      504F575F 
+ 4465      424D5336 
+ 4465      33454E5F 
+ 4465      43454C4C 
+ 4466              	.LASF295:
+ 4467 0db2 41454B5F 		.string	"AEK_POW_BMS63EN_VTREF_ALWAYS_ENABLED"
+ 4467      504F575F 
+ 4467      424D5336 
+ 4467      33454E5F 
+ 4467      56545245 
+ 4468              	.LASF13:
+ 4469 0dd7 75696E74 		.string	"uint16_t"
+ 4469      31365F74 
+ 4469      00
+ 4470              	.LASF17:
+ 4471 0de0 7675696E 		.string	"vuint32_t"
+ 4471      7433325F 
+ 4471      7400
+ 4472              	.LASF264:
+ 4473 0dea 64657669 		.string	"device_status"
+ 4473      63655F73 
+ 4473      74617475 
+ 4473      7300
+ 4474              	.LASF340:
+ 4475 0df8 41454B5F 		.string	"AEK_POW_BMS63EN_ObjectInit"
+ 4475      504F575F 
+ 4475      424D5336 
+ 4475      33454E5F 
+ 4475      4F626A65 
+ 4476              	.LASF280:
+ 4477 0e13 41454B5F 		.string	"AEK_POW_BMS63EN_adc_flt_soc_9ms28"
+ 4477      504F575F 
+ 4477      424D5336 
+ 4477      33454E5F 
+ 4477      6164635F 
+ 4478              	.LASF7:
+ 4479 0e35 5F5F7569 		.string	"__uint32_t"
+ 4479      6E743332 
+ 4479      5F7400
+ 4480              	.LASF65:
+ 4481 0e40 454F5146 		.string	"EOQFRE"
+ 4481      524500
+ 4482              	.LASF332:
+ 4483 0e47 53504944 		.string	"SPID1"
+ 4483      3100
+ 4484              	.LASF241:
+ 4485 0e4d 41454B5F 		.string	"AEK_POW_BMS63EN_STOP"
+ 4485      504F575F 
+ 4485      424D5336 
+ 4485      33454E5F 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 89
+
+
+ 4485      53544F50 
+ 4486              	.LASF35:
+ 4487 0e62 4449535F 		.string	"DIS_TXF"
+ 4487      54584600 
+ 4488              	.LASF317:
+ 4489 0e6a 6770696F 		.string	"gpio9_conf"
+ 4489      395F636F 
+ 4489      6E6600
+ 4490              	.LASF124:
+ 4491 0e75 636F6E66 		.string	"config"
+ 4491      696700
+ 4492              	.LASF175:
+ 4493 0e7c 41454B5F 		.string	"AEK_POW_BMS63EN_cell_conn_t"
+ 4493      504F575F 
+ 4493      424D5336 
+ 4493      33454E5F 
+ 4493      63656C6C 
+ 4494              	.LASF192:
+ 4495 0e98 63656C6C 		.string	"cell_1"
+ 4495      5F3100
+ 4496              	.LASF193:
+ 4497 0e9f 63656C6C 		.string	"cell_2"
+ 4497      5F3200
+ 4498              	.LASF194:
+ 4499 0ea6 63656C6C 		.string	"cell_3"
+ 4499      5F3300
+ 4500              	.LASF195:
+ 4501 0ead 63656C6C 		.string	"cell_4"
+ 4501      5F3400
+ 4502              	.LASF196:
+ 4503 0eb4 63656C6C 		.string	"cell_5"
+ 4503      5F3500
+ 4504              	.LASF197:
+ 4505 0ebb 63656C6C 		.string	"cell_6"
+ 4505      5F3600
+ 4506              	.LASF198:
+ 4507 0ec2 63656C6C 		.string	"cell_7"
+ 4507      5F3700
+ 4508              	.LASF199:
+ 4509 0ec9 63656C6C 		.string	"cell_8"
+ 4509      5F3800
+ 4510              	.LASF200:
+ 4511 0ed0 63656C6C 		.string	"cell_9"
+ 4511      5F3900
+ 4512              	.LASF314:
+ 4513 0ed7 6770696F 		.string	"gpio4_conf"
+ 4513      345F636F 
+ 4513      6E6600
+ 4514              	.LASF2:
+ 4515 0ee2 73686F72 		.string	"short int"
+ 4515      7420696E 
+ 4515      7400
+ 4516              	.LASF63:
+ 4517 0eec 504F504E 		.string	"POPNXTPTR"
+ 4517      58545054 
+ 4517      5200
+ 4518              	.LASF84:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 90
+
+
+ 4519 0ef6 52584441 		.string	"RXDATA"
+ 4519      544100
+ 4520              	.LASF248:
+ 4521 0efd 41454B5F 		.string	"AEK_POW_BMS63EN_SLEEP"
+ 4521      504F575F 
+ 4521      424D5336 
+ 4521      33454E5F 
+ 4521      534C4545 
+ 4522              	.LASF107:
+ 4523 0f13 64737069 		.string	"dspi_reserved1"
+ 4523      5F726573 
+ 4523      65727665 
+ 4523      643100
+ 4524              	.LASF147:
+ 4525 0f22 72785F70 		.string	"rx_ptr16"
+ 4525      74723136 
+ 4525      00
+ 4526              	.LASF6:
+ 4527 0f2b 6C6F6E67 		.string	"long int"
+ 4527      20696E74 
+ 4527      00
+ 4528              	.LASF98:
+ 4529 0f34 44504353 		.string	"DPCS0"
+ 4529      3000
+ 4530              	.LASF257:
+ 4531 0f3a 73746174 		.string	"status"
+ 4531      757300
+ 4532              	.LASF313:
+ 4533 0f41 6770696F 		.string	"gpio3_conf"
+ 4533      335F636F 
+ 4533      6E6600
+ 4534              	.LASF254:
+ 4535 0f4c 41454B5F 		.string	"AEK_POW_BMS63EN_DIAG"
+ 4535      504F575F 
+ 4535      424D5336 
+ 4535      33454E5F 
+ 4535      44494147 
+ 4536              	.LASF30:
+ 4537 0f61 50435349 		.string	"PCSIS3"
+ 4537      533300
+ 4538              	.LASF119:
+ 4539 0f68 44535049 		.string	"DSPI_not_used"
+ 4539      5F6E6F74 
+ 4539      5F757365 
+ 4539      6400
+ 4540              	.LASF146:
+ 4541 0f76 72785F70 		.string	"rx_ptr8"
+ 4541      74723800 
+ 4542              	.LASF27:
+ 4543 0f7e 50435349 		.string	"PCSIS6"
+ 4543      533600
+ 4544              	.LASF163:
+ 4545 0f85 41454B5F 		.string	"AEK_POW_BMS63EN_CELL10"
+ 4545      504F575F 
+ 4545      424D5336 
+ 4545      33454E5F 
+ 4545      43454C4C 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 91
+
+
+ 4546              	.LASF164:
+ 4547 0f9c 41454B5F 		.string	"AEK_POW_BMS63EN_CELL11"
+ 4547      504F575F 
+ 4547      424D5336 
+ 4547      33454E5F 
+ 4547      43454C4C 
+ 4548              	.LASF165:
+ 4549 0fb3 41454B5F 		.string	"AEK_POW_BMS63EN_CELL12"
+ 4549      504F575F 
+ 4549      424D5336 
+ 4549      33454E5F 
+ 4549      43454C4C 
+ 4550              	.LASF166:
+ 4551 0fca 41454B5F 		.string	"AEK_POW_BMS63EN_CELL13"
+ 4551      504F575F 
+ 4551      424D5336 
+ 4551      33454E5F 
+ 4551      43454C4C 
+ 4552              	.LASF167:
+ 4553 0fe1 41454B5F 		.string	"AEK_POW_BMS63EN_CELL14"
+ 4553      504F575F 
+ 4553      424D5336 
+ 4553      33454E5F 
+ 4553      43454C4C 
+ 4554              	.LASF306:
+ 4555 0ff8 4750494F 		.string	"GPIO5UVThreshold"
+ 4555      35555654 
+ 4555      68726573 
+ 4555      686F6C64 
+ 4555      00
+ 4556              	.LASF115:
+ 4557 1009 44535049 		.string	"DSPI_reserved_rxf"
+ 4557      5F726573 
+ 4557      65727665 
+ 4557      645F7278 
+ 4557      6600
+ 4558              	.LASF270:
+ 4559 101b 41454B5F 		.string	"AEK_POW_BMS63EN_Config"
+ 4559      504F575F 
+ 4559      424D5336 
+ 4559      33454E5F 
+ 4559      436F6E66 
+ 4560              	.LASF47:
+ 4561 1032 43504841 		.string	"CPHA"
+ 4561      00
+ 4562              	.LASF19:
+ 4563 1037 696F706F 		.string	"ioportid_t"
+ 4563      72746964 
+ 4563      5F7400
+ 4564              	.LASF72:
+ 4565 1042 434F4E54 		.string	"CONT"
+ 4565      00
+ 4566              	.LASF143:
+ 4567 1047 78737069 		.string	"xspi"
+ 4567      00
+ 4568              	.LASF321:
+ 4569 104c 6164635F 		.string	"adc_filter_soc"
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 92
+
+
+ 4569      66696C74 
+ 4569      65725F73 
+ 4569      6F6300
+ 4570              	.LASF11:
+ 4571 105b 756E7369 		.string	"unsigned int"
+ 4571      676E6564 
+ 4571      20696E74 
+ 4571      00
+ 4572              	.LASF181:
+ 4573 1068 41454B5F 		.string	"AEK_POW_BMS63EN_gpio_digital_output"
+ 4573      504F575F 
+ 4573      424D5336 
+ 4573      33454E5F 
+ 4573      6770696F 
+ 4574              	.LASF69:
+ 4575 108c 52464F46 		.string	"RFOFRE"
+ 4575      524500
+ 4576              	.LASF18:
+ 4577 1093 73697A65 		.string	"sizetype"
+ 4577      74797065 
+ 4577      00
+ 4578              	.LASF101:
+ 4579 109c 434F4D50 		.string	"COMP_DATA"
+ 4579      5F444154 
+ 4579      4100
+ 4580              	.LASF8:
+ 4581 10a6 6C6F6E67 		.string	"long unsigned int"
+ 4581      20756E73 
+ 4581      69676E65 
+ 4581      6420696E 
+ 4581      7400
+ 4582              	.LASF255:
+ 4583 10b8 41454B5F 		.string	"AEK_POW_BMS63EN_dev_state_t"
+ 4583      504F575F 
+ 4583      424D5336 
+ 4583      33454E5F 
+ 4583      6465765F 
+ 4584              	.LASF82:
+ 4585 10d4 50435330 		.string	"PCS0"
+ 4585      00
+ 4586              	.LASF81:
+ 4587 10d9 50435331 		.string	"PCS1"
+ 4587      00
+ 4588              	.LASF80:
+ 4589 10de 50435332 		.string	"PCS2"
+ 4589      00
+ 4590              	.LASF79:
+ 4591 10e3 50435333 		.string	"PCS3"
+ 4591      00
+ 4592              	.LASF78:
+ 4593 10e8 50435334 		.string	"PCS4"
+ 4593      00
+ 4594              	.LASF77:
+ 4595 10ed 50435335 		.string	"PCS5"
+ 4595      00
+ 4596              	.LASF76:
+ 4597 10f2 50435336 		.string	"PCS6"
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 93
+
+
+ 4597      00
+ 4598              	.LASF186:
+ 4599 10f7 41454B5F 		.string	"AEK_POW_BMS63EN_cell_pcb_conn_t"
+ 4599      504F575F 
+ 4599      424D5336 
+ 4599      33454E5F 
+ 4599      63656C6C 
+ 4600              	.LASF44:
+ 4601 1117 54434E54 		.string	"TCNT"
+ 4601      00
+ 4602              	.LASF323:
+ 4603 111c 41454B5F 		.string	"AEK_POW_BMS63EN_iso_freq"
+ 4603      504F575F 
+ 4603      424D5336 
+ 4603      33454E5F 
+ 4603      69736F5F 
+ 4604              	.LASF148:
+ 4605 1135 72785F70 		.string	"rx_ptr32"
+ 4605      74723332 
+ 4605      00
+ 4606              	.LASF220:
+ 4607 113e 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE13"
+ 4607      504F575F 
+ 4607      424D5336 
+ 4607      33454E5F 
+ 4607      44455649 
+ 4608              	.LASF312:
+ 4609 1157 4750494F 		.string	"GPIO8UVThreshold"
+ 4609      38555654 
+ 4609      68726573 
+ 4609      686F6C64 
+ 4609      00
+ 4610              	.LASF52:
+ 4611 1168 54585258 		.string	"TXRXS"
+ 4611      5300
+ 4612              	.LASF1:
+ 4613 116e 756E7369 		.string	"unsigned char"
+ 4613      676E6564 
+ 4613      20636861 
+ 4613      7200
+ 4614              	.LASF226:
+ 4615 117c 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE19"
+ 4615      504F575F 
+ 4615      424D5336 
+ 4615      33454E5F 
+ 4615      44455649 
+ 4616              	.LASF34:
+ 4617 1195 4D444953 		.string	"MDIS"
+ 4617      00
+ 4618              	.LASF265:
+ 4619 119a 41454B5F 		.string	"AEK_POW_BMS63EN_status_t"
+ 4619      504F575F 
+ 4619      424D5336 
+ 4619      33454E5F 
+ 4619      73746174 
+ 4620              	.LASF53:
+ 4621 11b3 454F5146 		.string	"EOQF"
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 94
+
+
+ 4621      00
+ 4622              	.LASF110:
+ 4623 11b8 50555348 		.string	"PUSHR"
+ 4623      5200
+ 4624              	.LASF74:
+ 4625 11be 4354434E 		.string	"CTCNT"
+ 4625      5400
+ 4626              	.LASF245:
+ 4627 11c4 41454B5F 		.string	"AEK_POW_BMS63EN_drv_state_t"
+ 4627      504F575F 
+ 4627      424D5336 
+ 4627      33454E5F 
+ 4627      6472765F 
+ 4628              	.LASF134:
+ 4629 11e0 58535049 		.string	"XSPI_ON_BIG_ENDIAN"
+ 4629      5F4F4E5F 
+ 4629      4249475F 
+ 4629      454E4449 
+ 4629      414E00
+ 4630              	.LASF150:
+ 4631 11f3 74785F70 		.string	"tx_ptr8"
+ 4631      74723800 
+ 4632              	.LASF207:
+ 4633 11fb 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE_ALL"
+ 4633      504F575F 
+ 4633      424D5336 
+ 4633      33454E5F 
+ 4633      44455649 
+ 4634              	.LASF178:
+ 4635 1216 41454B5F 		.string	"AEK_POW_BMS63EN_cell_en_t"
+ 4635      504F575F 
+ 4635      424D5336 
+ 4635      33454E5F 
+ 4635      63656C6C 
+ 4636              	.LASF217:
+ 4637 1230 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE10"
+ 4637      504F575F 
+ 4637      424D5336 
+ 4637      33454E5F 
+ 4637      44455649 
+ 4638              	.LASF218:
+ 4639 1249 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE11"
+ 4639      504F575F 
+ 4639      424D5336 
+ 4639      33454E5F 
+ 4639      44455649 
+ 4640              	.LASF219:
+ 4641 1262 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE12"
+ 4641      504F575F 
+ 4641      424D5336 
+ 4641      33454E5F 
+ 4641      44455649 
+ 4642              	.LASF36:
+ 4643 127b 4449535F 		.string	"DIS_RXF"
+ 4643      52584600 
+ 4644              	.LASF221:
+ 4645 1283 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE14"
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 95
+
+
+ 4645      504F575F 
+ 4645      424D5336 
+ 4645      33454E5F 
+ 4645      44455649 
+ 4646              	.LASF222:
+ 4647 129c 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE15"
+ 4647      504F575F 
+ 4647      424D5336 
+ 4647      33454E5F 
+ 4647      44455649 
+ 4648              	.LASF223:
+ 4649 12b5 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE16"
+ 4649      504F575F 
+ 4649      424D5336 
+ 4649      33454E5F 
+ 4649      44455649 
+ 4650              	.LASF224:
+ 4651 12ce 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE17"
+ 4651      504F575F 
+ 4651      424D5336 
+ 4651      33454E5F 
+ 4651      44455649 
+ 4652              	.LASF225:
+ 4653 12e7 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE18"
+ 4653      504F575F 
+ 4653      424D5336 
+ 4653      33454E5F 
+ 4653      44455649 
+ 4654              	.LASF158:
+ 4655 1300 41454B5F 		.string	"AEK_POW_BMS63EN_CELL5"
+ 4655      504F575F 
+ 4655      424D5336 
+ 4655      33454E5F 
+ 4655      43454C4C 
+ 4656              	.LASF49:
+ 4657 1316 50435353 		.string	"PCSSCK"
+ 4657      434B00
+ 4658              	.LASF58:
+ 4659 131d 52464F46 		.string	"RFOF"
+ 4659      00
+ 4660              	.LASF286:
+ 4661 1322 41454B5F 		.string	"AEK_POW_BMS63EN_commtimeout_32ms"
+ 4661      504F575F 
+ 4661      424D5336 
+ 4661      33454E5F 
+ 4661      636F6D6D 
+ 4662              	.LASF103:
+ 4663 1343 464D535A 		.string	"FMSZE"
+ 4663      4500
+ 4664              	.LASF253:
+ 4665 1349 41454B5F 		.string	"AEK_POW_BMS63EN_NORMAL"
+ 4665      504F575F 
+ 4665      424D5336 
+ 4665      33454E5F 
+ 4665      4E4F524D 
+ 4666              	.LASF311:
+ 4667 1360 4750494F 		.string	"GPIO8OVThreshold"
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 96
+
+
+ 4667      384F5654 
+ 4667      68726573 
+ 4667      686F6C64 
+ 4667      00
+ 4668              	.LASF108:
+ 4669 1371 43544152 		.string	"CTAR"
+ 4669      00
+ 4670              	.LASF73:
+ 4671 1376 43544153 		.string	"CTAS"
+ 4671      00
+ 4672              	.LASF3:
+ 4673 137b 5F5F7569 		.string	"__uint8_t"
+ 4673      6E74385F 
+ 4673      7400
+ 4674              	.LASF149:
+ 4675 1385 74785F70 		.string	"tx_ptr"
+ 4675      747200
+ 4676              	.LASF189:
+ 4677 138c 63656C6C 		.string	"cell_en"
+ 4677      5F656E00 
+ 4678              	.LASF288:
+ 4679 1394 41454B5F 		.string	"AEK_POW_BMS63EN_commtimeout_2048ms"
+ 4679      504F575F 
+ 4679      424D5336 
+ 4679      33454E5F 
+ 4679      636F6D6D 
+ 4680              	.LASF246:
+ 4681 13b7 41454B5F 		.string	"AEK_POW_BMS63EN_POR"
+ 4681      504F575F 
+ 4681      424D5336 
+ 4681      33454E5F 
+ 4681      504F5200 
+ 4682              	.LASF0:
+ 4683 13cb 7369676E 		.string	"signed char"
+ 4683      65642063 
+ 4683      68617200 
+ 4684              	.LASF330:
+ 4685 13d7 41454B5F 		.string	"AEK_POW_BMS63EN_status"
+ 4685      504F575F 
+ 4685      424D5336 
+ 4685      33454E5F 
+ 4685      73746174 
+ 4686              	.LASF5:
+ 4687 13ee 73686F72 		.string	"short unsigned int"
+ 4687      7420756E 
+ 4687      7369676E 
+ 4687      65642069 
+ 4687      6E7400
+ 4688              	.LASF289:
+ 4689 1401 41454B5F 		.string	"AEK_POW_BMS63EN_commtimeout_t"
+ 4689      504F575F 
+ 4689      424D5336 
+ 4689      33454E5F 
+ 4689      636F6D6D 
+ 4690              	.LASF227:
+ 4691 141f 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE20"
+ 4691      504F575F 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 97
+
+
+ 4691      424D5336 
+ 4691      33454E5F 
+ 4691      44455649 
+ 4692              	.LASF228:
+ 4693 1438 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE21"
+ 4693      504F575F 
+ 4693      424D5336 
+ 4693      33454E5F 
+ 4693      44455649 
+ 4694              	.LASF229:
+ 4695 1451 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE22"
+ 4695      504F575F 
+ 4695      424D5336 
+ 4695      33454E5F 
+ 4695      44455649 
+ 4696              	.LASF230:
+ 4697 146a 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE23"
+ 4697      504F575F 
+ 4697      424D5336 
+ 4697      33454E5F 
+ 4697      44455649 
+ 4698              	.LASF231:
+ 4699 1483 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE24"
+ 4699      504F575F 
+ 4699      424D5336 
+ 4699      33454E5F 
+ 4699      44455649 
+ 4700              	.LASF232:
+ 4701 149c 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE25"
+ 4701      504F575F 
+ 4701      424D5336 
+ 4701      33454E5F 
+ 4701      44455649 
+ 4702              	.LASF233:
+ 4703 14b5 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE26"
+ 4703      504F575F 
+ 4703      424D5336 
+ 4703      33454E5F 
+ 4703      44455649 
+ 4704              	.LASF234:
+ 4705 14ce 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE27"
+ 4705      504F575F 
+ 4705      424D5336 
+ 4705      33454E5F 
+ 4705      44455649 
+ 4706              	.LASF235:
+ 4707 14e7 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE28"
+ 4707      504F575F 
+ 4707      424D5336 
+ 4707      33454E5F 
+ 4707      44455649 
+ 4708              	.LASF236:
+ 4709 1500 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE29"
+ 4709      504F575F 
+ 4709      424D5336 
+ 4709      33454E5F 
+ 4709      44455649 
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 98
+
+
+ 4710              	.LASF261:
+ 4711 1519 63656C6C 		.string	"cell_stack_state"
+ 4711      5F737461 
+ 4711      636B5F73 
+ 4711      74617465 
+ 4711      00
+ 4712              	.LASF132:
+ 4713 152a 58535049 		.string	"XSPI_OFF"
+ 4713      5F4F4646 
+ 4713      00
+ 4714              	.LASF327:
+ 4715 1533 41454B5F 		.string	"AEK_POW_BMS63EN_cell_stack_state_dev1"
+ 4715      504F575F 
+ 4715      424D5336 
+ 4715      33454E5F 
+ 4715      63656C6C 
+ 4716              	.LASF328:
+ 4717 1559 41454B5F 		.string	"AEK_POW_BMS63EN_cell_stack_state_dev2"
+ 4717      504F575F 
+ 4717      424D5336 
+ 4717      33454E5F 
+ 4717      63656C6C 
+ 4718              	.LASF243:
+ 4719 157f 41454B5F 		.string	"AEK_POW_BMS63EN_STOPPING"
+ 4719      504F575F 
+ 4719      424D5336 
+ 4719      33454E5F 
+ 4719      53544F50 
+ 4720              	.LASF179:
+ 4721 1598 41454B5F 		.string	"AEK_POW_BMS63EN_gpio_analog_input"
+ 4721      504F575F 
+ 4721      424D5336 
+ 4721      33454E5F 
+ 4721      6770696F 
+ 4722              	.LASF275:
+ 4723 15ba 41454B5F 		.string	"AEK_POW_BMS63EN_CoulombCounting_Disabled"
+ 4723      504F575F 
+ 4723      424D5336 
+ 4723      33454E5F 
+ 4723      436F756C 
+ 4724              	.LASF322:
+ 4725 15e3 636F756C 		.string	"coulomb_counting_en"
+ 4725      6F6D625F 
+ 4725      636F756E 
+ 4725      74696E67 
+ 4725      5F656E00 
+ 4726              	.LASF291:
+ 4727 15f7 41454B5F 		.string	"AEK_POW_BMS63EN_iso_freq_high"
+ 4727      504F575F 
+ 4727      424D5336 
+ 4727      33454E5F 
+ 4727      69736F5F 
+ 4728              	.LASF43:
+ 4729 1615 48414C54 		.string	"HALT"
+ 4729      00
+ 4730              	.LASF277:
+ 4731 161a 41454B5F 		.string	"AEK_POW_BMS63EN_adc_flt_soc_290us"
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 99
+
+
+ 4731      504F575F 
+ 4731      424D5336 
+ 4731      33454E5F 
+ 4731      6164635F 
+ 4732              	.LASF142:
+ 4733 163c 70757368 		.string	"pushr"
+ 4733      7200
+ 4734              	.LASF251:
+ 4735 1642 41454B5F 		.string	"AEK_POW_BMS63EN_TRIMMING"
+ 4735      504F575F 
+ 4735      424D5336 
+ 4735      33454E5F 
+ 4735      5452494D 
+ 4736              	.LASF23:
+ 4737 165b 4D544645 		.string	"MTFE"
+ 4737      00
+ 4738              	.LASF290:
+ 4739 1660 41454B5F 		.string	"AEK_POW_BMS63EN_iso_freq_low"
+ 4739      504F575F 
+ 4739      424D5336 
+ 4739      33454E5F 
+ 4739      69736F5F 
+ 4740              	.LASF102:
+ 4741 167d 44455345 		.string	"DESER_DATA"
+ 4741      525F4441 
+ 4741      544100
+ 4742              	.LASF272:
+ 4743 1688 41454B5F 		.string	"AEK_POW_BMS63EN_cell_tim_bal_mode"
+ 4743      504F575F 
+ 4743      424D5336 
+ 4743      33454E5F 
+ 4743      63656C6C 
+ 4744              	.LASF237:
+ 4745 16aa 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE30"
+ 4745      504F575F 
+ 4745      424D5336 
+ 4745      33454E5F 
+ 4745      44455649 
+ 4746              	.LASF238:
+ 4747 16c3 41454B5F 		.string	"AEK_POW_BMS63EN_DEVICE31"
+ 4747      504F575F 
+ 4747      424D5336 
+ 4747      33454E5F 
+ 4747      44455649 
+ 4748              	.LASF305:
+ 4749 16dc 4750494F 		.string	"GPIO5OVThreshold"
+ 4749      354F5654 
+ 4749      68726573 
+ 4749      686F6C64 
+ 4749      00
+ 4750              	.LASF140:
+ 4751 16ed 73737061 		.string	"sspad"
+ 4751      6400
+ 4752              		.ident	"GCC: (GNU) 4.9.4 20160726 (Sat May 27 11:09:55 CDT 2017         build.sh rev=gd8b6c20 s=F4
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s 			page 100
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 AEK_POW_BMS63EN_cfg.c
+C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s:10     .text.AEK_POW_BMS63EN_cfg_objects_init:00000000 AEK_POW_BMS63EN_cfg_objects_init
+C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s:105    .data.AEK_POW_BMS63EN_config:00000000 AEK_POW_BMS63EN_config
+C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s:237    .data.AEK_POW_BMS63EN_Drv:00000000 AEK_POW_BMS63EN_Drv
+C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s:31     .data.AEK_POW_BMS63EN_ParamConf_dev:00000000 AEK_POW_BMS63EN_ParamConf_dev
+C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s:94     .data.AEK_POW_BMS63EN_dev_status:00000000 AEK_POW_BMS63EN_dev_status
+C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s:114    .data.AEK_POW_BMS63EN_cell_stack_state_dev1:00000000 AEK_POW_BMS63EN_cell_stack_state_dev1
+C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s:175    .data.AEK_POW_BMS63EN_cell_stack_state_dev2:00000000 AEK_POW_BMS63EN_cell_stack_state_dev2
+C:\Users\Vipuls\AppData\Local\Temp\ccL0uJ9a.s:245    .data.AEK_POW_BMS63EN_status:00000000 AEK_POW_BMS63EN_status
+
+UNDEFINED SYMBOLS
+AEK_POW_BMS63EN_ObjectInit
+SPID1
+spi_config_spi_config_AEK_COM_ISOSPI1_dev0

@@ -1,0 +1,501 @@
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s 			page 1
+
+
+   1              		.file	"pit_lld_cfg.c"
+   2              		.section	".text","axv"
+   3              	.Ltext0:
+   4              		.cfi_sections	.debug_frame
+   5              		.globl pit0_config
+   6              		.section	.data.pit0_config,"aw",@progbits
+   7              		.align 2
+   8              		.type	pit0_config, @object
+   9              		.size	pit0_config, 96
+  10              	pit0_config:
+  11 0000 00       		.byte	0
+  12 0001 000000   		.zero	3
+  13 0004 00000000 		.long	0
+  14 0008 00000000 		.long	0
+  15 000c 00       		.byte	0
+  16 000d 000000   		.zero	3
+  17 0010 00000000 		.long	0
+  18 0014 00000000 		.long	0
+  19 0018 00       		.byte	0
+  20 0019 000000   		.zero	3
+  21 001c 00000000 		.long	0
+  22 0020 00000000 		.long	0
+  23 0024 01       		.byte	1
+  24 0025 000000   		.zero	3
+  25 0028 00000002 		.long	2
+  26 002c 00000000 		.long	AEK_POW_BMS63EN_Mgn_exec
+  27 0030 01       		.byte	1
+  28 0031 000000   		.zero	3
+  29 0034 0000000A 		.long	10
+  30 0038 00000000 		.long	AEK_POW_BMS63EN_CAN_Voltage_Transmission
+  31 003c 01       		.byte	1
+  32 003d 000000   		.zero	3
+  33 0040 00000001 		.long	1
+  34 0044 00000000 		.long	AEK_POW_BMS63EN_CAN_Temp_Transmission
+  35 0048 00       		.byte	0
+  36 0049 000000   		.zero	3
+  37 004c 00000000 		.long	0
+  38 0050 00000000 		.long	0
+  39 0054 00       		.byte	0
+  40 0055 000000   		.zero	3
+  41 0058 00000000 		.long	0
+  42 005c 00000000 		.long	0
+  43              		.section	".text","axv"
+  44              	.Letext0:
+  45              		.file 1 "c:\\autodevkitstudio-2.4.0\\eclipse\\plugins\\com.st.tools.spc5.tools.gnu.gcc.ppcvle.win3
+  46              		.file 2 "c:\\autodevkitstudio-2.4.0\\eclipse\\plugins\\com.st.tools.spc5.tools.gnu.gcc.ppcvle.win3
+  47              		.file 3 "./components/spc58ecxx_low_level_drivers_component_rla/lib/include/pit_lld.h"
+  48              		.file 4 "./components/spc58ecxx_low_level_drivers_component_rla/cfg/pit_lld_cfg.c"
+  49              		.section	.debug_info,"",@progbits
+  50              	.Ldebug_info0:
+  51 0000 0000010C 		.4byte	0x10c
+  52 0004 0002     		.2byte	0x2
+  53 0006 00000000 		.4byte	.Ldebug_abbrev0
+  54 000a 04       		.byte	0x4
+  55 000b 01       		.uleb128 0x1
+  56 000c 00000000 		.4byte	.LASF19
+  57 0010 01       		.byte	0x1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s 			page 2
+
+
+  58 0011 00000000 		.4byte	.LASF20
+  59 0015 00000000 		.4byte	.LASF21
+  60 0019 00000000 		.4byte	.Ldebug_line0
+  61 001d 02       		.uleb128 0x2
+  62 001e 01       		.byte	0x1
+  63 001f 06       		.byte	0x6
+  64 0020 00000000 		.4byte	.LASF0
+  65 0024 03       		.uleb128 0x3
+  66 0025 00000000 		.4byte	.LASF5
+  67 0029 01       		.byte	0x1
+  68 002a 1D       		.byte	0x1d
+  69 002b 0000002F 		.4byte	0x2f
+  70 002f 02       		.uleb128 0x2
+  71 0030 01       		.byte	0x1
+  72 0031 08       		.byte	0x8
+  73 0032 00000000 		.4byte	.LASF1
+  74 0036 02       		.uleb128 0x2
+  75 0037 02       		.byte	0x2
+  76 0038 05       		.byte	0x5
+  77 0039 00000000 		.4byte	.LASF2
+  78 003d 02       		.uleb128 0x2
+  79 003e 02       		.byte	0x2
+  80 003f 07       		.byte	0x7
+  81 0040 00000000 		.4byte	.LASF3
+  82 0044 02       		.uleb128 0x2
+  83 0045 04       		.byte	0x4
+  84 0046 05       		.byte	0x5
+  85 0047 00000000 		.4byte	.LASF4
+  86 004b 03       		.uleb128 0x3
+  87 004c 00000000 		.4byte	.LASF6
+  88 0050 01       		.byte	0x1
+  89 0051 41       		.byte	0x41
+  90 0052 00000056 		.4byte	0x56
+  91 0056 02       		.uleb128 0x2
+  92 0057 04       		.byte	0x4
+  93 0058 07       		.byte	0x7
+  94 0059 00000000 		.4byte	.LASF7
+  95 005d 02       		.uleb128 0x2
+  96 005e 08       		.byte	0x8
+  97 005f 05       		.byte	0x5
+  98 0060 00000000 		.4byte	.LASF8
+  99 0064 02       		.uleb128 0x2
+ 100 0065 08       		.byte	0x8
+ 101 0066 07       		.byte	0x7
+ 102 0067 00000000 		.4byte	.LASF9
+ 103 006b 04       		.uleb128 0x4
+ 104 006c 04       		.byte	0x4
+ 105 006d 05       		.byte	0x5
+ 106 006e 696E7400 		.string	"int"
+ 107 0072 02       		.uleb128 0x2
+ 108 0073 04       		.byte	0x4
+ 109 0074 07       		.byte	0x7
+ 110 0075 00000000 		.4byte	.LASF10
+ 111 0079 03       		.uleb128 0x3
+ 112 007a 00000000 		.4byte	.LASF11
+ 113 007e 02       		.byte	0x2
+ 114 007f 15       		.byte	0x15
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s 			page 3
+
+
+ 115 0080 00000024 		.4byte	0x24
+ 116 0084 03       		.uleb128 0x3
+ 117 0085 00000000 		.4byte	.LASF12
+ 118 0089 02       		.byte	0x2
+ 119 008a 2D       		.byte	0x2d
+ 120 008b 0000004B 		.4byte	0x4b
+ 121 008f 02       		.uleb128 0x2
+ 122 0090 04       		.byte	0x4
+ 123 0091 07       		.byte	0x7
+ 124 0092 00000000 		.4byte	.LASF13
+ 125 0096 05       		.uleb128 0x5
+ 126 0097 00000000 		.4byte	.LASF14
+ 127 009b 03       		.byte	0x3
+ 128 009c 011D     		.2byte	0x11d
+ 129 009e 000000A2 		.4byte	0xa2
+ 130 00a2 06       		.uleb128 0x6
+ 131 00a3 04       		.byte	0x4
+ 132 00a4 000000A8 		.4byte	0xa8
+ 133 00a8 07       		.uleb128 0x7
+ 134 00a9 01       		.byte	0x1
+ 135 00aa 08       		.uleb128 0x8
+ 136 00ab 0C       		.byte	0xc
+ 137 00ac 03       		.byte	0x3
+ 138 00ad 0122     		.2byte	0x122
+ 139 00af 000000E1 		.4byte	0xe1
+ 140 00b3 09       		.uleb128 0x9
+ 141 00b4 00000000 		.4byte	.LASF15
+ 142 00b8 03       		.byte	0x3
+ 143 00b9 0126     		.2byte	0x126
+ 144 00bb 00000079 		.4byte	0x79
+ 145 00bf 02       		.byte	0x2
+ 146 00c0 23       		.byte	0x23
+ 147 00c1 00       		.uleb128 0
+ 148 00c2 09       		.uleb128 0x9
+ 149 00c3 00000000 		.4byte	.LASF16
+ 150 00c7 03       		.byte	0x3
+ 151 00c8 012A     		.2byte	0x12a
+ 152 00ca 00000084 		.4byte	0x84
+ 153 00ce 02       		.byte	0x2
+ 154 00cf 23       		.byte	0x23
+ 155 00d0 04       		.uleb128 0x4
+ 156 00d1 09       		.uleb128 0x9
+ 157 00d2 00000000 		.4byte	.LASF17
+ 158 00d6 03       		.byte	0x3
+ 159 00d7 012E     		.2byte	0x12e
+ 160 00d9 00000096 		.4byte	0x96
+ 161 00dd 02       		.byte	0x2
+ 162 00de 23       		.byte	0x23
+ 163 00df 08       		.uleb128 0x8
+ 164 00e0 00       		.byte	0
+ 165 00e1 05       		.uleb128 0x5
+ 166 00e2 00000000 		.4byte	.LASF18
+ 167 00e6 03       		.byte	0x3
+ 168 00e7 012F     		.2byte	0x12f
+ 169 00e9 000000AA 		.4byte	0xaa
+ 170 00ed 0A       		.uleb128 0xa
+ 171 00ee 000000E1 		.4byte	0xe1
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s 			page 4
+
+
+ 172 00f2 000000FD 		.4byte	0xfd
+ 173 00f6 0B       		.uleb128 0xb
+ 174 00f7 0000008F 		.4byte	0x8f
+ 175 00fb 07       		.byte	0x7
+ 176 00fc 00       		.byte	0
+ 177 00fd 0C       		.uleb128 0xc
+ 178 00fe 00000000 		.4byte	.LASF22
+ 179 0102 04       		.byte	0x4
+ 180 0103 1F       		.byte	0x1f
+ 181 0104 000000ED 		.4byte	0xed
+ 182 0108 01       		.byte	0x1
+ 183 0109 05       		.byte	0x5
+ 184 010a 03       		.byte	0x3
+ 185 010b 00000000 		.4byte	pit0_config
+ 186 010f 00       		.byte	0
+ 187              		.section	.debug_abbrev,"",@progbits
+ 188              	.Ldebug_abbrev0:
+ 189 0000 01       		.uleb128 0x1
+ 190 0001 11       		.uleb128 0x11
+ 191 0002 01       		.byte	0x1
+ 192 0003 25       		.uleb128 0x25
+ 193 0004 0E       		.uleb128 0xe
+ 194 0005 13       		.uleb128 0x13
+ 195 0006 0B       		.uleb128 0xb
+ 196 0007 03       		.uleb128 0x3
+ 197 0008 0E       		.uleb128 0xe
+ 198 0009 1B       		.uleb128 0x1b
+ 199 000a 0E       		.uleb128 0xe
+ 200 000b 10       		.uleb128 0x10
+ 201 000c 06       		.uleb128 0x6
+ 202 000d 00       		.byte	0
+ 203 000e 00       		.byte	0
+ 204 000f 02       		.uleb128 0x2
+ 205 0010 24       		.uleb128 0x24
+ 206 0011 00       		.byte	0
+ 207 0012 0B       		.uleb128 0xb
+ 208 0013 0B       		.uleb128 0xb
+ 209 0014 3E       		.uleb128 0x3e
+ 210 0015 0B       		.uleb128 0xb
+ 211 0016 03       		.uleb128 0x3
+ 212 0017 0E       		.uleb128 0xe
+ 213 0018 00       		.byte	0
+ 214 0019 00       		.byte	0
+ 215 001a 03       		.uleb128 0x3
+ 216 001b 16       		.uleb128 0x16
+ 217 001c 00       		.byte	0
+ 218 001d 03       		.uleb128 0x3
+ 219 001e 0E       		.uleb128 0xe
+ 220 001f 3A       		.uleb128 0x3a
+ 221 0020 0B       		.uleb128 0xb
+ 222 0021 3B       		.uleb128 0x3b
+ 223 0022 0B       		.uleb128 0xb
+ 224 0023 49       		.uleb128 0x49
+ 225 0024 13       		.uleb128 0x13
+ 226 0025 00       		.byte	0
+ 227 0026 00       		.byte	0
+ 228 0027 04       		.uleb128 0x4
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s 			page 5
+
+
+ 229 0028 24       		.uleb128 0x24
+ 230 0029 00       		.byte	0
+ 231 002a 0B       		.uleb128 0xb
+ 232 002b 0B       		.uleb128 0xb
+ 233 002c 3E       		.uleb128 0x3e
+ 234 002d 0B       		.uleb128 0xb
+ 235 002e 03       		.uleb128 0x3
+ 236 002f 08       		.uleb128 0x8
+ 237 0030 00       		.byte	0
+ 238 0031 00       		.byte	0
+ 239 0032 05       		.uleb128 0x5
+ 240 0033 16       		.uleb128 0x16
+ 241 0034 00       		.byte	0
+ 242 0035 03       		.uleb128 0x3
+ 243 0036 0E       		.uleb128 0xe
+ 244 0037 3A       		.uleb128 0x3a
+ 245 0038 0B       		.uleb128 0xb
+ 246 0039 3B       		.uleb128 0x3b
+ 247 003a 05       		.uleb128 0x5
+ 248 003b 49       		.uleb128 0x49
+ 249 003c 13       		.uleb128 0x13
+ 250 003d 00       		.byte	0
+ 251 003e 00       		.byte	0
+ 252 003f 06       		.uleb128 0x6
+ 253 0040 0F       		.uleb128 0xf
+ 254 0041 00       		.byte	0
+ 255 0042 0B       		.uleb128 0xb
+ 256 0043 0B       		.uleb128 0xb
+ 257 0044 49       		.uleb128 0x49
+ 258 0045 13       		.uleb128 0x13
+ 259 0046 00       		.byte	0
+ 260 0047 00       		.byte	0
+ 261 0048 07       		.uleb128 0x7
+ 262 0049 15       		.uleb128 0x15
+ 263 004a 00       		.byte	0
+ 264 004b 27       		.uleb128 0x27
+ 265 004c 0C       		.uleb128 0xc
+ 266 004d 00       		.byte	0
+ 267 004e 00       		.byte	0
+ 268 004f 08       		.uleb128 0x8
+ 269 0050 13       		.uleb128 0x13
+ 270 0051 01       		.byte	0x1
+ 271 0052 0B       		.uleb128 0xb
+ 272 0053 0B       		.uleb128 0xb
+ 273 0054 3A       		.uleb128 0x3a
+ 274 0055 0B       		.uleb128 0xb
+ 275 0056 3B       		.uleb128 0x3b
+ 276 0057 05       		.uleb128 0x5
+ 277 0058 01       		.uleb128 0x1
+ 278 0059 13       		.uleb128 0x13
+ 279 005a 00       		.byte	0
+ 280 005b 00       		.byte	0
+ 281 005c 09       		.uleb128 0x9
+ 282 005d 0D       		.uleb128 0xd
+ 283 005e 00       		.byte	0
+ 284 005f 03       		.uleb128 0x3
+ 285 0060 0E       		.uleb128 0xe
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s 			page 6
+
+
+ 286 0061 3A       		.uleb128 0x3a
+ 287 0062 0B       		.uleb128 0xb
+ 288 0063 3B       		.uleb128 0x3b
+ 289 0064 05       		.uleb128 0x5
+ 290 0065 49       		.uleb128 0x49
+ 291 0066 13       		.uleb128 0x13
+ 292 0067 38       		.uleb128 0x38
+ 293 0068 0A       		.uleb128 0xa
+ 294 0069 00       		.byte	0
+ 295 006a 00       		.byte	0
+ 296 006b 0A       		.uleb128 0xa
+ 297 006c 01       		.uleb128 0x1
+ 298 006d 01       		.byte	0x1
+ 299 006e 49       		.uleb128 0x49
+ 300 006f 13       		.uleb128 0x13
+ 301 0070 01       		.uleb128 0x1
+ 302 0071 13       		.uleb128 0x13
+ 303 0072 00       		.byte	0
+ 304 0073 00       		.byte	0
+ 305 0074 0B       		.uleb128 0xb
+ 306 0075 21       		.uleb128 0x21
+ 307 0076 00       		.byte	0
+ 308 0077 49       		.uleb128 0x49
+ 309 0078 13       		.uleb128 0x13
+ 310 0079 2F       		.uleb128 0x2f
+ 311 007a 0B       		.uleb128 0xb
+ 312 007b 00       		.byte	0
+ 313 007c 00       		.byte	0
+ 314 007d 0C       		.uleb128 0xc
+ 315 007e 34       		.uleb128 0x34
+ 316 007f 00       		.byte	0
+ 317 0080 03       		.uleb128 0x3
+ 318 0081 0E       		.uleb128 0xe
+ 319 0082 3A       		.uleb128 0x3a
+ 320 0083 0B       		.uleb128 0xb
+ 321 0084 3B       		.uleb128 0x3b
+ 322 0085 0B       		.uleb128 0xb
+ 323 0086 49       		.uleb128 0x49
+ 324 0087 13       		.uleb128 0x13
+ 325 0088 3F       		.uleb128 0x3f
+ 326 0089 0C       		.uleb128 0xc
+ 327 008a 02       		.uleb128 0x2
+ 328 008b 0A       		.uleb128 0xa
+ 329 008c 00       		.byte	0
+ 330 008d 00       		.byte	0
+ 331 008e 00       		.byte	0
+ 332              		.section	.debug_aranges,"",@progbits
+ 333 0000 00000014 		.4byte	0x14
+ 334 0004 0002     		.2byte	0x2
+ 335 0006 00000000 		.4byte	.Ldebug_info0
+ 336 000a 04       		.byte	0x4
+ 337 000b 00       		.byte	0
+ 338 000c 0000     		.2byte	0
+ 339 000e 0000     		.2byte	0
+ 340 0010 00000000 		.4byte	0
+ 341 0014 00000000 		.4byte	0
+ 342              		.section	.debug_line,"",@progbits
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s 			page 7
+
+
+ 343              	.Ldebug_line0:
+ 344 0000 000001F9 		.section	.debug_str,"MS",@progbits,1
+ 344      00020000 
+ 344      01F30201 
+ 344      FB0E0D00 
+ 344      01010101 
+ 345              	.LASF8:
+ 346 0000 6C6F6E67 		.string	"long long int"
+ 346      206C6F6E 
+ 346      6720696E 
+ 346      7400
+ 347              	.LASF15:
+ 348 000e 656E6162 		.string	"enabled"
+ 348      6C656400 
+ 349              	.LASF10:
+ 350 0016 756E7369 		.string	"unsigned int"
+ 350      676E6564 
+ 350      20696E74 
+ 350      00
+ 351              	.LASF6:
+ 352 0023 5F5F7569 		.string	"__uint32_t"
+ 352      6E743332 
+ 352      5F7400
+ 353              	.LASF14:
+ 354 002e 70697463 		.string	"pitcallback_t"
+ 354      616C6C62 
+ 354      61636B5F 
+ 354      7400
+ 355              	.LASF7:
+ 356 003c 6C6F6E67 		.string	"long unsigned int"
+ 356      20756E73 
+ 356      69676E65 
+ 356      6420696E 
+ 356      7400
+ 357              	.LASF18:
+ 358 004e 5049545F 		.string	"PIT_CH_Config"
+ 358      43485F43 
+ 358      6F6E6669 
+ 358      6700
+ 359              	.LASF9:
+ 360 005c 6C6F6E67 		.string	"long long unsigned int"
+ 360      206C6F6E 
+ 360      6720756E 
+ 360      7369676E 
+ 360      65642069 
+ 361              	.LASF5:
+ 362 0073 5F5F7569 		.string	"__uint8_t"
+ 362      6E74385F 
+ 362      7400
+ 363              	.LASF16:
+ 364 007d 66726571 		.string	"frequency"
+ 364      75656E63 
+ 364      7900
+ 365              	.LASF17:
+ 366 0087 63616C6C 		.string	"callback"
+ 366      6261636B 
+ 366      00
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s 			page 8
+
+
+ 367              	.LASF22:
+ 368 0090 70697430 		.string	"pit0_config"
+ 368      5F636F6E 
+ 368      66696700 
+ 369              	.LASF11:
+ 370 009c 75696E74 		.string	"uint8_t"
+ 370      385F7400 
+ 371              	.LASF1:
+ 372 00a4 756E7369 		.string	"unsigned char"
+ 372      676E6564 
+ 372      20636861 
+ 372      7200
+ 373              	.LASF12:
+ 374 00b2 75696E74 		.string	"uint32_t"
+ 374      33325F74 
+ 374      00
+ 375              	.LASF21:
+ 376 00bb 443A5C53 		.string	"D:\\Study\\Y1\\Work\\RCVD\\Autodev\\Slave_L9963E\\SPC58EC - Combined_Application_v4"
+ 376      74756479 
+ 376      5C59315C 
+ 376      576F726B 
+ 376      5C524356 
+ 377              	.LASF4:
+ 378 0108 6C6F6E67 		.string	"long int"
+ 378      20696E74 
+ 378      00
+ 379              	.LASF20:
+ 380 0111 2E2F636F 		.string	"./components/spc58ecxx_low_level_drivers_component_rla/cfg/pit_lld_cfg.c"
+ 380      6D706F6E 
+ 380      656E7473 
+ 380      2F737063 
+ 380      35386563 
+ 381              	.LASF3:
+ 382 015a 73686F72 		.string	"short unsigned int"
+ 382      7420756E 
+ 382      7369676E 
+ 382      65642069 
+ 382      6E7400
+ 383              	.LASF0:
+ 384 016d 7369676E 		.string	"signed char"
+ 384      65642063 
+ 384      68617200 
+ 385              	.LASF13:
+ 386 0179 73697A65 		.string	"sizetype"
+ 386      74797065 
+ 386      00
+ 387              	.LASF2:
+ 388 0182 73686F72 		.string	"short int"
+ 388      7420696E 
+ 388      7400
+ 389              	.LASF19:
+ 390 018c 474E5520 		.ascii	"GNU C 4.9.4 20160726 (Sat May 27 11:09:55 CDT 2017         b"
+ 390      4320342E 
+ 390      392E3420 
+ 390      32303136 
+ 390      30373236 
+ 391 01c8 75696C64 		.ascii	"uild.sh"
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s 			page 9
+
+
+ 391      2E7368
+ 392 01cf 20726576 		.string	" rev=gd8b6c20 s=F494 ELe200 -V release_gd8b6c20_build_Fed_ELe200_ML0) -mcall-sysv -mcpu=e
+ 392      3D676438 
+ 392      62366332 
+ 392      3020733D 
+ 392      46343934 
+ 393              		.ident	"GCC: (GNU) 4.9.4 20160726 (Sat May 27 11:09:55 CDT 2017         build.sh rev=gd8b6c20 s=F4
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 pit_lld_cfg.c
+C:\Users\Vipuls\AppData\Local\Temp\ccL2YaIN.s:10     .data.pit0_config:00000000 pit0_config
+
+UNDEFINED SYMBOLS
+AEK_POW_BMS63EN_Mgn_exec
+AEK_POW_BMS63EN_CAN_Voltage_Transmission
+AEK_POW_BMS63EN_CAN_Temp_Transmission

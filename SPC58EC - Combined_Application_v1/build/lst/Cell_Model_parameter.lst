@@ -1,0 +1,1059 @@
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 1
+
+
+   1              		.file	"Cell_Model_parameter.c"
+   2              		.section	".text","axv"
+   3              	.Ltext0:
+   4              		.cfi_sections	.debug_frame
+   5              		.globl Temperature_Vector
+   6              		.globl SOH_MIN
+   7              		.globl SOH_MAX
+   8              		.globl SOC_Vector
+   9              		.globl SOC_MIN
+  10              		.globl SOC_MAX
+  11              		.globl R1_Vector
+  12              		.globl R0_Vector
+  13              		.globl R0_EOL_Vector
+  14              		.globl OCV_Vector
+  15              		.globl NTC_Vector
+  16              		.globl NTC_Temp_Vector
+  17              		.globl KELVIN_CON
+  18              		.globl Cap_Nom
+  19              		.section	.data.Temperature_Vector,"aw",@progbits
+  20              		.align 2
+  21              		.type	Temperature_Vector, @object
+  22              		.size	Temperature_Vector, 20
+  23              	Temperature_Vector:
+  24 0000 43889333 		.long	1133024051
+  25 0004 438D9333 		.long	1133351731
+  26 0008 43929333 		.long	1133679411
+  27 000c 43979333 		.long	1134007091
+  28 0010 439C9333 		.long	1134334771
+  29              		.section	.data.SOH_MAX,"aw",@progbits
+  30              		.align 2
+  31              		.type	SOH_MAX, @object
+  32              		.size	SOH_MAX, 4
+  33              	SOH_MAX:
+  34 0000 3F7AE148 		.long	1065017672
+  35              		.section	.data.Cap_Nom,"aw",@progbits
+  36              		.align 2
+  37              		.type	Cap_Nom, @object
+  38              		.size	Cap_Nom, 4
+  39              	Cap_Nom:
+  40 0000 42080000 		.long	1107820544
+  41              		.section	.data.SOC_MIN,"aw",@progbits
+  42              		.align 2
+  43              		.type	SOC_MIN, @object
+  44              		.size	SOC_MIN, 4
+  45              	SOC_MIN:
+  46 0000 3C23D70A 		.long	1008981770
+  47              		.section	.data.SOC_MAX,"aw",@progbits
+  48              		.align 2
+  49              		.type	SOC_MAX, @object
+  50              		.size	SOC_MAX, 4
+  51              	SOC_MAX:
+  52 0000 3F7AE148 		.long	1065017672
+  53              		.section	.data.R0_EOL_Vector,"aw",@progbits
+  54              		.align 2
+  55              		.type	R0_EOL_Vector, @object
+  56              		.size	R0_EOL_Vector, 340
+  57              	R0_EOL_Vector:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 2
+
+
+  58 0000 3E884601 		.long	1049118209
+  59 0004 3E87BB7C 		.long	1049082748
+  60 0008 3E87AE14 		.long	1049079316
+  61 000c 3E86C2BF 		.long	1049019071
+  62 0010 3E831569 		.long	1048778089
+  63 0014 3E746607 		.long	1047815687
+  64 0018 3E6CA90E 		.long	1047308558
+  65 001c 3E650FD3 		.long	1046810579
+  66 0020 3E607728 		.long	1046509352
+  67 0024 3E5F11B0 		.long	1046417840
+  68 0028 3E5FE531 		.long	1046471985
+  69 002c 3E6020C5 		.long	1046487237
+  70 0030 3E78C31E 		.long	1048101662
+  71 0034 3E7987BA 		.long	1048151994
+  72 0038 3E7E70D4 		.long	1048473812
+  73 003c 3E81C649 		.long	1048692297
+  74 0040 3E824C56 		.long	1048726614
+  75 0044 3E755752 		.long	1047877458
+  76 0048 3E71FD65 		.long	1047657829
+  77 004c 3E71CDBB 		.long	1047645627
+  78 0050 3E6D52DA 		.long	1047352026
+  79 0054 3E6C34E0 		.long	1047278816
+  80 0058 3E60FD35 		.long	1046543669
+  81 005c 3E53FDC4 		.long	1045691844
+  82 0060 3E4EE206 		.long	1045357062
+  83 0064 3E4CFF71 		.long	1045233521
+  84 0068 3E4C5E95 		.long	1045192341
+  85 006c 3E4BF652 		.long	1045165650
+  86 0070 3E4C7964 		.long	1045199204
+  87 0074 3E59B764 		.long	1046067044
+  88 0078 3E5C43C5 		.long	1046234053
+  89 007c 3E5E8BA3 		.long	1046383523
+  90 0080 3E633C23 		.long	1046690851
+  91 0084 3E68D7F9 		.long	1047058425
+  92 0088 3E578165 		.long	1045922149
+  93 008c 3E579C35 		.long	1045929013
+  94 0090 3E57250D 		.long	1045898509
+  95 0094 3E5598DB 		.long	1045797083
+  96 0098 3E4F17A5 		.long	1045370789
+  97 009c 3E437DAC 		.long	1044610476
+  98 00a0 3E38F5C3 		.long	1043920323
+  99 00a4 3E3621E3 		.long	1043735011
+ 100 00a8 3E358FEB 		.long	1043697643
+ 101 00ac 3E35633C 		.long	1043686204
+ 102 00b0 3E351EB8 		.long	1043668664
+ 103 00b4 3E35ADB5 		.long	1043705269
+ 104 00b8 3E3CF08C 		.long	1044181132
+ 105 00bc 3E3E8E9E 		.long	1044287134
+ 106 00c0 3E40E266 		.long	1044439654
+ 107 00c4 3E43F7CF 		.long	1044641743
+ 108 00c8 3E48A554 		.long	1044948308
+ 109 00cc 3E4EF0EB 		.long	1045360875
+ 110 00d0 3E4D10E4 		.long	1045237988
+ 111 00d4 3E492EC9 		.long	1044983497
+ 112 00d8 3E428526 		.long	1044546854
+ 113 00dc 3E3D2256 		.long	1044193878
+ 114 00e0 3E35C7AB 		.long	1043711915
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 3
+
+
+ 115 00e4 3E3211D2 		.long	1043468754
+ 116 00e8 3E31201A 		.long	1043406874
+ 117 00ec 3E2FFB52 		.long	1043331922
+ 118 00f0 3E2FBE0A 		.long	1043316234
+ 119 00f4 3E2F24D6 		.long	1043277014
+ 120 00f8 3E2F4DB1 		.long	1043287473
+ 121 00fc 3E32D078 		.long	1043517560
+ 122 0100 3E33B12A 		.long	1043575082
+ 123 0104 3E351A0A 		.long	1043667466
+ 124 0108 3E376034 		.long	1043816500
+ 125 010c 3E3B9E3A 		.long	1044094522
+ 126 0110 3E5B16E6 		.long	1046157030
+ 127 0114 3E5380A7 		.long	1045659815
+ 128 0118 3E4D5BCA 		.long	1045257162
+ 129 011c 3E473FDC 		.long	1044856796
+ 130 0120 3E42BC0B 		.long	1044560907
+ 131 0124 3E3F592E 		.long	1044338990
+ 132 0128 3E3AEA37 		.long	1044048439
+ 133 012c 3E3866C6 		.long	1043883718
+ 134 0130 3E36C5BA 		.long	1043776954
+ 135 0134 3E36636C 		.long	1043751788
+ 136 0138 3E35AABB 		.long	1043704507
+ 137 013c 3E357816 		.long	1043691542
+ 138 0140 3E378460 		.long	1043825760
+ 139 0144 3E38A84F 		.long	1043900495
+ 140 0148 3E3872B0 		.long	1043886768
+ 141 014c 3E3963FB 		.long	1043948539
+ 142 0150 3E3C7669 		.long	1044149865
+ 143              		.section	.data.KELVIN_CON,"aw",@progbits
+ 144              		.align 2
+ 145              		.type	KELVIN_CON, @object
+ 146              		.size	KELVIN_CON, 4
+ 147              	KELVIN_CON:
+ 148 0000 43889333 		.long	1133024051
+ 149              		.section	.data.SOH_MIN,"aw",@progbits
+ 150              		.align 2
+ 151              		.type	SOH_MIN, @object
+ 152              		.size	SOH_MIN, 4
+ 153              	SOH_MIN:
+ 154 0000 3C23D70A 		.long	1008981770
+ 155              		.section	.data.NTC_Temp_Vector,"aw",@progbits
+ 156              		.align 2
+ 157              		.type	NTC_Temp_Vector, @object
+ 158              		.size	NTC_Temp_Vector, 132
+ 159              	NTC_Temp_Vector:
+ 160 0000 42F00000 		.long	1123024896
+ 161 0004 42E60000 		.long	1122369536
+ 162 0008 42DC0000 		.long	1121714176
+ 163 000c 42D20000 		.long	1121058816
+ 164 0010 42C80000 		.long	1120403456
+ 165 0014 42BE0000 		.long	1119748096
+ 166 0018 42B40000 		.long	1119092736
+ 167 001c 42AA0000 		.long	1118437376
+ 168 0020 42A00000 		.long	1117782016
+ 169 0024 42960000 		.long	1117126656
+ 170 0028 428C0000 		.long	1116471296
+ 171 002c 42820000 		.long	1115815936
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 4
+
+
+ 172 0030 42700000 		.long	1114636288
+ 173 0034 425C0000 		.long	1113325568
+ 174 0038 42480000 		.long	1112014848
+ 175 003c 42340000 		.long	1110704128
+ 176 0040 42200000 		.long	1109393408
+ 177 0044 420C0000 		.long	1108082688
+ 178 0048 41F00000 		.long	1106247680
+ 179 004c 41C80000 		.long	1103626240
+ 180 0050 41A00000 		.long	1101004800
+ 181 0054 41700000 		.long	1097859072
+ 182 0058 41200000 		.long	1092616192
+ 183 005c 40A00000 		.long	1084227584
+ 184 0060 00000000 		.long	0
+ 185 0064 C0A00000 		.long	-1063256064
+ 186 0068 C1200000 		.long	-1054867456
+ 187 006c C1700000 		.long	-1049624576
+ 188 0070 C1A00000 		.long	-1046478848
+ 189 0074 C1C80000 		.long	-1043857408
+ 190 0078 C1F00000 		.long	-1041235968
+ 191 007c C20C0000 		.long	-1039400960
+ 192 0080 C2200000 		.long	-1038090240
+ 193              		.section	.data.NTC_Vector,"aw",@progbits
+ 194              		.align 2
+ 195              		.type	NTC_Vector, @object
+ 196              		.size	NTC_Vector, 132
+ 197              	NTC_Vector:
+ 198 0000 43C03333 		.long	1136669491
+ 199 0004 43DC199A 		.long	1138497946
+ 200 0008 43FCD99A 		.long	1140644250
+ 201 000c 4411B333 		.long	1142010675
+ 202 0010 44288666 		.long	1143506534
+ 203 0014 4443A000 		.long	1145282560
+ 204 0018 4463E666 		.long	1147397734
+ 205 001c 44854000 		.long	1149583360
+ 206 0020 449C8000 		.long	1151107072
+ 207 0024 44B88000 		.long	1152942080
+ 208 0028 44DA8000 		.long	1155170304
+ 209 002c 4501F000 		.long	1157754880
+ 210 0030 451B4000 		.long	1159413760
+ 211 0034 453A6000 		.long	1161453568
+ 212 0038 4560F000 		.long	1163980800
+ 213 003c 45886800 		.long	1166567424
+ 214 0040 45A66000 		.long	1168531456
+ 215 0044 45CC1000 		.long	1171001344
+ 216 0048 45FBC000 		.long	1174126592
+ 217 004c 461C4000 		.long	1176256512
+ 218 0050 46433400 		.long	1178809344
+ 219 0054 46757C00 		.long	1182104576
+ 220 0058 469B7200 		.long	1184592384
+ 221 005c 46C64A00 		.long	1187400192
+ 222 0060 46FEE000 		.long	1191108608
+ 223 0064 47251C00 		.long	1193614336
+ 224 0068 4757B200 		.long	1196929536
+ 225 006c 478E1E80 		.long	1200496256
+ 226 0070 47BCFC80 		.long	1203567744
+ 227 0074 47FDB600 		.long	1207809536
+ 228 0078 482C0140 		.long	1210843456
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 5
+
+
+ 229 007c 486BAAC0 		.long	1215015616
+ 230 0080 48A33840 		.long	1218656320
+ 231              		.section	.data.SOC_Vector,"aw",@progbits
+ 232              		.align 2
+ 233              		.type	SOC_Vector, @object
+ 234              		.size	SOC_Vector, 68
+ 235              	SOC_Vector:
+ 236 0000 3A83126F 		.long	981668463
+ 237 0004 3CF5C28F 		.long	1022739087
+ 238 0008 3D75C28F 		.long	1031127695
+ 239 000c 3DB851EC 		.long	1035489772
+ 240 0010 3DF5C28F 		.long	1039516303
+ 241 0014 3E19999A 		.long	1041865114
+ 242 0018 3E800000 		.long	1048576000
+ 243 001c 3EB33333 		.long	1051931443
+ 244 0020 3EE66666 		.long	1055286886
+ 245 0024 3F0CCCCD 		.long	1057803469
+ 246 0028 3F266666 		.long	1059481190
+ 247 002c 3F400000 		.long	1061158912
+ 248 0030 3F59999A 		.long	1062836634
+ 249 0034 3F6147AE 		.long	1063339950
+ 250 0038 3F68F5C3 		.long	1063843267
+ 251 003c 3F70A3D7 		.long	1064346583
+ 252 0040 3F7851EC 		.long	1064849900
+ 253              		.section	.data.R0_Vector,"aw",@progbits
+ 254              		.align 2
+ 255              		.type	R0_Vector, @object
+ 256              		.size	R0_Vector, 340
+ 257              	R0_Vector:
+ 258 0000 3DB5B2AC 		.long	1035317932
+ 259 0004 3DB4F9FB 		.long	1035270651
+ 260 0008 3DB4E81B 		.long	1035266075
+ 261 000c 3DB3AE54 		.long	1035185748
+ 262 0010 3DAEC737 		.long	1034864439
+ 263 0014 3DA2EEAF 		.long	1034088111
+ 264 0018 3D9DC609 		.long	1033750025
+ 265 001c 3D98B538 		.long	1033418040
+ 266 0020 3D95A4C5 		.long	1033217221
+ 267 0024 3D94B675 		.long	1033156213
+ 268 0028 3D954376 		.long	1033192310
+ 269 002c 3D956B2E 		.long	1033202478
+ 270 0030 3DA5D76A 		.long	1034278762
+ 271 0034 3DA65A7C 		.long	1034312316
+ 272 0038 3DA9A08D 		.long	1034526861
+ 273 003c 3DAD0861 		.long	1034750049
+ 274 0040 3DADBB1D 		.long	1034795805
+ 275 0044 3DA38F8C 		.long	1034129292
+ 276 0048 3DA15398 		.long	1033982872
+ 277 004c 3DA133D2 		.long	1033974738
+ 278 0050 3D9E373C 		.long	1033779004
+ 279 0054 3D9D7895 		.long	1033730197
+ 280 0058 3D95FE23 		.long	1033240099
+ 281 005c 3D8D53D8 		.long	1032672216
+ 282 0060 3D89EC04 		.long	1032449028
+ 283 0064 3D88AA4B 		.long	1032366667
+ 284 0068 3D883F0E 		.long	1032339214
+ 285 006c 3D87F98C 		.long	1032321420
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 6
+
+
+ 286 0070 3D8850ED 		.long	1032343789
+ 287 0074 3D9124ED 		.long	1032922349
+ 288 0078 3D92D7D9 		.long	1033033689
+ 289 007c 3D945D17 		.long	1033133335
+ 290 0080 3D977D6D 		.long	1033338221
+ 291 0084 3D9B3AA6 		.long	1033583270
+ 292 0088 3D8FAB99 		.long	1032825753
+ 293 008c 3D8FBD79 		.long	1032830329
+ 294 0090 3D8F6E09 		.long	1032809993
+ 295 0094 3D8E65E7 		.long	1032742375
+ 296 0098 3D8A0FC3 		.long	1032458179
+ 297 009c 3D8253C8 		.long	1031951304
+ 298 00a0 3D769D03 		.long	1031183619
+ 299 00a4 3D72D7D9 		.long	1030936537
+ 300 00a8 3D72153A 		.long	1030886714
+ 301 00ac 3D71D9A6 		.long	1030871462
+ 302 00b0 3D717E4B 		.long	1030848075
+ 303 00b4 3D723CF2 		.long	1030896882
+ 304 00b8 3D7BEB65 		.long	1031531365
+ 305 00bc 3D7E137D 		.long	1031672701
+ 306 00c0 3D8096EE 		.long	1031837422
+ 307 00c4 3D82A535 		.long	1031972149
+ 308 00c8 3D85C38E 		.long	1032176526
+ 309 00cc 3D89F5F2 		.long	1032451570
+ 310 00d0 3D88B5ED 		.long	1032369645
+ 311 00d4 3D861F31 		.long	1032199985
+ 312 00d8 3D81AE19 		.long	1031908889
+ 313 00dc 3D7C2DC8 		.long	1031548360
+ 314 00e0 3D725F8E 		.long	1030905742
+ 315 00e4 3D6D6D18 		.long	1030581528
+ 316 00e8 3D6C2ACE 		.long	1030499022
+ 317 00ec 3D6AA46D 		.long	1030399085
+ 318 00f0 3D6A52B8 		.long	1030378168
+ 319 00f4 3D698673 		.long	1030325875
+ 320 00f8 3D69BCEC 		.long	1030339820
+ 321 00fc 3D6E6B4B 		.long	1030646603
+ 322 0100 3D6F96E3 		.long	1030723299
+ 323 0104 3D71780D 		.long	1030846477
+ 324 0108 3D748045 		.long	1031045189
+ 325 010c 3D7A284E 		.long	1031415886
+ 326 0110 3D920F44 		.long	1032982340
+ 327 0114 3D8D006F 		.long	1032650863
+ 328 0118 3D88E7DC 		.long	1032382428
+ 329 011c 3D84D53E 		.long	1032115518
+ 330 0120 3D81D2B2 		.long	1031918258
+ 331 0124 3D7F2193 		.long	1031741843
+ 332 0128 3D79384A 		.long	1031354442
+ 333 012c 3D75DE5D 		.long	1031134813
+ 334 0130 3D73B24D 		.long	1030992461
+ 335 0134 3D732F3A 		.long	1030958906
+ 336 0138 3D7238F9 		.long	1030895865
+ 337 013c 3D71F573 		.long	1030878579
+ 338 0140 3D74B080 		.long	1031057536
+ 339 0144 3D7635BF 		.long	1031157183
+ 340 0148 3D75EE40 		.long	1031138880
+ 341 014c 3D772FF9 		.long	1031221241
+ 342 0150 3D7B488D 		.long	1031489677
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 7
+
+
+ 343              		.section	.data.OCV_Vector,"aw",@progbits
+ 344              		.align 2
+ 345              		.type	OCV_Vector, @object
+ 346              		.size	OCV_Vector, 340
+ 347              	OCV_Vector:
+ 348 0000 405291D1 		.long	1079153105
+ 349 0004 4053205C 		.long	1079189596
+ 350 0008 4053E1B1 		.long	1079239089
+ 351 000c 4054EB85 		.long	1079307141
+ 352 0010 4056BC9F 		.long	1079426207
+ 353 0014 405A01A3 		.long	1079640483
+ 354 0018 4060C60B 		.long	1080083979
+ 355 001c 4065E4F7 		.long	1080419575
+ 356 0020 4069DC5D 		.long	1080679517
+ 357 0024 406F9965 		.long	1081055589
+ 358 0028 4075D048 		.long	1081462856
+ 359 002c 407B9C78 		.long	1081842808
+ 360 0030 40815E84 		.long	1082220164
+ 361 0034 40820A72 		.long	1082264178
+ 362 0038 40826219 		.long	1082286617
+ 363 003c 4082B5A8 		.long	1082308008
+ 364 0040 40835206 		.long	1082348038
+ 365 0044 404E3439 		.long	1078867001
+ 366 0048 404EFC85 		.long	1078918277
+ 367 004c 40501C78 		.long	1078991992
+ 368 0050 4051FE91 		.long	1079115409
+ 369 0054 4056FAAD 		.long	1079442093
+ 370 0058 405AC25B 		.long	1079689819
+ 371 005c 40619062 		.long	1080135778
+ 372 0060 4066A92A 		.long	1080469802
+ 373 0064 406A7660 		.long	1080718944
+ 374 0068 40703F14 		.long	1081098004
+ 375 006c 4076B190 		.long	1081520528
+ 376 0070 407CD220 		.long	1081922080
+ 377 0074 4081AE7D 		.long	1082240637
+ 378 0078 40823D8B 		.long	1082277259
+ 379 007c 40828B44 		.long	1082297156
+ 380 0080 4082E92A 		.long	1082321194
+ 381 0084 4083B176 		.long	1082372470
+ 382 0088 404A573F 		.long	1078613823
+ 383 008c 404BB2FF 		.long	1078702847
+ 384 0090 404E02AA 		.long	1078854314
+ 385 0094 40537007 		.long	1079209991
+ 386 0098 40580FF9 		.long	1079513081
+ 387 009c 405B0A3D 		.long	1079708221
+ 388 00a0 40619B71 		.long	1080138609
+ 389 00a4 4066F213 		.long	1080488467
+ 390 00a8 406AA4DD 		.long	1080730845
+ 391 00ac 40706388 		.long	1081107336
+ 392 00b0 40777838 		.long	1081571384
+ 393 00b4 407CFCB9 		.long	1081932985
+ 394 00b8 4081BD8B 		.long	1082244491
+ 395 00bc 40824E70 		.long	1082281584
+ 396 00c0 40829D7E 		.long	1082301822
+ 397 00c4 4082F958 		.long	1082325336
+ 398 00c8 4083C241 		.long	1082376769
+ 399 00cc 40467382 		.long	1078358914
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 8
+
+
+ 400 00d0 4049AF9A 		.long	1078570906
+ 401 00d4 404F11F7 		.long	1078923767
+ 402 00d8 40543BEB 		.long	1079262187
+ 403 00dc 4058788A 		.long	1079539850
+ 404 00e0 405B363E 		.long	1079719486
+ 405 00e4 4061A6B5 		.long	1080141493
+ 406 00e8 40672A4E 		.long	1080502862
+ 407 00ec 406ADC99 		.long	1080745113
+ 408 00f0 40709D85 		.long	1081122181
+ 409 00f4 4077FA9E 		.long	1081604766
+ 410 00f8 407D18A2 		.long	1081940130
+ 411 00fc 4081C415 		.long	1082246165
+ 412 0100 40825712 		.long	1082283794
+ 413 0104 4082A39B 		.long	1082303387
+ 414 0108 408302FC 		.long	1082327804
+ 415 010c 4083CA0D 		.long	1082378765
+ 416 0110 4044B405 		.long	1078244357
+ 417 0114 404AAF4F 		.long	1078636367
+ 418 0118 40500347 		.long	1078985543
+ 419 011c 4054DE9E 		.long	1079303838
+ 420 0120 4058A268 		.long	1079550568
+ 421 0124 405B5E35 		.long	1079729717
+ 422 0128 4061A440 		.long	1080140864
+ 423 012c 406740EC 		.long	1080508652
+ 424 0130 406B0B0F 		.long	1080757007
+ 425 0134 4070A36E 		.long	1081123694
+ 426 0138 4077F6C9 		.long	1081603785
+ 427 013c 407D01D8 		.long	1081934296
+ 428 0140 4081B79A 		.long	1082242970
+ 429 0144 4082538F 		.long	1082282895
+ 430 0148 4082A546 		.long	1082303814
+ 431 014c 40830952 		.long	1082329426
+ 432 0150 4083D3C3 		.long	1082381251
+ 433              		.section	.data.R1_Vector,"aw",@progbits
+ 434              		.align 2
+ 435              		.type	R1_Vector, @object
+ 436              		.size	R1_Vector, 340
+ 437              	R1_Vector:
+ 438 0000 3DF73981 		.long	1039612289
+ 439 0004 3DFC209E 		.long	1039933598
+ 440 0008 3E010D4B 		.long	1040256331
+ 441 000c 3E0585FD 		.long	1040549373
+ 442 0010 3E0E78F8 		.long	1041135864
+ 443 0014 3DADECC3 		.long	1034808515
+ 444 0018 3D396CB8 		.long	1027173560
+ 445 001c 3D2B62F6 		.long	1026253558
+ 446 0020 3D16DB5F 		.long	1024908127
+ 447 0024 3D0D95C7 		.long	1024300487
+ 448 0028 3D0577B1 		.long	1023768497
+ 449 002c 3D077417 		.long	1023898647
+ 450 0030 3D0AE770 		.long	1024124784
+ 451 0034 3D131897 		.long	1024661655
+ 452 0038 3D13BDD2 		.long	1024703954
+ 453 003c 3D19DF81 		.long	1025105793
+ 454 0040 3D2C57A1 		.long	1026316193
+ 455 0044 3DE3D63F 		.long	1038341695
+ 456 0048 3DEBBFE7 		.long	1038860263
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 9
+
+
+ 457 004c 3DF4800B 		.long	1039433739
+ 458 0050 3E00D4E5 		.long	1040241893
+ 459 0054 3D87A558 		.long	1032299864
+ 460 0058 3D28D138 		.long	1026085176
+ 461 005c 3D0093C1 		.long	1023448001
+ 462 0060 3D02CC87 		.long	1023593607
+ 463 0064 3CE095BD 		.long	1021351357
+ 464 0068 3CCE3709 		.long	1020147465
+ 465 006c 3CD24942 		.long	1020414274
+ 466 0070 3CDED4EF 		.long	1021236463
+ 467 0074 3CCC4758 		.long	1020020568
+ 468 0078 3CCAD066 		.long	1019924582
+ 469 007c 3CC442AE 		.long	1019495086
+ 470 0080 3CC187A1 		.long	1019316129
+ 471 0084 3CD0D250 		.long	1020318288
+ 472 0088 3DD5C2F5 		.long	1037419253
+ 473 008c 3DE0464D 		.long	1038108237
+ 474 0090 3DCFD41C 		.long	1037030428
+ 475 0094 3D59B895 		.long	1029290133
+ 476 0098 3D146967 		.long	1024747879
+ 477 009c 3CECDF78 		.long	1022156664
+ 478 00a0 3CC95319 		.long	1019826969
+ 479 00a4 3CE13AF8 		.long	1021393656
+ 480 00a8 3CB9FBB5 		.long	1018821557
+ 481 00ac 3CA40386 		.long	1017381766
+ 482 00b0 3CB7C1D1 		.long	1018675665
+ 483 00b4 3CBCB067 		.long	1018998887
+ 484 00b8 3CA5FFED 		.long	1017511917
+ 485 00bc 3CA1EDB4 		.long	1017245108
+ 486 00c0 3C955E12 		.long	1016421906
+ 487 00c4 3C8BF586 		.long	1015805318
+ 488 00c8 3C90A69F 		.long	1016112799
+ 489 00cc 3DBBF2A9 		.long	1035727529
+ 490 00d0 3D8A831E 		.long	1032487710
+ 491 00d4 3D264EE9 		.long	1025920745
+ 492 00d8 3CEEFE5E 		.long	1022295646
+ 493 00dc 3CCED98B 		.long	1020189067
+ 494 00e0 3CB771AE 		.long	1018655150
+ 495 00e4 3CA100C1 		.long	1017184449
+ 496 00e8 3CC206BA 		.long	1019348666
+ 497 00ec 3C98F95D 		.long	1016658269
+ 498 00f0 3C87D698 		.long	1015535256
+ 499 00f4 3CA216D0 		.long	1017255632
+ 500 00f8 3C9E9EAC 		.long	1017028268
+ 501 00fc 3C88F1D8 		.long	1015607768
+ 502 0100 3C8386A3 		.long	1015252643
+ 503 0104 3C68866F 		.long	1013483119
+ 504 0108 3C5256E0 		.long	1012029152
+ 505 010c 3C537964 		.long	1012103524
+ 506 0110 3D05DAFD 		.long	1023793917
+ 507 0114 3CB3C629 		.long	1018414633
+ 508 0118 3C896C85 		.long	1015639173
+ 509 011c 3C6DDA7E 		.long	1013832318
+ 510 0120 3C5F8E02 		.long	1012895234
+ 511 0124 3C4C9D23 		.long	1011653923
+ 512 0128 3C337784 		.long	1010005892
+ 513 012c 3C5BC1B1 		.long	1012646321
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 10
+
+
+ 514 0130 3C30CDF1 		.long	1009831409
+ 515 0134 3C195A0D 		.long	1008294413
+ 516 0138 3C4C35DE 		.long	1011627486
+ 517 013c 3C34A234 		.long	1010082356
+ 518 0140 3C1943CF 		.long	1008288719
+ 519 0144 3C1012DE 		.long	1007686366
+ 520 0148 3BF8B6CE 		.long	1006155470
+ 521 014c 3BD995A1 		.long	1004115361
+ 522 0150 3BD8CA45 		.long	1004063301
+ 523              		.section	".text","axv"
+ 524              	.Letext0:
+ 525              		.file 1 "./source/ModelBMS/Cell_Model_parameter.c"
+ 526              		.file 2 "./source/ModelBMS/rtwtypes.h"
+ 527              		.section	.debug_info,"",@progbits
+ 528              	.Ldebug_info0:
+ 529 0000 000001B5 		.4byte	0x1b5
+ 530 0004 0002     		.2byte	0x2
+ 531 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 532 000a 04       		.byte	0x4
+ 533 000b 01       		.uleb128 0x1
+ 534 000c 00000000 		.4byte	.LASF25
+ 535 0010 01       		.byte	0x1
+ 536 0011 00000000 		.4byte	.LASF26
+ 537 0015 00000000 		.4byte	.LASF27
+ 538 0019 00000000 		.4byte	.Ldebug_line0
+ 539 001d 02       		.uleb128 0x2
+ 540 001e 01       		.byte	0x1
+ 541 001f 06       		.byte	0x6
+ 542 0020 00000000 		.4byte	.LASF0
+ 543 0024 02       		.uleb128 0x2
+ 544 0025 01       		.byte	0x1
+ 545 0026 08       		.byte	0x8
+ 546 0027 00000000 		.4byte	.LASF1
+ 547 002b 03       		.uleb128 0x3
+ 548 002c 04       		.byte	0x4
+ 549 002d 05       		.byte	0x5
+ 550 002e 696E7400 		.string	"int"
+ 551 0032 02       		.uleb128 0x2
+ 552 0033 04       		.byte	0x4
+ 553 0034 07       		.byte	0x7
+ 554 0035 00000000 		.4byte	.LASF2
+ 555 0039 02       		.uleb128 0x2
+ 556 003a 04       		.byte	0x4
+ 557 003b 05       		.byte	0x5
+ 558 003c 00000000 		.4byte	.LASF3
+ 559 0040 02       		.uleb128 0x2
+ 560 0041 04       		.byte	0x4
+ 561 0042 07       		.byte	0x7
+ 562 0043 00000000 		.4byte	.LASF4
+ 563 0047 02       		.uleb128 0x2
+ 564 0048 08       		.byte	0x8
+ 565 0049 05       		.byte	0x5
+ 566 004a 00000000 		.4byte	.LASF5
+ 567 004e 02       		.uleb128 0x2
+ 568 004f 08       		.byte	0x8
+ 569 0050 07       		.byte	0x7
+ 570 0051 00000000 		.4byte	.LASF6
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 11
+
+
+ 571 0055 04       		.uleb128 0x4
+ 572 0056 00000000 		.4byte	.LASF28
+ 573 005a 02       		.byte	0x2
+ 574 005b 3D       		.byte	0x3d
+ 575 005c 00000060 		.4byte	0x60
+ 576 0060 02       		.uleb128 0x2
+ 577 0061 04       		.byte	0x4
+ 578 0062 04       		.byte	0x4
+ 579 0063 00000000 		.4byte	.LASF7
+ 580 0067 02       		.uleb128 0x2
+ 581 0068 08       		.byte	0x8
+ 582 0069 04       		.byte	0x4
+ 583 006a 00000000 		.4byte	.LASF8
+ 584 006e 02       		.uleb128 0x2
+ 585 006f 01       		.byte	0x1
+ 586 0070 08       		.byte	0x8
+ 587 0071 00000000 		.4byte	.LASF9
+ 588 0075 02       		.uleb128 0x2
+ 589 0076 04       		.byte	0x4
+ 590 0077 07       		.byte	0x7
+ 591 0078 00000000 		.4byte	.LASF10
+ 592 007c 05       		.uleb128 0x5
+ 593 007d 00000055 		.4byte	0x55
+ 594 0081 0000008C 		.4byte	0x8c
+ 595 0085 06       		.uleb128 0x6
+ 596 0086 00000075 		.4byte	0x75
+ 597 008a 54       		.byte	0x54
+ 598 008b 00       		.byte	0
+ 599 008c 07       		.uleb128 0x7
+ 600 008d 00000000 		.4byte	.LASF11
+ 601 0091 01       		.byte	0x1
+ 602 0092 1C       		.byte	0x1c
+ 603 0093 00000055 		.4byte	0x55
+ 604 0097 01       		.byte	0x1
+ 605 0098 05       		.byte	0x5
+ 606 0099 03       		.byte	0x3
+ 607 009a 00000000 		.4byte	Cap_Nom
+ 608 009e 07       		.uleb128 0x7
+ 609 009f 00000000 		.4byte	.LASF12
+ 610 00a3 01       		.byte	0x1
+ 611 00a4 1D       		.byte	0x1d
+ 612 00a5 00000055 		.4byte	0x55
+ 613 00a9 01       		.byte	0x1
+ 614 00aa 05       		.byte	0x5
+ 615 00ab 03       		.byte	0x3
+ 616 00ac 00000000 		.4byte	KELVIN_CON
+ 617 00b0 05       		.uleb128 0x5
+ 618 00b1 00000055 		.4byte	0x55
+ 619 00b5 000000C0 		.4byte	0xc0
+ 620 00b9 06       		.uleb128 0x6
+ 621 00ba 00000075 		.4byte	0x75
+ 622 00be 20       		.byte	0x20
+ 623 00bf 00       		.byte	0
+ 624 00c0 07       		.uleb128 0x7
+ 625 00c1 00000000 		.4byte	.LASF13
+ 626 00c5 01       		.byte	0x1
+ 627 00c6 1E       		.byte	0x1e
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 12
+
+
+ 628 00c7 000000B0 		.4byte	0xb0
+ 629 00cb 01       		.byte	0x1
+ 630 00cc 05       		.byte	0x5
+ 631 00cd 03       		.byte	0x3
+ 632 00ce 00000000 		.4byte	NTC_Temp_Vector
+ 633 00d2 07       		.uleb128 0x7
+ 634 00d3 00000000 		.4byte	.LASF14
+ 635 00d7 01       		.byte	0x1
+ 636 00d8 23       		.byte	0x23
+ 637 00d9 000000B0 		.4byte	0xb0
+ 638 00dd 01       		.byte	0x1
+ 639 00de 05       		.byte	0x5
+ 640 00df 03       		.byte	0x3
+ 641 00e0 00000000 		.4byte	NTC_Vector
+ 642 00e4 07       		.uleb128 0x7
+ 643 00e5 00000000 		.4byte	.LASF15
+ 644 00e9 01       		.byte	0x1
+ 645 00ea 29       		.byte	0x29
+ 646 00eb 0000007C 		.4byte	0x7c
+ 647 00ef 01       		.byte	0x1
+ 648 00f0 05       		.byte	0x5
+ 649 00f1 03       		.byte	0x3
+ 650 00f2 00000000 		.4byte	OCV_Vector
+ 651 00f6 07       		.uleb128 0x7
+ 652 00f7 00000000 		.4byte	.LASF16
+ 653 00fb 01       		.byte	0x1
+ 654 00fc 3C       		.byte	0x3c
+ 655 00fd 0000007C 		.4byte	0x7c
+ 656 0101 01       		.byte	0x1
+ 657 0102 05       		.byte	0x5
+ 658 0103 03       		.byte	0x3
+ 659 0104 00000000 		.4byte	R0_EOL_Vector
+ 660 0108 07       		.uleb128 0x7
+ 661 0109 00000000 		.4byte	.LASF17
+ 662 010d 01       		.byte	0x1
+ 663 010e 4F       		.byte	0x4f
+ 664 010f 0000007C 		.4byte	0x7c
+ 665 0113 01       		.byte	0x1
+ 666 0114 05       		.byte	0x5
+ 667 0115 03       		.byte	0x3
+ 668 0116 00000000 		.4byte	R0_Vector
+ 669 011a 07       		.uleb128 0x7
+ 670 011b 00000000 		.4byte	.LASF18
+ 671 011f 01       		.byte	0x1
+ 672 0120 65       		.byte	0x65
+ 673 0121 0000007C 		.4byte	0x7c
+ 674 0125 01       		.byte	0x1
+ 675 0126 05       		.byte	0x5
+ 676 0127 03       		.byte	0x3
+ 677 0128 00000000 		.4byte	R1_Vector
+ 678 012c 07       		.uleb128 0x7
+ 679 012d 00000000 		.4byte	.LASF19
+ 680 0131 01       		.byte	0x1
+ 681 0132 79       		.byte	0x79
+ 682 0133 00000055 		.4byte	0x55
+ 683 0137 01       		.byte	0x1
+ 684 0138 05       		.byte	0x5
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 13
+
+
+ 685 0139 03       		.byte	0x3
+ 686 013a 00000000 		.4byte	SOC_MAX
+ 687 013e 07       		.uleb128 0x7
+ 688 013f 00000000 		.4byte	.LASF20
+ 689 0143 01       		.byte	0x1
+ 690 0144 7E       		.byte	0x7e
+ 691 0145 00000055 		.4byte	0x55
+ 692 0149 01       		.byte	0x1
+ 693 014a 05       		.byte	0x5
+ 694 014b 03       		.byte	0x3
+ 695 014c 00000000 		.4byte	SOC_MIN
+ 696 0150 05       		.uleb128 0x5
+ 697 0151 00000055 		.4byte	0x55
+ 698 0155 00000160 		.4byte	0x160
+ 699 0159 06       		.uleb128 0x6
+ 700 015a 00000075 		.4byte	0x75
+ 701 015e 10       		.byte	0x10
+ 702 015f 00       		.byte	0
+ 703 0160 07       		.uleb128 0x7
+ 704 0161 00000000 		.4byte	.LASF21
+ 705 0165 01       		.byte	0x1
+ 706 0166 7F       		.byte	0x7f
+ 707 0167 00000150 		.4byte	0x150
+ 708 016b 01       		.byte	0x1
+ 709 016c 05       		.byte	0x5
+ 710 016d 03       		.byte	0x3
+ 711 016e 00000000 		.4byte	SOC_Vector
+ 712 0172 07       		.uleb128 0x7
+ 713 0173 00000000 		.4byte	.LASF22
+ 714 0177 01       		.byte	0x1
+ 715 0178 8B       		.byte	0x8b
+ 716 0179 00000055 		.4byte	0x55
+ 717 017d 01       		.byte	0x1
+ 718 017e 05       		.byte	0x5
+ 719 017f 03       		.byte	0x3
+ 720 0180 00000000 		.4byte	SOH_MAX
+ 721 0184 07       		.uleb128 0x7
+ 722 0185 00000000 		.4byte	.LASF23
+ 723 0189 01       		.byte	0x1
+ 724 018a 8C       		.byte	0x8c
+ 725 018b 00000055 		.4byte	0x55
+ 726 018f 01       		.byte	0x1
+ 727 0190 05       		.byte	0x5
+ 728 0191 03       		.byte	0x3
+ 729 0192 00000000 		.4byte	SOH_MIN
+ 730 0196 05       		.uleb128 0x5
+ 731 0197 00000055 		.4byte	0x55
+ 732 019b 000001A6 		.4byte	0x1a6
+ 733 019f 06       		.uleb128 0x6
+ 734 01a0 00000075 		.4byte	0x75
+ 735 01a4 04       		.byte	0x4
+ 736 01a5 00       		.byte	0
+ 737 01a6 07       		.uleb128 0x7
+ 738 01a7 00000000 		.4byte	.LASF24
+ 739 01ab 01       		.byte	0x1
+ 740 01ac 8D       		.byte	0x8d
+ 741 01ad 00000196 		.4byte	0x196
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 14
+
+
+ 742 01b1 01       		.byte	0x1
+ 743 01b2 05       		.byte	0x5
+ 744 01b3 03       		.byte	0x3
+ 745 01b4 00000000 		.4byte	Temperature_Vector
+ 746 01b8 00       		.byte	0
+ 747              		.section	.debug_abbrev,"",@progbits
+ 748              	.Ldebug_abbrev0:
+ 749 0000 01       		.uleb128 0x1
+ 750 0001 11       		.uleb128 0x11
+ 751 0002 01       		.byte	0x1
+ 752 0003 25       		.uleb128 0x25
+ 753 0004 0E       		.uleb128 0xe
+ 754 0005 13       		.uleb128 0x13
+ 755 0006 0B       		.uleb128 0xb
+ 756 0007 03       		.uleb128 0x3
+ 757 0008 0E       		.uleb128 0xe
+ 758 0009 1B       		.uleb128 0x1b
+ 759 000a 0E       		.uleb128 0xe
+ 760 000b 10       		.uleb128 0x10
+ 761 000c 06       		.uleb128 0x6
+ 762 000d 00       		.byte	0
+ 763 000e 00       		.byte	0
+ 764 000f 02       		.uleb128 0x2
+ 765 0010 24       		.uleb128 0x24
+ 766 0011 00       		.byte	0
+ 767 0012 0B       		.uleb128 0xb
+ 768 0013 0B       		.uleb128 0xb
+ 769 0014 3E       		.uleb128 0x3e
+ 770 0015 0B       		.uleb128 0xb
+ 771 0016 03       		.uleb128 0x3
+ 772 0017 0E       		.uleb128 0xe
+ 773 0018 00       		.byte	0
+ 774 0019 00       		.byte	0
+ 775 001a 03       		.uleb128 0x3
+ 776 001b 24       		.uleb128 0x24
+ 777 001c 00       		.byte	0
+ 778 001d 0B       		.uleb128 0xb
+ 779 001e 0B       		.uleb128 0xb
+ 780 001f 3E       		.uleb128 0x3e
+ 781 0020 0B       		.uleb128 0xb
+ 782 0021 03       		.uleb128 0x3
+ 783 0022 08       		.uleb128 0x8
+ 784 0023 00       		.byte	0
+ 785 0024 00       		.byte	0
+ 786 0025 04       		.uleb128 0x4
+ 787 0026 16       		.uleb128 0x16
+ 788 0027 00       		.byte	0
+ 789 0028 03       		.uleb128 0x3
+ 790 0029 0E       		.uleb128 0xe
+ 791 002a 3A       		.uleb128 0x3a
+ 792 002b 0B       		.uleb128 0xb
+ 793 002c 3B       		.uleb128 0x3b
+ 794 002d 0B       		.uleb128 0xb
+ 795 002e 49       		.uleb128 0x49
+ 796 002f 13       		.uleb128 0x13
+ 797 0030 00       		.byte	0
+ 798 0031 00       		.byte	0
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 15
+
+
+ 799 0032 05       		.uleb128 0x5
+ 800 0033 01       		.uleb128 0x1
+ 801 0034 01       		.byte	0x1
+ 802 0035 49       		.uleb128 0x49
+ 803 0036 13       		.uleb128 0x13
+ 804 0037 01       		.uleb128 0x1
+ 805 0038 13       		.uleb128 0x13
+ 806 0039 00       		.byte	0
+ 807 003a 00       		.byte	0
+ 808 003b 06       		.uleb128 0x6
+ 809 003c 21       		.uleb128 0x21
+ 810 003d 00       		.byte	0
+ 811 003e 49       		.uleb128 0x49
+ 812 003f 13       		.uleb128 0x13
+ 813 0040 2F       		.uleb128 0x2f
+ 814 0041 0B       		.uleb128 0xb
+ 815 0042 00       		.byte	0
+ 816 0043 00       		.byte	0
+ 817 0044 07       		.uleb128 0x7
+ 818 0045 34       		.uleb128 0x34
+ 819 0046 00       		.byte	0
+ 820 0047 03       		.uleb128 0x3
+ 821 0048 0E       		.uleb128 0xe
+ 822 0049 3A       		.uleb128 0x3a
+ 823 004a 0B       		.uleb128 0xb
+ 824 004b 3B       		.uleb128 0x3b
+ 825 004c 0B       		.uleb128 0xb
+ 826 004d 49       		.uleb128 0x49
+ 827 004e 13       		.uleb128 0x13
+ 828 004f 3F       		.uleb128 0x3f
+ 829 0050 0C       		.uleb128 0xc
+ 830 0051 02       		.uleb128 0x2
+ 831 0052 0A       		.uleb128 0xa
+ 832 0053 00       		.byte	0
+ 833 0054 00       		.byte	0
+ 834 0055 00       		.byte	0
+ 835              		.section	.debug_aranges,"",@progbits
+ 836 0000 00000014 		.4byte	0x14
+ 837 0004 0002     		.2byte	0x2
+ 838 0006 00000000 		.4byte	.Ldebug_info0
+ 839 000a 04       		.byte	0x4
+ 840 000b 00       		.byte	0
+ 841 000c 0000     		.2byte	0
+ 842 000e 0000     		.2byte	0
+ 843 0010 00000000 		.4byte	0
+ 844 0014 00000000 		.4byte	0
+ 845              		.section	.debug_line,"",@progbits
+ 846              	.Ldebug_line0:
+ 847 0000 00000053 		.section	.debug_str,"MS",@progbits,1
+ 847      00020000 
+ 847      004D0201 
+ 847      FB0E0D00 
+ 847      01010101 
+ 848              	.LASF23:
+ 849 0000 534F485F 		.string	"SOH_MIN"
+ 849      4D494E00 
+ 850              	.LASF15:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 16
+
+
+ 851 0008 4F43565F 		.string	"OCV_Vector"
+ 851      56656374 
+ 851      6F7200
+ 852              	.LASF24:
+ 853 0013 54656D70 		.string	"Temperature_Vector"
+ 853      65726174 
+ 853      7572655F 
+ 853      56656374 
+ 853      6F7200
+ 854              	.LASF18:
+ 855 0026 52315F56 		.string	"R1_Vector"
+ 855      6563746F 
+ 855      7200
+ 856              	.LASF7:
+ 857 0030 666C6F61 		.string	"float"
+ 857      7400
+ 858              	.LASF1:
+ 859 0036 756E7369 		.string	"unsigned char"
+ 859      676E6564 
+ 859      20636861 
+ 859      7200
+ 860              	.LASF13:
+ 861 0044 4E54435F 		.string	"NTC_Temp_Vector"
+ 861      54656D70 
+ 861      5F566563 
+ 861      746F7200 
+ 862              	.LASF4:
+ 863 0054 6C6F6E67 		.string	"long unsigned int"
+ 863      20756E73 
+ 863      69676E65 
+ 863      6420696E 
+ 863      7400
+ 864              	.LASF17:
+ 865 0066 52305F56 		.string	"R0_Vector"
+ 865      6563746F 
+ 865      7200
+ 866              	.LASF8:
+ 867 0070 646F7562 		.string	"double"
+ 867      6C6500
+ 868              	.LASF25:
+ 869 0077 474E5520 		.ascii	"GNU C 4.9.4 20160726 (Sat May 27 11:09:55 CDT 2017         b"
+ 869      4320342E 
+ 869      392E3420 
+ 869      32303136 
+ 869      30373236 
+ 870 00b3 75696C64 		.ascii	"uild.sh"
+ 870      2E7368
+ 871 00ba 20726576 		.string	" rev=gd8b6c20 s=F494 ELe200 -V release_gd8b6c20_build_Fed_ELe200_ML0) -mcall-sysv -mcpu=e
+ 871      3D676438 
+ 871      62366332 
+ 871      3020733D 
+ 871      46343934 
+ 872              	.LASF14:
+ 873 01bb 4E54435F 		.string	"NTC_Vector"
+ 873      56656374 
+ 873      6F7200
+ 874              	.LASF19:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 17
+
+
+ 875 01c6 534F435F 		.string	"SOC_MAX"
+ 875      4D415800 
+ 876              	.LASF2:
+ 877 01ce 756E7369 		.string	"unsigned int"
+ 877      676E6564 
+ 877      20696E74 
+ 877      00
+ 878              	.LASF6:
+ 879 01db 6C6F6E67 		.string	"long long unsigned int"
+ 879      206C6F6E 
+ 879      6720756E 
+ 879      7369676E 
+ 879      65642069 
+ 880              	.LASF10:
+ 881 01f2 73697A65 		.string	"sizetype"
+ 881      74797065 
+ 881      00
+ 882              	.LASF11:
+ 883 01fb 4361705F 		.string	"Cap_Nom"
+ 883      4E6F6D00 
+ 884              	.LASF5:
+ 885 0203 6C6F6E67 		.string	"long long int"
+ 885      206C6F6E 
+ 885      6720696E 
+ 885      7400
+ 886              	.LASF9:
+ 887 0211 63686172 		.string	"char"
+ 887      00
+ 888              	.LASF27:
+ 889 0216 443A5C53 		.string	"D:\\Study\\Y1\\Work\\RCVD\\Autodev\\Slave_L9963E\\SPC58EC - Combined_Application_v1"
+ 889      74756479 
+ 889      5C59315C 
+ 889      576F726B 
+ 889      5C524356 
+ 890              	.LASF26:
+ 891 0263 2E2F736F 		.string	"./source/ModelBMS/Cell_Model_parameter.c"
+ 891      75726365 
+ 891      2F4D6F64 
+ 891      656C424D 
+ 891      532F4365 
+ 892              	.LASF28:
+ 893 028c 7265616C 		.string	"real32_T"
+ 893      33325F54 
+ 893      00
+ 894              	.LASF16:
+ 895 0295 52305F45 		.string	"R0_EOL_Vector"
+ 895      4F4C5F56 
+ 895      6563746F 
+ 895      7200
+ 896              	.LASF20:
+ 897 02a3 534F435F 		.string	"SOC_MIN"
+ 897      4D494E00 
+ 898              	.LASF3:
+ 899 02ab 6C6F6E67 		.string	"long int"
+ 899      20696E74 
+ 899      00
+ 900              	.LASF12:
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 18
+
+
+ 901 02b4 4B454C56 		.string	"KELVIN_CON"
+ 901      494E5F43 
+ 901      4F4E00
+ 902              	.LASF0:
+ 903 02bf 7369676E 		.string	"signed char"
+ 903      65642063 
+ 903      68617200 
+ 904              	.LASF22:
+ 905 02cb 534F485F 		.string	"SOH_MAX"
+ 905      4D415800 
+ 906              	.LASF21:
+ 907 02d3 534F435F 		.string	"SOC_Vector"
+ 907      56656374 
+ 907      6F7200
+ 908              		.ident	"GCC: (GNU) 4.9.4 20160726 (Sat May 27 11:09:55 CDT 2017         build.sh rev=gd8b6c20 s=F4
+GAS LISTING C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s 			page 19
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 Cell_Model_parameter.c
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:23     .data.Temperature_Vector:00000000 Temperature_Vector
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:153    .data.SOH_MIN:00000000 SOH_MIN
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:33     .data.SOH_MAX:00000000 SOH_MAX
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:235    .data.SOC_Vector:00000000 SOC_Vector
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:45     .data.SOC_MIN:00000000 SOC_MIN
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:51     .data.SOC_MAX:00000000 SOC_MAX
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:437    .data.R1_Vector:00000000 R1_Vector
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:257    .data.R0_Vector:00000000 R0_Vector
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:57     .data.R0_EOL_Vector:00000000 R0_EOL_Vector
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:347    .data.OCV_Vector:00000000 OCV_Vector
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:197    .data.NTC_Vector:00000000 NTC_Vector
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:159    .data.NTC_Temp_Vector:00000000 NTC_Temp_Vector
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:147    .data.KELVIN_CON:00000000 KELVIN_CON
+C:\Users\Vipuls\AppData\Local\Temp\ccx1B3RW.s:39     .data.Cap_Nom:00000000 Cap_Nom
+
+NO UNDEFINED SYMBOLS
